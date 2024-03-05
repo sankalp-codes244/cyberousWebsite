@@ -6,12 +6,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function DropDown() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-          Options
+          Training
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -36,7 +36,7 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Edit
+                  Feature
                 </a>
               )}
             </Menu.Item>
@@ -49,7 +49,7 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Duplicate
+                  Free Quote
                 </a>
               )}
             </Menu.Item>
@@ -64,7 +64,7 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Archive
+                  Our Team
                 </a>
               )}
             </Menu.Item>
@@ -77,7 +77,7 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Move
+                  Testimonial
                 </a>
               )}
             </Menu.Item>
@@ -92,38 +92,11 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Share
+                  404 Page
                 </a>
               )}
             </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Add to favorites
-                </a>
-              )}
-            </Menu.Item>
-          </div>
-          <div className="py-1">
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Delete
-                </a>
-              )}
-            </Menu.Item>
+            
           </div>
         </Menu.Items>
       </Transition>
