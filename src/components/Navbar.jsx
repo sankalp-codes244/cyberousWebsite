@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white h-20 shadow-md sticky top-0">
+    <div className="bg-white h-20 shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center h-full px-4 md:px-8">
         <Link to="/">
         <h1 className="text-custom-orange-color text-2xl font-bold mx-4">Cyberous</h1>
