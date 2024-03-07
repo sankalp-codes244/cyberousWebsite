@@ -1,8 +1,8 @@
 import React from 'react'
 import CarouselElement from '../../components/CarouselElement'
-import About from '../AboutUs/About'
 import { Images } from '../../assets'
 import OurServices from '../OurServices'
+import About from '../aboutUs/About'
 
 const Homepage = () => {
   let imgData = [
