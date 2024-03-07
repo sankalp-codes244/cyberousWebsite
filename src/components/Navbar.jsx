@@ -23,12 +23,12 @@ const Navbar = () => {
         </div>
 
         <div className={`${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
-          <button className="mx-2 md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg px-5 py-2.5 text-center">Home</button>
+          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg  py-2.5 text-center">Home</button>
           <DropDown />
-          <button className="mx-2 md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg px-5 py-2.5 text-center">Service</button>
-          <button className="mx-2 md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg px-5 py-2.5 text-center">About</button>
-          <button className="mx-2 md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg px-5 py-2.5 text-center">Blog</button>
-          <button className="mx-2 md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg px-5 py-2.5 text-center">Contact</button>
+          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
+          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2 text-center">About</button>
+          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Blog</button>
+          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
         </div>
       </div>
     </div>
