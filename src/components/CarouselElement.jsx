@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft } from 'react-feather';
 
 const CarouselElement = ({ getImages }) => {
-  console.log(getImages)
   // State to keep track of the current image index
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,7 +30,7 @@ const CarouselElement = ({ getImages }) => {
   return (
     <>
       <div className="w-full h-screen overflow-hidden relative">
-        <div className="flex transition-transform ease-out duration-700" style={{ transform: `translateX(-${currentIndex * 100}%)`}}>
+        <div className="flex transition-transform ease-out duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)`}}>
           {getImages.map((item, index) => (
             <>
             {/* <div key={index} className='absolute bottom-0 left-1/2 top-1/2 '>
