@@ -10,6 +10,7 @@ function App() {
         {/* Nav Bar Code */}
 
       </div>
+      <div className='h-screen'></div>
     </>
   )
 }
