@@ -1,19 +1,42 @@
 import React from 'react'
 import CarouselElement from '../../components/CarouselElement'
+import About from '../AboutUs/About'
+import { Images } from '../../assets'
+import OurServices from '../OurServices'
 
-export const Homepage = () => {
+const Homepage = () => {
   let imgData = [
-    "https://staticg.sportskeeda.com/editor/2022/02/7b353-16439509782499.png",
-    "https://images3.alphacoders.com/666/666312.jpg",
-    "https://sm.ign.com/ign_latam/screenshot/default/saitama-debilidad_ve13.jpg",
-  
+    {
+      id:1,
+      text:'Empowering Organizations With Tailored Security Solutions Through Expert Consultation.',
+      Image: Images.carousalImg1,
+    },
+    {
+      id:2,
+      text:'Transforming Individuals into Cyber Guardians Through Expert Training',
+      Image: Images.carousalImg2,
+    },
+    {
+      id:3,
+      text:'Empowering Organizations With Tailored Security Solutions Through Expert Consultation.',
+      Image: Images.carousalImg3,
+    }
   ]
   return (
-    <div className='h-screen  '>
-      <div className=''>
+    <>
+      <div className='h-screen  '>
+        <div className=''>
 
-      <CarouselElement getImages={imgData} />
+          <CarouselElement getImages={imgData} />
+        </div>
       </div>
-    </div>
+      <div id="about" className='h-screen bg-white'>
+        <About/>
+      </div>
+      <div>
+        <OurServices/>
+      </div>
+    </>
   )
 }
+export default Homepage;
