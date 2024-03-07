@@ -17,9 +17,11 @@ export default {
         'custom-gradient-bg-light': '#3438a5',
         'custum-bg-dark': '#161616',
         'custom-fontColor-Dark':'#9b9b9b',
+        'custom-fontColor-grey':'#9ba6c1',
         'custom-fontColor-Green':'#2a7624',
         'custom-buttonColor-Green':'#7cc04f',
         'custom-buttonColor-GreenDark':'#4a732f',
+        'custom-greyLightColor':'#f5f5f5',
       },
       fontFamily: {
       sans: [

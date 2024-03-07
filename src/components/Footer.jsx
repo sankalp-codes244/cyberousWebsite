@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
             </Link>
             <Link to='about'>
-              <li className=" w-28 md:w-40 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className="w-full md:w-32 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -98,15 +98,17 @@ const Footer = () => {
               Stay informed about cybersecurity risks. Get the latest security updates directly to your email inbox, keeping you ahead of potential threats.
             </h1>
             <div className="flex flex-col md:flex-row items-center mt-6 ">
-              <div className="bg-gray-900 rounded-lg mb-4 md:mb-0">
+              <div className=" rounded-lg mb-4 md:mb-0">
                 <input
                   name="emailHandle"
                   type="email"
-                  className="mt-4 ml-5 h-10 px-2 text-white bg-custum-bg-dark focus:outline-none border border-solid border-white w-80 rounded-lg"
+                  className="mt-4 ml-5 h-10 px-2 text-white bg-custum-bg-dark focus:outline-none border border-solid border-white w-80 rounded-lg
+                 
+                  "
                   placeholder="Enter your email"
                 />
               </div>
-              <button className="mt-4 ml-4 bg-custom-buttonColor-Green hover:bg-custom-buttonColor-GreenDark text-white font-bold py-2 px-4 ">
+              <button className="mt-4 ml-4 bg-custom-buttonColor-Green hover:bg-custom-buttonColor-GreenDark text-white font-bold py-2 px-4 rounded">
                 Sign Up
               </button>
             </div>
