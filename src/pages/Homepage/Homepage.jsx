@@ -1,7 +1,7 @@
 import React from 'react'
 import CarouselElement from '../../components/CarouselElement'
 
-export const Homepage = () => {
+const Homepage = () => {
   let imgData = [
     "https://staticg.sportskeeda.com/editor/2022/02/7b353-16439509782499.png",
     "https://images3.alphacoders.com/666/666312.jpg",
@@ -17,3 +17,4 @@ export const Homepage = () => {
     </div>
   )
 }
+export default Homepage;
