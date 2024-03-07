@@ -15,6 +15,11 @@ export default {
         'custom-orange-hover-color': '#ff9900', // Custom hover color
         'custom-gradient-bg-dark': '#2E3192',
         'custom-gradient-bg-light': '#3438a5',
+        'custum-bg-dark': '#161616',
+        'custom-fontColor-Dark':'#9b9b9b',
+        'custom-fontColor-Green':'#2a7624',
+        'custom-buttonColor-Green':'#7cc04f',
+        'custom-buttonColor-GreenDark':'#4a732f',
       },
       fontFamily: {
       sans: [
