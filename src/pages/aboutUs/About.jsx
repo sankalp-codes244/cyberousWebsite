@@ -15,11 +15,11 @@ const About = () => {
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan, Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-start items-center">
-            <img src={Images.aboutimg1} alt="Image of something" className="w-32 h-32 sm:w-48 sm:h-48" />
+            <img src={Images.aboutimg1} alt="Image of something" className="w-28 h-28 sm:w-28 sm:h-28" />
             <h1 className="text-custom-buttonColor-Green text-lg mt-4 sm:mt-0 sm:ml-10">
               1000+ Projects
             </h1>
-            <img src={Images.aboutimg2} className="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-20" alt="Cyberous achievement" />
+            <img src={Images.aboutimg2} className="w-28 h-28 sm:w-28 sm:h-28 mt-4 sm:mt-0 sm:ml-20" alt="Cyberous achievement" />
             <h1 className="text-custom-buttonColor-Green text-lg mt-4 sm:mt-0 sm:ml-10">
               50+
             </h1>
