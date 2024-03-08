@@ -25,7 +25,10 @@ import linkedinLight from './images/linkedinLight.png'
 import linkedinDark from './images/linkedinDark.png'
 import xDark from './images/xDark.png'
 import xLight from './images/xLight.png'
-
+import indrec1 from './images/indrec1.png'
+import indrec2 from './images/indrec2.png'
+import indrec3 from './images/indrec3.png'
+import indrec4 from './images/indrec4.png'
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -54,4 +57,8 @@ export const Images ={
     xDark: xDark,
     linkedinDark: linkedinDark,
     linkedinLight: linkedinLight,
+    indrec1: indrec1,
+    indrec2: indrec2,
+    indrec3: indrec3,
+    indrec4: indrec4,
 }
