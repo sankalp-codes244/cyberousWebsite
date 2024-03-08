@@ -29,11 +29,6 @@ import indrec1 from './images/indrec1.png'
 import indrec2 from './images/indrec2.png'
 import indrec3 from './images/indrec3.png'
 import indrec4 from './images/indrec4.png'
-import indrec5 from './images/indrec5.png'
-import indrec6 from './images/indrec6.png'
-import indrec7 from './images/indrec7.png'
-import indrec8 from './images/indrec8.png'
-
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -66,8 +61,4 @@ export const Images ={
     indrec2: indrec2,
     indrec3: indrec3,
     indrec4: indrec4,
-    indrec5: indrec5,
-    indrec6: indrec6,
-    indrec7: indrec7,
-    indrec8: indrec8,
 }

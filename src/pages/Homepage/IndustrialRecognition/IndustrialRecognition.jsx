@@ -15,17 +15,12 @@ const IndustrialRecognition = () => {
             <div className='flex justify-center'>
                 <div className='flex flex-col'>
                     <div className='flex flex-row'>
-                        <img src={Images.indrec1} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec2} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec3} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec4} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
+                        <img src={Images.indrec1} className='m-8 duration-500 h-48 w-48 mt-10 hover:scale-110'/>
+                        <img src={Images.indrec2} className='m-8 duration-500 h-48 w-48 mt-10 hover:scale-110'/>
+                        <img src={Images.indrec3} className='m-8 duration-500 h-48 w-48 mt-10 hover:scale-110'/>
+                        <img src={Images.indrec4} className='m-8 duration-500 h-48 w-48 mt-10 hover:scale-110'/>
                     </div>
-                    <div className='flex flex-row'>
-                        <img src={Images.indrec5} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec6} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec7} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                        <img src={Images.indrec8} className='m-8 duration-500 h-48 w-48 mt-6 hover:scale-110'/>
-                    </div>
+                   
                 </div>
             </div>
 
