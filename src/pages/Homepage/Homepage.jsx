@@ -84,7 +84,7 @@ const Homepage = () => {
       <div id="chooseus" className='min-h-screen bg-white'>
         <WhyChooseUs/>
       </div>
-      <div id="industrialrec" className='min-h-screen bg-white'>
+      <div id="industrialrec" className='min-h-full bg-white'>
         <IndustrialRecognition/>
       </div>
       <div id="training" className='min-h-screen bg-white'>
