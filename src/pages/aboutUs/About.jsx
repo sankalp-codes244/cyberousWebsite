@@ -3,42 +3,29 @@ import { Images } from "../../assets";
 
 const About = () => {
   return (
-    <div className="">
-      <div className="pt-8 flex flex-row w-full h-full mb-10">
-        <div className="w-1/2">
-          <img src={Images.aboutImages} alt="This is image" />
+    <div className="px-4 md:px-8 lg:px-12">
+      <div className="flex flex-col md:flex-row w-full pt-8 mb-10">
+        <div className="md:w-1/2 lg:flex-shrink-0">
+          <img src={Images.aboutImages} alt="This is image" className="w-full h-auto" />
         </div>
-        <div className="w-2/3 p-20 bg-custom-greyLightColor ">
-          <h1 className="text-5xl text-black font-bold">About Us</h1>
+        <div className="md:w-2/3 lg:w-1/2 p-5 md:p-20 bg-custom-greyLightColor mt-10 md:mt-0">
+          <h1 className="text-3xl lg:text-5xl text-black font-bold">About Us</h1>
           <div className="h-1 w-56 bg-custom-buttonColor-Green mt-6 rounded-full"></div>
-          <div className="">
-            <p className="text-xl mr-12 mt-6 text-custom-fontColor-grey">
-              Welcome to Cyberous, your premier cyber security partner.
-              Specializing in ethical hacking training, VAPT services covering
-              web, network, mobile, and cloud platforms, as well as red teaming
-              and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini,
-              renowned for training over 10,000 students globally and 2,500+
-              corporate employees. Recognized as a Top 10 CEO in Jaipur,
-              Rajasthan, Cyberous is committed to empowering individuals and
-              organizations while ensuring a secure digital future. Join us in
-              safeguarding your digital assets today.
-            </p>
-          </div>
-          <div className="mt-20 flex flex-row">
-            <img src={Images.aboutimg1} alt="Image of something" />
-            {/* <h1 className='text-black text-xl ml-10'>0</h1> */}
-            <h1 className="ml-10 mt-10 text-custom-buttonColor-Green text-lg">
+          <p className="text-lg lg:text-xl mt-6 text-custom-fontColor-grey">
+            Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan, Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row justify-start items-center">
+            <img src={Images.aboutimg1} alt="Image of something" className="w-32 h-32 sm:w-48 sm:h-48" />
+            <h1 className="text-custom-buttonColor-Green text-lg mt-4 sm:mt-0 sm:ml-10">
               1000+ Projects
             </h1>
-            <img src={Images.aboutimg2} className="ml-20" />
-
-            {/* <h1 className='text-black text-3xl font-bold ml-10'>1234</h1> */}
-            <h1 className="mt-10 ml-10 text-custom-buttonColor-Green text-lg">
+            <img src={Images.aboutimg2} className="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-20" alt="Cyberous achievement" />
+            <h1 className="text-custom-buttonColor-Green text-lg mt-4 sm:mt-0 sm:ml-10">
               50+
             </h1>
           </div>
-          <div className="">
-            <button className="h-16 w-60 bg-custom-buttonColor-Green mt-12 rounded-full text-white text-xl">
+          <div className="text-center mt-12">
+            <button className="h-12 md:h-16 w-48 md:w-60 bg-custom-buttonColor-Green rounded-full text-white text-lg">
               Explore More
             </button>
           </div>

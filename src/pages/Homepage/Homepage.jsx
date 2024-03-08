@@ -22,21 +22,19 @@ const Homepage = () => {
       Image: Images.carousalImg3,
     }
   ]
+
   return (
     <>
-      <div className='h-screen  '>
-        <div className=''>
-
-          <CarouselElement getImages={imgData} />
-        </div>
+      <div className='min-h-screen'>
+        <CarouselElement getImages={imgData} />
       </div>
-      <div id="about" className='h-screen bg-white'>
+      <div id="about" className='min-h-screen bg-white'>
         <About/>
       </div>
-      <div>
+      <div className='min-h-screen bg-white'>
         <OurServices/>
       </div>
     </>
-  )
-}
+  );
+};
 export default Homepage;

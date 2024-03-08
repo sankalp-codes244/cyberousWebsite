@@ -4,12 +4,13 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 const Layout = () => {
   return (
-    <>
-        {/* <Header/> */}
-        <Navbar/>
-        <Outlet/>
-        <Footer/>
-    </>
-  )
-}
+    <div className="flex flex-col min-h-screen">
+      <Navbar/>
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <Footer/>
+    </div>
+  );
+};
 export default Layout;
