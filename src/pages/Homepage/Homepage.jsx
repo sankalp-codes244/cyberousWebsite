@@ -58,7 +58,7 @@ const Homepage = () => {
       title: 'Application Development',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
-      type: 'Application_Development'
+      type: 'Application_Development' 
     },
     {
       id: 6,
