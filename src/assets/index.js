@@ -17,7 +17,14 @@ import whychooseus2 from './images/whychooseusimg2.png'
 import whychooseus3 from './images/whychooseusimg3.png'
 import whychooseus4 from './images/whychooseusimg4.png'
 import whychooseus5 from './images/whychooseusimg5.png'
-
+import facebookLight from './images/facebook.png'
+import facebookDark from './images/facebookDark.png'
+import instagramDark from './images/instagramDark.png'
+import instagramLight from './images/instagramLight.png'
+import linkedinLight from './images/linkedinLight.png'
+import linkedinDark from './images/linkedinDark.png'
+import xDark from './images/xDark.png'
+import xLight from './images/xLight.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -39,4 +46,12 @@ export const Images ={
     whychooseus3: whychooseus3,
     whychooseus4: whychooseus4,
     whychooseus5: whychooseus5,
+    facebookLight: facebookLight,
+    facebookDark: facebookDark,
+    instagramDark: instagramDark,
+    instagramLight: instagramLight,
+    xLight: xLight,
+    xDark: xDark,
+    linkedinDark: linkedinDark,
+    linkedinLight: linkedinLight,
 }
