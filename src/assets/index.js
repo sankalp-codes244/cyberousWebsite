@@ -12,6 +12,12 @@ import OurServicesimg2 from './images/ourServicesimg2.png';
 import OurServicesimg3 from './images/ourServicesimg3.png';
 import OurServicesimg4 from './images/ourServicesimg4.png';
 import whiteArrow from './images/whiteArrowIcon.png'
+import whychooseus1 from './images/whychooseusimg1.jpg'
+import whychooseus2 from './images/whychooseusimg2.png'
+import whychooseus3 from './images/whychooseusimg3.png'
+import whychooseus4 from './images/whychooseusimg4.png'
+import whychooseus5 from './images/whychooseusimg5.png'
+
 
 export const Images ={
     logo: cyberousLogo,
@@ -28,4 +34,9 @@ export const Images ={
     OurServicesimg3: OurServicesimg3,
     OurServicesimg4: OurServicesimg4,
     whiteArrow: whiteArrow,
+    whychooseus1: whychooseus1,
+    whychooseus2: whychooseus2,
+    whychooseus3: whychooseus3,
+    whychooseus4: whychooseus4,
+    whychooseus5: whychooseus5,
 }
