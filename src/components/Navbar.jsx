@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import DropDown from './DropDown';
 import { Link } from 'react-router-dom';
+import { Images } from '../assets';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +45,22 @@ const Navbar = () => {
           </a>
 
           <DropDown />
-          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
-          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2 text-center">About</button>
-          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Blog</button>
-          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
+          <button className="md:mx-8  text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
+          <button className="md:mx-8  text-sm font-medium rounded-lg py-2 text-center">About</button>
+          <button className="md:mx-8  text-sm font-medium rounded-lg py-2.5 text-center">Blog</button>
+          <button className="md:mx-8  text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
+          <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
+            <img src={Images.facebookDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.facebookLight} onMouseOut={(e) => e.currentTarget.src = Images.facebookDark }/>
+          </button>
+          <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
+            <img src={Images.instagramDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.instagramLight} onMouseOut={(e) => e.currentTarget.src = Images.instagramDark }/>
+          </button>
+          <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
+            <img src={Images.linkedinDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.linkedinLight} onMouseOut={(e) => e.currentTarget.src = Images.linkedinDark}/>
+          </button>
+          <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
+            <img src={Images.xDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.xLight} onMouseOut={(e) => e.currentTarget.src = Images.xDark }/>
+          </button>
         </div>
       </div>
     </div>
