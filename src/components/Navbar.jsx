@@ -23,7 +23,11 @@ const Navbar = () => {
         </div>
 
         <div className={`${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
-          <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg  py-2.5 text-center">Home</button>
+          <a href="#about">
+
+          <p className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg  py-2.5 text-center">Home</p>
+          </a>
+
           <DropDown />
           <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
           <button className="md:mx-8 hover:bg-custom-orange-hover-color focus:bg-custom-orange-hover-color text-sm font-medium rounded-lg py-2 text-center">About</button>
