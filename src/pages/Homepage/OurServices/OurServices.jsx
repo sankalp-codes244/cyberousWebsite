@@ -1,6 +1,6 @@
 import React from 'react'
-import { Images } from '../../assets'
-import ServicesCard from '../../components/ServicesCard'
+import { Images } from '../../../assets'
+import ServicesCard from '../../../components/ServicesCard'
 
 let servicesData = [
   {id:0,

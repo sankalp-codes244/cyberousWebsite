@@ -1,9 +1,10 @@
 import React from 'react'
 import CarouselElement from '../../components/CarouselElement'
 import { Images } from '../../assets'
-import OurServices from '../OurServices/OurServices'
-import About from '../aboutUs/About'
-import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
+import OurServices from '../Homepage/OurServices/OurServices'
+import About from './AboutUs/About'
+import WhyChooseUs from '../Homepage/WhyChooseUs/WhyChooseUs'
+import Training from './Training/Training'
 
 const Homepage = () => {
   let imgData = [
@@ -23,6 +24,44 @@ const Homepage = () => {
       Image: Images.carousalImg3,
     }
   ]
+  const programs = [
+    {
+      id: 1,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+    {
+      id: 2,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+    {
+      id: 3,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+    {
+      id: 4,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+    {
+      id: 5,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+    {
+      id: 6,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.carousalImg3,
+    },
+  ];
 
   return (
     <>
@@ -35,8 +74,11 @@ const Homepage = () => {
       <div className='min-h-screen bg-white'>
         <OurServices/>
       </div>
-      <div id="chooseus" className='h-screen bg-white'>
+      <div id="chooseus" className='min-h-screen bg-white'>
         <WhyChooseUs/>
+      </div>
+      <div id="chooseus" className='min-h-screen bg-white'>
+        <Training programs={programs}/>
       </div>
     </>
   );
