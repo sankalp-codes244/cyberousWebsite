@@ -103,7 +103,7 @@ const Footer = () => {
                   name="emailHandle"
                   type="email"
                   className="mt-4 ml-5 h-10 px-4 focus-visible:ring-4 duration-500 text-white bg-custum-bg-dark  border border-solid border-white w-80 rounded-lg
-"
+                  "
                   placeholder="Enter your email"
                 />
               </div>
