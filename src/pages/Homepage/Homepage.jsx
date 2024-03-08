@@ -3,6 +3,7 @@ import CarouselElement from '../../components/CarouselElement'
 import { Images } from '../../assets'
 import OurServices from '../OurServices/OurServices'
 import About from '../aboutUs/About'
+import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 
 const Homepage = () => {
   let imgData = [
@@ -33,8 +34,11 @@ const Homepage = () => {
       <div id="about" className='h-screen bg-white'>
         <About/>
       </div>
-      <div>
+      <div id="ourservices" className=' bg-white'>
         <OurServices/>
+      </div>
+      <div id="chooseus" className='h-screen bg-white'>
+        <WhyChooseUs/>
       </div>
     </>
   )

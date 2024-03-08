@@ -5,7 +5,12 @@ const OurServices = () => {
   return (
     <div className='w-full h-full '>
       <div className='bg-white pt-12'>
-        <h1 className='text-black text-5xl text-center font-bold'>Our Services</h1>
+        <div className='flex justify-center'>
+        <h1 className='text-black text-5xl font-bold'>Our Services</h1>
+        </div>
+        <div className='flex justify-center'>
+        <div className="h-1 w-56 bg-custom-buttonColor-Green mt-6 rounded-full mb-4"></div>
+        </div>
         <div className='flex justify-center'>
           <div className='flex flex-row w-4/5 h-full shadow-xl'>
             <div className='w-1/4 border-r border-custom-greyBorderColor border-solid'>
