@@ -1,7 +1,7 @@
 import React from 'react'
 import CarouselElement from '../../components/CarouselElement'
 import { Images } from '../../assets'
-import OurServices from '../OurServices'
+import OurServices from '../OurServices/OurServices'
 import About from '../aboutUs/About'
 
 const Homepage = () => {

@@ -13,7 +13,6 @@ const router = createBrowserRouter(
       <Route path='' element={<Homepage />} />
       {/* <Route path='aboutpage' element={<About />} /> */}
     </Route>,
-
 ))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
