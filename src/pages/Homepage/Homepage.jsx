@@ -27,39 +27,45 @@ const Homepage = () => {
   const programs = [
     {
       id: 1,
-      title: 'Advanced Ethical Hacking',
+      title: 'Bug Bounty',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'bug_bounty'
     },
     {
       id: 2,
       title: 'Advanced Ethical Hacking',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'Advanced_Ethical_Hacking'
     },
     {
       id: 3,
-      title: 'Advanced Ethical Hacking',
+      title: 'Linux Fundamental',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'Linux_Fundamental'
     },
     {
       id: 4,
-      title: 'Advanced Ethical Hacking',
+      title: 'Cyber Security Diploma',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'Cyber_Security_Diploma'
     },
     {
       id: 5,
-      title: 'Advanced Ethical Hacking',
+      title: 'Application Development',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'Application_Development'
     },
     {
       id: 6,
       title: 'Advanced Ethical Hacking',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.carousalImg3,
+      type: 'Advanced_Ethical_Hacking'
     },
   ];
 
