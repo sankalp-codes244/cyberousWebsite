@@ -6,6 +6,8 @@ import About from './AboutUs/About'
 import WhyChooseUs from '../Homepage/WhyChooseUs/WhyChooseUs'
 import Training from './Training/Training'
 import IndustrialRecognition from './IndustrialRecognition/IndustrialRecognition'
+import BrandsTrustUs from './BrandsTrustUs/BrandsTrustUs'
+import Testemonial from './Testimonial/Testemonial'
 
 const Homepage = () => {
   let imgData = [
@@ -89,6 +91,12 @@ const Homepage = () => {
       </div>
       <div id="training" className='min-h-screen bg-white'>
         <Training programs={programs}/>
+      </div>
+      <div id="training" className='min-h-full bg-white'>
+        <BrandsTrustUs/>
+      </div>
+      <div id="training" className='min-h-full bg-white'>
+        <Testemonial/>
       </div>
     </>
   );

@@ -25,7 +25,7 @@ const About = () => {
             </h1>
           </div>
           <div className="text-center mt-12">
-            <button className="h-12 md:h-16 w-48 md:w-60 bg-custom-buttonColor-Green rounded-full text-white text-lg">
+            <button className="h-12 md:h-16 w-48 md:w-60 duration-500  focus:ring hover:ring-4 active:bg-green-700 ring-green-300  bg-custom-buttonColor-Green rounded-full text-white text-lg">
               Explore More
             </button>
           </div>

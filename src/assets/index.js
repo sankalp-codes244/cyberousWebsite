@@ -29,6 +29,20 @@ import indrec1 from './images/indrec1.png'
 import indrec2 from './images/indrec2.png'
 import indrec3 from './images/indrec3.png'
 import indrec4 from './images/indrec4.png'
+import codes_black from './images/codes_black.png'
+import CodeshalaLogo from './images/CodeshalaLogo.png'
+import edu from './images/edu.png'
+import EXPN from './images/EXPN.png'
+import gc_fasion from './images/gc_fasion.png'
+import halen from './images/halen.png'
+import jag from './images/jag.png'
+import kidcakes from './images/kidcakes.png'
+import malgodee from './images/malgodee.png'
+import nvlogo from './images/nvlogo.png'
+import pc from './images/pc.png'
+import rf from './images/rf.png'
+import travelkicks from './images/travelkicks.png'
+
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -61,4 +75,18 @@ export const Images ={
     indrec2: indrec2,
     indrec3: indrec3,
     indrec4: indrec4,
+    codeBlack: codes_black,
+    CodeshalaLogo: CodeshalaLogo,
+    edu: edu,
+    EXPN: EXPN,
+    gc_fasion: gc_fasion,
+    halen: halen,
+    jag: jag,
+    kidcakes: kidcakes,
+    malgodee: malgodee,
+    nvlogo: nvlogo,
+    pc: pc,
+    rf: rf,
+    travelkicks: travelkicks
+    
 }
