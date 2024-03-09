@@ -8,6 +8,7 @@ import Training from './Training/Training'
 import IndustrialRecognition from './IndustrialRecognition/IndustrialRecognition'
 import BrandsTrustUs from './BrandsTrustUs/BrandsTrustUs'
 import Testemonial from './Testimonial/Testemonial'
+import MediaGallery from './MediaGallery/MediaGallery'
 
 const Homepage = () => {
   let imgData = [
@@ -97,6 +98,9 @@ const Homepage = () => {
       </div>
       <div id="training" className='min-h-full bg-white'>
         <Testemonial/>
+      </div>
+      <div id="training" className='min-h-full bg-white'>
+        <MediaGallery/>
       </div>
     </>
   );
