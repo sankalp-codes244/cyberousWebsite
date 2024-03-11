@@ -75,13 +75,13 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='min-h-screen'>
+      <div id="home" className='min-h-screen'>
         <CarouselElement getImages={imgData} />
       </div>
       <div id="about" className='min-h-screen bg-white'>
         <About/>
       </div>
-      <div className='min-h-screen bg-white'>
+      <div id="services" className='min-h-screen bg-white'>
         <OurServices/>
       </div>
       <div id="chooseus" className='min-h-screen bg-white'>
@@ -93,13 +93,13 @@ const Homepage = () => {
       <div id="training" className='min-h-screen bg-white'>
         <Training programs={programs}/>
       </div>
-      <div id="training" className='min-h-full bg-white'>
+      <div id="brands" className='min-h-full bg-white'>
         <BrandsTrustUs/>
       </div>
-      <div id="training" className='min-h-full bg-white'>
+      <div id="testimonials" className='min-h-full bg-white'>
         <Testemonial/>
       </div>
-      <div id="training" className='min-h-full bg-white'>
+      <div id="gallery" className='min-h-full bg-white'>
         <MediaGallery/>
       </div>
     </>
