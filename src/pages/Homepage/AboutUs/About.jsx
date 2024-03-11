@@ -11,7 +11,7 @@ const About = () => {
         <div className="md:w-2/3 lg:w-1/2 p-5 md:p-20 bg-custom-greyLightColor mt-10 md:mt-0">
           <h1 className="text-3xl lg:text-5xl text-black font-bold">About Us</h1>
           <div className="h-1 w-56 bg-custom-buttonColor-Green mt-6 rounded-full"></div>
-          <p className="text-lg lg:text-xl mt-6 text-custom-fontColor-grey">
+          <p className="text-lg lg:text-xl mt-6 text-custom-fontColor-grey text-justify">
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan, Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-start items-center">

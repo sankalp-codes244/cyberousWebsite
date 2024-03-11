@@ -33,42 +33,42 @@ const Homepage = () => {
       id: 1,
       title: 'Bug Bounty',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources1,
       type: 'bug_bounty'
     },
     {
       id: 2,
       title: 'Advanced Ethical Hacking',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources2,
       type: 'Advanced_Ethical_Hacking'
     },
     {
       id: 3,
       title: 'Linux Fundamental',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources3,
       type: 'Linux_Fundamental'
     },
     {
       id: 4,
       title: 'Cyber Security Diploma',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources4,
       type: 'Cyber_Security_Diploma'
     },
     {
       id: 5,
       title: 'Application Development',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources5,
       type: 'Application_Development' 
     },
     {
       id: 6,
       title: 'Advanced Ethical Hacking',
       description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.carousalImg3,
+      image: Images.ourcources2,
       type: 'Advanced_Ethical_Hacking'
     },
   ];

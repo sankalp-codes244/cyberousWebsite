@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
                 <div className='lg:w-3/4 bg-custom-greyLightColor mb-10 px-6 lg:px-0'>
                     <h1 className='text-black text-4xl lg:text-5xl font-bold lg:ml-36 pb-4 mt-10 lg:mt-36'>Why To Choose Us</h1>
                     <div className="h-1 w-56 bg-custom-buttonColor-Green mt-6 rounded-full lg:ml-36"></div>
-                    <div className='mt-6 lg:pl-36 lg:pr-12 text-custom-fontColor-grey text-md lg:text-lg'>
+                    <div className='mt-6 lg:pl-36 lg:pr-12 text-custom-fontColor-grey text-md lg:text-lg text-justify'>
                         <p>
                             Choose us for unparalleled cybersecurity solutions tailored to your needs. Our seasoned professionals bring extensive industry experience, ensuring comprehensive services from training to VAPT assessments. With a proven track record of safeguarding clients' digital assets, trust in our tailored approach for maximum protection.
                         </p>

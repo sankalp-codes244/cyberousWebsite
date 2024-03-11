@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TrainingCard from "../../../components/TrainingCard";
+import { Images } from '../../../assets'
 const Training = ({ programs }) => {
   const [selectedType, setSelectedType] = useState("All");
 
@@ -26,7 +27,6 @@ const Training = ({ programs }) => {
           </button>
         ))}
       </div>
-
       {/* Responsive grid layout for cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
         {selectedType === "All" ? (

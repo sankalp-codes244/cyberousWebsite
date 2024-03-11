@@ -42,6 +42,11 @@ import nvlogo from './images/nvlogo.png'
 import pc from './images/pc.png'
 import rf from './images/rf.png'
 import travelkicks from './images/travelkicks.png'
+import ourcources1 from './images/ourcources1.png'
+import ourcources2 from './images/ourcources2.jpg'
+import ourcources3 from './images/ourcources3.jpg'
+import ourcources4 from './images/ourcources4.png'
+import ourcources5 from './images/ourcources5.jpeg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -87,6 +92,11 @@ export const Images ={
     nvlogo: nvlogo,
     pc: pc,
     rf: rf,
-    travelkicks: travelkicks
-    
+    travelkicks: travelkicks,
+    ourcources1: ourcources1,
+    ourcources2: ourcources2,
+    ourcources3: ourcources3,
+    ourcources4: ourcources4,
+    ourcources5: ourcources5,
+
 }
