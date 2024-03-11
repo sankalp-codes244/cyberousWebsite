@@ -5,19 +5,19 @@ import ServicesCard from '../../../components/ServicesCard'
 let servicesData = [
   {id:0,
     img: Images.OurServicesimg1,
-    servicesDescription: `Enhance your digital defenses with Cyberous' VAPT services. Our expert team conducts comprehensive Vulnerability Assessment and Penetration Testing, ensuring robust protection against cyber threats. Rely on our 5-star Google-rated services to safeguard your assets effectivel`,
+    servicesDescription: `Enhance your digital defenses with Cyberous' VAPT services. Our expert team conducts comprehensive Vulnerability Assessment and , ensuring robust protection against cyber threats. Rely on our 5-star Google-rated services to safeguard your assets effectively.`,
     serviceText:'VAPT'},
   {id:1,
     img: Images.OurServicesimg2,
-    servicesDescription: 'Embark on a journey to mastery with our Ethical Hacking Training. At Cyberous, we equip students with practical skills, readying them for real-life cyber challenges. With a stellar 5-star Google rating, trust us to elevate your cybersecurity expertise and career prospects.',
+    servicesDescription: 'Embark on your mastery journey with Cyberous Ethical Hacking Training. We equip you with practical skills for real-world cyber challenges. Rely on our stellar 5-star Google rating to enhance your cybersecurity expertise and boost your career prospects significantly.',
     serviceText:'Training'},
   {id:2,
     img: Images.OurServicesimg3,
-    servicesDescription: `Elevate your cybersecurity strategy with Cyberous' Consultancy services. Our expert consultants specialize in crafting custom strategies to fortify your digital landscape against ever-evolving threats. Trust us to guide you through proactive risk management and implement robust defense solutions tailored to your unique needs. With Cyberous by your side, navigate the complex world of cybersecurity with confidence and resilience.`,
+    servicesDescription: `Elevate your cybersecurity strategy with Cyberous' Consultancy. Our experts craft custom strategies to fortify your digital landscape. LorenIpsum Trust us for proactive risk management and tailored defense solutions. Navigate cybersecurity confidently with Cyberous.`,
     serviceText:'consultancy'},
   {id:3,
     img: Images.OurServicesimg4,
-    servicesDescription: `Boost your cybersecurity resilience with Cyberous' Red Teaming service. Our expert team simulates real-world cyber attacks to uncover vulnerabilities and enhance your defense strategy. Trust Cyberous to deliver comprehensive Red Teaming solutions, tailored to fortify your digital infrastructure against sophisticated threats.`,
+    servicesDescription: `Enhance your cybersecurity resilience with Cyberous' Red Teaming service. Our experts simulate real-world cyber attacks to uncover vulnerabilities and fortify your defense strategy. Trust Cyberous for comprehensive Red , tailored to secure your digital infrastructure against sophisticated threats.`,
     serviceText:'Red Teaming'},
 ]
  
