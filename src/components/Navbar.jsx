@@ -58,16 +58,16 @@ const Navbar = () => {
           <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
           </Link>
           <button className="md:mx-3 text-sm font-medium rounded-lg py-2.5 text-center">
-            <img src={Images.facebookDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.facebookLight} onMouseOut={(e) => e.currentTarget.src = Images.facebookDark }/>
+            <img src={Images.facebookDark} className='pointer-events-none select-none h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.facebookLight} onMouseOut={(e) => e.currentTarget.src = Images.facebookDark }/>
           </button>
           <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
-            <img src={Images.instagramDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.instagramLight} onMouseOut={(e) => e.currentTarget.src = Images.instagramDark }/>
+            <img src={Images.instagramDark} className='pointer-events-none select-none h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.instagramLight} onMouseOut={(e) => e.currentTarget.src = Images.instagramDark }/>
           </button>
           <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
-            <img src={Images.linkedinDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.linkedinLight} onMouseOut={(e) => e.currentTarget.src = Images.linkedinDark}/>
+            <img src={Images.linkedinDark} className='pointer-events-none select-none h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.linkedinLight} onMouseOut={(e) => e.currentTarget.src = Images.linkedinDark}/>
           </button>
           <button className="md:mx-4 text-sm font-medium rounded-lg py-2.5 text-center">
-            <img src={Images.xDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.xLight} onMouseOut={(e) => e.currentTarget.src = Images.xDark }/>
+            <img src={Images.xDark} className='pointer-events-none select-none h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.xLight} onMouseOut={(e) => e.currentTarget.src = Images.xDark }/>
           </button>
         </div>
       </div>

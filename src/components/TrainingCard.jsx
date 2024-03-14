@@ -6,7 +6,7 @@ const TrainingCard = ({ image, title, description,type}) => {
     <div className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-lg xl:max-w-lg mx-auto rounded overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
       {/* Zoom and transition effects on the image */}
       <div className="overflow-hidden">
-        <img className="w-full h-64 transform transition duration-500 hover:scale-110" src={image} alt={title}
+        <img className="pointer-events-none select-none w-full h-64 transform transition duration-500 hover:scale-110" src={image} alt={title}
         />
       </div>
       <div className="px-6 py-10">

@@ -42,7 +42,7 @@ const MediaGallery = () => {
           <div key={event.id} className="bg-white p-4 shadow-md cursor-pointer" onClick={() => openModal(event.id)}>
             <div className="flex justify-center mb-4">
               {event.images.slice(0, 3).map((image, index) => (
-                <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="w-16 h-16 object-cover mx-1 rounded-md" />
+                <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="pointer-events-none select-none w-16 h-16 object-cover mx-1 rounded-md" />
               ))}
             </div>
             <h3 className="text-lg font-bold text-center">{event.name}</h3>

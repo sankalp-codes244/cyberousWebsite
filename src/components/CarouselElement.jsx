@@ -36,7 +36,7 @@ const CarouselElement = ({ getImages }) => {
             {/* <div key={index} className='absolute bottom-0 left-1/2 top-1/2 '>
               {item.text}
             </div> */}
-            <img key={index} className="w-full h-screen flex-shrink-0 object-cover" src={item.Image} alt={`carousel-${index}`} />
+            <img key={index} className="pointer-events-none select-none w-full h-screen flex-shrink-0 object-cover" src={item.Image} alt={`carousel-${index}`} />
             </>
 
           ))}

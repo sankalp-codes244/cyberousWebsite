@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 <div className='lg:w-1/2 flex justify-center lg:justify-end'>
-                    <img src={Images.whychooseus1} className='max-w-full h-auto mb-10' alt="Why Choose Us" />
+                    <img src={Images.whychooseus1} className='pointer-events-none select-none max-w-full h-auto mb-10' alt="Why Choose Us" />
                 </div>
             </div>
         </div>
