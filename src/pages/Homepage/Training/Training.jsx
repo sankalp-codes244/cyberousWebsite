@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TrainingCard from "../../../components/TrainingCard";
-import { Images } from '../../../assets'
 const Training = ({ programs }) => {
   const [selectedType, setSelectedType] = useState("All");
 

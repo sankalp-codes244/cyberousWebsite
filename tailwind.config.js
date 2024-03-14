@@ -16,16 +16,17 @@ export default {
         'custom-gradient-bg-dark': '#2E3192',
         'custom-gradient-bg-light': '#3438a5',
         'custum-bg-dark': '#161616',
+        'custom-bg-violet': '#a497ff',
         'custom-fontColor-Dark':'#9b9b9b',
         'custom-fontColor-grey':'#9ba6c1',
         'custom-fontColor-violet':'#6957df',
         'custom-fontColor-violetLight':'#a497ff',
-        'custom-fontColor-Green':'#2a7624',
+        'custom-fontColor-Green':'#22c55e',
         'custom-buttonColor-Green':'#7cc04f',
         'custom-buttonColor-GreenDark':'#4a732f',
         'custom-greyLightColor':'#f5f5f5',
         'custom-greyBorderColor':'#f5f5f5',
-
+        
       },
       fontFamily: {
       sans: [
