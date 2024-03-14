@@ -40,15 +40,23 @@ const Navbar = () => {
         </div>
 
         <div className={`${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
-          <a href="#about">
+          <Link to='/'>
             <p className="md:mx-3 text-sm rounded-lg  py-2.5 text-center">Home</p>
-          </a>
+          </Link>
 
           <DropDown />
+          <Link to='/services'>
           <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
+          </Link>
+          <Link to='/about'>
           <button className="md:mx-3  text-sm font-medium rounded-lg py-2 text-center">About</button>
+          </Link>
+          <Link to='/blog'>
           <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Blog</button>
+          </Link>
+          <Link to='contact'>
           <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
+          </Link>
           <button className="md:mx-3 text-sm font-medium rounded-lg py-2.5 text-center">
             <img src={Images.facebookDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.facebookLight} onMouseOut={(e) => e.currentTarget.src = Images.facebookDark }/>
           </button>
