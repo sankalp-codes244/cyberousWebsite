@@ -48,6 +48,7 @@ import ourcources3 from './images/ourcources3.jpg'
 import ourcources4 from './images/ourcources4.png'
 import ourcources5 from './images/ourcources5.jpeg'
 import methodology1 from './images/methodologyimg1.jpg'
+import aboutBg from './images/aboutBg.jpg'
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -99,4 +100,5 @@ export const Images ={
     ourcources4: ourcources4,
     ourcources5: ourcources5,
     methodology1: methodology1,
+    aboutBg: aboutBg,
 }
