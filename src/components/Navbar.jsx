@@ -31,19 +31,18 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className={`${isOpen ? 'block absolute top-20 right-0 mt-2 py-2 w-40 bg-white rounded-md shadow-xl z-20 flex flex-col items-center md:hidden' : 'hidden'} md:flex items-center `}>
-          <a href="#home" className="text-sm font-medium rounded-lg py-2.5 text-center mx-3">
-            Home
-          </a>
+        <div className={`${isOpen ? 'block' : 'hidden'} md:flex items-center`}>
+          <Link to='/'>
+            <p className="md:mx-3 text-sm rounded-lg  py-2.5 text-center">Home</p>
+          </Link>
+
           <DropDown />
-          <a href="#services" className="text-sm font-medium rounded-lg py-2.5 text-center mx-3">
-            Service
-          </a>
-          <a href="#about" className="text-sm font-medium rounded-lg py-2 text-center mx-3">
-            About
-          </a>
-          <button className="text-sm font-medium rounded-lg py-2.5 text-center mx-3">
-            Blog
+          <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
+          <button className="md:mx-3  text-sm font-medium rounded-lg py-2 text-center">About</button>
+          <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Blog</button>
+          <button className="md:mx-3  text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
+          <button className="md:mx-3 text-sm font-medium rounded-lg py-2.5 text-center">
+            <img src={Images.facebookDark} className='h-10 w-10 rounded-full' onMouseOver={(e) => e.currentTarget.src = Images.facebookLight} onMouseOut={(e) => e.currentTarget.src = Images.facebookDark }/>
           </button>
           <button className="text-sm font-medium rounded-lg py-2.5 text-center mx-3">
             Contact
