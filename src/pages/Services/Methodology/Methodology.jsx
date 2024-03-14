@@ -3,13 +3,10 @@ import { Images } from '../../../assets';
 
 const Methodology = ({ boxData }) => {
     const [selectedBox, setSelectedBox] = useState(() => {
-        // Initialize selectedBox state with the value from local storage if available,
-        // otherwise default to 0
         return parseInt(localStorage.getItem('selectedBox')) || 0;
     });
 
     useEffect(() => {
-        // Update local storage whenever selectedBox changes
         localStorage.setItem('selectedBox', selectedBox);
     }, [selectedBox]);
 

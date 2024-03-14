@@ -1,5 +1,7 @@
 import React from 'react'
 import Methodology from './Methodology/Methodology'
+import EvaluateBusiness from './EvaluateBusiness/EvaluateBusiness'
+import { Images } from '../../assets'
 
 const Services = () => {
 
@@ -20,6 +22,9 @@ const boxData = [
       paragraphText: "Gain insight into the core of your digital defenses through White Box Testing. Consider it as a thorough examination of your system's security health. Our specialists meticulously scrutinize the internal architecture, source code, and algorithms, leaving no aspect unexplored. This approach not only detects vulnerabilities but also offers insights into the overall strength of your system. Acting as an internal guardian, White Box Testing reinforces your digital assets against potential threats, providing a protective layer that extends beyond the surface.",
     }
   ]
+
+
+  
   return (
     <div className='h-full'>
 
@@ -49,7 +54,12 @@ const boxData = [
           </div>
       </div>
       {/* Subpages */}
+      <div>
       <Methodology boxData={boxData}/>
+      </div>
+      <div>
+        <EvaluateBusiness />
+      </div>
     </div>
   )
 }
