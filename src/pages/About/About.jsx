@@ -64,13 +64,17 @@ const boxData = [
           </div>
           </div>
           
-        <div className='flex border border-solid px-36 justify-between'>
+        <div className='flex px-36 justify-between'>
           <div className="py-12">
-          Download a copy of our Company Profile 
+            <p className='font-bold text-5xl'>
+              Download a copy of our<p className='text-green-500'>
+                Company Profile </p> 
+            </p>
+            <button className='bg-green-500 text-white px-4 py-2 rounded-lg mt-4 hover:ring-4 active:bg-green-700 duration-300 ring-green-300'>Download</button>
 
           </div>
           <div className="py-12">
-          Download a copy of our Company Profile 
+          Cyberous LOGO
 
           </div>
           </div>
@@ -83,7 +87,69 @@ const boxData = [
           </div>
       </div>
       {/* Subpages */}
-      <Methodology boxData={boxData}/>
+      <div>
+        <p className='text-4xl font-bold text-center'>We Excel in Delivering <p className='text-green-500'>Optimal Solution</p>
+</p>
+      </div>
+      <div className='flex justify-center'>
+        <div className="h-1 w-32 bg-custom-buttonColor-Green mt-6 rounded-full"></div>
+        </div>
+      <div className='flex justify-evenly p-10 border border-solid'>
+      <div className='text-3xl font-semibold'>
+
+        <ol className='list-decimal text-green-500'>
+          <li> Ethical Hacking training 
+            <div className='text-xl font-normal text-gray-600'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.
+
+              </div>     </li>
+          <li> Cybersecurity     <div className='text-xl font-normal text-gray-600'>Get tailored cybersecurity solutions and expert guidance to protect your organization's digital assets.
+
+              </div> </li>
+          <li> Red Teaming     <div className='text-xl font-normal text-gray-600'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.
+
+              </div></li>
+          <li> IOT Testing     <div className='text-xl font-normal text-gray-600'>Safeguard your IoT devices and networks from cyber attacks with our comprehensive testing procedures.
+
+              </div></li>
+          <li> IOS Application Testing              <div className='text-xl font-normal text-gray-600'> Secure your iOS apps against cyber threats with our specialized Penetration Testing services.
+
+              </div> </li>
+        </ol>
+
+        </div>
+        <div className='text-3xl font-semibold'>
+        <ol className='list-decimal text-green-500 ' start={6}>
+          <li>  Web Application Penetration Testing    <div className='text-xl font-normal text-gray-600'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.
+
+
+              </div> </li>
+          <li>  Network Penetration Testing    <div className='text-xl font-normal text-gray-600'>Identify and mitigate vulnerabilities in your network infrastructure with our thorough Penetration Testing solutions.
+
+
+
+              </div>
+ </li>
+          <li> Android Application Penetration Testing     <div className='text-xl font-normal text-gray-600'>Protect your Android applications from potential breaches with our rigorous Penetration Testing procedures.
+
+
+              </div></li>
+          <li> Source Code Review    <div className='text-xl font-normal text-gray-600'>Strengthen your software security with our meticulous Source Code Review assessments.
+
+              </div>
+ </li>
+          <li>   API Penetration Testing     <div className='text-xl font-normal text-gray-600'>Ensure the integrity of your APIs with our specialized Penetration Testing services.
+
+
+              </div>
+
+ </li>
+        </ol>
+
+        </div>
+        </div>
+
+
+
     </div>
   )
 }
