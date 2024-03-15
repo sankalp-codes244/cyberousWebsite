@@ -19,6 +19,10 @@ const Methodology = ({ boxData }) => {
             <div className='flex flex-row'>
                 <div className='flex flex-col w-3/5 '>
                     <h1 className=' text-center mt-20 text-black text-4xl font-bold'>Methodology</h1>
+                    <div className=' flex justify-center'>
+                        <div className="h-1 w-48 mr-4 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
+
+                    </div>
                     <p className='ml-20 mr-20 mt-6 text-lg text-justify'>
                         Embrace a comprehensive penetration testing methodology that not only identifies security vulnerabilities but also tackles intricate business logic vulnerabilities. Our approach incorporates meticulous security checklists in line with industry standards such as OWASP10, SANS25, OSSTMM, and others. At IEMLabs, we provide both on-premises and off-premises application security solutions. Backed by years of experience, our proven roadmap extends across the varied threat landscapes of online platforms, mobile applications, and cloud environments.
                     </p>

@@ -5,7 +5,7 @@ const EvCard = ({image, heading, paragraph}) => {
     <div className='flex justify-center border border-solid border-l-custom-greyBorderColor p-4'>
         <div className='h-1/5 w-full'>
             <div className='flex justify-center'>
-                <img src={image} className='h-32 ' />
+                <img src={image} className='h-32 pointer-events-none select-none' />
             </div>
             <h1 className='flex text-center font-bold text-3xl text-black pt-6 pl-6'>
                 {heading}

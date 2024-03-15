@@ -51,6 +51,7 @@ const Training = ({ programs }) => {
               />
             ))
         )}
+
       </div>
     </div>
   );

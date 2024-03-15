@@ -51,6 +51,19 @@ import methodology1 from './images/methodologyimg1.jpg'
 import Ev1 from './images/evaluatebusinessimg1.gif'
 import Ev2 from './images/evaluatebusinessimg2.gif'
 import Ev3 from './images/evaluatebusinessimg3.gif'
+import Approach1 from './images/Approach1.jpg'
+import Approach2 from './images/Approach2.jpg'
+import Approach3 from './images/Approach3.jpg'
+import Approach4 from './images/Approach4.jpg'
+import Approach5 from './images/Approach5.jpg'
+import Approach6 from './images/Approach6.jpg'
+import Approach7 from './images/Approach7.jpg'
+import Approach8 from './images/Approach8.jpg'
+import Approach9 from './images/Approach9.jpg'
+import Approach10 from './images/Approach10.jpg'
+import Approach11 from './images/Approach11.jpg'
+import chevronDown from './images/chevronDown.svg'
+
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -105,4 +118,16 @@ export const Images ={
     Ev1: Ev1,
     Ev2: Ev2,
     Ev3: Ev3,
+    Approach1: Approach1,
+    Approach2: Approach2,
+    Approach3: Approach3,
+    Approach4: Approach4,
+    Approach5: Approach5,
+    Approach6: Approach6,
+    Approach7: Approach7,
+    Approach8: Approach8,
+    Approach9: Approach9,
+    Approach10: Approach10,
+    Approach11: Approach11,
+    chevronDown: chevronDown
 }
