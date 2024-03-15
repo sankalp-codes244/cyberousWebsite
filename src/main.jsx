@@ -10,20 +10,20 @@ import Services from './pages/Services/Services.jsx'
 import About from './pages/About/About.jsx'
 import Blog from './pages/Blog.jsx'
 import Contact from './pages/Contact/Contact.jsx'
+import NotFound from './pages/404Page/NotFound.jsx'
 // import About  from './pages/AboutUs/About.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
+      <Route path='*' element={<NotFound/>} />
       <Route path='' element={<Homepage/>} />
       <Route path='/training' element={<TrainingPage/>} />
       <Route path='/services' element={<Services/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/blog' element={<Blog/>} />
       <Route path='/contact' element={<Contact/>} />
-      {/* <Route path='aboutpage' element={<About />} /> */}
     </Route>,
-    // <Route path='*' element={<div>Error 404</div> } />
 ))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
