@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarouselElement from '../../components/CarouselElement'
 import { Images } from '../../assets'
 import OurServices from '../Homepage/OurServices/OurServices'
@@ -72,7 +72,9 @@ const Homepage = () => {
       type: 'Advanced_Ethical_Hacking'
     },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div id="home" className='min-h-screen'>

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Images } from '../../assets';
 import BrandsTrustUs from '../Homepage/BrandsTrustUs/BrandsTrustUs';
 import Testemonial from '../Homepage/Testimonial/Testemonial';
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery';
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='h-full'>
       {/* Background section */}
