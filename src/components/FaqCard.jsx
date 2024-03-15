@@ -7,7 +7,7 @@ const FaqCard = ({ name, description }) => {
 
     }
     return (
-        <div>
+        <div onClick={() => buttonHandler()}>
             <div className='flex justify-center'>
                 <div className=' bg-white w-2/3 h-full rounded-xl m-4 shadow-xl '>
                     <div className='flex flex-row justify-between'>
