@@ -6,7 +6,7 @@ import aboutimg1 from './images/aboutimg1.png'
 import aboutimg2 from './images/aboutimg2.png'
 import CarousalImg1 from './images/CarousalImg1.jpg'
 import CarousalImg2 from './images/CarousalImg2.jpg'
-import CarousalImg3 from './images/Carousalmg3.png'
+import CarousalImg3 from './images/Carousalmg3.jpg'
 import OurServicesimg1 from './images/ourServicesimg1.png';
 import OurServicesimg2 from './images/ourServicesimg2.png';
 import OurServicesimg3 from './images/ourServicesimg3.png';
@@ -63,6 +63,9 @@ import Approach9 from './images/Approach9.jpg'
 import Approach10 from './images/Approach10.jpg'
 import Approach11 from './images/Approach11.jpg'
 import chevronDown from './images/chevronDown.svg'
+import aboutBg from './images/aboutBg.jpg'
+import user from './images/user.png'
+
 
 export const Images ={
     logo: cyberousLogo,
@@ -129,5 +132,7 @@ export const Images ={
     Approach9: Approach9,
     Approach10: Approach10,
     Approach11: Approach11,
-    chevronDown: chevronDown
+    chevronDown: chevronDown,
+    aboutBg: aboutBg,
+    user: user,
 }
