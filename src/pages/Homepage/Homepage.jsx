@@ -72,6 +72,42 @@ const Homepage = () => {
       type: 'Advanced_Ethical_Hacking'
     },
   ];
+
+const whyChooseUs = [
+  {
+    id: 0,
+    description: 'EXPERT Training',
+    img:Images.whychooseus2,
+  },
+  {
+    id: 1,
+    description: 'Quality Service ',
+    img:Images.whychooseus3,
+  },
+  {
+    id: 2,
+    description: '24X7 Hour Support',
+    img:Images.whychooseus4,
+  },
+  {
+    id: 3,
+    description: 'Expert consultancy ',
+    img:Images.whychooseus5,
+  },
+  // {
+  //   id: 4,
+  //   description: 'Comprehensive Threat Detection and Prevention',
+  //   img:Images.whychooseus5,
+  // },
+  // {
+  //   id: 5,
+  //   description: 'Tailored Solutions for Specific Needs',
+  //   img:Images.whychooseus5,
+  // },
+]
+
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -87,7 +123,7 @@ const Homepage = () => {
         <OurServices/>
       </div>
       <div id="chooseus" className='min-h-screen bg-white'>
-        <WhyChooseUs/>
+        <WhyChooseUs whyUs={whyChooseUs}/>
       </div>
       <div id="industrialrec" className='min-h-full bg-white'>
         <IndustrialRecognition/>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Images } from '../../../assets';
 
-const WhyChooseUs = () => {
+
+const WhyChooseUs = ({ whyUs }) => {
     return (
         <div className='pt-12'>
             <div className='flex flex-col lg:flex-row'>
@@ -14,14 +15,14 @@ const WhyChooseUs = () => {
                         </p>
                     </div>
                     <div className='flex flex-wrap justify-center lg:justify-start lg:ml-36 mt-10 lg:mt-16 '>
-                        {[Images.whychooseus2, Images.whychooseus3, Images.whychooseus4, Images.whychooseus5,Images.whychooseus5,Images.whychooseus5].map((image, index) => (
-                            <div key={index} className='flex flex-row items-center my-4 lg:my-0 lg:mr-10 pt-6'>
+                        {whyUs.map((index) => (
+                            <div key={index.id} className='flex flex-row items-center my-4 lg:my-0 lg:mr-10 pt-6'>
                                 <div className='bg-white rounded-full p-2'>
-                                    <img src={image} className='h-16 w-16' alt={`Feature ${index + 1}`} />
+                                    <img src={index.img} className='h-16 w-16' alt={`Feature ${index.id + 1}`} />
                                 </div>
                                 <div className='flex flex-col ml-4'>
                                     <h1 className='text-lg text-custom-buttonColor-Green'>Feature</h1>
-                                    <h1 className='text-black font-bold text-xl ml-0 mt-2'>Description {index + 1}</h1>
+                                    <h1 className='text-black font-bold text-xl ml-0 mt-2'>{index.description}</h1>
                                 </div>
                             </div>
                         ))}

@@ -23,37 +23,37 @@ const cardData = [
     },
 ]
 
+
 const EvaluateBusiness = () => {
     return (
-        <div className='bg-custom-greyBorderColor'>
-    <div className='w-full h-full text-center bg-white'>
-        <div className='flex flex-col md:flex-row items-center justify-center md:justify-between'>
-            <div className='md:w-2/3 md:ml-8 md:mt-4'>
-                <h1 className='font-sans text-4xl mt-4 md:mt-20 md:ml-28 mb-8 md:mb-20'>Evaluate your business capabilities and uncover opportunities for greater success.</h1>
+        <div class='bg-custom-greyBorderColor'>
+            <div class='w-full h-full text-center bg-white'>
+                <div class='flex flex-col md:flex-row'>
+                    <div class='md:w-2/3 md:ml-8 mt-4'>
+                        <h1 class='font-sans text-4xl mt-4 md:ml-28 mb-20'>Evaluate your business capabilities and uncover opportunities for greater success.</h1>
+                    </div>
+                    <button class='m-8 ml-12 md:ml-0 md:mt-8 rounded-full h-16 md:w-48 border border-green-500 text-white bg-green-500 pl-3 pr-2 font-bold'>Get a free Consultation</button>
+                </div>
             </div>
-            <button className='m-8 ml-2 md:ml-12 rounded-full h-16 w-full md:w-48 border border-green-500 text-white bg-green-500 pl-3 pr-2 font-bold md:w-auto md:ml-0'>Get a free Consultation</button>
+            <div class='flex justify-center mt-12'>
+                <div class='w-full md:w-1/4 m'>
+                    <h1 class='font-sans text-3xl md:ml-28'>Client Benefits</h1>
+                    <h1 class='font-sans text-5xl mt-6 mb-6 font-bold '>What do you get?</h1>
+                </div>
+            </div>
+            <div class='flex justify-center'>
+                <div class='flex flex-col md:flex-row bg-white shadow-xl rounded-xl w-full md:w-2/3 mb-10'>
+                    {cardData.map((item) => (
+                        <EvCard key={item.id} image={item.imgUrl} heading={item.headingText} paragraph={item.paragraphText} />
+                    ))}
+                </div>
+            </div>
         </div>
-    </div>
-    <div className='flex justify-center m-8 md:m-12'>
-        <div className='w-full md:w-1/4 m'>
-            <h1 className='font-sans text-3xl md:text-5xl ml-4 md:ml-28'>
-                Client Benefits
-            </h1>
-            <h1 className='font-sans text-3xl md:text-5xl mt-4 md:mt-8 font-bold ml-4 md:ml-28'>
-                What do you get?
-            </h1>
-        </div>
-    </div>
-    <div className='flex justify-center'>
-        <div className='flex flex-col md:flex-row bg-white shadow-xl rounded-xl w-full md:w-2/3 mb-10'>
-            {cardData.map((item) => (
-                <EvCard key={item.id} image={item.imgUrl} heading={item.headingText} paragraph={item.paragraphText} />
-            ))}
-        </div>
-    </div>
-</div>
 
     )
 }
 
+
+
 export default EvaluateBusiness
+

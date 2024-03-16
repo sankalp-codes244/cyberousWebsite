@@ -46,7 +46,7 @@ const Footer = () => {
         <div className=' md:w-1/3 h-auto md:h-96 ml-8 mt-8'>
           <h1 className='text-white text-2xl font-bold mb-5 ml-8'>Quick Links</h1>
           <ol className="list-none">
-            <Link to='about'>
+            <Link to='/training'>
               <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
@@ -54,7 +54,7 @@ const Footer = () => {
                 Training
               </li>
             </Link>
-            <Link to='about'>
+            <Link to='/services'>
               <li className=" md:w-32 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
@@ -62,7 +62,7 @@ const Footer = () => {
                 Our Services
               </li>
             </Link>
-            <Link to='about'>
+            <Link to='/about'>
               <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
@@ -70,7 +70,7 @@ const Footer = () => {
                 About Us
               </li>
             </Link>
-            <Link to='about'>
+            <Link to='/blog'>
               <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
@@ -78,7 +78,7 @@ const Footer = () => {
                 Blog
               </li>
             </Link>
-            <Link to='about'>
+            <Link to='/contact'>
               <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
