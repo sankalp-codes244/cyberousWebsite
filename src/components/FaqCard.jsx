@@ -19,7 +19,7 @@ const FaqCard = ({ name, description }) => {
             </button>
           </div>
           <div className={`${isOpen ? '' : 'hidden'}`}>
-            <p className='p-4 pt-0'>{description}</p>
+            <p className='p-6 pt-0 text-justify'>{description}</p>
           </div>
         </div>
       </div>
