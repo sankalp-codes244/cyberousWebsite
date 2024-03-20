@@ -14,7 +14,7 @@ let servicesData = [
   {id:2,
     img: Images.OurServicesimg3,
     servicesDescription: `Elevate your cybersecurity strategy with Cyberous' Consultancy. Our experts craft custom strategies to fortify your digital landscape. LorenIpsum Trust us for proactive risk management and tailored defense solutions. Navigate cybersecurity confidently with Cyberous.`,
-    serviceText:'consultancy'},
+    serviceText:'Consultancy'},
   {id:3,
     img: Images.OurServicesimg4,
     servicesDescription: `Enhance your cybersecurity resilience with Cyberous' Red Teaming service. Our experts simulate real-world cyber attacks to uncover vulnerabilities and fortify your defense strategy. Trust Cyberous for comprehensive Red , tailored to secure your digital infrastructure against sophisticated threats.`,

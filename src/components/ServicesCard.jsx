@@ -7,7 +7,7 @@ const ServicesCard = ({image,serviceText,serviceName}) => {
     <div className='ml-10 mt-14 pb-5'>
       <img src={image}  className='pointer-events-none select-none bg-slate-100 rounded-full object-contain' />
       <h1 className='font-bold text-black text-2xl mt-8'>{serviceName}</h1>
-      <p className='mt-6 text-xl text-custom-fontColor-grey mr-10 text-justify'>
+      <p className='mt-6 text-xl text-custom-fontColor-grey mr-10 text-center'>
         {serviceText}
       </p>
       <button>

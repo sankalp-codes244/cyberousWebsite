@@ -41,7 +41,7 @@ const Testemonial = () => {
             <div className="flex justify-center">
             <div className="w-1/2">
                 <img src={item.image} alt="Placeholder" className="pointer-events-none select-none w-full h-32 sm:h-20 object-contain duration-500 hover:scale-110 rounded-full" />
-                <p className="text-center text-xl font-sans text-justify">{item.desc}</p>
+                <p className="text-center text-xl font-sans ">{item.desc}</p>
                 <p className="text-right text-xl font-bold my-4"> - {item.name}</p>
                 </div>
     

@@ -9,17 +9,19 @@ const FaqCard = ({ name, description }) => {
   };
 
   return (
-    <div onClick={() => buttonHandler()}>
+    <div onClick={buttonHandler}>
       <div className='flex justify-center'>
-        <div className='bg-white w-full md:w-2/3 h-full rounded-xl m-4 shadow-xl'>
+        <div className='bg-white w-full md:w-2/3 rounded-xl m-4 shadow-xl'>
           <div className='flex flex-row justify-between'>
             <h1 className='text-xl font-bold m-6'>{name}</h1>
-            <button onClick={() => buttonHandler()}>
-              <img src={Images.chevronDown} className='m-6 mr-8 h-7' alt='this is an image' />
+            <button onClick={buttonHandler}>
+              <img src={Images.chevronDown} className={`m-6 mr-8 h-7 transform transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`} alt='this is an image' />
             </button>
           </div>
-          <div className={`${isOpen ? '' : 'hidden'}`}>
-            <p className='p-6 pt-0 text-justify'>{description}</p>
+          <div className={`overflow-hidden transition-height ${isOpen ? 'h-auto' : 'h-0'}`}>
+            <div className={`${isOpen ? 'opacity-100' : 'opacity-0'} p-6 pt-0 text-justify transition-opacity duration-500`}>
+              {description}
+            </div>
           </div>
         </div>
       </div>

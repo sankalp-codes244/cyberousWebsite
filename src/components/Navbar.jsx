@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Menu items */}
         <div className={`${isOpen ? 'hidden' : 'hidden'} md:flex items-center`}>
           <Link to='/'>
-            <p className="md:mx-3 text-sm rounded-lg py-2.5 text-center">Home</p>
+            <p className="md:mx-3 text-sm rounded-lg py-2.5 text-center font-medium">Home</p>
           </Link>
 
           <DropDown />

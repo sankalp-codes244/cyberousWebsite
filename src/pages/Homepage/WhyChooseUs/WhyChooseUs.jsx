@@ -14,11 +14,11 @@ const WhyChooseUs = ({ whyUs }) => {
                             Choose us for unparalleled cybersecurity solutions tailored to your needs. Our seasoned professionals bring extensive industry experience, ensuring comprehensive services from training to VAPT assessments. With a proven track record of safeguarding clients' digital assets, trust in our tailored approach for maximum protection.
                         </p>
                     </div>
-                    <div className='flex flex-wrap justify-center lg:justify-start lg:ml-36 mt-10 lg:mt-16 '>
+                    <div className='flex flex-wrap justify-center lg:justify-start lg:ml-36 mt-10 lg:mt-16 mb-8'>
                         {whyUs.map((index) => (
                             <div key={index.id} className='flex flex-row items-center my-4 lg:my-0 lg:mr-10 pt-6'>
                                 <div className='bg-white rounded-full p-2'>
-                                    <img src={index.img} className='h-16 w-16' alt={`Feature ${index.id + 1}`} />
+                                    <img src={index.img} className='h-16 w-16 pointer-events-none select-none' alt={`Feature ${index.id + 1}`} />
                                 </div>
                                 <div className='flex flex-col ml-4'>
                                     <h1 className='text-lg text-custom-buttonColor-Green'>Feature</h1>

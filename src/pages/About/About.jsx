@@ -36,7 +36,7 @@ const About = () => {
           Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan, Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </div>
         </div>
-        <div className='flex flex-col md:flex-row justify-around items-center my-10'>
+        <div className='flex flex-col md:flex-row justify-between items-center my-10'>
           <div>
             <p className='font-bold text-xl md:text-2xl lg:text-3xl'>Download a copy of our <span className='text-green-500'>Company Profile</span></p>
             <button className='mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-700'>Download</button>
@@ -54,8 +54,8 @@ const About = () => {
       <div className='flex justify-center'>
 </div>
 <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
-  <div className='text-lg lg:text-2xl font-semibold mb-8 lg:mb-0'>
-    <ol className='list-decimal text-green-500 space-y-4'>
+  <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
+    <ul className='text-green-500 space-y-4 list-disc'>
       <li>
         Ethical Hacking training
         <div className='text-base lg:text-lg font-normal text-gray-600'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</div>
@@ -76,10 +76,10 @@ const About = () => {
         IOS Application Testing
         <div className='text-base lg:text-lg font-normal text-gray-600'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services.</div>
       </li>
-    </ol>
+    </ul>
   </div>
   <div className='text-lg lg:text-2xl font-semibold'>
-    <ol className='list-decimal text-green-500 space-y-4' start={6}>
+    <ul className='list-disc xl:mr-6 text-green-500 space-y-4' >
       <li>
         Web Application Penetration Testing
         <div className='text-base lg:text-lg font-normal text-gray-600'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.</div>
@@ -96,11 +96,11 @@ const About = () => {
         Source Code Review
         <div className='text-base lg:text-lg font-normal text-gray-600'>Strengthen your software security with our meticulous Source Code Review assessments.</div>
       </li>
-      <li>
+      <li className=''>
         API Penetration Testing
         <div className='text-base lg:text-lg font-normal text-gray-600'>Ensure the integrity of your APIs with our specialized Penetration Testing services.</div>
       </li>
-    </ol>
+    </ul>
   </div>
   
 </div>
