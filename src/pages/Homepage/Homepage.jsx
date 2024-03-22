@@ -86,12 +86,12 @@ const whyChooseUs = [
   },
   {
     id: 2,
-    description: '24X7 Hour Support',
+    description: '24/7 Hour Support',
     img:Images.whychooseus4,
   },
   {
     id: 3,
-    description: 'Expert consultancy ',
+    description: 'Expert Consultancy ',
     img:Images.whychooseus5,
   },
   // {

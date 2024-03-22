@@ -29,23 +29,10 @@ export default {
         
       },
       fontFamily: {
-      sans: [
-        'Inter',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'Segoe UI',
-        'Roboto',
-        'Helvetica Neue',
-        'Arial',
-        'Noto Sans',
-        'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji',
-      ],
-    },},
+        sans: ['Roboto', 'sans-serif'],
+        heading: ['Montserrat', 'sans-serif'],
+      },
+  },
     screens: {
       xs: '400px',
       sm: '640px',

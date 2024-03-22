@@ -2,9 +2,9 @@ import React from 'react'
 import { Images } from '../../../assets/index'
 const BrandsTrustUs = () => {
   return (
-    <div className="container mx-auto px-4">
-    <h2 className="text-center text-3xl md:text-4xl font-bold my-10">
-      Brands that trust us
+    <div className="container mx-auto p-4 ">
+    <h2 className="text-center text-3xl md:text-5xl font-bold my-10 font-serif">
+      Brands That Trust Us
     </h2>
 
 

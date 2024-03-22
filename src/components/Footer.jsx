@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Images } from '../assets'
+
+
 
 const Footer = () => {
   return (
-    <div>
-      <div className='flex flex-col md:flex-row  bg-custum-bg-dark pt-10'>
-        <div className='md:w-1/3 h-auto md:h-96 ml-8 mt-8'>
+    <div className='flex flex-col bg-custum-bg-dark pt-10'>
+      <div className='flex flex-col md:flex-row  '>
+        <div className='md:w-1/3 h-auto md:h-full ml-8 mt-8'>
           <h1 className='text-white text-2xl font-bold mb-5 ml-8'>Services</h1>
           <div>
             <ol className="list-none">
@@ -39,11 +42,10 @@ const Footer = () => {
                 </svg>
                 Red Teaming
               </li>
-              {/* Add other list items */}
             </ol>
           </div>
         </div>
-        <div className=' md:w-1/3 h-auto md:h-96 ml-8 mt-8'>
+        <div className=' md:w-1/3 h-full ml-8 mt-8'>
           <h1 className='text-white text-2xl font-bold mb-5 ml-8'>Quick Links</h1>
           <ol className="list-none">
             <Link to='/training'>
@@ -89,7 +91,7 @@ const Footer = () => {
             {/* Add other list items */}
           </ol>
         </div>
-        <div className=' md:w-1/3 h-auto md:h-96 ml-8 md:mr-10 md:mt-0'>
+        <div className=' md:w-1/3 h-full ml-8 md:mr-10 md:mt-0'>
           <h1 className='text-white text-2xl font-bold mb-5 ml-5 mt-8'>
             News Letter
           </h1>
@@ -113,11 +115,28 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+      </div>
+      <div>
+      <div className="pt-6 ml-12 md:mt-0 justify-center md:justify-normal flex  md:p-10 ">
+        
+            <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
+            <img src={Images.facebookLight} alt="Facebook" className=" h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
+            </Link>
+            <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
+            <img src={Images.instagramLight} alt="Instagram" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
+            </Link>
+            <Link to={'https://www.linkedin.com/company/cyberous'}>
+            <img src={Images.linkedinLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
+            </Link>
+            <Link to={'https://twitter.com/cyberousinfosec'}>
+            <img src={Images.xLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
+            </Link>
+          </div>
       </div>
       <div className='h-24  bg-black'>
         <h1 className='ml-32 pt-4 text-white text-base'> © <span className='text-custom-buttonColor-Green underline'>Cyberous</span> , All rights Reserved</h1>
       </div>
+      
     </div>
   )
 }

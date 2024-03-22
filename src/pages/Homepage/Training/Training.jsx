@@ -10,7 +10,7 @@ const Training = ({ programs }) => {
 
   return (
     <div className="container mx-auto px-4">
-      <h2 className="text-center text-3xl md:text-4xl font-bold my-10">
+      <h2 className="text-center text-3xl md:text-4xl font-bold my-10 font-serif">
         Our Training Programs
       </h2>
 

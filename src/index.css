@@ -19,13 +19,20 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2d8e54; /* color of the scroll thumb */
+  background-color: #7cc04f; /* color of the scroll thumb */
   border-radius: 6px; /* roundness of the scroll thumb */
-  border: 3px solid #2d8e54; /* creates padding around scroll thumb */
+  border: 3px solid #7cc04f; /* creates padding around scroll thumb */
 }
 
 /* Custom scrollbar for Firefox */
 * {
   scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #2d8e54 #fff; /* thumb and track color */
+  scrollbar-color: #7cc04f #fff; /* thumb and track color */
+}
+
+.custom-list-icon {
+  background-image: url('path/to/your-image.png');
+  background-size: cover;
+  width: 1.5rem; /* Adjust as needed */
+  height: 1.5rem; /* Adjust as needed */
 }

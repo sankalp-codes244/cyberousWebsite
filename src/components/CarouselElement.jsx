@@ -25,7 +25,7 @@ const CarouselElement = ({ getImages }) => {
           <div key={index} className="w-full h-screen flex-shrink-0 relative">
             <img className="pointer-events-none select-none w-full h-screen object-cover" src={item.Image} alt={`carousel-${index}`} />
             <div className="absolute inset-0 flex items-center justify-center p-4 bg-black bg-opacity-50">
-              <p className="text-white font-bold text-center mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20 text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl">{item.text}</p>
+              <p className="text-white font-bold text-center mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20 text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-serif">{item.text}</p>
             </div>
           </div>
         ))}

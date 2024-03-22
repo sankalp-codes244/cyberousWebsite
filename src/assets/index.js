@@ -65,6 +65,7 @@ import Approach11 from './images/Approach11.jpg'
 import chevronDown from './images/chevronDown.svg'
 import aboutBg from './images/aboutBg.jpg'
 import user from './images/user.png'
+import listIcon from './images/listIcon.png'
 
 
 export const Images ={
@@ -135,4 +136,5 @@ export const Images ={
     chevronDown: chevronDown,
     aboutBg: aboutBg,
     user: user,
+    listIcon: listIcon,
 }
