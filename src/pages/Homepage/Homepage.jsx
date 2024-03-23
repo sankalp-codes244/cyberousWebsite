@@ -9,6 +9,7 @@ import IndustrialRecognition from './IndustrialRecognition/IndustrialRecognition
 import BrandsTrustUs from './BrandsTrustUs/BrandsTrustUs'
 import Testemonial from './Testimonial/Testemonial'
 import MediaGallery from './MediaGallery/MediaGallery'
+import ContactUs from './ContactUs/ContactUs'
 
 const Homepage = () => {
   let imgData = [
@@ -130,6 +131,9 @@ const whyChooseUs = [
       </div>
       <div id="training" className='min-h-screen bg-white'>
         <Training programs={programs}/>
+      </div>
+      <div id="brands" className='min-h-full bg-white'>
+        <ContactUs/>
       </div>
       <div id="brands" className='min-h-full bg-white'>
         <BrandsTrustUs/>

@@ -10,10 +10,12 @@ const Training = ({ programs }) => {
 
   return (
     <div className="container mx-auto px-4">
-      <h2 className="text-center text-3xl md:text-4xl font-bold my-10 font-serif">
+      <h1 className="text-center text-3xl md:text-4xl font-bold font-serif">
         Our Training Programs
-      </h2>
-
+      </h1>
+      <div className="justify-center flex m-6">
+        <div className="h-1 w-72 md:w-96 bg-custom-buttonColor-Green"></div>
+      </div>
       {/* Filter buttons with responsive adjustments */}
       <div className="flex flex-wrap justify-center my-4 text-center">
         {["All", "bug_bounty", "Linux_Fundamental", "Advanced_Ethical_Hacking", "Cyber_Security_Diploma", "Application_Development"].map((type) => (

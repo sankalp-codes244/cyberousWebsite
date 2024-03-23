@@ -66,6 +66,7 @@ import chevronDown from './images/chevronDown.svg'
 import aboutBg from './images/aboutBg.jpg'
 import user from './images/user.png'
 import listIcon from './images/listIcon.png'
+import contactUsImg1 from './images/contactusimg1.jpg'
 
 
 export const Images ={
@@ -137,4 +138,5 @@ export const Images ={
     aboutBg: aboutBg,
     user: user,
     listIcon: listIcon,
+    contactUsImg1: contactUsImg1,
 }
