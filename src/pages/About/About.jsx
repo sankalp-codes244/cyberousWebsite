@@ -5,9 +5,9 @@ import Testemonial from '../Homepage/Testimonial/Testemonial';
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery';
 import IndustrialRecognition from '../Homepage/IndustrialRecognition/IndustrialRecognition'
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div className='h-full'>
       {/* Background section */}
@@ -30,25 +30,32 @@ const About = () => {
 
       {/* Service details */}
       <div className='px-4 lg:px-32 py-8'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 '>
           <div className='flex flex-col'>
-            <div className='flex text-9xl text-green-500 font-serif font-bold items-center'>4+<p className='text-lg m-2 font-sans'>Years of Excellence Services</p></div>
-            <p className='text-2xl md:text-5xl font-serif mt-8 m-4 md:mr-10 font-bold'>
+            <div className='flex  flex-row items-center mx-10 md:mx-40'>
+              <p className='text-9xl text-green-500 font-serif font-bold '>4+</p>
+              <div className='w-24'>
+                <p className='text-basefont-sans mt-10 text-custom-fontColor-grey md:mt-20'>Year's of Excellence Services</p>
+              </div>
+            </div>
+            <div className='flex justify-center'>
+            <p className='w-2/3 md:w-3/4 text-2xl md:text-5xl font-serif mt-8 m-4 md:mr-10 font-bold'>
               Learn More About Our Success Stories
             </p>
+            </div>
           </div>
-          <div className='text-lg text-justify'>
+          <div className='text-lg text-justify mt-10 md:mt-20'>
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan. Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </div>
         </div>
-        <div className='flex flex-col md:flex-row justify-between items-center mt-20'>
+        <div className='flex flex-col md:flex-row justify-between items-center mt-20 md:py-40'>
           <div className=''>
             <div className='flex flex-col'>
               <p className='font-bold text-3xl md:text-6xl font-serif'>Download a copy of our <p className='text-green-500'>Company Profile</p></p>
             </div>
             <div className='flex flex-row justify-between '>
               <button className=' h-full w-40 mt-4 mb-4 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/2'>Download Brochure</button>
-            <div className='text-lg mt-8 text-center md:text-3xl'>Cyberous LOGO</div>
+              <div className='text-lg mt-8 text-center md:text-3xl'>Cyberous LOGO</div>
             </div>
           </div>
         </div>
@@ -149,7 +156,7 @@ const About = () => {
         <BrandsTrustUs />
       </div>
       <div id="brands" className='min-h-full bg-white'>
-        <IndustrialRecognition/>
+        <IndustrialRecognition />
       </div>
       <div id="testimonials" className='min-h-full bg-white'>
         <Testemonial />

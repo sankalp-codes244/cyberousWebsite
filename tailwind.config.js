@@ -29,8 +29,10 @@ export default {
         
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-        heading: ['Montserrat', 'sans-serif'],
+        sans: ["Roboto", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
+        // Add Permanent Marker font to fontFamily
+        marker: ["'Permanent Marker'", "cursive"],
       },
   },
     screens: {
