@@ -5,9 +5,9 @@ import Testemonial from '../Homepage/Testimonial/Testemonial';
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery';
 import IndustrialRecognition from '../Homepage/IndustrialRecognition/IndustrialRecognition'
 const About = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='h-full'>
       {/* Background section */}
@@ -39,9 +39,9 @@ const About = () => {
               </div>
             </div>
             <div className='flex justify-center'>
-            <p className='w-2/3 md:w-3/4 text-2xl md:text-5xl font-serif mt-8 m-4 md:mr-10 font-bold'>
-              Learn More About Our Success Stories
-            </p>
+              <p className='w-2/3 md:w-3/4 text-2xl md:text-5xl font-serif mt-8 m-4 md:mr-10 font-bold'>
+                Learn More About Our Success Stories
+              </p>
             </div>
           </div>
           <div className='text-lg text-justify mt-10 md:mt-20'>
@@ -68,58 +68,112 @@ const About = () => {
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>
       <div className='flex justify-center'>
+        <div className='md:w-4/5'>
+          <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
+            <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
+              <ul className='text-green-500 space-y-4 '>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p> Ethical Hacking training </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p> Web Application Penetration Testing </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  Network Penetration Testing </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'> Identify and mitigate vulnerabilities in your network infrastructure with our thorough Penetration Testing solutions.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>IOS Application Penetration Testing</p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  Android Application Penetration Testing </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Protect your Android applications from potential breaches with our rigorous Penetration Testing procedures.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className='text-lg lg:text-xl font-semibold'>
+              <ul className=' xl:mr-6 text-green-500 space-y-4' >
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  Source Code Review: </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Strengthen your software security with our meticulous Source Code Review assessments.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  API Penetration Testing </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Ensure the integrity of your APIs with our specialized Penetration Testing services.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  IoT Penetration Testing </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Safeguard your IoT devices and networks from cyber attacks with our comprehensive testing procedures.
+</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  Cyber Security Consultancy: </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Get tailored cybersecurity solutions and expert guidance to protect your organization's digital assets.</p>
+                  </div>
+                </li>
+                <li className='font-serif'>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p>  ARed Teaming: </p>
+                  </div>
+                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='pl-10'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
-        <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
-          <ul className='text-green-500 space-y-4 '>
-            <li className='font-serif'>
-              Ethical Hacking training
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</div>
-            </li>
-            <li className='font-serif'>
-              Cyber Security
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Get tailored cybersecurity solutions and expert guidance to protect your organization's digital assets.</div>
-            </li>
-            <li className='font-serif'>
-              Red Teaming
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.</div>
-            </li>
-            <li className='font-serif'>
-              IOT Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Safeguard your IoT devices and networks from cyber attacks with our comprehensive testing procedures.</div>
-            </li>
-            <li className='font-serif'>
-              IOS Application Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services.</div>
-            </li>
-          </ul>
-        </div>
-        <div className='text-lg lg:text-xl font-semibold'>
-          <ul className=' xl:mr-6 text-green-500 space-y-4' >
-            <li className='font-serif'>
-              Web Application Penetration Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.</div>
-            </li>
-            <li className='font-serif'>
-              Network Penetration Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Identify and mitigate vulnerabilities in your network infrastructure with our thorough Penetration Testing solutions.</div>
-            </li>
-            <li className='font-serif'>
-              Android Application Penetration Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Protect your Android applications from potential breaches with our rigorous Penetration Testing procedures.</div>
-            </li>
-            <li className='font-serif'>
-              Source Code Review
-              <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>Strengthen your software security with our meticulous Source Code Review assessments.</div>
-            </li>
-            <li className='font-serif'>
-              API Penetration Testing
-              <div className='text-base lg:text-lg font-normal text-gray-600'>Ensure the integrity of your APIs with our specialized Penetration Testing services.</div>
-            </li>
-          </ul>
-        </div>
 
-      </div>
+
       <div className="p-6 bg-custom-buttonColor-GreenDark text-white md:p-20">
         <div className="container mx-auto px-4 ">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">

@@ -48,11 +48,10 @@ const Contact = () => {
   const chooseType = () => {
 
   }
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    // <div>Contact</div>
     <div>
       <div className='flex flex-col md:flex-row'>
         <div className='flex flex-col p-4 mt-4 md:mt-40 w-full md:w-1/2'>
