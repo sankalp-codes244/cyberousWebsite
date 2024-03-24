@@ -67,7 +67,7 @@ import aboutBg from './images/aboutBg.jpg'
 import user from './images/user.png'
 import listIcon from './images/listIcon.png'
 import contactUsImg1 from './images/contactusimg1.jpg'
-
+import commmaImg from './images/commaImg.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -139,4 +139,5 @@ export const Images ={
     user: user,
     listIcon: listIcon,
     contactUsImg1: contactUsImg1,
+    commmaImg: commmaImg,
 }
