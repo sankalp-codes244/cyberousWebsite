@@ -31,20 +31,20 @@ const Footer = () => {
                 VAPT
               </li>
               <Link to='/services/consultancy'>
-              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                </svg>
-                Consultancy
-              </li>
+                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                  </svg>
+                  Consultancy
+                </li>
               </Link>
               <Link to='/services/redteaming'>
-              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                </svg>
-                Red Teaming
-              </li>
+                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                  </svg>
+                  Red Teaming
+                </li>
               </Link>
             </ol>
           </div>
@@ -120,27 +120,60 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>
-      <div className="pt-6 ml-12 md:mt-0 justify-center md:justify-normal flex  md:p-10 ">
-        
-            <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
+      <div className='flex flex-row justify-between'>
+        <div className="pt-6 ml-12 md:mt-20 justify-center md:justify-normal flex  md:p-10 ">
+
+          <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
             <img src={Images.facebookLight} alt="Facebook" className=" h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
-            </Link>
-            <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
+          </Link>
+          <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
             <img src={Images.instagramLight} alt="Instagram" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
-            </Link>
-            <Link to={'https://www.linkedin.com/company/cyberous'}>
+          </Link>
+          <Link to={'https://www.linkedin.com/company/cyberous'}>
             <img src={Images.linkedinLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
-            </Link>
-            <Link to={'https://twitter.com/cyberousinfosec'}>
+          </Link>
+          <Link to={'https://twitter.com/cyberousinfosec'}>
             <img src={Images.xLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
-            </Link>
-          </div>
+          </Link>
+        </div>
+        <div className='pr-4 md:pr-48'>
+          <img src={Images.FiveStarReview} className='h-20 w-20 md:h-60 md:w-60 rounded-full mb-4' />
+        </div>
       </div>
-      <div className='h-24  bg-black'>
+      <div className='h-full bg-black md:px-24'>
         <h1 className='ml-32 pt-4 text-white text-base'> © <span className='text-custom-buttonColor-Green underline'>Cyberous</span> , All rights Reserved</h1>
+        <div className=''>
+          <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6">
+            <Link>
+            <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              
+              Terms & Conditions
+            </li>
+            </Link>
+            <Link>
+            <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              
+              Privacy Policy
+            </li>
+            </Link>
+            <Link>
+            <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              
+              DMCA Policy
+            </li>
+            </Link>
+            <Link to=''>
+              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+                
+                Disclaimer
+              </li>
+            </Link>
+
+          </ol>
+        </div>
+
       </div>
-      
+
     </div>
   )
 }
