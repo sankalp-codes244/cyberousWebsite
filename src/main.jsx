@@ -11,23 +11,38 @@ import About from './pages/About/About.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import NotFound from './pages/404Page/NotFound.jsx'
 import Blog from './pages/Blog/Blog.jsx'
-// import About  from './pages/AboutUs/About.jsx'
+import WebApplicationSecurity from './pages/Services/WebApplicationSecurity/WebApplicationSecurity.jsx'
+import SourceCode from './pages/Services/SourceCode/SourceCode.jsx'
+import Network from './pages/Services/Network/Network.jsx'
+import IOTPT from './pages/Services/IOTPenetrationTesting/IOTPT.jsx'
+import IOSPT from './pages/Services/IOSPenetrationTesting/IOSPT.jsx'
+import APIPT from './pages/Services/APIPenetrationTesting/APIPT.jsx'
+import AndroidPT from './pages/Services/AndroidPenetrationTesting/AndroidPT.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
-      <Route path='*' element={<NotFound/>} />
-      <Route path='' element={<Homepage/>} />
-      <Route path='/training' element={<TrainingPage/>} />
-      <Route path='/services' element={<Services/>} />
-      <Route path='/about' element={<About/>} />
-      <Route path='/blog' element={<Blog/>} />
-      <Route path='/contact' element={<Contact/>} />
+    <Route path='/' element={<Layout />}>
+      <Route path='*' element={<NotFound />} />
+      <Route path='' element={<Homepage />} />
+      <Route path='/training' element={<TrainingPage />} />
+      <Route path='/services' element={<Services />} >
+      </Route>
+      <Route path='/services/websecurity' element={<WebApplicationSecurity />} />
+      <Route path='/services/sourcecode' element={<SourceCode />} />
+      <Route path='/services/network' element={<Network />} />
+      <Route path='/services/iotpt' element={<IOTPT/>} />
+      <Route path='/services/iospt' element={<IOSPT />} />
+      <Route path='/services/apipt' element={<APIPT/>} />
+      <Route path='/services/androidpt' element={<AndroidPT/>} />
+      <Route path='/about' element={<About />} />
+      <Route path='/blog' element={<Blog />} />
+      <Route path='/contact' element={<Contact />} />
     </Route>,
-))
+  ))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

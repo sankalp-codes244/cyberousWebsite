@@ -68,7 +68,7 @@ const About = () => {
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>
       <div className='flex justify-center'>
-        <div className='md:w-4/5'>
+        <div className='md:w-4/5 bg-custom-greyBorderColor my-8' >
           <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
             <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
               <ul className='text-green-500 space-y-4 '>

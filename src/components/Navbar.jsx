@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DropDown from './DropDown'; // Ensure your DropDown is responsive if it includes any content that needs to adjust
 import { Images } from '../assets';
+import DropDownService from './DropDownServices'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
 
   return (
     <div className={`bg-white h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
@@ -46,7 +48,7 @@ const Navbar = () => {
 
           <DropDown />
           <Link to='/services'>
-            <button className="md:mx-3 text-sm font-medium rounded-lg py-2.5 text-center">Service</button>
+            <DropDownService/>
           </Link>
           <Link to='/about'>
             <button className="md:mx-3 text-sm font-medium rounded-lg py-2 text-center">About</button>
@@ -57,21 +59,21 @@ const Navbar = () => {
           <Link to='/contact'>
             <button className="md:mx-3 text-sm font-medium rounded-lg py-2.5 text-center">Contact</button>
           </Link>
-        <div className="flex ">
+          <div className="flex ">
             <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
-            <img src={Images.facebookDark} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookDark)} />
+              <img src={Images.facebookDark} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookDark)} />
             </Link>
             <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
-            <img src={Images.instagramDark} alt="Instagram" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.instagramLight)} onMouseOut={(e) => (e.currentTarget.src = Images.instagramDark)} />
+              <img src={Images.instagramDark} alt="Instagram" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.instagramLight)} onMouseOut={(e) => (e.currentTarget.src = Images.instagramDark)} />
             </Link>
             <Link to={'https://www.linkedin.com/company/cyberous'}>
-            <img src={Images.linkedinDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.linkedinLight)} onMouseOut={(e) => (e.currentTarget.src = Images.linkedinDark)} />
+              <img src={Images.linkedinDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.linkedinLight)} onMouseOut={(e) => (e.currentTarget.src = Images.linkedinDark)} />
             </Link>
             <Link to={'https://twitter.com/cyberousinfosec'}>
-            <img src={Images.xDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.xDark)} onMouseOut={(e) => (e.currentTarget.src = Images.xDark)} />
+              <img src={Images.xDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.xDark)} onMouseOut={(e) => (e.currentTarget.src = Images.xDark)} />
             </Link>
           </div>
-          </div>
+        </div>
       </div>
 
       {/* Dropdown menu for mobile screens */}

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Images } from '../../../assets';
-import FaqCard from '../../../components/FaqCard';
+import { Images } from '../../../../assets';
+import FaqCard from '../../../../components/FaqCard';
 
 const Faqs = ({ faqData }) => {
   return (

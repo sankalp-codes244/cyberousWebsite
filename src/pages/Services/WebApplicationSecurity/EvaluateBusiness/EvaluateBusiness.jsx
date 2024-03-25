@@ -1,6 +1,6 @@
 import React from 'react'
-import { Images } from '../../../assets'
-import EvCard from '../../../components/EvCard'
+import { Images } from '../../../../assets'
+import EvCard from '../../../../components/EvCard'
 
 const cardData = [
     {
@@ -42,7 +42,7 @@ const EvaluateBusiness = () => {
                 </div>
             </div>
             <div class='flex justify-center'>
-                <div class='flex flex-col md:flex-row bg-white shadow-xl rounded-xl w-full md:w-2/3 mb-10'>
+                <div class='flex flex-col md:flex-row  w-full md:w-2/3 mb-10'>
                     {cardData.map((item) => (
                         <EvCard key={item.id} image={item.imgUrl} heading={item.headingText} paragraph={item.paragraphText} />
                     ))}

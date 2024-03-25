@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Images } from '../../../assets';
+import { Images } from '../../../../assets';
 
 const Methodology = ({ boxData }) => {
     const [selectedBox, setSelectedBox] = useState(() => {
@@ -23,7 +23,7 @@ const Methodology = ({ boxData }) => {
                         <div className="h-1 w-32 lg:w-48 mt-4 mb-6 lg:mb-8 bg-custom-buttonColor-Green rounded-full"></div>
                     </div>
                     <p className=' mx-6 lg:mx-20 mt-2 lg:mt-6 text-lg lg:text-xl text-justify'>
-                        Embrace a comprehensive penetration testing methodology that not only identifies security vulnerabilities but also tackles intricate business logic vulnerabilities. Our approach incorporates meticulous security checklists in line with industry standards such as OWASP10, SANS25, OSSTMM, and others. At IEMLabs, we provide both on-premises and off-premises application security solutions. Backed by years of experience, our proven roadmap extends across the varied threat landscapes of online platforms, mobile applications, and cloud environments.
+                    Our methodology encompasses an initial Automated Tool-Based Analysis, swiftly identifying common vulnerabilities and setting the foundation for further assessment. We then conduct a meticulous Manual Tool-Based Examination led by our experts, ensuring a nuanced review of code structures and security controls. The process culminates in a holistic Vulnerability Assessment, delving deep into the codebase to identify advanced vulnerabilities and provide actionable insights for robust security fortification. Elevate your application's security with our comprehensive Source Code Review process today!
                     </p>
                     <div className='flex flex-wrap justify-center mx-6 lg:mx-20 mt-6'>
                         {boxData.map((item, index) => (

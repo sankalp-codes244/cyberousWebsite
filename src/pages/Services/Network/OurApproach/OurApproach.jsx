@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import OurApproachCard from '../../../components/OurApproachCard';
+import OurApproachCard from '../../../../components/OurApproachCard';
 
 const OurApproach = ({ approachData }) => {
-  const [selectedType, setSelectedType] = useState("Requirement_Analysis");
+  const [selectedType, setSelectedType] = useState('Defining_Scope');
   const filterButtonBaseClasses = "mx-2 mb-2 px-4 py-2 rounded-lg focus:outline-none focus:ring-4 ring-green-300 transition duration-500";
   const filterButtonActiveClasses = "bg-green-500 text-white";
   const filterButtonInactiveClasses = "bg-white text-green-500 border border-green-500";
@@ -18,7 +18,7 @@ const OurApproach = ({ approachData }) => {
     </div>
 
     <div class='flex flex-wrap justify-center my-4 text-center'>
-        {["Requirement_Analysis", "Threat_Modeling", "Authentication_&_Authorization_Testing", "Session_Management", "Data_Input_Validation", "Error_Handling_Inspection", "Business_Logic_Testing", "Client_Side_Security_Analysis", "Database_Connection_&_Assesment", "Dos_Resilience_Testing", "Reporting_and_Documentation"].map((type) => (
+        {['Defining_Scope', 'Information_Gathering','Exploitation_and_Security_Assessment','Post_Exploitation_Analysis','Network_Traffic_Analysis','Reporting_and_Documentation'].map((type) => (
             <button
                 key={type}
                 onClick={() => setSelectedType(type)}

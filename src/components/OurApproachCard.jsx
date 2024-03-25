@@ -12,7 +12,7 @@ const OurApproachCard = ({key, image, description, name}) => {
             </div>
         </div>
         <div class=' md:w-auto m-6 md:ml-16 '>
-            <img src={image} alt='This is an image' class='pointer-events-none select-none' />
+            <img src={image} alt='This is an image' class='rounded-xl border border-solid shadow-xl pointer-events-none select-none' />
         </div>
     </div>
 </div>

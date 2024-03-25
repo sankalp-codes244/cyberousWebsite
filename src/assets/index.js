@@ -69,6 +69,21 @@ import listIcon from './images/listIcon.png'
 import contactUsImg1 from './images/contactusimg1.jpg'
 import commmaImg from './images/commaImg.png'
 import checkMark from './images/checkmark.png'
+import SCOurApproachImg1 from './images/SCOurApproachImg1.png'
+import SCOurApproachImg2 from './images/SCOurApproachImg2.png'
+import SCOurApproachImg3 from './images/SCOurApproachImg3.png'
+import SCOurApproachImg4 from './images/SCOurApproachImg4.png'
+import SCOurApproachImg5 from './images/SCOurApproachImg5.png'
+import SCOurApproachImg6 from './images/SCOurApproachImg6.png'
+import SCOurApproachImg7 from './images/SCOurApproachImg7.png'
+import NetworkMethimg1 from './images/Networkimg1.png'
+import NetworkMethimg2 from './images/Networkimg2.png'
+import NetworkApproachimg1 from './images/NetworkApproachimg1.png'
+import NetworkApproachimg2 from './images/NetworkApproachimg2.png'
+import NetworkApproachimg3 from './images/NetworkApproachimg3.png'
+import NetworkApproachimg4 from './images/NetworkApproachimg4.png'
+import NetworkApproachimg5 from './images/NetworkApproachimg5.png'
+import NetworkApproachimg6 from './images/NetworkApproachimg6.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -142,4 +157,19 @@ export const Images ={
     contactUsImg1: contactUsImg1,
     commmaImg: commmaImg,
     checkMark: checkMark,
+    SCOurApproachImg1: SCOurApproachImg1,
+    SCOurApproachImg2: SCOurApproachImg2,
+    SCOurApproachImg3: SCOurApproachImg3,
+    SCOurApproachImg4: SCOurApproachImg4,
+    SCOurApproachImg5: SCOurApproachImg5,
+    SCOurApproachImg6: SCOurApproachImg6,
+    SCOurApproachImg7: SCOurApproachImg7,
+    NetworkMethimg1: NetworkMethimg1,
+    NetworkMethimg2: NetworkMethimg2,
+    NetworkApproachimg1: NetworkApproachimg1,
+    NetworkApproachimg2: NetworkApproachimg2,
+    NetworkApproachimg3: NetworkApproachimg3,
+    NetworkApproachimg4: NetworkApproachimg4,
+    NetworkApproachimg5: NetworkApproachimg5,
+    NetworkApproachimg6: NetworkApproachimg6,
 }
