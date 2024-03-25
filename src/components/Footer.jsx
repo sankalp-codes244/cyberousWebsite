@@ -30,18 +30,22 @@ const Footer = () => {
                 </svg>
                 VAPT
               </li>
+              <Link to='/services/consultancy'>
               <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
                 Consultancy
               </li>
+              </Link>
+              <Link to='/services/redteaming'>
               <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
                 Red Teaming
               </li>
+              </Link>
             </ol>
           </div>
         </div>

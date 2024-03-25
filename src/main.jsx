@@ -11,13 +11,15 @@ import About from './pages/About/About.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import NotFound from './pages/404Page/NotFound.jsx'
 import Blog from './pages/Blog/Blog.jsx'
-import WebApplicationSecurity from './pages/Services/WebApplicationSecurity/WebApplicationSecurity.jsx'
-import SourceCode from './pages/Services/SourceCode/SourceCode.jsx'
-import Network from './pages/Services/Network/Network.jsx'
-import IOTPT from './pages/Services/IOTPenetrationTesting/IOTPT.jsx'
-import IOSPT from './pages/Services/IOSPenetrationTesting/IOSPT.jsx'
-import APIPT from './pages/Services/APIPenetrationTesting/APIPT.jsx'
-import AndroidPT from './pages/Services/AndroidPenetrationTesting/AndroidPT.jsx'
+import WebApplicationSecurity from './pages/Services/VAPT/WebApplicationSecurity/WebApplicationSecurity.jsx'
+import SourceCode from './pages/Services/VAPT/SourceCode/SourceCode.jsx'
+import Network from './pages/Services/VAPT/Network/Network.jsx'
+import IOTPT from './pages/Services/VAPT/IOTPenetrationTesting/IOTPT.jsx'
+import IOSPT from './pages/Services/VAPT/IOSPenetrationTesting/IOSPT.jsx'
+import APIPT from './pages/Services/VAPT/APIPenetrationTesting/APIPT.jsx'
+import AndroidPT from './pages/Services/VAPT/AndroidPenetrationTesting/AndroidPT.jsx'
+import Consultancy from './pages/Services/Consultancy/Consultancy.jsx'
+import RedTeaming from './pages/Services/RedTeaming/RedTeaming.jsx'
 
 
 const router = createBrowserRouter(
@@ -26,8 +28,7 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound />} />
       <Route path='' element={<Homepage />} />
       <Route path='/training' element={<TrainingPage />} />
-      <Route path='/services' element={<Services />} >
-      </Route>
+      <Route path='/services' element={<Services />} />
       <Route path='/services/websecurity' element={<WebApplicationSecurity />} />
       <Route path='/services/sourcecode' element={<SourceCode />} />
       <Route path='/services/network' element={<Network />} />
@@ -35,6 +36,8 @@ const router = createBrowserRouter(
       <Route path='/services/iospt' element={<IOSPT />} />
       <Route path='/services/apipt' element={<APIPT/>} />
       <Route path='/services/androidpt' element={<AndroidPT/>} />
+      <Route path='/services/consultancy' element={<Consultancy/>} />
+      <Route path='/services/redteaming' element={<RedTeaming/>} />
       <Route path='/about' element={<About />} />
       <Route path='/blog' element={<Blog />} />
       <Route path='/contact' element={<Contact />} />

@@ -114,7 +114,7 @@ import AndroidPTApproachimg6 from './images/AndroidPTAppraochimg6.png'
 import AndroidPTApproachimg7 from './images/AndroidPTAppraochimg7.png'
 import AndroidPTApproachimg8 from './images/AndroidPTAppraochimg8.png'
 import AndroidMethimg1 from './images/AndroidPTMethimg1.png'
-
+import FiveStarReview from './images/FiveStarReview.jpg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -233,4 +233,5 @@ export const Images ={
     AndroidPTApproachimg7: AndroidPTApproachimg7,
     AndroidPTApproachimg8: AndroidPTApproachimg8,
     AndroidMethimg1: AndroidMethimg1,
+    FiveStarReview: FiveStarReview,
 }
