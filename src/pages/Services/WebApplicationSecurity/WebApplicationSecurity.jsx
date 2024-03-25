@@ -15,12 +15,12 @@ const WebApplicationSecurity = () => {
     {
       id: 0,
       headingText: 'Black box testing',
-      paragraphText: "Begin a thorough security exploration through Black Box Testing. Picture it as a simulated cyber intrusion, where our specialists, acting as external attackers, meticulously assess your system's defenses. By examining your system from an outsider's perspective, we pinpoint vulnerabilities that could be exploited in real-world situations. This approach not only assesses your system's existing security stance but also strengthens it against potential external threats in the ever-evolving cybersecurity landscape.",
+      paragraphText: "Begin Your Security Journey with Black Box Testing. Experience a Simulated Cyber Intrusion by Our Experts, Identifying System Weaknesses from an Outsider's Perspective. Our Method Empowers Your System to Withstand External Threats in the Ever-Changing Cybersecurity Landscape. Boost Your Security Posture with Comprehensive Testing Today!",
     },
     {
       id: 1,
       headingText: 'Grey box testing',
-      paragraphText: "Achieve a balanced fusion of security insight and an external viewpoint through Gray Box Testing. Our strategy combines the advantages of Black Box and White Box methods. Equipped with partial knowledge of your system's internal structure, our specialists execute a detailed assessment. This approach provides a well-rounded perspective, enabling us to simulate an attacker's strategy with restricted internal details. It represents the optimal intersection where transparency intersects with robust vulnerability analysis, guaranteeing a comprehensive evaluation while maintaining realistic simulation.",
+      paragraphText: "Achieve Security Harmony with Gray Box Testing. Our Method Harmonizes External Perspective with System Insight, Blending Black Box and White Box Strengths. With Partial Internal Knowledge, We Conduct Nuanced Assessments, Emulating Attacker Approaches. Experience Transparent, Effective Vulnerability Analysis for Thorough Evaluations Without Compromising Real-World Simulation. Optimize Your Security Strategy Today!",
     },
     {
       id: 2,

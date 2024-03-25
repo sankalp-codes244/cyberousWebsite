@@ -1,11 +1,11 @@
 import React, { useEffect }  from 'react'
 import { Images } from '../../../assets'
-import Methodology from '../SourceCode/Methodology/Methodology'
-import EvaluateBusiness from '../WebApplicationSecurity/EvaluateBusiness/EvaluateBusiness'
-import OurApproach from '../SourceCode/OurApproach/OurApproach'
+import Methodology from './Methodology/Methodology'
+import EvaluateBusiness from './EvaluateBusiness/EvaluateBusiness'
+import OurApproach from './OurApproach/OurApproach'
 import BrandsTrustUs from '../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../Homepage/Testimonial/Testemonial'
-import Faqs from '../WebApplicationSecurity/FAQs/Faqs'
+import Faqs from './FAQs/Faqs'
 // import { Images } from '../../../assets'
 
 const SourceCode = () => {
@@ -19,7 +19,7 @@ const SourceCode = () => {
     {
       id: 1,
       headingText: 'Manual',
-      paragraphText: "Complement automated results with manual tool-based analysis conducted by our seasoned experts. This step involves a hands-on review of the source code, focusing on intricate details that automated tools might overlook. Our experts meticulously examine code structures, logic flows, and security controls to identify nuanced vulnerabilities and ensure a thorough assessment. Strengthen your application's security with our comprehensive Manual Tool-Based Examination today! ",
+      paragraphText: "Complement automated results with manual tool-based analysis conducted by our seasoned experts. This step involves a hands-on review of the source code, focusing on intricate details that automated tools might overlook. Our experts meticulously examine code structures, logic flows, and security controls to identify nuanced vulnerabilities and ensure a thorough assessment. Strengthen your application's security with our comprehensive Manual Tool-Based Examination today!",
     },
     
   ]

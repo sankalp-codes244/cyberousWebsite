@@ -84,6 +84,37 @@ import NetworkApproachimg3 from './images/NetworkApproachimg3.png'
 import NetworkApproachimg4 from './images/NetworkApproachimg4.png'
 import NetworkApproachimg5 from './images/NetworkApproachimg5.png'
 import NetworkApproachimg6 from './images/NetworkApproachimg6.png'
+import IOTPTApproach1 from './images/IOTPTApproachImg1.png';
+import IOTPTApproach2 from './images/IOTPTApproachImg2.png';
+import IOTPTApproach3 from './images/IOTPTApproachImg3.png';
+import IOTPTApproach4 from './images/IOTPTApproachImg4.png';
+import IOTPTApproach5 from './images/IOTPTApproachImg5.png';
+import IOTPTApproach6 from './images/IOTPTApproachImg6.png';
+import IOTPTApproach7 from './images/IOTPTApproachImg7.png';
+import IOTPTMethimg1 from './images/IOTPTMethimg1.png';
+import IOSPTMethimg1 from './images/IOSPTMethimg1.png';
+import APIPTApproachimg1 from './images/APIPTApproachimg1.png'
+import APIPTApproachimg2 from './images/APIPTApproachimg2.png'
+import APIPTApproachimg3 from './images/APIPTApproachimg3.png'
+import APIPTApproachimg4 from './images/APIPTApproachimg4.png'
+import APIPTApproachimg5 from './images/APIPTApproachimg5.png'
+import APIPTApproachimg6 from './images/APIPTApproachimg6.png'
+import APIPTApproachimg7 from './images/APIPTApproachimg7.png'
+import APIPTApproachimg8 from './images/APIPTApproachimg8.png'
+import APIPTApproachimg9 from './images/APIPTApproachimg9.png'
+import APIPTApproachimg10 from './images/APIPTApproachimg10.png'
+import APIPTApproachimg11 from './images/APIPTApproachimg11.png'
+import APIPTMethimg1 from './images/APIPTMethimg1.png'
+import AndroidPTApproachimg1 from './images/AndroidPTAppraochimg1.png'
+import AndroidPTApproachimg2 from './images/AndroidPTAppraochimg2.png'
+import AndroidPTApproachimg3 from './images/AndroidPTAppraochimg3.png'
+import AndroidPTApproachimg4 from './images/AndroidPTAppraochimg4.png'
+import AndroidPTApproachimg5 from './images/AndroidPTAppraochimg5.png'
+import AndroidPTApproachimg6 from './images/AndroidPTAppraochimg6.png'
+import AndroidPTApproachimg7 from './images/AndroidPTAppraochimg7.png'
+import AndroidPTApproachimg8 from './images/AndroidPTAppraochimg8.png'
+import AndroidMethimg1 from './images/AndroidPTMethimg1.png'
+
 
 export const Images ={
     logo: cyberousLogo,
@@ -172,4 +203,34 @@ export const Images ={
     NetworkApproachimg4: NetworkApproachimg4,
     NetworkApproachimg5: NetworkApproachimg5,
     NetworkApproachimg6: NetworkApproachimg6,
+    IOTPTApproach1: IOTPTApproach1,
+    IOTPTApproach2: IOTPTApproach2,
+    IOTPTApproach3: IOTPTApproach3,
+    IOTPTApproach4: IOTPTApproach4,
+    IOTPTApproach5: IOTPTApproach5,
+    IOTPTApproach6: IOTPTApproach6,
+    IOTPTApproach7: IOTPTApproach7,
+    IOSPTMethimg1: IOSPTMethimg1,
+    IOTPTMethimg1: IOTPTMethimg1,
+    APIPTApproachimg1: APIPTApproachimg1,
+    APIPTApproachimg2: APIPTApproachimg2,
+    APIPTApproachimg3: APIPTApproachimg3,
+    APIPTApproachimg4: APIPTApproachimg4,
+    APIPTApproachimg5: APIPTApproachimg5,
+    APIPTApproachimg6: APIPTApproachimg6,
+    APIPTApproachimg7: APIPTApproachimg7,
+    APIPTApproachimg8: APIPTApproachimg8,
+    APIPTApproachimg9: APIPTApproachimg9,
+    APIPTApproachimg10: APIPTApproachimg10,
+    APIPTApproachimg11: APIPTApproachimg11,
+    APIPTMethimg1: APIPTMethimg1,
+    AndroidPTApproachimg1: AndroidPTApproachimg1,
+    AndroidPTApproachimg2: AndroidPTApproachimg2,
+    AndroidPTApproachimg3: AndroidPTApproachimg3,
+    AndroidPTApproachimg4: AndroidPTApproachimg4,
+    AndroidPTApproachimg5: AndroidPTApproachimg5,
+    AndroidPTApproachimg6: AndroidPTApproachimg6,
+    AndroidPTApproachimg7: AndroidPTApproachimg7,
+    AndroidPTApproachimg8: AndroidPTApproachimg8,
+    AndroidMethimg1: AndroidMethimg1,
 }

@@ -18,7 +18,7 @@ const OurApproach = ({ approachData }) => {
     </div>
 
     <div class='flex flex-wrap justify-center my-4 text-center'>
-        {['Initial_Analysis','Security_Controls','Vulnerability_Identification','Code_Quality_Assessment','Third-Party_Libraries_Analysis','Secure_Coding_Best_Practices','Remediation_Recommendations'].map((type) => (
+        {['Initial_Analysis','Security_Controls','Vulnerability_Identification','Code_Quality_Assessment','Third-Party_Libraries_Analysis','Remediation_Recommendations'].map((type) => (
             <button
                 key={type}
                 onClick={() => setSelectedType(type)}
