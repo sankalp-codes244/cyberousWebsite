@@ -14,10 +14,12 @@ export default function DropDown() {
   return (
     <Menu as="div" className="relative inline-block text-left" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
       <div>
+        <Link to='/services'>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm md:mx-3 font-medium  text-center  text-gray-900 ">
           Services
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
+        </Link>
       </div>
 
       <Transition

@@ -124,7 +124,7 @@ const About = () => {
                 <li className='font-serif'>
                   <div className='flex flex-row'>
                     <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  Source Code Review: </p>
+                    <p> Source Code Review: </p>
                   </div>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Strengthen your software security with our meticulous Source Code Review assessments.</p>

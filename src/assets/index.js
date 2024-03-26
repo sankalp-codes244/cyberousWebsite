@@ -114,7 +114,12 @@ import AndroidPTApproachimg6 from './images/AndroidPTAppraochimg6.png'
 import AndroidPTApproachimg7 from './images/AndroidPTAppraochimg7.png'
 import AndroidPTApproachimg8 from './images/AndroidPTAppraochimg8.png'
 import AndroidMethimg1 from './images/AndroidPTMethimg1.png'
-import FiveStarReview from './images/FiveStarReview.jpg'
+import FiveStarReview from './images/FiveStarReview.png'
+import ConsultancyImg1 from './images/ConsultancyImg1.jpg'
+import Consultancycard1 from './images/Consultancycard1.png'
+import Consultancycard2 from './images/Consultancycard2.png'
+import Consultancycard3 from './images/Consultancycard3.png'
+
 
 export const Images ={
     logo: cyberousLogo,
@@ -234,4 +239,8 @@ export const Images ={
     AndroidPTApproachimg8: AndroidPTApproachimg8,
     AndroidMethimg1: AndroidMethimg1,
     FiveStarReview: FiveStarReview,
+    ConsultancyImg1: ConsultancyImg1,
+    Consultancycard1: Consultancycard1,
+    Consultancycard2: Consultancycard2,
+    Consultancycard3: Consultancycard3,
 }

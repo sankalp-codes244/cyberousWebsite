@@ -2,8 +2,8 @@ import React from 'react'
 import { Images } from '../../../assets/index'
 const BrandsTrustUs = () => {
   return (
-    <div className="container mx-auto p-4 ">
-      <h1 className="text-center text-3xl md:text-5xl font-bold font-serif">
+    <div className="container mx-auto my-10 p-4 ">
+      <h1 className="text-center text-4xl md:text-7xl font-bold font-arbutus">
         Brands That Trust Us
       </h1>
       <div className="justify-center flex my-10">
