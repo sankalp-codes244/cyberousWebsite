@@ -6,6 +6,7 @@ import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
 import { Images } from '../../../../assets'
+import PageHeader from './PageHeader/PageHeader'
 
 const AndroidPT = () => {
     const boxData = [
@@ -127,6 +128,7 @@ const AndroidPT = () => {
     return (
       <div className='h-full'>
         <div className='bg-white'>
+          <PageHeader/>
           {/* Heading Text */}
           <div className='flex flex-col text-center'>
             <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>

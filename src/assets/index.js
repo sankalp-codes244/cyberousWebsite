@@ -119,6 +119,7 @@ import ConsultancyImg1 from './images/ConsultancyImg1.jpg'
 import Consultancycard1 from './images/Consultancycard1.png'
 import Consultancycard2 from './images/Consultancycard2.png'
 import Consultancycard3 from './images/Consultancycard3.png'
+import WebAppHeaderimg1 from './images/WebAppHeaderimg1.jpg'
 
 
 export const Images ={
@@ -243,4 +244,6 @@ export const Images ={
     Consultancycard1: Consultancycard1,
     Consultancycard2: Consultancycard2,
     Consultancycard3: Consultancycard3,
+    WebAppHeaderimg1: WebAppHeaderimg1,
+    
 }

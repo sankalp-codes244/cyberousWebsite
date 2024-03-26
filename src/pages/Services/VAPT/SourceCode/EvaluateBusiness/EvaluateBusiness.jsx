@@ -36,9 +36,9 @@ const EvaluateBusiness = () => {
                 </div>
             </div>
             <div class='flex justify-center mt-12'>
-                <div class='w-1/3 '>
-                    <h1 class='font-sans xl:ml-40 text-3xl md:ml-28'>Client Benefits</h1>
-                    <h1 class='font-sans text-center text-5xl  p-4 font-bold '>What do you get?</h1>
+                <div class='md:w-1/3 '>
+                    <h1 class='text-center font-sans my-4 text-xl md:text-3xl'>Client Benefits</h1>
+                    <h1 class='font-sans text-center text-3xl md:text-5xl font-bold '>What do you get?</h1>
                 </div>
             </div>
             <div class='flex justify-center'>

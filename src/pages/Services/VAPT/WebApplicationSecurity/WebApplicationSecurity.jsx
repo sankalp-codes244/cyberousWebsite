@@ -6,6 +6,7 @@ import EvaluateBusiness from './EvaluateBusiness/EvaluateBusiness'
 import OurApproach from './OurApproach/OurApproach'
 import Faqs from './FAQs/Faqs'
 import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
+import PageHeader from './PageHeader/PageHeader'
 
 const WebApplicationSecurity = () => {
 
@@ -151,6 +152,7 @@ const WebApplicationSecurity = () => {
     <div className='h-full'>
       <div className='bg-white'>
         {/* Heading Text */}
+        <PageHeader/>
         <div className='flex flex-col text-center'>
           <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>
           <div className='flex justify-center'>

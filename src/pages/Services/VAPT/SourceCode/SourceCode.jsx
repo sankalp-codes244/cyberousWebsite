@@ -6,6 +6,7 @@ import OurApproach from './OurApproach/OurApproach'
 import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
+import PageHeader from './PageHeader/PageHeader'
 // import { Images } from '../../../assets'
 
 const SourceCode = () => {
@@ -116,6 +117,7 @@ const SourceCode = () => {
   return (
     <div className='h-full'>
       <div className='bg-white'>
+        <PageHeader/>
         {/* Heading Text */}
         <div className='flex flex-col text-center'>
           <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>

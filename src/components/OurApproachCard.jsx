@@ -8,7 +8,7 @@ const OurApproachCard = ({key, image, description, name}) => {
         <div class='w-full md:w-1/2 h-auto md:h-1/5'>
             <div class='flex flex-col justify-center p-6 md:p-16'>
                 <h1 class='text-3xl text-black m-6 text-center md:text-left'>{name}</h1>
-                <p class='text-lg text-black m-6 text-center md:text-justify'>{description}</p>
+                <p class='text-lg text-black m-6 text-justify'>{description}</p>
             </div>
         </div>
         <div class=' md:w-auto m-6 md:ml-16 '>
