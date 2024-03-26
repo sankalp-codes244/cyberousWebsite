@@ -33,7 +33,7 @@ export default {
         heading: ["Montserrat", "sans-serif"],
         // Add Permanent Marker font to fontFamily
         arbutus: ['Arbutus', 'sans-serif'],
-        'holtwood-one-sc': ['Holtwood One SC', 'sans-serif'],
+        holtwood: ['"Holtwood One SC"', 'sans-serif'],
         stylish: ['Stylish', 'sans-serif'],
       },
     },

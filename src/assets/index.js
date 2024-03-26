@@ -31,7 +31,6 @@ import indrec3 from './images/indrec3.png'
 import indrec4 from './images/indrec4.png'
 import indrec5 from './images/indrec5.png'
 import indrec6 from './images/indrec6.png'
-// import indrec6 from './images/indrec6.png'
 import codes_black from './images/codes_black.png'
 import CodeshalaLogo from './images/CodeshalaLogo.png'
 import edu from './images/edu.png'
@@ -123,7 +122,7 @@ import Consultancycard1 from './images/Consultancycard1.png'
 import Consultancycard2 from './images/Consultancycard2.png'
 import Consultancycard3 from './images/Consultancycard3.png'
 import WebAppHeaderimg1 from './images/WebAppHeaderimg1.jpg'
-
+import RedteamingHeader from './images/RedteamingHeader.jpg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -250,5 +249,5 @@ export const Images ={
     Consultancycard2: Consultancycard2,
     Consultancycard3: Consultancycard3,
     WebAppHeaderimg1: WebAppHeaderimg1,
-    
+    RedteamingHeader: RedteamingHeader,
 }
