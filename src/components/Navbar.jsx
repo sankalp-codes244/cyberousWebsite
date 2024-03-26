@@ -81,7 +81,9 @@ const Navbar = () => {
         <div className="flex flex-col items-center">
           <Link to='/' className="text-sm font-medium py-2.5 px-3">Home</Link>
           <DropDown />
-          <Link to='/services' className="text-sm font-medium py-2.5 px-3">Service</Link>
+          <Link to='/services'>
+            <DropDownService/>
+          </Link>
           <Link to='/about' className="text-sm font-medium py-2.5 px-3">About</Link>
           <Link to='/blog' className="text-sm font-medium py-2.5 px-3">Blog</Link>
           <Link to='/contact' className="text-sm font-medium py-2.5 px-3">Contact</Link>

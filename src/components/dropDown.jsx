@@ -21,14 +21,14 @@ export default function DropDown() {
       <Transition
         show={isOpen}
         as={Fragment}
-        enter="transition ease-out duration-500" // Adjust the duration here (e.g., duration-500)
+        enter="transition linear duration-200" // Adjust the duration here (e.g., duration-500)
         enterFrom="transform opacity-0 scale-95"
         enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-500" // Adjust the duration here (e.g., duration-500)
+        leave="transition linear duration-300" // Adjust the duration here (e.g., duration-500)
         leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
+        leaveTo="transform opacity-0 scale-110"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y xs:shadow-lg xs:border-x-black border border-solid divide-gray-100 rounded-md bg-white  focus:outline-none" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
+        <Menu.Items className="sm:absolute lg:fixed lg:w-full lg:inset-y-30 lg:z-10 lg:mt-2 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
