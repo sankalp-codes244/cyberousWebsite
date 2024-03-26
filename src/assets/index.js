@@ -29,6 +29,9 @@ import indrec1 from './images/indrec1.png'
 import indrec2 from './images/indrec2.png'
 import indrec3 from './images/indrec3.png'
 import indrec4 from './images/indrec4.png'
+import indrec5 from './images/indrec5.png'
+import indrec6 from './images/indrec6.png'
+// import indrec6 from './images/indrec6.png'
 import codes_black from './images/codes_black.png'
 import CodeshalaLogo from './images/CodeshalaLogo.png'
 import edu from './images/edu.png'
@@ -154,6 +157,8 @@ export const Images ={
     indrec2: indrec2,
     indrec3: indrec3,
     indrec4: indrec4,
+    indrec5: indrec5,
+    indrec6: indrec6,
     codeBlack: codes_black,
     CodeshalaLogo: CodeshalaLogo,
     edu: edu,
