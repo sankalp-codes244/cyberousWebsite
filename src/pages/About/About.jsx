@@ -4,6 +4,7 @@ import BrandsTrustUs from '../Homepage/BrandsTrustUs/BrandsTrustUs';
 import Testemonial from '../Homepage/Testimonial/Testemonial';
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery';
 import IndustrialRecognition from '../Homepage/IndustrialRecognition/IndustrialRecognition'
+import { Link } from 'react-router-dom';
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -82,37 +83,45 @@ const About = () => {
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p> Web Application Penetration Testing </p>
-                  </div>
+                  <Link to='/services/websecurity'>
+                    <div className='flex flex-row '>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p> Web Application Penetration Testing </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  Network Penetration Testing </p>
-                  </div>
+                  <Link to='/services/network'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  Network Penetration Testing </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'> Identify and mitigate vulnerabilities in your network infrastructure with our thorough Penetration Testing solutions.</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>IOS Application Penetration Testing</p>
-                  </div>
+                  <Link to='/services/iospt'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>IOS Application Penetration Testing</p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  Android Application Penetration Testing </p>
-                  </div>
+                  <Link to='/services/androidpt'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  Android Application Penetration Testing </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Protect your Android applications from potential breaches with our rigorous Penetration Testing procedures.</p>
                   </div>
@@ -122,47 +131,57 @@ const About = () => {
             <div className='text-lg lg:text-xl font-semibold'>
               <ul className=' xl:mr-6 text-green-500 space-y-4' >
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p> Source Code Review: </p>
-                  </div>
+                  <Link to='/services/sourcecode'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  Source Code Review: </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Strengthen your software security with our meticulous Source Code Review assessments.</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  API Penetration Testing </p>
-                  </div>
+                  <Link to='/services/apipt'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  API Penetration Testing </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Ensure the integrity of your APIs with our specialized Penetration Testing services.</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  IoT Penetration Testing </p>
-                  </div>
+                  <Link to='/services/iotpt'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  IoT Penetration Testing </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Safeguard your IoT devices and networks from cyber attacks with our comprehensive testing procedures.
-</p>
+                    </p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  Cyber Security Consultancy: </p>
-                  </div>
+                  <Link to='/services/consultancy'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  Cyber Security Consultancy: </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Get tailored cybersecurity solutions and expert guidance to protect your organization's digital assets.</p>
                   </div>
                 </li>
                 <li className='font-serif'>
-                  <div className='flex flex-row'>
-                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p>  ARed Teaming: </p>
-                  </div>
+                  <Link to='/services/redteaming'>
+                    <div className='flex flex-row'>
+                      <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                      <p>  Red Teaming: </p>
+                    </div>
+                  </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.</p>
                   </div>

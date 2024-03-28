@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Testimonials from '../../Homepage/Testimonial/Testemonial'
 import IndustrialRecognition from '../../Homepage/IndustrialRecognition/IndustrialRecognition'
 import Footer from '../../../components/Footer'
@@ -13,6 +13,9 @@ import Attackers from './Attackers/Attackers'
 import SayHello from './SayHello/SayHello'
 
 const RedTeaming = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <PageHeader/>

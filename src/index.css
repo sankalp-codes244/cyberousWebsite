@@ -36,3 +36,11 @@ html {
   width: 1.5rem; /* Adjust as needed */
   height: 1.5rem; /* Adjust as needed */
 }
+#submit{
+  border: none;
+  background-color: orangered;
+  color: white;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+}

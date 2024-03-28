@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="px-4 md:px-8 lg:px-12">
-      <div className="flex flex-col md:flex-row w-full pt-8 mb-10">
-        <div className="md:w-1/2 lg:flex-shrink-0">
-          <img src={Images.aboutImages} alt="This is image" className="w-full h-auto pointer-events-none select-none" />
+      <div className="flex flex-col md:flex-row py-10">
+        <div className="md:w-1/2">
+          <img src={Images.aboutImages} alt="This is image" className="h-full w-full pointer-events-none select-none" />
         </div>
-        <div className="md:w-2/3 lg:w-1/2 p-5 md:p-20 bg-custom-greyLightColor mt-10 md:mt-0">
+        <div className="w-full md:w-1/2 p-5 md:p-20 bg-custom-greyLightColor">
           <h1 className="text-3xl lg:text-5xl text-black font-bold font-serif text-center ">About Us</h1>
           <div className="justify-center flex">
             <div className="h-1 w-28 md:w-48 bg-custom-buttonColor-Green m-4"></div>
