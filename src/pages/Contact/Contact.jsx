@@ -73,8 +73,8 @@ const Contact = () => {
         <img src={Images.contactUsImg1} className='p-4 w-full h-full md:w-1/2' />
       </div>
 
-      <div className='bg-custom-greyLightColor'>
-        <h1 className='text-xl text-black md:text-3xl font-sans text-center p-6'>
+      <div className='bg-custom-black-color'>
+        <h1 className='text-xl text-white md:text-3xl font-sans text-center p-6'>
           What works best for you ?
         </h1>
         <div className='flex justify-center'>
@@ -94,7 +94,7 @@ const Contact = () => {
 
         </div>
         <div className=''>
-          <h1 className='text-center text-black text-xl p-4'>
+          <h1 className='text-center text-white text-xl p-4'>
             You can also get in touch with us using the
             <Link>
               <span className='font-bold underline '> contact form </span>
