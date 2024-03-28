@@ -8,6 +8,9 @@ import CyberAttacks from './CyberAttacks/CyberAttacks'
 import PlayRules from './PlayRules/PlayRules'
 import Experts from './Experts/Experts'
 import CollectiveIntelligence from './CollectiveIntelligence/CollectiveIntelligence'
+import NamesYouKnow from './NamesYouKnow/NamesYouKnow'
+import Attackers from './Attackers/Attackers'
+import SayHello from './SayHello/SayHello'
 
 const RedTeaming = () => {
   return (
@@ -17,6 +20,9 @@ const RedTeaming = () => {
       <PlayRules/>
       <Experts/>
       <CollectiveIntelligence/>
+      <NamesYouKnow/>
+      <Attackers/>
+      <SayHello/>
 
 
       <IndustrialRecognition />

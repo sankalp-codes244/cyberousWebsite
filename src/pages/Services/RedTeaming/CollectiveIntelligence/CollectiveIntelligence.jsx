@@ -3,7 +3,7 @@ import { Images } from '../../../../assets'
 
 const CollectiveIntelligence = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-custom-black-color'>
             <div className='md:flex'>
                 <div className='md:w-1/2 md:hidden'>
                     <img src={Images.Collectiveimg1} />

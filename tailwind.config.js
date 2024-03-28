@@ -26,6 +26,7 @@ export default {
         'custom-buttonColor-GreenDark': '#4a732f',
         'custom-greyLightColor': '#f5f5f5',
         'custom-greyBorderColor': '#f5f5f5',
+        'custom-black-color': '#222222',
 
       },
       fontFamily: {

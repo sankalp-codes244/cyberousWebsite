@@ -127,6 +127,14 @@ import PlayRulesimg1 from './images/PlayRulesimg1.png'
 import Expertsimg1 from './images/Expertsimg1.png'
 import Collectiveimg1 from './images/Collectiveimg1.png'
 import CyberAttacksimg1 from './images/CyberAttacksimg1.jpg'
+import NamesYouKnowimg1 from './images/NamesYouKnowimg1.svg'
+import NamesYouKnowimg2 from './images/NamesYouKnowimg2.svg'
+import NamesYouKnowimg3 from './images/NamesYouKnowimg3.svg'
+import NamesYouKnowimg4 from './images/NamesYouKnowimg4.svg'
+import NamesYouKnowimg5 from './images/NamesYouKnowimg5.svg'
+import NamesYouKnowimg6 from './images/NamesYouKnowimg6.svg'
+import NamesYouKnowimg7 from './images/NamesYouKnowimg7.svg'
+import NamesYouKnowimg8 from './images/NamesYouKnowimg8.svg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -258,4 +266,12 @@ export const Images ={
     Expertsimg1: Expertsimg1,
     Collectiveimg1: Collectiveimg1,
     CyberAttacksimg1: CyberAttacksimg1,
+    NamesYouKnowimg1: NamesYouKnowimg1,
+    NamesYouKnowimg2: NamesYouKnowimg2,
+    NamesYouKnowimg3: NamesYouKnowimg3,
+    NamesYouKnowimg4: NamesYouKnowimg4,
+    NamesYouKnowimg5: NamesYouKnowimg5,
+    NamesYouKnowimg6: NamesYouKnowimg6,
+    NamesYouKnowimg7: NamesYouKnowimg7,
+    NamesYouKnowimg8: NamesYouKnowimg8,
 }
