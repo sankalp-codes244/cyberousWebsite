@@ -3,7 +3,7 @@ import { Images } from '../../../assets/index'
 const BrandsTrustUs = () => {
   return (
     <div className="container mx-auto my-10 p-4 ">
-      <h1 className="text-center text-4xl md:text-7xl font-bold font-arbutus">
+      <h1 className="text-center text-4xl md:text-7xl font-holtwood">
         Brands That Trust Us
       </h1>
       <div className="justify-center flex my-10">
