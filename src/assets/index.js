@@ -126,6 +126,7 @@ import RedteamingHeader from './images/RedteamingHeader.jpg'
 import PlayRulesimg1 from './images/PlayRulesimg1.png'
 import Expertsimg1 from './images/Expertsimg1.png'
 import Collectiveimg1 from './images/Collectiveimg1.png'
+import star from './images/star.png'
 import CyberAttacksimg1 from './images/CyberAttacksimg1.jpg'
 import NamesYouKnowimg1 from './images/NamesYouKnowimg1.svg'
 import NamesYouKnowimg2 from './images/NamesYouKnowimg2.svg'
@@ -138,6 +139,8 @@ import NamesYouKnowimg8 from './images/NamesYouKnowimg8.svg'
 import Human from './images/Human.jpg'
 import securityBG from './images/securityBG.jpg'
 import consultancyBG from './images/consultancyBG.jpg'
+import securityPlayboy from './images/securityPlayboy.jpg'
+import bgGreen from './images/bgGreen.jpg'
 
 
 export const Images ={
@@ -280,6 +283,9 @@ export const Images ={
     NamesYouKnowimg8: NamesYouKnowimg8,
     Human: Human,
     securityBG:securityBG,
-    consultancyBG:consultancyBG
+    consultancyBG:consultancyBG,
+    securityPlayboy:securityPlayboy,
+    bgGreen:bgGreen,
+    star:star,
     
 }
