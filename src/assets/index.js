@@ -135,6 +135,10 @@ import NamesYouKnowimg5 from './images/NamesYouKnowimg5.svg'
 import NamesYouKnowimg6 from './images/NamesYouKnowimg6.svg'
 import NamesYouKnowimg7 from './images/NamesYouKnowimg7.svg'
 import NamesYouKnowimg8 from './images/NamesYouKnowimg8.svg'
+import Human from './images/Human.jpg'
+import securityBG from './images/securityBG.jpg'
+import consultancyBG from './images/consultancyBG.jpg'
+
 
 export const Images ={
     logo: cyberousLogo,
@@ -274,4 +278,8 @@ export const Images ={
     NamesYouKnowimg6: NamesYouKnowimg6,
     NamesYouKnowimg7: NamesYouKnowimg7,
     NamesYouKnowimg8: NamesYouKnowimg8,
+    Human: Human,
+    securityBG:securityBG,
+    consultancyBG:consultancyBG
+    
 }
