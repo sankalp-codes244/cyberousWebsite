@@ -11,7 +11,7 @@ export default function DropDown() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Menu as="div" className="relative block text-left w-full"  onClick={() => setIsOpen(!isOpen)} onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
+    <Menu as="div" className="relative block text-left w-full"  onClick={() => setIsOpen(!isOpen)}  >
       <div>
         <Menu.Button className="inline-flex w-full justify-center rounded-md  text-sm md:mx-3 font-medium  text-gray-900 ">
           VAPT
