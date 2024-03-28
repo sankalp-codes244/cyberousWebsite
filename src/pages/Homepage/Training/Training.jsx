@@ -9,7 +9,7 @@ const Training = ({ programs }) => {
   const filterButtonInactiveClasses = "bg-white text-green-500 border border-green-500";
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 my-24">
       <h1 className="text-center text-3xl md:text-4xl font-bold font-serif">
         Our Training Programs
       </h1>

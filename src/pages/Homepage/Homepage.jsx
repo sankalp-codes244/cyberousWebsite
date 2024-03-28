@@ -10,6 +10,7 @@ import BrandsTrustUs from './BrandsTrustUs/BrandsTrustUs'
 import Testemonial from './Testimonial/Testemonial'
 import MediaGallery from './MediaGallery/MediaGallery'
 import ContactUs from './ContactUs/ContactUs'
+import NamesYouKnow from '../Services/RedTeaming/NamesYouKnow/NamesYouKnow'
 
 const Homepage = () => {
   let imgData = [
@@ -136,7 +137,8 @@ const whyChooseUs = [
         <ContactUs/>
       </div>
       <div id="brands" className='min-h-full bg-white'>
-        <BrandsTrustUs/>
+        {/* <BrandsTrustUs/> */}
+        <NamesYouKnow/>
       </div>
       <div id="testimonials" className='min-h-full bg-white'>
         <Testemonial/>
