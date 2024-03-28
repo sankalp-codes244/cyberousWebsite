@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DropDown from './dropDown'; // Ensure your DropDown is responsive if it includes any content that needs to adjust
+import DropDown from './DropDown'; // Ensure your DropDown is responsive if it includes any content that needs to adjust
 import { Images } from '../assets';
 import DropDownService from './DropDownServices'
 
