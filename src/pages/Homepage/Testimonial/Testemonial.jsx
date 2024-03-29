@@ -1,6 +1,7 @@
 import React from "react";
 import { Images } from "../../../assets/index";
 import TestimonialCard from "../../../components/TestimonialCard";
+import { Carousel } from "react-responsive-carousel";
 const Testemonial = () => {
   let data = [
     {
@@ -38,7 +39,7 @@ const Testemonial = () => {
           What do People Say About Us
         </h1>
         <div className="flex justify-center">
-          <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 gap-5 md:flex md:flex-row m-4">
+          <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 gap-5 md:flex md:flex-row m-4 lg:hidden">
             {data.map((item) => (
               <TestimonialCard 
               image={item.image}
@@ -49,9 +50,37 @@ const Testemonial = () => {
             ))
             }
           </div>
+          
+
+            {/* <Carousel 
+            showThumbs={false}
+            showStatus={false}
+            infiniteLoop={true}
+            autoPlay={true}
+            showArrows={true}
+            showIndicators={false}
+            interval={5000}
+            stopOnHover={true}
+            centerSlidePercentage={300}
+            centerMode
+            > */}
+            <div className="lg:flex justify-center hidden border">
+            <div className=" lg:w-4/5 lg:flex  m-4">
+            {data.map((item) => (
+              <TestimonialCard 
+              image={item.image}
+              name={item.name}
+              title={item.title}
+              desc={item.desc}
+              />
+              ))
+            }
+        </div>
         </div>
 
+            {/* </Carousel> */}
 
+      </div>
       </div>
     </>
   );
