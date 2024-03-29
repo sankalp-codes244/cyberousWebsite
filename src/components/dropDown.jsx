@@ -37,8 +37,8 @@ export default function DropDown() {
         <Menu.Items className="sm:absolute lg:fixed lg:w-full lg:h-screen lg:inset-y-30 lg:z-10 lg:mt-2 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
           <div className="">
             <div className="grid grid-flow-row">
-              {["bug_bounty", "Linux_Fundamental", "Advanced_Ethical_Hacking", "Cyber_Security_Diploma", "Application_Development"].map((type) => (
-                <HoveredLinks name={type} />
+              {["bug_bounty", "Linux_Fundamental", "Advanced_Ethical_Hacking", "Cyber_Security_Diploma", "Application_Development"].map((type,index) => (
+                <HoveredLinks key={index} name={type} />
               ))}
             </div>
           </div>
