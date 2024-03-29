@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: '#fff';
-}
 
 html {
     scroll-behavior: smooth;
@@ -15,7 +12,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff; /* color of the tracking area */
+  /* background: ; color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {

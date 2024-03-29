@@ -11,8 +11,35 @@ import Testemonial from './Testimonial/Testemonial'
 import MediaGallery from './MediaGallery/MediaGallery'
 import ContactUs from './ContactUs/ContactUs'
 import NamesYouKnow from '../Services/RedTeaming/NamesYouKnow/NamesYouKnow'
-
+import Faqs from './FAQs/Faqs'
 const Homepage = () => {
+  const faqData = [
+    {
+      id: 0,
+      name: 'How does Web Application Security Testing ensure digital asset protection?',
+      description: " In Web Application Security Testing, we conduct thorough Requirement Analysis, delving into the nuances of your application's architecture. This ensures a tailored and effective security assessment, leaving no aspect overlooked in safeguarding your digital assets."
+    },
+    {
+      id: 1,
+      name: 'Why is Threat Modeling crucial for web application security?',
+      description: " Threat Modeling crafts a robust model, identifying potential threats, vulnerabilities, and attack vectors. This proactive approach prioritizes testing efforts on critical areas, fortifying your digital defenses effectively and ensuring a comprehensive security testing strategy."
+    },
+    {
+      id: 2,
+      name: 'What is the significance of Authentication & Authorization Testing?',
+      description: " Authentication & Authorization Testing ensures robust user access control. Our experts examine authentication and authorization mechanisms, conducting exhaustive testing to thwart unauthorized entry and fortify the safeguarding of sensitive data."
+    },
+    {
+      id: 3,
+      name: 'How does Security Testing protect against unforeseen risks?',
+      description: " Through comprehensive Threat Modeling, we identify potential threats and vulnerabilities, allowing us to prioritize testing efforts.This ensures a targeted security testing strategy, mitigating unforeseen risks and fortifying your web application's overall security posture."
+    },
+    {
+      id: 4,
+      name: 'What role does Vulnerability Assessment play in web application security?',
+      description: " Vulnerability Assessment involves a meticulous examination to identify and address vulnerabilities. This critical step ensures a proactive approach to security, allowing for timely mitigation and safeguarding your web application against potential cyber threats."
+    }
+  ]
   let imgData = [
     {
       id:1,
@@ -118,33 +145,36 @@ const whyChooseUs = [
       <div id="home" className='min-h-screen'>
         <CarouselElement getImages={imgData} />
       </div>
-      <div id="about" className='min-h-screen bg-white'>
+      <div id="about" className='min-h-screen '>
         <About/>
       </div>
-      <div id="services" className='min-h-screen bg-white'>
+      <div id="services" className='min-h-screen'>
         <OurServices/>
       </div>
-      <div id="chooseus" className='min-h-screen bg-white'>
+      <div id="chooseus" className='min-h-screen'>
         <WhyChooseUs whyUs={whyChooseUs}/>
       </div>
-      <div id="industrialrec" className='min-h-full bg-white'>
+      <div id="industrialrec" className='min-h-full'>
         <IndustrialRecognition/>
       </div>
-      <div id="training" className='min-h-screen bg-white'>
+      <div id="training" className='min-h-screen'>
         <Training programs={programs}/>
       </div>
-      <div id="brands" className='min-h-full bg-white'>
+      <div id="brands" className='min-h-full'>
         <ContactUs/>
       </div>
-      <div id="brands" className='min-h-full bg-white'>
+      <div id="brands" className='h-screen'>
         {/* <BrandsTrustUs/> */}
         <NamesYouKnow/>
       </div>
-      <div id="testimonials" className='min-h-full bg-white'>
+      <div id="testimonials" className='my-20'>
         <Testemonial/>
       </div>
-      <div id="gallery" className='min-h-full bg-white'>
+      <div id="gallery" className='my-32'>
         <MediaGallery/>
+      </div>
+      <div>
+        <Faqs faqData={faqData}/>
       </div>
     </>
   );

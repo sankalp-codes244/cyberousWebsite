@@ -41,7 +41,7 @@ const contactData = [
   {
     id: 4,
     name: 'Speak Up',
-    desc: "if you have a cmpliance concern (we'll keep it confidential)",
+    desc: "if you have a compliance concern (we'll keep it confidential)",
     Link: "Go →"
   },
 ]
@@ -61,9 +61,9 @@ const Contact = () => {
   
   return (
     <div>
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row bg-custom-greyBorderColor my-10'>
         <div className='flex flex-col p-4 mt-4 md:mt-40 w-full md:w-1/2'>
-          <h1 className='pr-20  text-5xl md:text-8xl  md:pr-0 font-bold text-center font-marker'>
+          <h1 className='pr-20  text-6xl md:text-9xl  md:pr-0 font-bold text-center font-heading'>
             Contact Us
           </h1>
           <h1 className='text-2xl md:text-4xl py-10 text-center md:py-20'>
@@ -73,12 +73,12 @@ const Contact = () => {
         <img src={Images.contactUsImg1} className='p-4 w-full h-full md:w-1/2' />
       </div>
 
-      <div className='bg-custom-black-color'>
+      <div className='bg-custom-orange-color'>
         <h1 className='text-xl text-white md:text-3xl font-sans text-center p-6'>
           What works best for you ?
         </h1>
         <div className='flex justify-center'>
-          <div className='w-4/5'>
+          <div className='md:w-11/12'>
             <div className='grid grid-col-1 mx-12 my-2 gap-6 md:gap-4 md:grid-cols-5 '>
               {contactData.map((item) => (
                 <Link>
@@ -107,12 +107,14 @@ const Contact = () => {
 
 
       <div className='m-8 md:m-20'>
-        <h1 className='text-xl font-serif '>
+        <div className='md:w-3/4'>
+        <h1 className='text-2xl font-sans'>
           Leave Us A Message
         </h1>
         <p className='text-lg font sans py-4 text-justify'>
           Your message will be sent to our teams worldwide, who will get back to you as soon as they can. Please be advised that weekends and public holidays might delay response time.
         </p>
+        </div>
         <p className='text-xl py-4'><span className='text-2xl md:text-4xl text-red-700'> * </span>Mandatory Fields </p>
         <p className='text-xl py-6'>
           What would you like to contact us about today?<span className='text-2xl md:text-4xl text-red-700'> * </span>

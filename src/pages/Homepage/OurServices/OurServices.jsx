@@ -41,8 +41,8 @@ const OurServices = () => {
         <div className="justify-center flex p-6 pb-10">
           <div className="h-1 w-40 md:w-64 bg-custom-buttonColor-Green"></div>
         </div>
-        <div className='flex justify-center'>
-          <div className='flex flex-col md:flex-row w-full md:w-4/5 h-full shadow-2xl '>
+        <div className='flex justify-center '>
+          <div className='w-full md:w-11/12 relative grid grid-cols-1 md:grid-cols-4 h-full shadow-2xl '>
             {servicesData.map((item,) => (
               <ServicesCard image={item.img} serviceText={item.servicesDescription} key={item.id} serviceName={item.serviceText} link={item.link} />
             ))}
