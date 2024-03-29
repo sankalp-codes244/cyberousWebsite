@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DropDown from './DropDown'; // Ensure your DropDown is responsive if it includes any content that needs to adjust
 import { Images } from '../assets';
 import DropDownService from './DropDownServices'
+import LinkButtons from './LinkButtons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,19 +23,19 @@ const Navbar = () => {
   return (
     <div className={`bg-white h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
       <div className="flex justify-between items-center h-full px-4 md:px-8">
-        <Link to="/" className="text-custom-orange-color text-2xl font-bold">
+        <Link to="/" className="text-green-500 font-heading text-2xl font-bold">
           Cyberous
         </Link>
 
         {/* Hamburger icon for mobile */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className="focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className="focus:outline-none duration-200">
             {isOpen ? (
-              <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-6 h-6 duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-6 h-6 duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
             )}
@@ -42,25 +43,30 @@ const Navbar = () => {
         </div>
 
         {/* Menu items */}
-        <div className={`${isOpen ? 'hidden' : 'hidden'} md:flex items-center`}>
-          <Link to='/'>
-            <p className="md:mx-3 text-sm rounded-lg py-2 text-center font-medium">Home</p>
+        <div className={`${isOpen ? 'hidden' : 'hidden'}  lg:flex lg:justify-end lg:items-center w-1/2`}>
+          <div className='lg:flex lg:justify-evenly lg:items-center w-full'>
+          <Link to='/' className=''>
+            <LinkButtons links='Home'/>
           </Link>
 
-          <DropDown />
-          
-          <DropDownService/>
-            <button className="md:mx-6 text-sm rounded-lg py-2 text-center font-medium">Career</button>
-          <Link to='/about'>
-            <button className="md:mx-6 text-sm rounded-lg py-2 text-center font-medium">About</button>
+          <DropDown LinkButtons={LinkButtons} />
+          <Link to='/services' className=''>
+            <DropDownService LinkButtons={LinkButtons}/>
           </Link>
-          <Link to='blog'>
-            <button className="md:mx-6 text-sm rounded-lg py-2 text-center font-medium">Blog</button>
+          <Link to='/about' className=''>
+          <LinkButtons links='About'/>
           </Link>
-          <Link to='/contact'>
-            <button className="md:mx-6 text-sm rounded-lg py-2 text-center font-medium">Contact</button>
+          <Link to='blog' className=''>
+            <LinkButtons links='Blog'/>
           </Link>
-          <div className="flex ">
+          <Link to='blog' className=''>
+            <LinkButtons links='Career'/>
+          </Link>
+          <Link to='/contact' className=''>
+            <LinkButtons links='Contact'/>
+          </Link>
+          </div>
+          <div className="flex w-3/12 justify-between ">
             <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
               <img src={Images.facebookDark} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookDark)} />
             </Link>
@@ -87,6 +93,7 @@ const Navbar = () => {
           </Link>
           <Link to='/about' className="text-sm font-medium py-2.5 px-3">About</Link>
           <Link to='/blog' className="text-sm font-medium py-2.5 px-3">Blog</Link>
+          <Link to='/blog' className="text-sm font-medium py-2.5 px-3">Career</Link>
           <Link to='/contact' className="text-sm font-medium py-2.5 px-3">Contact</Link>
         </div>
       </div>
