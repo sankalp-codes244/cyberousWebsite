@@ -15,6 +15,8 @@ import Callicon from "../../../assets/Svgs/Callicon";
 import { Link } from "react-router-dom";
 import Mailicon from "../../../assets/Svgs/Mailicon";
 import FormComponent from "../../../components/FormComponent";
+import NamesYouKnow from "../RedTeaming/NamesYouKnow/NamesYouKnow";
+import Faqs from "../../Homepage/FAQs/Faqs";
 
 const Cards = ({ image, name, desc }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -42,6 +44,33 @@ const Cards = ({ image, name, desc }) => {
 };
 
 const Consultancy = () => {
+  const faqData = [
+    {
+      id: 0,
+      name: 'How does Web Application Security Testing ensure digital asset protection?',
+      description: " In Web Application Security Testing, we conduct thorough Requirement Analysis, delving into the nuances of your application's architecture. This ensures a tailored and effective security assessment, leaving no aspect overlooked in safeguarding your digital assets."
+    },
+    {
+      id: 1,
+      name: 'Why is Threat Modeling crucial for web application security?',
+      description: " Threat Modeling crafts a robust model, identifying potential threats, vulnerabilities, and attack vectors. This proactive approach prioritizes testing efforts on critical areas, fortifying your digital defenses effectively and ensuring a comprehensive security testing strategy."
+    },
+    {
+      id: 2,
+      name: 'What is the significance of Authentication & Authorization Testing?',
+      description: " Authentication & Authorization Testing ensures robust user access control. Our experts examine authentication and authorization mechanisms, conducting exhaustive testing to thwart unauthorized entry and fortify the safeguarding of sensitive data."
+    },
+    {
+      id: 3,
+      name: 'How does Security Testing protect against unforeseen risks?',
+      description: " Through comprehensive Threat Modeling, we identify potential threats and vulnerabilities, allowing us to prioritize testing efforts.This ensures a targeted security testing strategy, mitigating unforeseen risks and fortifying your web application's overall security posture."
+    },
+    {
+      id: 4,
+      name: 'What role does Vulnerability Assessment play in web application security?',
+      description: " Vulnerability Assessment involves a meticulous examination to identify and address vulnerabilities. This critical step ensures a proactive approach to security, allowing for timely mitigation and safeguarding your web application against potential cyber threats."
+    }
+  ]
   const consultancyData = [
     {
         id:0,
@@ -278,25 +307,10 @@ const Consultancy = () => {
           </div>
         </div>
       </div>
-      <div className='text-center relative bg-no-repeat bg-center h-32 pt-10 bg-white'>
-        <div className='h-full  bg-opacity-50 flex flex-col justify-center'>
-          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black'>Our Clients</h1>
-          <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
-        </div>
-      </div>
-
-
-
-      {/* Service List */}
       <div id="brands" className='min-h-full bg-white'>
-        <BrandsTrustUs />
+       <Faqs faqData={faqData}/>
       </div>
-      <div id="brands" className='min-h-full bg-white'>
-        <IndustrialRecognition />
-      </div>
-      <div id="testimonials" className='min-h-full bg-white'>
-        <Testemonial />
-      </div>
+
 </div>
       
     </div>
