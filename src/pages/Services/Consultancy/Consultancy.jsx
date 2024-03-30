@@ -11,6 +11,10 @@ import Training from "../../../assets/Svgs/Training";
 import BrandsTrustUs from "../../Homepage/BrandsTrustUs/BrandsTrustUs";
 import IndustrialRecognition from "../../Homepage/IndustrialRecognition/IndustrialRecognition";
 import Testemonial from "../../Homepage/Testimonial/Testemonial";
+import Callicon from "../../../assets/Svgs/Callicon";
+import { Link } from "react-router-dom";
+import Mailicon from "../../../assets/Svgs/Mailicon";
+import FormComponent from "../../../components/FormComponent";
 
 const Cards = ({ image, name, desc }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -225,15 +229,51 @@ const Consultancy = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen flex flex-col lg:flex-row">
-          <div className="border border-solid  w-full lg:w-1/2 flex justify-center items-center">
+        <div className="h-full flex flex-col lg:flex-row my-28">
+          <div className=" w-full lg:w-1/2 flex justify-center items-center">
             <div className="flex flex-col justify-center items-center">
-            <p className="text-center text-2xl font-bold lg:text-5xl mt-10">4.9/5</p>
-            <img src={Images.star} alt="star" className="w-8 h-8 lg:"/>
+            <p className="text-center text-2xl font-bold lg:text-5xl mt-10 mb-5">4.9 / 5</p>
+            <div className="flex gap-2 mb-5">
+              {[1,2,3,4,5].map((data)=>{
+                return(
+                  <img src={Images.star} alt="star" className="w-8 h-8 lg:w-14 lg:h-14"/>
+                )
+              })}
+
             </div>
-            
+            <p className="text-sm lg:text-xl text-center  font-semibold">By 1000+ clients and 5000+ Customers</p>
+            <div className="my-5">
+              <a href="tel:+918199985888" className="flex justify-center items-center">
+            <Callicon/>
+             <div className="">
+             <p className="font-bold text-xs lg:text-lg">
+             CALL FOR ADVICE NOW!
+              </p> 
+              <p className="font-bold text-2xl lg:text-4xl">
+              +91 9876543210
+              </p> 
+             </div>
+              </a>
+            </div>
+            <div className="mb-5">
+              <a href="mailto:+918199985888" className="flex justify-center items-center">
+            <Mailicon/>
+             <div className="">
+             <p className="font-bold text-xs lg:text-lg">
+             SAY HELLO!
+              </p> 
+              <p className="font-bold text-xl lg:text-4xl">
+              cyberous@gmail.info
+              </p> 
+             </div>
+              </a>
+            </div>
+            </div>
           </div>
-          <div className="border border-solid  w-full lg:w-1/2">
+
+          <div className=" flex justify-center items-center lg:w-1/2">
+
+            <FormComponent/>
 
           </div>
         </div>

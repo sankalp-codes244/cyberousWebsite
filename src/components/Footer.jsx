@@ -137,7 +137,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className='pr-4 md:pr-48'>
-          <img src={Images.FiveStarReview} className='h-20 w-20 md:h-60 md:w-60 rounded-full mb-4' />
+          <img src={Images.FiveStarReview} className='h-20 w-20 lg:h-72 lg:w-72 rounded-full mb-4' />
         </div>
       </div>
       <div className='h-full bg-black md:px-24'>
