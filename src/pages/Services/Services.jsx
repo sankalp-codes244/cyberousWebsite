@@ -22,13 +22,18 @@ const Services = () => {
       </div>
 
       {/* Company info */}
-      <div className='text-center py-8'>
-        <h1 className='text-3xl lg:text-5xl font-bold font-serif '>Our Company</h1>
+      <div className='flex flex-col justify-center py-8'>
+        <h1 className='text-lg text-center md:text-2xl font-bold font-serif '>Our Company</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
-        <p className='text-lg mx-4 lg:text-xl lg:mx-32'>
-          "Cyberous offers a comprehensive range of cybersecurity services dedicated to ensuring your success."
-        </p>
+        <div className='flex justify-center'>
+          <div className='w-full md:w-3/4'>
+            <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center'>
+              "Cyberous offers a comprehensive range of cybersecurity services dedicated to ensuring your <span className='text-custom-buttonColor-GreenDark font-bold'> success.</span>"
+            </p>
+          </div>
+        </div>
       </div>
+
 
       {/* Service details */}
       <div className='px-4 lg:px-32 py-8'>
@@ -37,7 +42,7 @@ const Services = () => {
             <div className='flex  flex-row items-center mx-10 md:mx-40'>
               <p className='text-9xl text-green-500 font-serif font-bold '>4+</p>
               <div className='w-24'>
-                <p className='text-basefont-sans mt-10 text-custom-fontColor-grey md:mt-20'>Year's of Excellence Services</p>
+                <p className='text-basefont-sans mt-10 text-custom-fontColor-grey font-bold md:mt-20'>Year's of Excellence Services</p>
               </div>
             </div>
             <div className='flex justify-center'>

@@ -147,6 +147,7 @@ import eventimg3 from './images/eventimg3.jpg'
 import eventimg4 from './images/eventimg4.jpg'
 import eventimg5 from './images/eventimg5.jpg'
 import eventimg6 from './images/eventimg6.jpg'
+import downloadicon from './images/downloadicon.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -298,4 +299,5 @@ export const Images ={
     eventimg4: eventimg4,
     eventimg5: eventimg5,
     eventimg6: eventimg6,
+    downloadicon: downloadicon,
 }
