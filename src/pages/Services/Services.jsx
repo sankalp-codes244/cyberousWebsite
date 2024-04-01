@@ -5,30 +5,31 @@ import Testemonial from '../Homepage/Testimonial/Testemonial';
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery';
 import { Images } from '../../assets';
 import { Link } from 'react-router-dom';
+import NamesYouKnow from './RedTeaming/NamesYouKnow/NamesYouKnow';
 
 const Services = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); 
+  // }, []);
   return (
     <div className='h-full'>
       {/* Background section */}
       <div className='text-center relative bg-no-repeat bg-cover bg-center h-screen object-cover' style={{ backgroundImage: `url(${Images.aboutBg})`, }}>
         <div className='h-full bg-black bg-opacity-50 flex flex-col justify-center'>
-          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-white'>Services</h1>
+          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold font-Inter text-white'>Services</h1>
           <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
-          <h2 className='text-xl sm:text-2xl lg:text-3xl text-white font-bold'>We Do More Than Just A Scanner, We Are Your Comprehensive Security Team.</h2>
+          <h2 className='text-xl sm:text-2xl lg:text-3xl text-white font-bold font-Inter'>We Do More Than Just A Scanner, We Are Your Comprehensive Security Team.</h2>
         </div>
       </div>
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif '>Our Company</h1>
+        <h1 className='text-lg text-center md:text-2xl font-bold font-Inter '>Our Company</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
-            <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center'>
-              "Cyberous offers a comprehensive range of cybersecurity services dedicated to ensuring your <span className='text-custom-buttonColor-GreenDark font-bold'> success.</span>"
+            <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-Inter'>
+              "Cyberous offers a comprehensive range of cybersecurity services dedicated to ensuring your <span className='text-custom-buttonColor-GreenDark font-bold font-Inter'> success.</span>"
             </p>
           </div>
         </div>
@@ -40,26 +41,26 @@ const Services = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 '>
           <div className='flex flex-col'>
             <div className='flex  flex-row items-center mx-10 md:mx-40'>
-              <p className='text-9xl text-green-500 font-serif font-bold '>4+</p>
+              <p className='text-9xl text-green-500 font-Inter font-bold '>4+</p>
               <div className='w-24'>
-                <p className='text-basefont-sans mt-10 text-custom-fontColor-grey font-bold md:mt-20'>Year's of Excellence Services</p>
+                <p className='text-basefont-sans mt-10 text-custom-fontColor-grey font-bold font-Inter md:mt-20'>Year's of Excellence Services</p>
               </div>
             </div>
             <div className='flex justify-center'>
-              <p className='w-2/3 md:w-3/4 text-2xl md:text-5xl font-serif mt-8 m-4 md:mr-10 font-bold'>
+              <p className='w-2/3 md:w-3/4 text-2xl font-Inter md:text-4xl mt-8 m-4 md:mr-10 font-bold'>
                 Learn More About Our Success Stories
               </p>
             </div>
           </div>
-          <div className='text-lg text-justify mt-10 md:mt-20'>
+          <div className='text-lg text-justify mt-10 md:mt-20 font-Inter'>
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan. Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </div>
         </div>
       </div>
       {/* We Excel section */}
-      <div className='text-center my-8'>
-        <h2 className='text-3xl lg:text-4xl font-bold font-serif'>Our Services</h2>
-        <p className='text-green-500 text-2xl lg:text-3xl my-4'>What do We Offer?</p>
+      <div className='text-center my-28'>
+        <h2 className='text-3xl lg:text-4xl font-bold font-Inter'>Our Services</h2>
+        <p className='text-green-500 text-2xl lg:text-3xl my-4 font-Inter'>What do We Offer?</p>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>
       <div className='flex justify-center'>
@@ -67,53 +68,53 @@ const Services = () => {
           <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
             <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
               <ul className='text-green-500 space-y-4 '>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <div className='flex flex-row'>
                     <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p> Ethical Hacking training </p>
-                  </div>
+                    <p className='font-Inter'> Ethical Hacking training </p>
+                   </div>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/websecurity'>
                     <div className='flex flex-row '>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p> Web Application Penetration Testing </p>
+                      <p className='font-Inter'> Web Application Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Ensure your web applications are secure and resilient with our comprehensive Penetration Testing services.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/network'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  Network Penetration Testing </p>
+                      <p className='font-Inter'>  Network Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'> Identify and mitigate vulnerabilities in your network infrastructure with our thorough Penetration Testing solutions.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/iospt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>IOS Application Penetration Testing</p>
+                      <p className='font-Inter'>IOS Application Penetration Testing</p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/androidpt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  Android Application Penetration Testing </p>
+                      <p className='font-Inter'>  Android Application Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -124,33 +125,33 @@ const Services = () => {
             </div>
             <div className='text-lg lg:text-xl font-semibold'>
               <ul className=' xl:mr-6 text-green-500 space-y-4' >
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/sourcecode'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  Source Code Review: </p>
+                      <p  className='font-Inter'>  Source Code Review: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Strengthen your software security with our meticulous Source Code Review assessments.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/apipt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  API Penetration Testing </p>
+                      <p className='font-Inter'>  API Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Ensure the integrity of your APIs with our specialized Penetration Testing services.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/iotpt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  IoT Penetration Testing </p>
+                      <p className='font-Inter'>  IoT Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -158,22 +159,22 @@ const Services = () => {
                     </p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/consultancy'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  Cyber Security Consultancy: </p>
+                      <p className='font-Inter'>  Cyber Security Consultancy: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Get tailored cybersecurity solutions and expert guidance to protect your organization's digital assets.</p>
                   </div>
                 </li>
-                <li className='font-serif'>
+                <li className='font-Inter'>
                   <Link to='/services/redteaming'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  Red Teaming: </p>
+                      <p>  R className='font-Inter'ed Teaming: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -198,7 +199,8 @@ const Services = () => {
 
       {/* Service List */}
       <div id="brands" className='min-h-full bg-white'>
-        <BrandsTrustUs />
+        {/* <BrandsTrustUs /> */}
+        <NamesYouKnow/>
       </div>
       <div className="p-6 bg-custom-buttonColor-GreenDark text-white md:p-20">
         <div className="container mx-auto px-4 ">
