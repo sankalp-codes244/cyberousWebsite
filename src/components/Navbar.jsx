@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className={`bg-white h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
       <div className="flex justify-between items-center h-full px-4 md:px-8">
         <Link to="/" className="text-green-500 font-heading text-2xl font-bold">
-          Cyberous
+          <img src={Images.CyberousLogo} className='h-28 w-28 md:h-36 md:w-36' />
         </Link>
 
         {/* Hamburger icon for mobile */}

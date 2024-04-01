@@ -125,27 +125,27 @@ const Contact = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 p-4'>
               <label className='mx-4 text-black text-xl'>
                 First Name :
-                <input type='text' name='FirstName' className='bg-white h-10 w-full rounded-lg mx-2 px-2 '></input>
+                <input type='text' name='FirstName' className='border border-solid border-black bg-white h-10 w-full rounded-lg mx-2 px-2 '></input>
               </label>
               <label className='mx-4 text-black text-xl'>
                 Last Name :
-                <input type='text' name='LastName' className='h-10 w-full rounded-lg mx-2 px-2  bg-white'></input>
+                <input type='text' name='LastName' className='border border-solid border-black h-10 w-full rounded-lg mx-2 px-2  bg-white'></input>
               </label>
             </div>
             <div className='flex flex-col md:flex-row p-4 justify-around'>
               <label className='mx-4 text-black text-xl'>
                 Phone :
-                <input type='number' name='phone' className='h-10 w-full rounded-lg mx-2 px-2  bg-white '></input>
+                <input type='number' name='phone' className='border border-solid border-black h-10 w-full rounded-lg mx-2 px-2  bg-white '></input>
               </label>
               <label className='mx-4 text-black text-xl'>
                 Email :
-                <input type='email' name='email' className='h-10 w-full rounded-lg mx-2 px-2 bg-white '></input>
+                <input type='email' name='email' className='border border-solid border-black h-10 w-full rounded-lg mx-2 px-2 bg-white '></input>
               </label>
             </div>
 
 
-            <div className='py-4 px-12'>
-              <Menu as="div" className="relative inline-block text-left">
+            <div className='py-4 px-12 '>
+              <Menu as="div" className="relative inline-block text-left ">
                 <div>
                   <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                     Contacted For
@@ -241,20 +241,18 @@ const Contact = () => {
             </div>
 
             <div className='p-4 px-8 '>
-              <p className='text-xl text-black py-4'>Your Comment  <span className='text-2xl md:text-4xl text-red-700'> * </span></p>
-              <input name='message' className='h-36 w-11/12 md:w-1/2 rounded-lg font-serif text-black p-4' type='text' placeholder=''>
+              <p className='text-xl text-black py-4'>Your Comment  <span className=' text-2xl md:text-4xl text-red-700'> * </span></p>
+              <input name='message' className='border border-solid border-black h-36 w-11/12 md:w-1/2 rounded-lg font-serif text-black p-4' type='text' placeholder=''>
               </input>
             </div>
             <div className='flex justify-center py-6'>
               <label className='submit'>
-                submit
+                
               <input value='Submit' type='submit' id='submit'/>
               </label>
             </div>
           </form>
         </div>
-
-
 
       </div>
 

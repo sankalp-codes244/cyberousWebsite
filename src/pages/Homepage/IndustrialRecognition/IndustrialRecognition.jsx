@@ -18,8 +18,8 @@ const IndustrialRecognition = () => {
                     <img src={Images.indrec2} alt="Recognition 2" className='duration-500 h-40 w-40 md:h-56 md:w-56 hover:scale-150 object-contain'/>
                     <img src={Images.indrec3} alt="Recognition 3" className='duration-500 h-40 w-40 md:h-56 md:w-56 hover:scale-150 object-contain'/>
                     <img src={Images.indrec4} alt="Recognition 4" className='duration-500 h-40 w-40 md:h-60 md:w-60 hover:scale-150 object-contain'/>
-                    <img src={Images.indrec5} alt="Recognition 4" className='duration-500 h-40 w-40 md:h-56 md:w-56 hover:scale-150 object-contain'/>
-                    <img src={Images.indrec6} alt="Recognition 4" className='duration-500 h-40 w-40 md:h-56 md:w-56 hover:scale-150 object-contain'/>
+                    <img src={Images.indrec5} alt="Recognition 4" className='duration-500 h-40 w-40 md:h-48 md:w-48 hover:scale-150 object-contain'/>
+                    <img src={Images.indrec6} alt="Recognition 4" className='duration-500 h-40 w-40 md:h-48 md:w-48 hover:scale-150 object-contain'/>
                 </div>
             </div>
         </div>
