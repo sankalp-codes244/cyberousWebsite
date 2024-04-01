@@ -14,7 +14,7 @@ const MediaGallery = () => {
       images: [Images.eventimg1, Images.eventimg2, Images.eventimg3] // Replace with actual image URLs
     },
     {
-      id: 1,
+      id: 2,
       name: "Navy",
       description: "Description for Event 1",
       images: [Images.eventimg4, Images.eventimg5, Images.eventimg6] // Replace with actual image URLs
