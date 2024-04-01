@@ -21,14 +21,14 @@ const Navbar = () => {
 
 
   return (
-    <div className={`bg-white h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
-      <div className="flex justify-between items-center h-full px-4 md:px-8">
-        <Link to="/" className="text-green-500 font-heading text-2xl font-bold">
-          <img src={Images.CyberousLogo} className='h-28 w-28 md:h-36 md:w-36' />
-        </Link>
+    <div className={`bg-black h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
+      <div className="flex justify-between items-center h-full px-4 md:px-8 ">
+      <Link to="/">
+        <img src={Images.cyberousWhitelogo} className='object-contain aspect-video w-48  ' />
+      </Link>
 
         {/* Hamburger icon for mobile */}
-        <div className="md:hidden">
+        <div className="sm:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className="focus:outline-none duration-200">
             {isOpen ? (
               <svg className="w-6 h-6 duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -68,13 +68,13 @@ const Navbar = () => {
           </div>
           <div className="flex w-3/12 justify-between ">
             <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
-              <img src={Images.facebookDark} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookDark)} />
+              <img src={Images.facebookLight} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookLight)} />
             </Link>
             <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
-              <img src={Images.instagramDark} alt="Instagram" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.instagramLight)} onMouseOut={(e) => (e.currentTarget.src = Images.instagramDark)} />
+              <img src={Images.instagramLight} alt="Instagram" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.instagramLight)} onMouseOut={(e) => (e.currentTarget.src = Images.instagramLight)} />
             </Link>
             <Link to={'https://www.linkedin.com/company/cyberous'}>
-              <img src={Images.linkedinDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.linkedinLight)} onMouseOut={(e) => (e.currentTarget.src = Images.linkedinDark)} />
+              <img src={Images.linkedinLight} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.linkedinLight)} onMouseOut={(e) => (e.currentTarget.src = Images.linkedinLight)} />
             </Link>
             <Link to={'https://twitter.com/cyberousinfosec'}>
               <img src={Images.xDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.xDark)} onMouseOut={(e) => (e.currentTarget.src = Images.xDark)} />
