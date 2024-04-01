@@ -1,8 +1,4 @@
 
-
-import { Images } from '../assets'
-import SideArrow from '../assets/Svgs/SideArrow'
-import { Link } from 'react-router-dom'
 const ContactUsCard = ({ head, desc, link }) => {
   return (
     <div className='relative shadow-2xl border-black p-4 pb-10 bg-custom-orange-colorlight w-full h-full rounded-md'>

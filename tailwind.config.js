@@ -38,6 +38,7 @@ export default {
         arbutus: ['Arbutus', 'sans-serif'],
         holtwood: ['"Holtwood One SC"', 'sans-serif'],
         stylish: ['Stylish', 'sans-serif'],
+        Inter:['Inter']
       },
     },
     screens: {
