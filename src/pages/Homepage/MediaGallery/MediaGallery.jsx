@@ -11,13 +11,25 @@ const MediaGallery = () => {
       id: 1,
       name: "Manipal",
       description: "Description for Event 1",
-      images: [Images.eventimg1, Images.eventimg2, Images.eventimg3] // Replace with actual image URLs
+      images: [Images.ManipalImg1, Images.ManipalImg2, Images.ManipalImg3, Images.ManipalImg4] // Replace with actual image URLs
     },
     {
       id: 2,
       name: "Navy",
-      description: "Description for Event 1",
-      images: [Images.eventimg4, Images.eventimg5, Images.eventimg6] // Replace with actual image URLs
+      description: "Description for Event 2",
+      images: [Images.NavyImg1, Images.NavyImg2, Images.NavyImg3, Images.NavyImg4,] // Replace with actual image URLs
+    },
+    {
+      id: 3,
+      name: "Mody",
+      description: "Description for Event 3",
+      images: [Images.ModiImg1, Images.ModiImg2, Images.ModiImg3, Images.ModiImg4,] // Replace with actual image URLs
+    },
+    {
+      id: 4,
+      name: "Amity",
+      description: "Description for Event 4",
+      images: [Images.AmityImg1, Images.AmityImg2, Images.AmityImg3, Images.AmityImg4, ] // Replace with actual image URLs
     },
     // The rest of your events...
   ];
@@ -44,7 +56,7 @@ const MediaGallery = () => {
           {events.map((event) => (
             <div key={event.id} className="bg-white p-4 shadow-xl border border-solid border-custom-greyBorderColor cursor-pointer w-full h-full" onClick={() => openModal(event.id)}>
               <div className="flex justify-center mb-4">
-                {event.images.slice(0, 3).map((image, index) => (
+                {event.images.slice(0, 4).map((image, index) => (
                   <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="mx-5 pointer-events-none select-none w-1/4 h-1/4 object-cover rounded-md" />
                 ))}
               </div>
