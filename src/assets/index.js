@@ -150,6 +150,14 @@ import eventimg6 from './images/eventimg6.jpg'
 import downloadicon from './images/downloadicon.png'
 import CyberousLogo from './images/CyberousLogo.svg'
 import cyberousWhitelogo from './images/cyberousWhitelogo.png'
+import hacker from './images/hacker.png'
+import linux from './images/linux.png'
+import webhack from './images/webhack.png'
+import bugs from './images/bugs.png'
+import webbug from './images/webbug.png'
+import websec from './images/websec.png'
+import mobsec from './images/mobsec.png'
+import iotsec from './images/iotsec.png'
 
 import AmityImg1 from './images/Events/Amity/AmityImg1.jpg'
 import AmityImg2 from './images/Events/Amity/AmityImg2.jpeg'
@@ -170,6 +178,8 @@ import NavyImg4 from './images/Events/Navy/NavyImg4.jpeg'
 
 export const Images ={
     logo: cyberousLogo,
+    mobsec: mobsec,
+    iotsec: iotsec,
     callLogo: phoneLogo,
     emailLogo: email,
     aboutImages: aboutImages,
@@ -337,4 +347,10 @@ export const Images ={
     NavyImg2: NavyImg2,
     NavyImg3: NavyImg3,
     NavyImg4: NavyImg4,
+    hacker: hacker,
+    linux: linux,
+    webhack: webhack,
+    bugs: bugs,
+    webbug: webbug,
+    websec: websec,
 }
