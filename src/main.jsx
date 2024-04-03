@@ -20,6 +20,7 @@ import APIPT from './pages/Services/VAPT/APIPenetrationTesting/APIPT.jsx'
 import AndroidPT from './pages/Services/VAPT/AndroidPenetrationTesting/AndroidPT.jsx'
 import Consultancy from './pages/Services/Consultancy/Consultancy.jsx'
 import RedTeaming from './pages/Services/RedTeaming/RedTeaming.jsx'
+import Career from './pages/Careers/Career.jsx'
 
 
 const router = createBrowserRouter(
