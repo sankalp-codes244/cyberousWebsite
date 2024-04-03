@@ -20,19 +20,19 @@ const About = () => {
           <div className="mt-10 flex flex-col sm:flex-row justify-start items-center">
             <img src={Images.aboutimg1} alt="Image of something" className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28" />
             <div className="grid grid-cols-1 gap-4 w-full">
-              <h1 className="text-custom-buttonColor-Green text-xl mt-2 md:mt-10 ml-10">
+              <h1 className="mt-2 md:mt-10 ml-10 text-2xl font-bold">
                 Happy Clients
               </h1>
-              <h1 className="text-black text-2xl font-bold m-2 mt-4 ml-10">
+              <h1 className="text-custom-buttonColor-Green text-xl font-bold m-2 mt-4 ml-10">
                 1000 +
               </h1>
             </div>
             <img src={Images.aboutimg2} className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28 mt-4 sm:mt-0 sm:ml-20" alt="Cyberous achievement" />
             <div className="grid grid-cols-1 gap-4 w-full">
-              <h1 className="text-custom-buttonColor-Green m-2 text-xl mt-4 ml-10">
+              <h1 className="m-2 text-2xl font-bold mt-4 ml-10">
                 Projects Done
               </h1>
-              <h1 className="text-black text-2xl font-bold m-2  ml-10">
+              <h1 className="text-custom-buttonColor-Green text-xl font-bold m-2  ml-10">
                 50+
               </h1>
             </div>

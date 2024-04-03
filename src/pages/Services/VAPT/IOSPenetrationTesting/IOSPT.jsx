@@ -122,17 +122,17 @@ const IOSPT = () => {
         <PageHeader/>
         {/* Heading Text */}
         <div className='flex flex-col text-center'>
-          <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>
+          <h1 className='text-2xl md:text-3xl mt-4 font-serif font-bold'>Our Services</h1>
           <div className='flex justify-center'>
-            <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
+            <div className="h-1 w-20  lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
           </div>
-          <h1 className='text-3xl lg:text-5xl text-black font-bold mt-4'>Overview of Our Services</h1>
+          <h1 className='font-serif text-3xl lg:text-5xl mt-4'>Overview of Our Services</h1>
         </div>
 
         {/* Overview Services Text */}
         <div className='flex justify-center'>
           <div className='w-full lg:w-2/3 px-4 lg:px-0'>
-            <p className='m-6 mb-12 text-base lg:text-xl text-custom-fontColor-grey text-justify'>
+            <p className='m-6 mb-12 text-base lg:text-xl text-black text-justify'>
             Strengthen the security of your iOS applications with our iOS Application Penetration Testing service. Our reliable approach, which combines automated and manual assessments, thoroughly explores your app's architecture, data flow, and security protocols. By utilizing dynamic and static analyses, we detect vulnerabilities, evaluate data storage integrity, examine network communication, and perform comprehensive authentication and authorization tests. Our detailed reports offer actionable insights, empowering you to enhance the security of your iOS applications against evolving cybersecurity threats and build user trust in the integrity of your digital assets.
 
             </p>

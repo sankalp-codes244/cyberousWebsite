@@ -58,22 +58,22 @@ const Services = () => {
         </div>
       </div>
       {/* We Excel section */}
-      <div className='text-center my-28'>
+      <div className='text-center my-10'>
         <h2 className='text-3xl lg:text-4xl font-bold font-__Inter_aaf875'>Our Services</h2>
-        <p className='text-green-500 text-2xl lg:text-3xl my-4 font-__Inter_aaf875'>What do We Offer?</p>
+        <p className='text-green-500 text-2xl lg:text-5xl my-4 font-__Inter_aaf875'>What do We Offer?</p>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>
       <div className='flex justify-center'>
         <div className='md:w-4/5 bg-custom-greyBorderColor my-8' >
           <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
-            <div className='text-lg lg:text-2xl font-semibold mb-8 xl:mr-6 lg:mb-0'>
+            <div className='text-lg lg:text-2xl mb-8 xl:mr-6 lg:mb-0'>
               <ul className='text-green-500 space-y-4 '>
                 <li className='font-__Inter_aaf875'>
                   <div className='flex flex-row'>
                     <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p className='font-__Inter_aaf875'> Ethical Hacking training </p>
-                   </div>
-                  <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
+                    <p className='font-bold'> Ethical Hacking training </p>
+                  </div>
+                  <div font-__Inter_aaf875 className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</p>
                   </div>
                 </li>
@@ -81,7 +81,7 @@ const Services = () => {
                   <Link to='/services/websecurity'>
                     <div className='flex flex-row '>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'> Web Application Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'> Web Application Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -92,7 +92,7 @@ const Services = () => {
                   <Link to='/services/network'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>  Network Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Network Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -103,7 +103,7 @@ const Services = () => {
                   <Link to='/services/iospt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>IOS Application Penetration Testing</p>
+                      <p className='font-bold font-__Inter_aaf875'>IOS Application Penetration Testing</p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -114,7 +114,7 @@ const Services = () => {
                   <Link to='/services/androidpt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>  Android Application Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Android Application Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -123,13 +123,13 @@ const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className='text-lg lg:text-xl font-semibold'>
+            <div className='text-lg lg:text-2xl'>
               <ul className=' xl:mr-6 text-green-500 space-y-4' >
                 <li className='font-__Inter_aaf875'>
                   <Link to='/services/sourcecode'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p  className='font-__Inter_aaf875'>  Source Code Review: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Source Code Review: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -140,7 +140,7 @@ const Services = () => {
                   <Link to='/services/apipt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>  API Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  API Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -151,7 +151,7 @@ const Services = () => {
                   <Link to='/services/iotpt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>  IoT Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  IoT Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -163,7 +163,7 @@ const Services = () => {
                   <Link to='/services/consultancy'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-__Inter_aaf875'>  Cyber Security Consultancy: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Cyber Security Consultancy: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -174,11 +174,11 @@ const Services = () => {
                   <Link to='/services/redteaming'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p>  R className='font-__Inter_aaf875'ed Teaming: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Red Teaming: </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
-                    <p className='pl-10'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.</p>
+                    <p className='pl-10 font-__Inter_aaf875'>Assess and enhance your organization's security posture with our simulated cyber attack scenarios.</p>
                   </div>
                 </li>
               </ul>
@@ -186,6 +186,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+
 
 
 

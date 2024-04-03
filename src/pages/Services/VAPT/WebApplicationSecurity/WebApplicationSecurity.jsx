@@ -152,19 +152,19 @@ const WebApplicationSecurity = () => {
     <div className='h-full'>
       <div className='bg-white'>
         {/* Heading Text */}
-        <PageHeader/>
+        <PageHeader />
         <div className='flex flex-col text-center'>
-          <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>
+          <h1 className='text-2xl md:text-3xl mt-4 font-serif font-bold'>Our Services</h1>
           <div className='flex justify-center'>
-            <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
+            <div className="h-1 w-20  lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
           </div>
-          <h1 className='text-3xl lg:text-5xl text-black font-bold mt-4'>Overview of Our Services</h1>
+          <h1 className='font-serif text-3xl lg:text-5xl mt-4'>Overview of Our Services</h1>
         </div>
 
         {/* Overview Services Text */}
         <div className='flex justify-center'>
           <div className='w-full lg:w-2/3 px-4 lg:px-0'>
-            <p className='m-6 mb-12 text-base lg:text-xl text-custom-fontColor-grey text-justify'>
+            <p className='m-6 mb-12 text-base lg:text-xl text-black text-justify'>
               Benefit from robust protection for your digital assets through our Web Application Security Testing service. Our skilled team utilizes state-of-the-art methodologies, such as Black Box, Gray Box, and White Box Testing, to meticulously assess your web applications. We delve beyond surface-level vulnerabilities, addressing intricate business logic flaws for a thorough security evaluation. Our service adheres to industry standards like OWASP10, SANS25, and OSSTMM, offering both on-premises and off-premises application security testing. With a proven roadmap honed through years of experience, we safeguard online platforms, mobile applications, and cloud environments effectively, leaving no space for cyber threats.
             </p>
           </div>

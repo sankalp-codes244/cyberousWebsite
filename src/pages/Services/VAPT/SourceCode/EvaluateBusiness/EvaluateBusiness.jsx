@@ -28,7 +28,7 @@ const EvaluateBusiness = () => {
     return (
         <div class='bg-custom-greyBorderColor'>
             <div class='w-full h-full text-center bg-white'>
-                <div class='flex flex-col md:flex-row'>
+                <div class='flex flex-col md:flex-row mt-16'>
                     <div class='md:w-2/3 md:ml-8 mt-4'>
                         <h1 class='font-sans text-4xl mt-4 md:ml-28 mb-20'>Evaluate your business capabilities and uncover opportunities for greater success.</h1>
                     </div>

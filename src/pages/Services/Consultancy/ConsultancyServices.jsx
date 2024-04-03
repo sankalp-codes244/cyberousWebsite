@@ -36,7 +36,7 @@ const ConsultancyServices = () => {
   return (
          <div className='py-10 md:py-40 text-center bg-no-repeat bg-cover  bg-center  object-cover' style={{ backgroundImage: `url(${Images.securityBG})`, backgroundAttachment: 'fixed' }}>
 
-        <h1 className='text-3xl lg:text-6xl font-semibold py-4 text-white'>Our Cybersecurity Consulting services</h1>
+        <h1 className='text-3xl lg:text-6xl font-semibold py-10 text-white'>Our Cybersecurity Consulting services</h1>
         <div className='flex flex-wrap lg:flex-nowrap gap-6 m-8 justify-center '>
           {/* <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div> */}
           {consultancyData.map((data)=>{
