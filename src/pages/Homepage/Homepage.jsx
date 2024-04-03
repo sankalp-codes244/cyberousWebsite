@@ -170,7 +170,7 @@ const whyChooseUs = [
       <div id="testimonials" className='my-20'>
         <Testemonial/>
       </div>
-      <div id="gallery" className='my-32'>
+      <div id="gallery" className='my-36'>
         <MediaGallery/>
       </div>
       <div>
