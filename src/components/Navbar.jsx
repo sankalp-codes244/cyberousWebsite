@@ -60,14 +60,14 @@ const Navbar = () => {
           <Link to='blog' className=''>
             <LinkButtons links='Blog'/>
           </Link>
-          <Link to='blog' className=''>
+          <Link to='/career' className=''>
             <LinkButtons links='Career'/>
           </Link>
           <Link to='/contact' className=''>
             <LinkButtons links='Contact'/>
           </Link>
           </div>
-          <div className="flex w-3/12 justify-between ">
+          <div className="flex w-3/12 justify-between gap-3">
             <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
               <img src={Images.facebookLight} alt="Facebook" className=" h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.facebookLight)} onMouseOut={(e) => (e.currentTarget.src = Images.facebookLight)} />
             </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <img src={Images.linkedinLight} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.linkedinLight)} onMouseOut={(e) => (e.currentTarget.src = Images.linkedinLight)} />
             </Link>
             <Link to={'https://twitter.com/cyberousinfosec'}>
-              <img src={Images.xDark} alt="LinkedIn" className="h-8 w-8 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.xDark)} onMouseOut={(e) => (e.currentTarget.src = Images.xDark)} />
+              <img src={Images.xDark} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-2 hover:scale-110 transition-transform duration-300" onMouseOver={(e) => (e.currentTarget.src = Images.xDark)} onMouseOut={(e) => (e.currentTarget.src = Images.xDark)} />
             </Link>
           </div>
         </div>

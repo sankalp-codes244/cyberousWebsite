@@ -27,8 +27,8 @@ export default {
         'custom-greyLightColor': '#f5f5f5',
         'custom-greyBorderColor': '#f5f5f5',
         'custom-black-color': '#222222',
-        'custom-orange-color':'#c03a1f',
-        'custom-orange-colorlight':'#d64123',
+        'custom-orange-color':'#a02c0c',
+        'custom-orange-colorlight':'#af3009',
 
       },
       fontFamily: {
@@ -38,6 +38,8 @@ export default {
         arbutus: ['Arbutus', 'sans-serif'],
         holtwood: ['"Holtwood One SC"', 'sans-serif'],
         stylish: ['Stylish', 'sans-serif'],
+        __Inter_aaf875:['Inter'],
+        Roboto:['Roboto']
       },
     },
     screens: {

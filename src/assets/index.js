@@ -151,6 +151,23 @@ import downloadicon from './images/downloadicon.png'
 import CyberousLogo from './images/CyberousLogo.svg'
 import cyberousWhitelogo from './images/cyberousWhitelogo.png'
 
+import AmityImg1 from './images/Events/Amity/AmityImg1.jpg'
+import AmityImg2 from './images/Events/Amity/AmityImg2.jpeg'
+import AmityImg3 from './images/Events/Amity/AmityImg3.jpeg'
+import AmityImg4 from './images/Events/Amity/AmityImg4.jpeg'
+import ManipalImg1 from './images/Events/Manipal/ManipalImg1.jpg'
+import ManipalImg2 from './images/Events/Manipal/ManipalImg2.jpg'
+import ManipalImg3 from './images/Events/Manipal/ManipalImg3.jpg'
+import ManipalImg4 from './images/Events/Manipal/ManipalImg4.jpg'
+import ModiImg1 from './images/Events/Modi/ModiImg1.jpg'
+import ModiImg2 from './images/Events/Modi/ModiImg2.jpg'
+import ModiImg3 from './images/Events/Modi/ModiImg3.jpg'
+import ModiImg4 from './images/Events/Modi/ModiImg4.jpg'
+import NavyImg1 from './images/Events/Navy/NavyImg1.jpg'
+import NavyImg2 from './images/Events/Navy/NavyImg2.jpg'
+import NavyImg3 from './images/Events/Navy/NavyImg3.jpeg'
+import NavyImg4 from './images/Events/Navy/NavyImg4.jpeg'
+
 export const Images ={
     logo: cyberousLogo,
     callLogo: phoneLogo,
@@ -304,4 +321,20 @@ export const Images ={
     downloadicon: downloadicon,
     CyberousLogo: CyberousLogo,
     cyberousWhitelogo: cyberousWhitelogo,
+    AmityImg1: AmityImg1,
+    AmityImg2: AmityImg2,
+    AmityImg3: AmityImg3,
+    AmityImg4: AmityImg4,
+    ManipalImg1: ManipalImg1,
+    ManipalImg2: ManipalImg2,
+    ManipalImg3: ManipalImg3,
+    ManipalImg4: ManipalImg4,
+    ModiImg1: ModiImg1,
+    ModiImg2: ModiImg2,
+    ModiImg3: ModiImg3,
+    ModiImg4: ModiImg4,
+    NavyImg1: NavyImg1,
+    NavyImg2: NavyImg2,
+    NavyImg3: NavyImg3,
+    NavyImg4: NavyImg4,
 }
