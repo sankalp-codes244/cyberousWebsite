@@ -51,13 +51,13 @@ const MediaGallery = () => {
           <div className='h-1 w-40 md:w-56 bg-custom-buttonColor-Green my-6'></div>
         </div>
       </h2>
-      <div className='flex justify-center  '>
+      <div className='flex justify-center '>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-4 w-full h-full">
           {events.map((event) => (
             <div key={event.id} className="bg-white p-4 shadow-xl border border-solid border-custom-greyBorderColor cursor-pointer w-full h-full" onClick={() => openModal(event.id)}>
-              <div className="flex justify-center mb-4">
+              <div className="grid grid-cols-2 grid-flow-row items-center justify-items-center flex-row gap-4  mb-4">
                 {event.images.slice(0, 4).map((image, index) => (
-                  <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="mx-5 pointer-events-none select-none w-1/4 h-1/4 object-cover rounded-md" />
+                  <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="mx-2 pointer-events-none select-none w-52 max-h-28 min-h-28 lg:w-96 lg:min-h-52  lg:max-h-52 object-cover rounded-md" />
                 ))}
               </div>
               <h3 className="text-lg font-bold text-center">{event.name}</h3>
