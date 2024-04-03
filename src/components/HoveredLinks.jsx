@@ -11,7 +11,7 @@ const HoveredLinks = ({name,data,link,isOpen}) => {
         key={name}
         className={` border-b-2 p-2 text-center lg:text-left lg:font-bold  lg:text-2xl lg:uppercase lg:border lg:grid lg:p-10 flex justify-start items-start lg:justify-normal  ${isHover? `lg:bg-green-500 lg:text-white`:''} ${name==='Red Teaming'?'hover:lg:bg-red-500':''} transition duration-200`}
       >
-        <p className={`${isHover? 'scale-105 lg:translate-x-7 lg:scale-100':''} duration-300 `}>
+        <p className={`${isHover? 'scale-105 lg:translate-x-7 lg:scale-100':''} text-white duration-300 `}>
        {name?.split('_').join(' ')}
         </p>
           

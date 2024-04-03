@@ -37,7 +37,7 @@ export default function DropDown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-110"
       >
-        <Menu.Items className="sm:absolute lg:fixed lg:w-full lg:h-screen lg:inset-y-30 lg:z-10 lg:mt-2 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none">
+        <Menu.Items className="sm:absolute lg:fixed lg:w-full lg:h-screen lg:inset-y-30 lg:z-10 lg:mt-2 lg:bg-black lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none">
         { [{name:'Consultancy',path:'services/Consultancy'},{name:'Red Teaming',path:'services/RedTeaming'}].map((type) => (
           <Link to={`/${type}`} onClick={()=>setIsOpen(false)}>
             <HoveredLinks name={type.name} link={type.path} />

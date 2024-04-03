@@ -24,18 +24,19 @@ const Navbar = () => {
     <div className={`bg-black h-20 sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-shadow duration-200`}>
       <div className="flex justify-between items-center h-full px-4 md:px-8 ">
       <Link to="/">
-        <img src={Images.cyberousWhitelogo} className='object-contain aspect-video w-48  ' />
+        <img src={Images.cyberousWhitelogo} className='object-contain aspect-square w-24 lg:w-36  ' />
       </Link>
 
         {/* Hamburger icon for mobile */}
         <div className="sm:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className="focus:outline-none duration-200">
             {isOpen ? (
-              <svg className="w-6 h-6 duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+             <svg className="w-6 h-6 duration-200 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+             <path d="M6 18L18 6M6 6l12 12"></path>
+           </svg>
+           
             ) : (
-              <svg className="w-6 h-6 duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-6 h-6 text-white duration-200" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
             )}
@@ -84,17 +85,17 @@ const Navbar = () => {
       </div>
 
       {/* Dropdown menu for mobile screens */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute top-20 left-0 w-full bg-white shadow-md z-50`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute top-20 left-0 w-full bg-black shadow-md z-50`}>
         <div className="flex flex-col items-center">
           <Link to='/' className="text-sm font-medium py-2.5 px-3">Home</Link>
           <DropDown />
           <Link to='/services'>
             <DropDownService/>
           </Link>
-          <Link to='/about' className="text-sm font-medium py-2.5 px-3">About</Link>
-          <Link to='/blog' className="text-sm font-medium py-2.5 px-3">Blog</Link>
-          <Link to='/blog' className="text-sm font-medium py-2.5 px-3">Career</Link>
-          <Link to='/contact' className="text-sm font-medium py-2.5 px-3">Contact</Link>
+          <Link to='/about' className="text-sm text-white  font-medium py-2.5 px-3">About</Link>
+          <Link to='/blog' className="text-sm  text-white font-medium py-2.5 px-3">Blog</Link>
+          <Link to='/blog' className="text-sm  text-white font-medium py-2.5 px-3">Career</Link>
+          <Link to='/contact' className="text-sm  text-white font-medium py-2.5 px-3">Contact</Link>
         </div>
       </div>
     </div>
