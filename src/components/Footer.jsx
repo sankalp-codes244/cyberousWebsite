@@ -141,7 +141,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='h-full bg-black md:px-24'>
-        <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span className='underline'>2024@copywrite</span> reserved</h1>
+        <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous</span> reserved</h1>
         <div className=''>
           <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6">
             <Link>

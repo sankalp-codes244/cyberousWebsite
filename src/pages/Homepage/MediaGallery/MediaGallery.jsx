@@ -45,10 +45,10 @@ const MediaGallery = () => {
 
   return (
     <div className="h-full w-full mx-auto px-4">
-      <h2 className="text-center text-3xl md:text-4xl font-bold my-10">
+      <h2 className="text-center text-3xl md:text-4xl font-bold my-10 font-serif">
         Hosted Events
         <div className='flex justify-center'>
-          <div className='h-1 w-40 md:w-56 bg-custom-buttonColor-GreenDark my-6'></div>
+          <div className='h-1 w-40 md:w-56 bg-custom-buttonColor-Green my-6'></div>
         </div>
       </h2>
       <div className='flex justify-center  '>

@@ -33,7 +33,7 @@ const Methodology = ({ boxData }) => {
                         ))}
                     </div>
                     {selectedBox !== null && (
-                        <div className='text-black text-lg mb-8 mx-6 lg:mx-20 mt-6 lg:mt-8 bg-white rounded-lg p-2'>
+                        <div className='border border-solid border-black text-black text-lg mb-8 mx-6 lg:mx-20 mt-6 lg:mt-8 bg-white rounded-lg p-2'>
                             {boxData[selectedBox].paragraphText}
                         </div>
                     )}

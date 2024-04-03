@@ -105,34 +105,24 @@ const Homepage = () => {
 const whyChooseUs = [
   {
     id: 0,
-    description: 'EXPERT Training',
+    description: 'Expert Training',
     img:Images.whychooseus2,
   },
   {
     id: 1,
-    description: 'Quality Service ',
-    img:Images.whychooseus3,
+    description: '24/7 Hour Support',
+    img:Images.whychooseus4,
   },
   {
     id: 2,
-    description: '24/7 Hour Support',
-    img:Images.whychooseus4,
+    description: 'Quality Service ',
+    img:Images.whychooseus3,
   },
   {
     id: 3,
     description: 'Expert Consultancy ',
     img:Images.whychooseus5,
   },
-  // {
-  //   id: 4,
-  //   description: 'Comprehensive Threat Detection and Prevention',
-  //   img:Images.whychooseus5,
-  // },
-  // {
-  //   id: 5,
-  //   description: 'Tailored Solutions for Specific Needs',
-  //   img:Images.whychooseus5,
-  // },
 ]
 
 

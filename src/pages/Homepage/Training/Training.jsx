@@ -11,7 +11,7 @@ const Training = ({ programs }) => {
   return (
     <div className="container mx-auto px-4 my-24">
       <h1 className="text-center text-3xl md:text-4xl font-bold font-serif">
-        Our Training Programs
+        Our <span className="text-custom-fontColor-Green font-bold"> Training </span> Programs
       </h1>
       <div className="justify-center flex m-6">
         <div className="h-1 w-72 md:w-96 bg-custom-buttonColor-Green"></div>

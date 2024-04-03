@@ -120,17 +120,17 @@ const SourceCode = () => {
         <PageHeader/>
         {/* Heading Text */}
         <div className='flex flex-col text-center'>
-          <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>
+          <h1 className='text-2xl md:text-3xl mt-4 font-serif font-bold'>Our Services</h1>
           <div className='flex justify-center'>
-            <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
+            <div className="h-1 w-20  lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
           </div>
-          <h1 className='text-3xl lg:text-5xl text-black font-bold mt-4'>Overview of Our Services</h1>
+          <h1 className='font-serif text-3xl lg:text-5xl mt-4'>Overview of Our Services</h1>
         </div>
 
         {/* Overview Services Text */}
         <div className='flex justify-center'>
           <div className='w-full lg:w-2/3 px-4 lg:px-0'>
-            <p className='m-6 mb-12 text-base lg:text-xl text-custom-fontColor-grey text-justify'>
+            <p className='m-6 mb-12 text-base lg:text-xl text-justify'>
             Experience a thorough examination of your application's source code with our Source Code Review service. Our methodology involves automated tool-based scans to identify common vulnerabilities and manual tool-based analysis by seasoned experts for a meticulous review. Going beyond, we perform a vulnerability assessment to unveil advanced risks and offer comprehensive remediation recommendations. This holistic approach ensures a robust evaluation of your codebase, fortifying your application against potential threats and ensuring the integrity of your software solutions. Strengthen your application's security with our comprehensive Source Code Review process today!
             </p>
           </div>

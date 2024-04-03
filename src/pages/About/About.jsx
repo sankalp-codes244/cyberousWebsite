@@ -76,7 +76,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex justify-center'>
-              <p className='w-2/3 md:w-3/4 text-2xl md:text-4xl font-__Inter_aaf875 mt-8 m-4 md:mt-8 md:m-0 font-__Inter_aaf875 font-bold'>
+              <p className='w-2/3 md:w-3/4 text-2xl md:text-4xl mt-8 m-4 md:mt-8 md:m-0 font-__Inter_aaf875 font-bold'>
                 Learn More About Our Success Stories
               </p>
             </div>
@@ -85,25 +85,25 @@ const About = () => {
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan. Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </div>
         </div>
-        <div className='flex flex-col md:flex-row justify-between items-center mt-20 md:py-40'>
-          <div className=''>
-            <div className='flex flex-col'>
-              <p className='font-bold text-3xl md:text-6xl font-__Inter_aaf875'>Download a copy of our <p className='text-green-500 font-__Inter_aaf875'>Company Profile</p></p>
-            </div>
-            <div className='md:flex md:flex-row justify-between'>
-              <button className='relative h-full w-full mt-4 mb-4 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/2'>
-                <img src={Images.downloadicon} className='invert absolute h-6 w-6 md:h-7 md:w-7 md:bottom-3 md:left-10' />
-                Download Brochure</button>
-              <div className='text-lg mt-8 text-center md:text-3xl'>Cyberous LOGO</div>
-            </div>
+        <div className='flex flex-col md:flex-row justify-between items-center mt-20 md:pt-40 md:pb-10'>
+          <div className='flex flex-col'>
+            <p className='font-bold text-3xl md:text-6xl font-__Inter_aaf875'>Download a copy of our <p className='text-green-500 font-__Inter_aaf875 pt-6'>Company Profile</p></p>
           </div>
+        </div>
+      </div>
+      <div className='md:flex md:flex-row md:justify-between'>
+        <button className='relative  h-full w-3/4 mx-8 md:mx-32 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/4'>
+          <img src={Images.downloadicon} className='invert absolute h-6 w-6 md:h-7 md:w-7 md:bottom-3 md:left-10' />
+          Download Brochure</button>
+        <div className='text-lg mt-8'>
+          <img src={Images.AboutusIcon} className='mx-20 w-3/4 md:mx-0 opacity-70' />
         </div>
       </div>
 
       {/* We Excel section */}
-      <div className='text-center my-8'>
-        <h2 className='text-3xl lg:text-4xl font-bold font-__Inter_aaf875'>We Excel in Delivering
-          <span className='text-green-500 text-2xl lg:text-4xl font-__Inter_aaf875'> Optimal Solution</span>
+      <div className='text-center my-20'>
+        <h2 className='text-3xl lg:text-4xl font-bold font-serif'>We Excel in Delivering
+          <span className='text-green-500 text-2xl lg:text-4xl'> Optimal Solution</span>
         </h2>
         <div className="h-1 w-32 md:w-1/3 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>

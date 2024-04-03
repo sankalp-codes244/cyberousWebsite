@@ -115,17 +115,16 @@ const Network = () => {
         <PageHeader/>
         {/* Heading Text */}
         <div className='flex flex-col text-center'>
-          <h1 className='text-3xl lg:text-4xl mt-4'>Our Services</h1>
+          <h1 className='text-2xl md:text-3xl mt-4 font-serif font-bold'>Our Services</h1>
           <div className='flex justify-center'>
-            <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
+            <div className="h-1 w-20  lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
           </div>
-          <h1 className='text-3xl lg:text-5xl text-black font-bold mt-4'>Overview of Our Services</h1>
+          <h1 className='font-serif text-3xl lg:text-5xl mt-4'>Overview of Our Services</h1>
         </div>
-
         {/* Overview Services Text */}
         <div className='flex justify-center'>
           <div className='w-full lg:w-2/3 px-4 lg:px-0'>
-            <p className='m-6 mb-12 text-base lg:text-xl text-custom-fontColor-grey text-justify'>
+            <p className='m-6 mb-12 text-base lg:text-xl text-justify'>
             Boost Your Network Security with Our Network Penetration Testing Service. Our Comprehensive Approach Includes Black Box, Gray Box, and White Box Testing to Uncover Vulnerabilities and Strengthen Defenses Against Cyber Threats. We Define Scope Precisely, Gather Information Thoroughly, and Execute Exploitation Simulations, Providing Actionable Insights Aligned with Industry Standards Such as OWASP10 and SANS25. With Meticulous Network Traffic Analysis and Transparent Reporting, Enhance Your Network Security Posture and Proactively Mitigate Risks Today!
             </p>
           </div>
