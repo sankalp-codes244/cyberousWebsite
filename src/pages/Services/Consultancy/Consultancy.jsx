@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Images } from "../../../assets";
 import ConsultancyServices from "./ConsultancyServices";
 import Data from "../../../assets/Svgs/Data";
@@ -39,6 +39,9 @@ const Cards = ({ image, name, desc }) => {
 };
 
 const Consultancy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const faqData = [
     {
       id: 0,
