@@ -176,6 +176,9 @@ import NavyImg2 from './images/Events/Navy/NavyImg2.jpg'
 import NavyImg3 from './images/Events/Navy/NavyImg3.jpeg'
 import NavyImg4 from './images/Events/Navy/NavyImg4.jpeg'
 import AboutusIcon from './images/AboutusIcon.png'
+import Trainingpageimg from './images/Trainingpageimg.png'
+import Trainingpageimg2 from './images/Trainingpageimg2.png'
+import chevronSide from './images/chevronSide.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -355,4 +358,7 @@ export const Images ={
     webbug: webbug,
     websec: websec,
     AboutusIcon: AboutusIcon,
+    Trainingpageimg: Trainingpageimg,
+    Trainingpageimg2: Trainingpageimg2,
+    chevronSide: chevronSide,
 }

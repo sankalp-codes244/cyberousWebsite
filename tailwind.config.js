@@ -30,6 +30,7 @@ export default {
         'custom-orange-color':'#a02c0c',
         'custom-orange-colorlight':'#af3009',
 
+
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
@@ -39,7 +40,7 @@ export default {
         holtwood: ['"Holtwood One SC"', 'sans-serif'],
         stylish: ['Stylish', 'sans-serif'],
         __Inter_aaf875:['Inter'],
-        Roboto:['Roboto']
+        Roboto:['Roboto'],
       },
     },
     screens: {
