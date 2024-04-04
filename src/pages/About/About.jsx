@@ -54,7 +54,7 @@ const About = () => {
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif font-__Inter_aaf875'>Our Company</h1>
+        <h1 className='text-lg text-center md:text-2xl font-bold font-serif'>Our Company</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>

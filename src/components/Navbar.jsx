@@ -49,8 +49,9 @@ const Navbar = () => {
           <Link to='/' className=''>
             <LinkButtons links='Home'/>
           </Link>
-
+          <Link to='/training'>
           <DropDown LinkButtons={LinkButtons} />
+          </Link>
           <Link to='/services' className=''>
             <DropDownService LinkButtons={LinkButtons}/>
           </Link>
@@ -88,7 +89,9 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute top-20 left-0 w-full bg-black shadow-md z-50`}>
         <div className="flex flex-col items-center">
           <Link to='/' className="text-sm font-medium py-2.5 text-white px-3">Home</Link>
+          <Link to='/training'>
           <DropDown />
+          </Link>
           <Link to='/services'>
             <DropDownService/>
           </Link>

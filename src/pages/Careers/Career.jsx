@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Images } from '../../assets'
 import About from '../Homepage/AboutUs/About'
 import Profiles from './Profiles/Profiles'
 
 const Career = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
     <div className='bg-custom-black-color h-screen'>
