@@ -2,6 +2,10 @@ import React from 'react'
 import { Images } from '../../assets'
 import SideArrow from '../../assets/Svgs/SideArrow'
 import TrainingPageCard from '../../components/TrainingPageCard'
+import Training from '../Homepage/Training/Training'
+import Testemonial from '../Homepage/Testimonial/Testemonial'
+import Faqs from '../Homepage/FAQs/Faqs'
+import MediaGallery from '../Homepage/MediaGallery/MediaGallery'
 
 const TrainingPage = () => {
   const trainingData = [
@@ -39,6 +43,79 @@ const TrainingPage = () => {
 
   ]
 
+  const programs = [
+    {
+      id: 1,
+      title: 'Bug Bounty',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources1,
+      type: 'bug_bounty'
+    },
+    {
+      id: 2,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources2,
+      type: 'Advanced_Ethical_Hacking'
+    },
+    {
+      id: 3,
+      title: 'Linux Fundamental',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources3,
+      type: 'Linux_Fundamental'
+    },
+    {
+      id: 4,
+      title: 'Cyber Security Diploma',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources4,
+      type: 'Cyber_Security_Diploma'
+    },
+    {
+      id: 5,
+      title: 'Application Development',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources5,
+      type: 'Application_Development' 
+    },
+    {
+      id: 6,
+      title: 'Advanced Ethical Hacking',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources2,
+      type: 'Advanced_Ethical_Hacking'
+    },
+  ];
+
+  const faqData = [
+    {
+      id: 0,
+      name: 'How does Web Application Security Testing ensure digital asset protection?',
+      description: " In Web Application Security Testing, we conduct thorough Requirement Analysis, delving into the nuances of your application's architecture. This ensures a tailored and effective security assessment, leaving no aspect overlooked in safeguarding your digital assets."
+    },
+    {
+      id: 1,
+      name: 'Why is Threat Modeling crucial for web application security?',
+      description: " Threat Modeling crafts a robust model, identifying potential threats, vulnerabilities, and attack vectors. This proactive approach prioritizes testing efforts on critical areas, fortifying your digital defenses effectively and ensuring a comprehensive security testing strategy."
+    },
+    {
+      id: 2,
+      name: 'What is the significance of Authentication & Authorization Testing?',
+      description: " Authentication & Authorization Testing ensures robust user access control. Our experts examine authentication and authorization mechanisms, conducting exhaustive testing to thwart unauthorized entry and fortify the safeguarding of sensitive data."
+    },
+    {
+      id: 3,
+      name: 'How does Security Testing protect against unforeseen risks?',
+      description: " Through comprehensive Threat Modeling, we identify potential threats and vulnerabilities, allowing us to prioritize testing efforts.This ensures a targeted security testing strategy, mitigating unforeseen risks and fortifying your web application's overall security posture."
+    },
+    {
+      id: 4,
+      name: 'What role does Vulnerability Assessment play in web application security?',
+      description: " Vulnerability Assessment involves a meticulous examination to identify and address vulnerabilities. This critical step ensures a proactive approach to security, allowing for timely mitigation and safeguarding your web application against potential cyber threats."
+    }
+  ]
+
   return (
     <div className='h-full'>
       <div className='text-center relative bg-no-repeat bg-cover bg-center h-screen object-cover' style={{ backgroundImage: `url(${Images.aboutBg})`, }}>
@@ -49,8 +126,8 @@ const TrainingPage = () => {
         </div>
       </div>
 
-      <div className='bg-custom-greyBorderColor'>
-        <h1 className='font-bold text-xl md:text-4xl text-center font-Roboto py-10'>Unlock Your Cybersecurity Career Potential with Cyberous' Comprehensive Cybersecurity Program</h1>
+      <div className='bg-custom-greyBorderColor md:p-10 py-32'>
+        <h1 className='font-bold text-xl md:text-4xl text-center font-Roboto p-4 py-10'>Unlock Your Cybersecurity Career Potential with Cyberous' Comprehensive Cybersecurity Program</h1>
         <div className='flex flex-col md:flex-row p-4 md:gap-10'>
           <div className='md:w-1/2'>
             <p className='p-2 text-lg md:text-xl text-justify'>
@@ -113,6 +190,81 @@ const TrainingPage = () => {
         </div>
       </div>
 
+
+      <div className='bg-custom-black-color py-8'>
+        <h1 className='text-center text-3xl md:text-5xl font-bold text-white font-Roboto'>What We Offer</h1>
+        <div className='md:flex md:justify-center py-4'>
+          <div className='md:w-11/12'>
+            <p className='text-white font-__Inter_aaf875 text-center text-sm md:text-base px-3'>
+              Craw Security offers a high level of technical education to students. clients, and partners in the IT Industry, and we have well-qualified. certified, and experienced trainers whoprovide nothing but the best in the businese We have training programs with a good reputation in the intemational market and a vast intemational alum base.
+            </p>
+          </div>
+        </div>
+
+        <div className='flex justify-center'>
+          <div className='md:w-10/12'>
+            <div className='grid grid-cols-1 md:grid-cols-3 p-10 md:p-0 md:py-6'>
+              <div className='grid grid-cols-1 gap-4'>
+                <div className='border border-solid border-custom-greyBorderColor p-10  my-4 md:my-0'>
+                  <h1 className='text-white font-bold text-xl font-__Inter_aaf875 text-center'>Live Online Training</h1>
+                  <p className='text-white font-__Inter_aaf875 text-base text-center py-4'>Gain expertise from anywhere with interactive live online training sessions tailored to your schedule and learning needs.</p>
+                </div>
+                <div className='border border-solid border-custom-greyBorderColor p-10 '>
+                  <h1 className='text-white font-bold text-xl font-__Inter_aaf875 text-center'>Internship</h1>
+                  <p className='text-white font-__Inter_aaf875 text-base text-center py-4'>Unlock hands-on experience and valuable industry insights with our internship program, propelling your career forward</p>
+                </div>
+              </div>
+              <div className='my-10 md:my-0 p-5 md:p-10 bg-custom-buttonColor-Green text-white md:mx-5'>
+                <h1 className='text-white font-bold text-xl font-__Inter_aaf875 text-center'>
+                  4+ Years of Experience
+                </h1>
+                <p className='text-white font-__Inter_aaf875 text-base text-center py-4'>Cyberous is a leading cybersecurity firm dedicated to fortifying digital infrastructures against evolving threats. With innovative solutions and expert guidance, we empower organizations to navigate the complexities of cyberspace securely, ensuring peace of mind in an ever-changing digital landscape.</p>
+                <div className='flex justify-center mt-4'>
+                  <button className='h-1/2 w-2/3 p-3 md:p-6 bg-white rounded-md text-black font-__Inter_aaf875'> Book Your Demo</button>
+                </div>
+
+              </div>
+              <div className='md:flex md:flex-col gap-5'>
+                <div className='border border-solid border-custom-greyBorderColor p-10  my-4 md:my-0'>
+                  <h1 className='text-white font-bold text-xl font-__Inter_aaf875 text-center'>Corporate Training</h1>
+                  <p className='text-white font-__Inter_aaf875 text-base text-center py-4'>Transform your workforce with customized corporate training, empowering them to thrive in today's digital age.</p>
+                </div>
+                <div className='border border-solid border-custom-greyBorderColor p-10 '>
+                  <h1 className='text-white font-bold text-xl font-__Inter_aaf875 text-center'>Job Assistance</h1>
+                  <p className='text-white font-__Inter_aaf875 text-base text-center py-4'>Receive dedicated job assistance to secure rewarding opportunities in the cybersecurity field and advance your career with confidence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='p-10 flex flex-col md:flex:row '>
+        <div className='md:w-1/2'>
+          <h1 className='text-center text-2xl md:text-4xl font-Roboto font-bold py-5'>
+            Online Cyber Security Diploma
+          </h1>
+          <p className='font-xl font-__Inter_aaf875 text-center md:px-10 md:text-justify '>
+            Embark on a transformative journey in cybersecurity with Cyberous' comprehensive diploma programs, available in durations of 6 months and 1 year. Delve into cutting-edge techniques and industry best practices under the guidance of seasoned experts, equipping yourself with the skills needed to safeguard digital assets effectively. Whether you're looking to kickstart your career or enhance your expertise, our flexible programs offer the perfect pathway to success in the dynamic realm of cybersecurity
+          </p>
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        <MediaGallery/>
+      </div>
+      <div>
+        <Training programs={programs} />
+      </div>
+
+      <div className='py-10'>
+        <Testemonial/>
+      </div>
+      <div>
+        <Faqs faqData={faqData}/>
+      </div>
     </div>
   )
 }
