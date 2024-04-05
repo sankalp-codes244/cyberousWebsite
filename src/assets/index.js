@@ -182,6 +182,13 @@ import chevronSide from './images/chevronSide.png'
 import ethicalhackingimg1 from './images/ethicalhackingimg1.png'
 import ethicalhackingimg2 from './images/ethicalhackingimg2.png'
 import ethicalhackingimg3 from './images/ethicalhackingimg3.png'
+import ethicalhackingimg4 from './images/EthicalHackingimg4.png'
+import ethicalhackingimg5 from './images/EthicalHackingimg5.png'
+import ethicalhackingimg6 from './images/EthicalHackingimg6.png'
+import ethicalhackingimg7 from './images/EthicalHackingimg7.png'
+import ethicalhackingimg8 from './images/EthicalHackingimg8.png'
+import ethicalhackingimg9 from './images/EthicalHackingimg9.png'
+import download from './images/download.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -367,4 +374,11 @@ export const Images ={
     ethicalhackingimg1: ethicalhackingimg1,
     ethicalhackingimg2: ethicalhackingimg2,
     ethicalhackingimg3: ethicalhackingimg3,
+    ethicalhackingimg4: ethicalhackingimg4,
+    ethicalhackingimg5: ethicalhackingimg5,
+    ethicalhackingimg6: ethicalhackingimg6,
+    ethicalhackingimg7: ethicalhackingimg7,
+    ethicalhackingimg8: ethicalhackingimg8,
+    ethicalhackingimg9: ethicalhackingimg9,
+    download: download,
 }

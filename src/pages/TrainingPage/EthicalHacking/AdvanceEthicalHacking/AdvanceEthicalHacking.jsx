@@ -9,11 +9,11 @@ import IndustrialRecognition from '../../../Homepage/IndustrialRecognition/Indus
 const AdvanceEthicalHacking = () => {
   return (
     <div>
-      <div className='bg-custom-black-color p-6 md:p-10'>
-        <div className='md:flex md:flex:row md:w-3/4'>
-          <div>
-            <h1 className='text-white font-Roboto text-xl md:text-3xl md:text-center'>Online Web Applicatim Security Course In Denti I Web Application Training</h1>
-            <div className='flex flex-col my-4'>
+      <div className='flex justify-center bg-custom-black-color py-12'>
+        <div className=' p-6 md:p-10'>
+          <div className='md:flex md:flex:row md:w-3/4'>
+            <div className=''>
+              <h1 className='text-white font-Roboto text-xl md:text-3xl md:text-center'>Online Web Applicatim Security Course In Denti I Web Application Training</h1>
               <div className='flex flex-row '>
                 <h1 className='bg-custom-gold-color text-sm w-28 my-2 font-__Inter_aaf875 px-2 text-center rounded-sm'>
                   BestSeller
@@ -28,43 +28,71 @@ const AdvanceEthicalHacking = () => {
                   8500+ Students
                 </h1>
               </div>
-              <div className='md:flex md:flex-row '>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Course Duration: <span className='font-bold'> 2 Months </span>
-                </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Course Level: <span className='font-bold'> Intermediate </span>
-                </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Course delivery: <span className='font-bold'> Live Online Sessions </span>
-                </h1>
-              </div>
               <div className='md:flex md:flex-row'>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Course Include: <span className='font-bold'> Training and Certification </span>
-                </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Language: <span className='font-bold'> Hindi, English </span>
-                </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
-                  Acccrediation by: <span className='font-bold'>Cyberous  </span>
-                </h1>
-              </div>
-              <div className='flex justify-center p-12 my-6 '>
-                <div className=' bg-white w-full relative rounded-xl md:w-1/4 p-8'>
-                  <h1 className='font-bold text-2xl '>
-                    ₹15000.00
-                  </h1>
-                  <h1 className='absolute font-bold text-base line-through right-20 md:right-10 text-custom-fontColor-grey'>
-                    ₹17700
-                  </h1>
+                <div className='flex flex-col my-4 md:w-1/2'>
+                  <div className=''>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg9} className='w-6 m-2 invert object-contain' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Course Duration: <span className='font-bold'> 2 Months </span>
+                      </h1>
+                    </div>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg8} className='w-6 m-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Course Level: <span className='font-bold'> Intermediate </span>
+                      </h1>
+                    </div>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg7} className='w-6 m-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Course delivery: <span className='font-bold'> Live Online Sessions </span>
+                      </h1>
+                    </div>
+                  </div>
+                  <div className=''>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg6} className='w-6 m-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Course Include: <span className='font-bold'> Training and Certification </span>
+                      </h1>
+                    </div>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg5} className='w-6 m-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Language: <span className='font-bold'> Hindi, English </span>
+                      </h1>
+                    </div>
+                    <div className='flex flex-row'>
+                      <img src={Images.ethicalhackingimg4} className='w-6 m-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm p-2'>
+                        Acccrediation by: <span className='font-bold'>Cyberous  </span>
+                      </h1>
+                    </div>
+                  </div>
+                  <div className='md:mx-5 py-6 relative'>
+                    <button className='w-full  h-12 bg-white border border-solid border-green-500 hover:bg-green-500  rounded-md text-green-500 hover:text-white'>
+                      <img src={Images.download} className=' w-6 absolute left-10 md:left-5' />
+                      Download Syllabus
+                    </button>
+                  </div>
+                </div>
+                <div className='flex justify-center p-12 my-6 '>
+                  <div className=' bg-white w-full relative rounded-xl md:w-full h-1/2 md:mt-20 p-12'>
+                    <h1 className='font-bold text-2xl '>
+                      ₹15000.00
+                    </h1>
+                    <h1 className='absolute font-bold text-base line-through right-20 md:right-10 text-custom-fontColor-grey'>
+                      ₹17700
+                    </h1>
+                  </div>
                 </div>
               </div>
             </div>
 
           </div>
-
         </div>
+
       </div>
       <div className='bg-custom-greyLightColor p-10'>
         <h1 className='text-center text-2xl md:text-4xl font-Roboto font-bold'>What You Will Learn</h1>
@@ -198,11 +226,7 @@ const AdvanceEthicalHacking = () => {
             </li>
           </ol>
         </div>
-        {/* <div className='flex justify-center'>
-          <button className='w-full md:w-1/4 h-12 bg-white border border-solid border-green-500 hover:bg-green-500  rounded-md text-green-500 hover:text-white'>
-            Download Course Curriculum
-          </button>
-        </div> */}
+
       </div>
 
       <div className='flex justify-center items-center bg-custom-fontColor-Green'>
