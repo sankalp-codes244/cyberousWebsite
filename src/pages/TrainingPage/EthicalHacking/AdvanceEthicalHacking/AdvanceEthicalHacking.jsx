@@ -5,47 +5,49 @@ import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import MediaGallery from '../../../Homepage/MediaGallery/MediaGallery'
 import Faqs from '../../../Homepage/FAQs/Faqs'
 import IndustrialRecognition from '../../../Homepage/IndustrialRecognition/IndustrialRecognition'
+import FormComponent from '../../../../components/FormComponent'
 
 const AdvanceEthicalHacking = () => {
   return (
     <div>
       <div className='flex justify-center bg-custom-black-color py-12'>
-        <div className=' p-6 md:p-10'>
-          <div className='md:flex md:flex:row md:w-3/4'>
-            <div className=''>
-              <h1 className='text-white font-Roboto text-xl md:text-3xl md:text-justify py-4'>Online Web Applicatim Security Course In Denti I Web Application Training</h1>
-              <div className='flex flex-row '>
-                <h1 className='bg-custom-gold-color text-sm w-28 my-2 font-__Inter_aaf875 px-2 text-center rounded-sm'>
+        <div className='w-full p-1 md:p-10'>
+          <div className='md:flex md:flex-row justify-between'>
+            <div className='p-8 md:px-28'>
+              <h1 className='text-white font-Roboto font-bold text-lg md:text-2xl md:text-justify py-4'>Online Web Applicatim Security Course In Denti Web Application Training</h1>
+              <div className='flex flex-row gap-2 md:gap-6'>
+                <h1 className='bg-custom-gold-color text-sm w-28 my-2 font-__Inter_aaf875 p-2 text-center rounded-sm'>
                   BestSeller
                 </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
+                <h1 className='text-white font-Roboto text-sm p-2 mt-2'>
                   5.0
                 </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
+                <h1 className='text-white font-Roboto text-sm p-2 mt-2'>
                   600+ Reviews
                 </h1>
-                <h1 className='text-white font-Roboto text-sm p-2'>
+                <h1 className='text-white font-Roboto text-sm p-2 mt-2'>
                   8500+ Students
                 </h1>
               </div>
+
               <div className='md:flex md:flex-row'>
-                <div className='flex flex-col my-4 md:w-1/2'>
+                <div className='grid grid-cols-1 my-4 md:w-1/2'>
                   <div className=''>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg9} className='w-4 mx-2 invert object-contain' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Course Duration: <span className='font-bold'> 2 Months </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg8} className='w-4 mx-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Course Level: <span className='font-bold'> Intermediate </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg7} className='w-4 mx-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Course delivery: <span className='font-bold'> Live Online Sessions </span>
                       </h1>
                     </div>
@@ -53,43 +55,45 @@ const AdvanceEthicalHacking = () => {
                   <div className=''>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg6} className='w-4 mx-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Course Include: <span className='font-bold'> Training and Certification </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg5} className='w-4 mx-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Language: <span className='font-bold'> Hindi, English </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
                       <img src={Images.ethicalhackingimg4} className='w-4 mx-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm px-2'>
+                      <h1 className='text-white font-Roboto text-sm p-2'>
                         Acccrediation by: <span className='font-bold'>Cyberous  </span>
                       </h1>
                     </div>
                   </div>
                   <div className='md:mx-5 py-6 relative'>
-                    <button className='w-full  h-12 bg-white border border-solid border-green-500 hover:bg-green-500  rounded-md text-green-500 hover:text-white'>
-                      <img src={Images.download} className=' w-6 absolute left-10 md:left-5' />
+                    <button className='w-full  h-12 hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+                      <img src={Images.download} className=' w-6 absolute left-10 md:left-5 invert' />
                       Download Syllabus
                     </button>
                   </div>
                 </div>
-                <div className='flex justify-center p-12 my-6 '>
-                  <div className=' bg-white w-full relative rounded-xl md:w-full h-1/2 md:mt-20 p-12'>
+                <div className='hidden md:block md:w-2/3 p-6'>
+                  <div className=' bg-white w-full relative rounded-sm md:w-full md:mt-20 md:ml-16 h-1/2 p-12'>
                     <h1 className='font-bold text-2xl '>
                       ₹15000.00
                     </h1>
-                    <h1 className='absolute font-bold text-base line-through right-20 md:right-10 text-custom-fontColor-grey'>
+                    <h1 className='absolute font-bold text-base line-through right-20 md:right-32 md:bottom-16 text-custom-fontColor-grey'>
                       ₹17700
                     </h1>
                   </div>
                 </div>
               </div>
             </div>
-
+            <div className='p-8 md:w-1/2'>
+              <FormComponent />
+            </div>
           </div>
         </div>
 
