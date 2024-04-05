@@ -29,6 +29,8 @@ export default {
         'custom-black-color': '#222222',
         'custom-orange-color':'#a02c0c',
         'custom-orange-colorlight':'#af3009',
+        'custom-gold-color':'#ffc221',
+        'custom-button-colorgrey':'#b9b9b9',
 
 
       },
