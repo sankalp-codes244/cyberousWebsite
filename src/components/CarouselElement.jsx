@@ -14,13 +14,13 @@ const CarouselElement = ({ getImages }) => {
   };
 
   useEffect(() => {
-    const timer = setInterval(goToNext, 3000);
+    const timer = setInterval(goToNext, 7000); // Change the interval to 5 seconds
     return () => clearInterval(timer);
   }, [currentIndex, totalImages]);
 
   return (
     <div className="w-full h-screen overflow-hidden relative">
-      <div className="flex transition-transform ease-out duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)`,  }}>
+      <div className="flex transition-transform ease-out" style={{ transform: `translateX(-${currentIndex * 100}%)`, transitionDuration: '1s' }}>
         {getImages.map((item, index) => (
           <div key={index} className="w-full h-screen flex-shrink-0 relative">
             <img className="pointer-events-none select-none w-full h-screen object-cover" src={item.Image} alt={`carousel-${index}`} />

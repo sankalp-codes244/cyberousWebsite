@@ -242,8 +242,8 @@ const Contact = () => {
 
             <div className='p-4 px-8 '>
               <p className='text-xl text-black py-4'>Your Comment  <span className=' text-2xl md:text-4xl text-red-700'> * </span></p>
-              <input name='message' className='border border-solid border-black h-36 w-11/12 md:w-1/2 rounded-lg font-serif text-black p-4' type='text' placeholder=''>
-              </input>
+              <textarea name='message' className='border border-solid border-black h-36 w-11/12 md:w-1/2 rounded-lg font-serif text-black p-4' type='text' placeholder=''>
+              </textarea>
             </div>
             <div className='flex justify-center py-6'>
               <label className='submit'>

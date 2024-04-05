@@ -144,25 +144,25 @@ const Footer = () => {
         <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous</span> reserved</h1>
         <div className=''>
           <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6">
-            <Link>
+            <Link to={'/terms'}>
             <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Terms & Conditions
             </li>
             </Link>
-            <Link>
+            <Link to='/privacyPolicy'>
             <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Privacy Policy
             </li>
             </Link>
-            <Link>
+            <Link to={'/DMCA'}>
             <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               DMCA Policy
             </li>
             </Link>
-            <Link to=''>
+            <Link to='/disclaimer'>
               <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 
                 Disclaimer

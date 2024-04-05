@@ -31,6 +31,10 @@ import LinuxFundamentals from './pages/TrainingPage/EthicalHacking/LinuxFundamen
 import MobilePT from './pages/TrainingPage/EthicalHacking/MobilePT/MobilePT.jsx'
 import WebPT from './pages/TrainingPage/EthicalHacking/WebPT/WebPT.jsx'
 import NetworkPT from './pages/TrainingPage/EthicalHacking/NetworkPT/NetworkPT.jsx'
+import TermsandCond from './pages/FooterContent/TermsandCond.jsx'
+import Disclamer from './pages/FooterContent/Disclamer.jsx'
+import PrivacyPolicy from './pages/FooterContent/PrivacyPolicy.jsx'
+import DMCAPolicy from './pages/FooterContent/DMCAPolicy.jsx'
 
 
 const router = createBrowserRouter(
@@ -65,6 +69,11 @@ const router = createBrowserRouter(
       <Route path='/blog' element={<Blog />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/career' element={<Career/>} />
+      <Route path='/terms'element={<TermsandCond/>} />
+      <Route path='/disclaimer'element={<Disclamer/>} />
+      <Route path='/privacyPolicy'element={<PrivacyPolicy/>} />
+      <Route path='/DMCA'element={<DMCAPolicy/>} />
+
     </Route>,
   ))
 
