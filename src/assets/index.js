@@ -179,6 +179,9 @@ import AboutusIcon from './images/AboutusIcon.png'
 import Trainingpageimg from './images/Trainingpageimg.png'
 import Trainingpageimg2 from './images/Trainingpageimg2.png'
 import chevronSide from './images/chevronSide.png'
+import ethicalhackingimg1 from './images/ethicalhackingimg1.png'
+import ethicalhackingimg2 from './images/ethicalhackingimg2.png'
+import ethicalhackingimg3 from './images/ethicalhackingimg3.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -361,4 +364,7 @@ export const Images ={
     Trainingpageimg: Trainingpageimg,
     Trainingpageimg2: Trainingpageimg2,
     chevronSide: chevronSide,
+    ethicalhackingimg1: ethicalhackingimg1,
+    ethicalhackingimg2: ethicalhackingimg2,
+    ethicalhackingimg3: ethicalhackingimg3,
 }
