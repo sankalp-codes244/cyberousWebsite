@@ -20,7 +20,7 @@ const CarouselElement = ({ getImages }) => {
 
   return (
     <div className="w-full h-screen overflow-hidden relative">
-      <div className="flex transition-transform ease-out duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex transition-transform ease-out duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)`,  }}>
         {getImages.map((item, index) => (
           <div key={index} className="w-full h-screen flex-shrink-0 relative">
             <img className="pointer-events-none select-none w-full h-screen object-cover" src={item.Image} alt={`carousel-${index}`} />
