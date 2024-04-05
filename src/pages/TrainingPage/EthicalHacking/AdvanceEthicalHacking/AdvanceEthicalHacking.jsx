@@ -14,7 +14,7 @@ const AdvanceEthicalHacking = () => {
         <div className='w-full p-1 md:p-10'>
           <div className='md:flex md:flex-row justify-between'>
             <div className='p-8 md:px-28'>
-              <h1 className='text-white font-Roboto font-bold text-lg md:text-2xl md:text-justify py-4'>Online Web Applicatim Security Course In Denti Web Application Training</h1>
+              <h1 className='text-white font-Roboto font-bold text-lg md:text-2xl md:text-justify py-4'> Web Application Security Course  </h1>
               <div className='flex flex-row gap-2 md:gap-6'>
                 <h1 className='bg-custom-gold-color text-sm w-28 my-2 font-__Inter_aaf875 p-2 text-center rounded-sm'>
                   BestSeller
@@ -74,7 +74,7 @@ const AdvanceEthicalHacking = () => {
                   </div>
                   <div className='md:mx-5 py-6 relative'>
                     <button className='w-full  h-12 hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
-                      <img src={Images.download} className=' w-6 absolute left-10 md:left-5 invert' />
+                      <img src={Images.download} className=' w-6 absolute left-10 md:left-2 invert' />
                       Download Syllabus
                     </button>
                   </div>
@@ -266,6 +266,73 @@ const AdvanceEthicalHacking = () => {
               <h1 className='font-__Inter_aaf875 text-base md:text-lg'>
                 Book a Demo Class
               </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='bg-custom-greyBorderColor p-10'>
+        <h1 className='text-center font-Roboto font-bold text-2xl md:text-4xl py-6'>
+          Why to Join Cyberous Training Program?
+        </h1>
+        <div className='flex justify-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-52 font-bold text-xl md:text-2xl font-Roboto'>
+            <div>
+              <ol>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Comprehensive Curriculum</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Experienced Instructors</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Hands-On Learning</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Career Advancement</p>
+                  </div>
+                </li>
+              </ol>
+
+            </div>
+            <div >
+              <ol>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'> Flexible Learning Options</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Industry Recognition</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Supportive Community</p>
+                  </div>
+                </li>
+                <li className=''>
+                  <div className='flex flex-row'>
+                    <img src={Images.checkMark} className='h-6 w-6 m-2' />
+                    <p className='mt-2'>Affordable Pricing</p>
+                  </div>
+                </li>
+              </ol>
+
             </div>
           </div>
         </div>
