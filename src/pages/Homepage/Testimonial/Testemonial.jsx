@@ -52,20 +52,6 @@ const Testemonial = () => {
           </div>
           
 
-            {/* <Carousel 
-            showThumbs={false}
-            showStatus={false}
-            infiniteLoop={true}
-            autoPlay={true}
-            showArrows={true}
-            showIndicators={false}
-            interval={5000}
-            stopOnHover={true}
-            centerSlidePercentage={300}
-            centerMode
-            > */}
-            <div className="lg:flex justify-center hidden border">
-            <div className=" lg:w-4/5 lg:flex  m-4">
             {data.map((item) => (
               <TestimonialCard 
               image={item.image}
@@ -75,10 +61,7 @@ const Testemonial = () => {
               />
               ))
             }
-        </div>
-        </div>
 
-            {/* </Carousel> */}
 
       </div>
       </div>

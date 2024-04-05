@@ -3,8 +3,8 @@ import { Images } from '../assets'
 
 const TestimonialCard = ({ image, name, title, desc }) => {
   return (
-    <div className='p-6 relative'>
-      <div className="w-full h-full md:w-full border border-solid rounded-lg bg-custom-greyLightColor shadow-lg ">
+    <div className='p-6 relative w-96'>
+      <div className=" h-full md:w-full border border-solid rounded-lg bg-custom-greyLightColor shadow-lg ">
         <div className=''>
           <img src={Images.commmaImg} className=' h-24 w-24 absolute top-2 right-4 md:h-24 md:w-24' />
         </div>
