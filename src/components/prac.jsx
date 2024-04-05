@@ -1,6 +1,6 @@
 
 import { Fragment, useState } from 'react'
-import { Menu, Transition } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom';
 import LinkButtons from './LinkButtons';
@@ -11,32 +11,23 @@ export default function DropDown() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Menu as="div" className="relative inline-block text-left" onMouseLeave={() => setIsOpen(false)} onMouseEnter={() => setIsOpen(true)}>
+    <Menu as="div" className="relative inline-block text-left" onClick={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(false)}>
       <div>
-        <Menu.Button  onMouseLeave={() => setIsOpen(false)} onMouseEnter={() => setIsOpen(!isOpen)} className="inline-flex w-full justify-center rounded-md py-2  lg:font-bold  text-center">
+        <Menu.Button onClick={() => setIsOpen(!isOpen)} className="inline-flex w-full justify-center rounded-md py-2  lg:font-bold  text-center">
           <div>
             <LinkButtons links='Training' isOpen={isOpen} />
           </div>
           <ChevronDownIcon className={`-mr-1 h-5 w-5 text-gray-400 ${isOpen ? 'rotate-180' : ''} duration-300`} aria-hidden="true" />
         </Menu.Button>
       </div>
-      <Transition
-        show={isOpen}
-        as={Fragment}
-        enter="transition linear duration-200" // Adjust the duration here (e.g., duration-500)
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition linear duration-300" // Adjust the duration here (e.g., duration-500)
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-110"
-      >
-      <Menu.Items className="sm:absolute lg:fixed lg:w-full  lg:inset-y-20 lg:z-10 lg:mt-0 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none">
+
+      <Menu.Items className="sm:absolute lg:fixed lg:w-full  lg:inset-y-20 lg:z-10 lg:mt-0 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md sm:bg-white  sm:focus:outline-none" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
         <div className="flex flex-col justify-center">
           <div className="grid grid-flow-row">
             <div className='lg:bg-slate-100 lg:my-1 lg:px-20'>
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Ethical hacking</p>
               <div className="lg:grid lg:grid-flow-row lg:grid-cols-3 lg:gap-10">
-                <Link onClick={() => setIsOpen(!isOpen)} to='/training/linuxfundamentals'>
+                <Link to='/training/linuxfundamentals' onClick={() => setIsOpen(!isOpen)} classsName=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.linux} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Linux Fundamental
@@ -45,7 +36,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Essential skills for Linux operating system.</div>
                 </Link>
                 
-                <Link onClick={() => setIsOpen(!isOpen)} to='/training/advanceeh'>
+                <Link to='/training/advanceeh' onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.hacker} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Advanced Ethical Hacking
@@ -54,7 +45,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'> Mastery in ethical hacking techniques.</div>
                 </Link>
                 
-                <Link onClick={() => setIsOpen(!isOpen)} to='/training/webpt'>
+                <Link to='/training/webpt' onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.webhack} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Web Application Penetration Testing
@@ -63,7 +54,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Assessing security of web applications.</div>
                 </Link>
                 
-                <Link onClick={() => setIsOpen(!isOpen)} to='/training/networkpt'>
+                <Link to='/training/networkpt' onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.webbug} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Network Penetration Testing
@@ -72,7 +63,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Evaluating network security vulnerabilities rigorously.</div>
                 </Link>
                 
-                <Link onClick={() => setIsOpen(!isOpen)} classsName='' to='/training/bugbounty'>
+                <Link to='/training/bugbounty' onClick={() => setIsOpen(!isOpen)} classsName=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.bugs} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Bug Bounty
@@ -113,7 +104,6 @@ export default function DropDown() {
           </div>
         </div>
       </Menu.Items>
-      </Transition>
     </Menu>
   )
 }
