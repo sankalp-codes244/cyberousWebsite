@@ -28,7 +28,7 @@ const Navbar = () => {
       </Link>
 
         {/* Hamburger icon for mobile */}
-        <div className="sm:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className="focus:outline-none duration-200">
             {isOpen ? (
              <svg className="w-6 h-6 duration-200 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       {/* Dropdown menu for mobile screens */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute top-20 left-0 w-full bg-black shadow-md z-50`}>
+      <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} absolute top-20 left-0 w-full bg-black shadow-md z-50`}>
         <div className="flex flex-col items-center">
           <Link to='/' className="text-sm font-medium py-2.5 text-white px-3">Home</Link>
           <Link to='/training'>

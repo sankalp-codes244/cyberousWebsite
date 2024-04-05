@@ -28,7 +28,7 @@ export default function DropDown() {
             <div className='lg:bg-slate-100 lg:my-1 lg:px-20'>
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Ethical hacking</p>
               <div className="lg:grid lg:grid-flow-row lg:grid-cols-3 lg:gap-10">
-                <Link className=''>
+                <Link onClick={() => setIsOpen(!isOpen)} classsName=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.linux} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Linux Fundamental
@@ -37,7 +37,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Essential skills for Linux operating system.</div>
                 </Link>
                 
-                <Link>
+                <Link onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.hacker} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Advanced Ethical Hacking
@@ -46,7 +46,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'> Mastery in ethical hacking techniques.</div>
                 </Link>
                 
-                <Link>
+                <Link onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.webhack} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Web Application Penetration Testing 
@@ -55,7 +55,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Assessing security of web applications.</div>
                 </Link>
                 
-                <Link>
+                <Link onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.webbug} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Network Penetration Testing
@@ -64,7 +64,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Evaluating network security vulnerabilities rigorously.</div>
                 </Link>
                 
-                <Link className=''>
+                <Link onClick={() => setIsOpen(!isOpen)} classsName=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.bugs} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Bug Bounty
@@ -78,7 +78,7 @@ export default function DropDown() {
             </div>
             {/* new gray menu */}
             <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
-              <Link>
+              <Link onClick={() => setIsOpen(!isOpen)} >
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Corporate training</p>
               </Link>
              
@@ -87,7 +87,7 @@ Tailored programs enhancing skills for organizational growth and efficiency.</di
           </div>
             {/* new gray menu */}
             <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
-              <Link>
+              <Link onClick={() => setIsOpen(!isOpen)} >
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Diploma in Cyber security</p>
               </Link>
              
@@ -96,7 +96,7 @@ Tailored programs enhancing skills for organizational growth and efficiency.</di
           </div>
             {/* new gray menu */}
             <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
-              <Link>
+              <Link onClick={() => setIsOpen(!isOpen)} >
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Internship training</p>
               </Link>
              
