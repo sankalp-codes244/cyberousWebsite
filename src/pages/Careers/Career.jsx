@@ -20,7 +20,7 @@ const Career = () => {
               <button className='w-full md:w-1/2 h-16 my-10 sm:m-0 md:m-10 bg-custom-buttonColor-Green text-white duration-300 border border-solid border-green-700 rounded-lg text-base md:ml-52'>
                 Contact Us +91 81999 85888</button>
               <button className='relative bg-transparent w-full md:w-1/2 h-16 sm:m-0 md:m-10 hover:bg-custom-buttonColor-Green hover:text-white text-green-500 duration-300 border border-solid border-custom-buttonColor-Green rounded-lg text-base md:ml-10'> 
-              <img src={Images.chevronDown}  className='absolute invert -rotate-90 left-4 top-3 border-2 rounded-full border-solid border-black p-2  w-8 md:w-10 '/>
+              <img src={Images.chevronDown}  className='absolute invert -rotate-90 left-4 top-3 border-2 rounded-full border-solid border-black p-2 w-8 md:w-10 '/>
               Apply Now</button>
             </div>
         </div>

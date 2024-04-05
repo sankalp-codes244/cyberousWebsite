@@ -21,6 +21,10 @@ import AndroidPT from './pages/Services/VAPT/AndroidPenetrationTesting/AndroidPT
 import Consultancy from './pages/Services/Consultancy/Consultancy.jsx'
 import RedTeaming from './pages/Services/RedTeaming/RedTeaming.jsx'
 import Career from './pages/Careers/Career.jsx'
+import CorporateTraining from './pages/TrainingPage/CorporateTraining/CorporateTraining.jsx'
+import Development from './pages/TrainingPage/Development/Development.jsx'
+import Internship from './pages/TrainingPage/Internship/Internship.jsx'
+import Diploma from './pages/TrainingPage/Diploma/Diploma.jsx'
 
 
 const router = createBrowserRouter(
@@ -29,6 +33,10 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound />} />
       <Route path='' element={<Homepage />} />
       <Route path='/training' element={<TrainingPage />} />
+      <Route path='/training/corporatetraining' element={<CorporateTraining />} />
+      <Route path='/training/development' element={<Development />} />
+      <Route path='/training/internship' element={<Internship />} />
+      <Route path='/training/diploma' element={<Diploma />} />
       <Route path='/services' element={<Services />} />
       <Route path='/services/websecurity' element={<WebApplicationSecurity />} />
       <Route path='/services/sourcecode' element={<SourceCode />} />
