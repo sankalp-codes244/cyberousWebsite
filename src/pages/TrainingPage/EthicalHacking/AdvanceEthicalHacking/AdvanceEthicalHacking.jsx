@@ -13,7 +13,7 @@ const AdvanceEthicalHacking = () => {
         <div className=' p-6 md:p-10'>
           <div className='md:flex md:flex:row md:w-3/4'>
             <div className=''>
-              <h1 className='text-white font-Roboto text-xl md:text-3xl md:text-center'>Online Web Applicatim Security Course In Denti I Web Application Training</h1>
+              <h1 className='text-white font-Roboto text-xl md:text-3xl md:text-justify py-4'>Online Web Applicatim Security Course In Denti I Web Application Training</h1>
               <div className='flex flex-row '>
                 <h1 className='bg-custom-gold-color text-sm w-28 my-2 font-__Inter_aaf875 px-2 text-center rounded-sm'>
                   BestSeller
@@ -32,40 +32,40 @@ const AdvanceEthicalHacking = () => {
                 <div className='flex flex-col my-4 md:w-1/2'>
                   <div className=''>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg9} className='w-6 m-2 invert object-contain' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg9} className='w-4 mx-2 invert object-contain' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Course Duration: <span className='font-bold'> 2 Months </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg8} className='w-6 m-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg8} className='w-4 mx-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Course Level: <span className='font-bold'> Intermediate </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg7} className='w-6 m-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg7} className='w-4 mx-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Course delivery: <span className='font-bold'> Live Online Sessions </span>
                       </h1>
                     </div>
                   </div>
                   <div className=''>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg6} className='w-6 m-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg6} className='w-4 mx-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Course Include: <span className='font-bold'> Training and Certification </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg5} className='w-6 m-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg5} className='w-4 mx-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Language: <span className='font-bold'> Hindi, English </span>
                       </h1>
                     </div>
                     <div className='flex flex-row'>
-                      <img src={Images.ethicalhackingimg4} className='w-6 m-2 invert object-contain ' />
-                      <h1 className='text-white font-Roboto text-sm p-2'>
+                      <img src={Images.ethicalhackingimg4} className='w-4 mx-2 invert object-contain ' />
+                      <h1 className='text-white font-Roboto text-sm px-2'>
                         Acccrediation by: <span className='font-bold'>Cyberous  </span>
                       </h1>
                     </div>
