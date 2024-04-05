@@ -25,6 +25,12 @@ import CorporateTraining from './pages/TrainingPage/CorporateTraining/CorporateT
 import Development from './pages/TrainingPage/Development/Development.jsx'
 import Internship from './pages/TrainingPage/Internship/Internship.jsx'
 import Diploma from './pages/TrainingPage/Diploma/Diploma.jsx'
+import AdvanceEthicalHacking from './pages/TrainingPage/EthicalHacking/AdvanceEthicalHacking/AdvanceEthicalHacking.jsx'
+import BugBounty from './pages/TrainingPage/EthicalHacking/BugBounty/BugBounty.jsx'
+import LinuxFundamentals from './pages/TrainingPage/EthicalHacking/LinuxFundamentals/LinuxFundamentals.jsx'
+import MobilePT from './pages/TrainingPage/EthicalHacking/MobilePT/MobilePT.jsx'
+import WebPT from './pages/TrainingPage/EthicalHacking/WebPT/WebPT.jsx'
+import NetworkPT from './pages/TrainingPage/EthicalHacking/NetworkPT/NetworkPT.jsx'
 
 
 const router = createBrowserRouter(
@@ -33,10 +39,18 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound />} />
       <Route path='' element={<Homepage />} />
       <Route path='/training' element={<TrainingPage />} />
+      <Route path='/training/advanceeh' element={<AdvanceEthicalHacking/>} />
+      <Route path='/training/bugbounty' element={<BugBounty />} />
+      <Route path='/training/linuxfundamentals' element={<LinuxFundamentals />} />
+      <Route path='/training/mobilept' element={<MobilePT/>} />
+      <Route path='/training/webpt' element={<WebPT />} />
+      <Route path='/training/networkpt' element={<NetworkPT />} />
       <Route path='/training/corporatetraining' element={<CorporateTraining />} />
       <Route path='/training/development' element={<Development />} />
       <Route path='/training/internship' element={<Internship />} />
       <Route path='/training/diploma' element={<Diploma />} />
+      
+      
       <Route path='/services' element={<Services />} />
       <Route path='/services/websecurity' element={<WebApplicationSecurity />} />
       <Route path='/services/sourcecode' element={<SourceCode />} />
