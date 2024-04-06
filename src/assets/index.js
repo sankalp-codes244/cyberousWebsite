@@ -197,6 +197,15 @@ import certificate1 from './images/certificate1.png'
 import certificate2 from './images/certificate2.png'
 import certificate3 from './images/certificate3.png'
 import accept from './images/accept.png'
+import CorporateTrainingbg from './images/CorporateTrainingbg.jpg'
+import BoostEmployeeimg1 from './images/BoostEmployeeimg1.svg'
+import BoostEmployeeimg2 from './images/BoostEmployeeimg2.svg'
+import BoostEmployeeimg3 from './images/BoostEmployeeimg3.svg'
+import BoostEmployeeimg4 from './images/BoostEmployeeimg4.svg'
+import BoostEmployeeimg5 from './images/BoostEmployeeimg5.svg'
+import coporatecyber1 from './images/coporatecyber1.svg'
+import coporatecyber2 from './images/coporatecyber2.svg'
+import coporatecyber3 from './images/coporatecyber3.svg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -397,4 +406,13 @@ export const Images ={
     certificate2: certificate2,
     certificate3: certificate3,
     accept: accept,
+    CorporateTrainingbg: CorporateTrainingbg,
+    BoostEmployeeimg1: BoostEmployeeimg1,
+    BoostEmployeeimg2: BoostEmployeeimg2,
+    BoostEmployeeimg3: BoostEmployeeimg3,
+    BoostEmployeeimg4: BoostEmployeeimg4,
+    BoostEmployeeimg5: BoostEmployeeimg5,
+    coporatecyber1: coporatecyber1,
+    coporatecyber2: coporatecyber2,
+    coporatecyber3: coporatecyber3,
 }

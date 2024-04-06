@@ -80,7 +80,7 @@ export default function DropDown() {
                   </div>
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Rewarding discovery of software vulnerabilities.</div>
                 </Link>
-                <Link onClick={() => setIsOpen(!isOpen)} classsName='' to='/training/bugbounty'>
+                <Link onClick={() => setIsOpen(!isOpen)} classsName='' to='/training/mobilept'>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.mobsec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Mobile Application Penetration Testing
