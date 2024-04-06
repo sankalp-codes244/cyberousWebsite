@@ -31,6 +31,7 @@ export default {
         'custom-orange-colorlight':'#af3009',
         'custom-gold-color':'#ffc221',
         'custom-button-colorgrey':'#b9b9b9',
+        'custom-custom-blackbg':'#141414',
 
 
       },

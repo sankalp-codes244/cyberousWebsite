@@ -188,7 +188,9 @@ import ethicalhackingimg6 from './images/EthicalHackingimg6.png'
 import ethicalhackingimg7 from './images/EthicalHackingimg7.png'
 import ethicalhackingimg8 from './images/EthicalHackingimg8.png'
 import ethicalhackingimg9 from './images/EthicalHackingimg9.png'
+import ethicalhackingimg10 from './images/ethicalhackingimg10.webp'
 import download from './images/download.png'
+import stars from './images/stars.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -380,5 +382,7 @@ export const Images ={
     ethicalhackingimg7: ethicalhackingimg7,
     ethicalhackingimg8: ethicalhackingimg8,
     ethicalhackingimg9: ethicalhackingimg9,
+    ethicalhackingimg10: ethicalhackingimg10,
     download: download,
+    stars: stars,
 }
