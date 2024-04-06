@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { z, object, string } from "zod";
+import { z, object, string, number } from "zod";
 
 // Define the schema using Zod
 const schema = object({
