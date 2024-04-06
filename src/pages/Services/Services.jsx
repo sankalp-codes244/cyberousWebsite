@@ -8,9 +8,53 @@ import { Link } from 'react-router-dom';
 import NamesYouKnow from './RedTeaming/NamesYouKnow/NamesYouKnow';
 
 const Services = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); 
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+const data =[
+  {
+    id: 1,
+    name: "Gaurav",
+    title: "CEO",
+    desc: "Choosing Cyberous was a game-changer for our business. Their VAPT team meticulously uncovered weaknesses in our systems, allowing us to fortify our defenses effectively. We feel much more secure now.",
+    image: Images.user
+  },
+  {
+    id: 2,
+    name: "Smith",
+    title: "CEO",
+    desc: "Working with Cyberous was a breeze. Their VAPT team was professional and efficient, providing detailed reports that helped us strengthen our defenses. Their consultancy services were insightful, and the Red Teaming exercise was a wake-up call. Cyberous is now our go-to for cybersecurity.",
+    image: Images.user
+  },
+  {
+    id: 3,
+    name: "Shubham",
+    title: "CEO",
+    desc: "We were impressed by Cyberous' professionalism and expertise. Their VAPT services were thorough, and their consultancy provided practical recommendations tailored to our needs. We highly recommend Cyberous for securing your business.",
+    image: Images.user
+  },
+  {
+    id: 4,
+    name: "John Smith",
+    title: "CEO",
+    desc: "Choosing Cyberous for our Red Teaming service was a game-changer. Their team simulated real-world attack scenarios with precision and expertise. The insights gained were invaluable, allowing us to identify and address critical vulnerabilities in our defenses. Cyberous' Red Teaming service is a must for any organization serious about fortifying their cybersecurity posture.",
+    image: Images.user
+  },
+  {
+    id: 5,
+    name: "Aman",
+    title: "Tech Expert",
+    desc: "Cyberous Web Penetration Testing service has revolutionized our online presence. Their expertise in web security ensured that our platform is robust against potential threats, while their proactive approach guarantees continuous protection. We highly recommend Cyberous for anyone seeking reliable web security solutions.",
+    image: Images.user
+  },
+  {
+    id: 6,
+    name: "Rohan",
+    title: "Manager",
+    desc: "Partnering with Cyberous for cybersecurity consultancy was a game-changer for our company. Their team of experts provided invaluable guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've strengthened our defenses and enhanced our overall security posture. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
+    image: Images.user
+  }
+];
   return (
     <div className='h-full'>
       {/* Background section */}
@@ -229,7 +273,7 @@ const Services = () => {
         <IndustrialRecognition />
       </div>
       <div id="testimonials" className='min-h-full bg-white'>
-        <Testemonial />
+        <Testemonial data={data} />
       </div>
       <div id="gallery" className='min-h-full bg-white'>
         <MediaGallery />

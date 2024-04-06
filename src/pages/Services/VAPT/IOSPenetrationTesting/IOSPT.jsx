@@ -9,6 +9,51 @@ import Faqs from './FAQs/Faqs'
 import PageHeader from './PageHeader/PageHeader'
 
 const IOSPT = () => {
+  const data = [
+    {
+      id: 1,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' iOS penetration testing service was exceptional. Their thorough examination of our app uncovered vulnerabilities we hadn't considered. Their detailed report and recommendations helped us strengthen our app's security. We highly recommend Cyberous for iOS security testing.",
+      image: Images.user
+    },
+    {
+      id: 2,
+      name: "Anonymous",
+      title: "",
+      desc: "Impressed with Cyberous' iOS penetration testing service. They identified critical security flaws in our app and provided clear guidance on how to address them. Thanks to Cyberous, we've been able to enhance our app's security measures. Trustworthy and professional – Cyberous is our top choice for mobile security.",
+      image: Images.user
+    },
+    {
+      id: 3,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' iOS penetration testing service was thorough and insightful. They uncovered vulnerabilities in our app that we hadn't considered. Their comprehensive report enabled us to improve our app's security posture effectively. Cyberous is a trusted partner for all our mobile security needs.",
+      image: Images.user
+    },
+    {
+      id: 4,
+      name: "Anonymous",
+      title: "",
+      desc: "Hats off to Cyberous for their outstanding iOS penetration testing service. They identified vulnerabilities in our app and provided practical solutions for mitigation. Working with Cyberous has been a positive experience, and we highly recommend their services to anyone in need of mobile security testing.",
+      image: Images.user
+    },
+    {
+      id: 5,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' iOS penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
+      image: Images.user
+    },
+    {
+      id: 6,
+      name: "Anonymous",
+      title: "",
+      desc: "Choosing Cyberous for our iOS penetration testing was the right decision. Their team conducted a comprehensive assessment of our app's security, identifying potential vulnerabilities and providing clear guidance on how to address them. Thanks to Cyberous, we were able to enhance our app's security measures and ensure the safety of our users' information. Highly recommend their services for anyone developing iOS apps.",
+      image: Images.user
+    }
+  ];
+  
   const boxData = [
     {
       id: 0,
@@ -150,7 +195,7 @@ const IOSPT = () => {
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
       <BrandsTrustUs />
-      <Testemonial />
+      <Testemonial data={data}/>
       <Faqs faqData={faqData} />
     </div>
   )

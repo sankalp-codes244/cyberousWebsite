@@ -8,6 +8,51 @@ import NamesYouKnow from '../Services/RedTeaming/NamesYouKnow/NamesYouKnow'
 import Faqs from '../Homepage/FAQs/Faqs'
 import { Link } from 'react-router-dom';
 const About = () => {
+  const data = [
+    {
+      id: 1,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' cybersecurity consultancy service was exceptional. Their team provided valuable insights and guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've significantly strengthened our defenses and mitigated potential risks. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
+      image: Images.user
+    },
+    {
+      id: 2,
+      name: "Anonymous",
+      title: "",
+      desc: "We were thoroughly impressed by Cyberous' web application penetration testing service. Their team conducted a thorough assessment of our web application, identifying vulnerabilities and providing practical recommendations for remediation. Thanks to Cyberous, we've been able to enhance our application's security measures effectively. Trustworthy and professional – Cyberous is our top choice for web security.",
+      image: Images.user
+    },
+    {
+      id: 3,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' Red Teaming service exceeded our expectations. Their team's simulated attacks were sophisticated and insightful, giving us a clear understanding of our organization's security posture. Their comprehensive report and recommendations enabled us to address vulnerabilities and enhance our defenses. Cyberous is our go-to partner for Red Teaming.",
+      image: Images.user
+    },
+    {
+      id: 4,
+      name: "Anonymous",
+      title: "",
+      desc: "Hats off to Cyberous for their exceptional network penetration testing service. Their team's attention to detail and professionalism were commendable. They identified vulnerabilities in our network infrastructure and provided practical solutions for mitigation. Working with Cyberous has been a positive experience, and we highly recommend their services to anyone in need of network security testing.",
+      image: Images.user
+    },
+    {
+      id: 5,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' Android penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
+      image: Images.user
+    },
+    {
+      id: 6,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous is the finest place to learn ethical hacking and a variety of other topics. The trainers are really pleasant and knowledgeable. The enrollment process was smooth. I completed the course and am now working as a cybersecurity analyst.",
+      image: Images.user
+    }
+  ];
+  
   const faqData = [
     {
       id: 0,
@@ -273,7 +318,7 @@ const About = () => {
         <IndustrialRecognition />
       </div>
       <div id="testimonials" className='min-h-full bg-white'>
-        <Testemonial />
+        <Testemonial data={data} />
       </div>
       <div id="gallery" className='min-h-full bg-white'>
         <MediaGallery />

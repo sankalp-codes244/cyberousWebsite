@@ -1,73 +1,9 @@
 import React from "react";
 import { Images } from "../../../assets/index";
 import TestimonialCard from "../../../components/TestimonialCard";
-import { Carousel } from "react-responsive-carousel";
-const Testemonial = () => {
-  let data = [
-    {
-      id: 1,
-      name: "Suraj Kumar",
-      title: "CEO, Cyberous",
-      desc: "Cyberous excels in web development and other courses. With friendly, skilled faculty, it's the premier institute for mastering diverse skills. Stand out with Cyberous for top-notch learning experiences.",
-      image: Images.user,
-    },
-    {
-      id: 1,
-      name: "Suraj Kumar",
-      title: "CEO, Cyberous",
-      desc: "Cyberous excels in web development and other courses. With friendly, skilled faculty, it's the premier institute for mastering diverse skills. Stand out with Cyberous for top-notch learning experiences.",
-      image: Images.user,
-    },
-    {
-      id: 1,
-      name: "Suraj Kumar",
-      title: "CEO, Cyberous",
-      desc: "Cyberous excels in web development and other courses. With friendly, skilled faculty, it's the premier institute for mastering diverse skills. Stand out with Cyberous for top-notch learning experiences.",
-      image: Images.user,
-    },
-    {
-      id: 2,
-      name: "Muskan Jindal",
-      title: "CEO, Cyberous",
-      desc: "Learning skills from cyberous is great. Teachers are wonderful, they helps you to brush your skills and learn new technical skills. Moreover  the main focus is on hands on practice which is must to survive in the corporate world.",
-      image: Images.user,
-    },
-    {
-      id: 3,
-      name: "Girdhar kumawat",
-      title: "CEO, Cyberous",
-      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
-      image: Images.user,
-    },
-    {
-      id: 3,
-      name: "Girdhar kumawat",
-      title: "CEO, Cyberous",
-      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
-      image: Images.user,
-    },
-    {
-      id: 3,
-      name: "Girdhar kumawat",
-      title: "CEO, Cyberous",
-      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
-      image: Images.user,
-    },
-    {
-      id: 3,
-      name: "Girdhar kumawat",
-      title: "CEO, Cyberous",
-      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
-      image: Images.user,
-    },
-    {
-      id: 3,
-      name: "Girdhar kumawat",
-      title: "CEO, Cyberous",
-      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
-      image: Images.user,
-    },
-  ];
+const Testemonial = ({data}) => {
+
+  
   return (
     <>
       <div className="mb-8">
@@ -81,7 +17,7 @@ const Testemonial = () => {
           What do People Say About Us
         </h1>
         <div className="flex justify-center">
-          <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 gap-5 md:flex md:flex-row m-4 lg:hidden">
+          <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-5 ">
             {data.map((item) => (
               <TestimonialCard 
               image={item.image}
@@ -92,23 +28,6 @@ const Testemonial = () => {
             ))
             }
           </div>
-          
-<div >
-<Carousel className=" flex-row hidden lg:flex lg:flex-row ">
-
-            {data.map((item) => (
-              <TestimonialCard 
-              image={item.image}
-              name={item.name}
-              title={item.title}
-              desc={item.desc}
-              />
-              ))
-            }
-            </Carousel>
-            </div>
-
-
       </div>
       </div>
     </>

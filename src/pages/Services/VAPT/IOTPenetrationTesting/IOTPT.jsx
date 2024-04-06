@@ -114,6 +114,52 @@ const IOTPT = () => {
       description: " Vulnerability Assessment involves a meticulous examination to identify and address vulnerabilities. This critical step ensures a proactive approach to security, allowing for timely mitigation and safeguarding your web application against potential cyber threats."
     }
   ]
+
+  const data = [
+    {
+      id: 1,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' IoT penetration testing service was invaluable for our smart device security. Their team's expertise uncovered vulnerabilities that could have compromised user privacy and safety. Thanks to Cyberous, we were able to address these issues and enhance the security of our IoT ecosystem. Highly recommend their services for IoT security testing.",
+      image: Images.user
+    },
+    {
+      id: 2,
+      name: "Anonymous",
+      title: "",
+      desc: "Impressed by Cyberous' IoT penetration testing service. Their thorough assessment of our connected devices identified potential risks and provided actionable recommendations for mitigation. With Cyberous' help, we've strengthened our IoT security measures and protected our infrastructure from potential threats. Trustworthy and professional – Cyberous is our top choice for IoT security.",
+      image: Images.user
+    },
+    {
+      id: 3,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' IoT penetration testing service exceeded our expectations. Their team's expertise in assessing the security of our IoT ecosystem was evident as they uncovered vulnerabilities and provided clear guidance on how to address them. Their comprehensive report enabled us to improve our IoT security posture effectively. Cyberous is a trusted partner for all our IoT security needs.",
+      image: Images.user
+    },
+    {
+      id: 4,
+      name: "Anonymous",
+      title: "",
+      desc: "Hats off to Cyberous for their outstanding IoT penetration testing service. Their team's meticulous examination of our connected devices and network infrastructure uncovered vulnerabilities that we hadn't considered. Their detailed report and recommendations enabled us to strengthen our IoT security measures effectively. Working with Cyberous has been a positive experience, and we highly recommend their services to anyone in need of IoT security testing.",
+      image: Images.user
+    },
+    {
+      id: 5,
+      name: "Anonymous",
+      title: "",
+      desc: "Cyberous' IoT penetration testing service was instrumental in validating the security of our smart devices. Their team's expertise and attention to detail were invaluable as they conducted simulated attacks and identified potential risks. With Cyberous' help, we were able to enhance the security of our IoT ecosystem and protect our users' privacy. Cyberous is our trusted advisor for IoT security testing.",
+      image: Images.user
+    },
+    {
+      id: 6,
+      name: "Anonymous",
+      title: "",
+      desc: "Choosing Cyberous for our IoT penetration testing needs was the right decision. Their team's professionalism and expertise were evident throughout the engagement. They conducted a comprehensive assessment of our IoT devices and provided actionable recommendations for improvement. Thanks to Cyberous, we now have confidence in the security of our connected ecosystem. Highly recommend their services for anyone developing IoT solutions.",
+      image: Images.user
+    }
+  ];
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -150,7 +196,7 @@ const IOTPT = () => {
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
       <BrandsTrustUs />
-      <Testemonial />
+      <Testemonial data={data} />
       <Faqs faqData={faqData} />
     </div>
   )
