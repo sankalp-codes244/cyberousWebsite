@@ -18,7 +18,7 @@ const Testemonial = ({data}) => {
         </h1>
         <div className="flex justify-center">
           <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-5 ">
-            {data.map((item) => (
+            {data?.map((item) => (
               <TestimonialCard 
               image={item.image}
               name={item.name}
