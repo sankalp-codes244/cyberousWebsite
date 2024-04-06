@@ -12,10 +12,52 @@ const Testemonial = () => {
       image: Images.user,
     },
     {
+      id: 1,
+      name: "Suraj Kumar",
+      title: "CEO, Cyberous",
+      desc: "Cyberous excels in web development and other courses. With friendly, skilled faculty, it's the premier institute for mastering diverse skills. Stand out with Cyberous for top-notch learning experiences.",
+      image: Images.user,
+    },
+    {
+      id: 1,
+      name: "Suraj Kumar",
+      title: "CEO, Cyberous",
+      desc: "Cyberous excels in web development and other courses. With friendly, skilled faculty, it's the premier institute for mastering diverse skills. Stand out with Cyberous for top-notch learning experiences.",
+      image: Images.user,
+    },
+    {
       id: 2,
       name: "Muskan Jindal",
       title: "CEO, Cyberous",
       desc: "Learning skills from cyberous is great. Teachers are wonderful, they helps you to brush your skills and learn new technical skills. Moreover  the main focus is on hands on practice which is must to survive in the corporate world.",
+      image: Images.user,
+    },
+    {
+      id: 3,
+      name: "Girdhar kumawat",
+      title: "CEO, Cyberous",
+      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
+      image: Images.user,
+    },
+    {
+      id: 3,
+      name: "Girdhar kumawat",
+      title: "CEO, Cyberous",
+      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
+      image: Images.user,
+    },
+    {
+      id: 3,
+      name: "Girdhar kumawat",
+      title: "CEO, Cyberous",
+      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
+      image: Images.user,
+    },
+    {
+      id: 3,
+      name: "Girdhar kumawat",
+      title: "CEO, Cyberous",
+      desc: "Cyberous is the finest place to learn ethical hacking and variety of other topics. The trainers are really pleasent and knowledgable. The enrollment process was smooth. I completed course and now working as a cybersecurity analyst.",
       image: Images.user,
     },
     {
@@ -51,6 +93,8 @@ const Testemonial = () => {
             }
           </div>
           
+<div >
+<Carousel className=" flex-row hidden lg:flex lg:flex-row ">
 
             {data.map((item) => (
               <TestimonialCard 
@@ -61,6 +105,8 @@ const Testemonial = () => {
               />
               ))
             }
+            </Carousel>
+            </div>
 
 
       </div>
