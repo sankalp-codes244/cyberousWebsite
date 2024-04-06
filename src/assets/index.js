@@ -188,7 +188,15 @@ import ethicalhackingimg6 from './images/EthicalHackingimg6.png'
 import ethicalhackingimg7 from './images/EthicalHackingimg7.png'
 import ethicalhackingimg8 from './images/EthicalHackingimg8.png'
 import ethicalhackingimg9 from './images/EthicalHackingimg9.png'
+import ethicalhackingimg10 from './images/ethicalhackingimg10.webp'
+import ethicalhackingimg11 from './images/ethicalhackingimg11.png'
 import download from './images/download.png'
+import stars from './images/stars.png'
+import checkmark from './images/check-mark.png'
+import certificate1 from './images/certificate1.png'
+import certificate2 from './images/certificate2.png'
+import certificate3 from './images/certificate3.png'
+import accept from './images/accept.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -380,5 +388,13 @@ export const Images ={
     ethicalhackingimg7: ethicalhackingimg7,
     ethicalhackingimg8: ethicalhackingimg8,
     ethicalhackingimg9: ethicalhackingimg9,
+    ethicalhackingimg10: ethicalhackingimg10,
+    ethicalhackingimg11: ethicalhackingimg11,
     download: download,
+    stars: stars,
+    checkmark: checkMark,
+    certificate1: certificate1,
+    certificate2: certificate2,
+    certificate3: certificate3,
+    accept: accept,
 }
