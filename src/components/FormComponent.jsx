@@ -7,7 +7,7 @@ const schema = object({
   email: string().email(),
   firstName: string(),
   lastName: string(),
-  serviceRequired: string(),
+  question: string(),
   description: string(),
 });
 
@@ -19,7 +19,7 @@ export default function FormComponent() {
     email: "",
     firstName: "",
     lastName: "",
-    serviceRequired: "",
+    question: "",
     description: "",
   });
   const [formErrors, setFormErrors] = useState({});
@@ -28,14 +28,24 @@ export default function FormComponent() {
     e.preventDefault();
 
     try {
-      const response = await fetch("YOUR_GOOGLE_SCRIPT_URL_HERE", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const formData = new FormData(event.target);
 
+    const response = fetch('https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Update form status
+      setFormStatus(data.message);
+      setShowPopup(true); // Show popup on successful submission
+    })
+    .catch(error => {
+      // Handle error
+      console.error('Error:', error);
+      setFormStatus('An error occurred while submitting the form.');
+      setShowPopup(true); // Show popup on error
+    });
       if (response.ok) {
         // Success handling
         console.log("Form data submitted successfully");
@@ -65,7 +75,14 @@ export default function FormComponent() {
       [name]: value,
     }));
   };
+  const [formStatus, setFormStatus] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
 
+
+
+  const handleClosePopup = () => {
+    setShowPopup(false); // Close the popup
+  };
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -76,7 +93,17 @@ export default function FormComponent() {
   }, []);
 
   return (
-    <form className={`rounded-lg border bg-white text-black shadow-xl w-full max-w-2xl ${isOpen ? 'open' : ''}`}>
+    <>
+    {showPopup && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+          <div className="bg-white rounded-lg p-8 max-w-md">
+            <div className="text-lg text-green-500 text-center mb-4">{formStatus}</div>
+            <button onClick={handleClosePopup} className="bg-custom-buttonColor-Green text-white font-semibold text-xl p-2 rounded-md">Close</button>
+          </div>
+        </div>
+      )}
+  
+    <form  id='myform' method='post' onSubmit={handleSubmit}  className={`rounded-lg border bg-white text-black shadow-xl w-full max-w-2xl ${isOpen ? 'open' : ''}`}>
       <div className="flex flex-col space-y-1.5 p-6">
         <h3 className="text-2xl lg:text-4xl font-semibold whitespace-nowrap leading-none tracking-tight text-black">
           Contact us
@@ -89,22 +116,22 @@ export default function FormComponent() {
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="mobile-number" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Mobile number</label>
-            <input type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            <input name='phone'  type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
           </div>
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            <input  name='email' type="email" id="email" placeholder="Enter your email" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="first-name" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">First name</label>
-            <input type="text" id="first-name" placeholder="Enter your first name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 text-sm py-5 text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            <input name='FirstName' type="text" id="first-name" placeholder="Enter your first name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 text-sm py-5 text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
           </div>
           <div className="space-y-2">
             <label htmlFor="last-name" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Last name</label>
           
-            <input type="text" id="last-name" placeholder="Enter your last name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            <input  name='LastName' type="text" id="last-name" placeholder="Enter your last name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
           </div>
         </div>
         <div className="space-y-2">
@@ -114,26 +141,27 @@ export default function FormComponent() {
           >
             Looking for{" "}
           </label>
-          <select
+          <select name='question'
             id="service-required"
-            name="serviceRequired"
-            value={formData.serviceRequired}
+            value={formData.question}
             onChange={handleChange}
             className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500"
           >
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+               <option value='NA'>Select a service</option>
+    <option value='VAPT'>VAPT</option>
+    <option value='Red Teaming'>   Red Teaming</option>
+    <option value='Consultancy'>Consultancy</option>
+    <option value='Support'>Support</option>
           </select>
         </div>
         <div className="space-y-2">
           <label htmlFor="description" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Description</label>
-          <textarea id="description" placeholder="Enter your description" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
+          <textarea  name='message' id="description" placeholder="Enter your description" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
         </div>
         <button className="inline-flex items-center shadow-lg border  justify-center whitespace-nowrap rounded-md text-sm lg:text-xl font-medium ring-offset-background transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300 duration-500 focus:ring-offset-2 bg-primary text-black hover:bg-opacity-90 h-10 px-4 py-5">Submit</button>
       </div>
       
     </form>
+    </>
   );
 }
