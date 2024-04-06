@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Images } from '../../assets'
 import SideArrow from '../../assets/Svgs/SideArrow'
 import TrainingPageCard from '../../components/TrainingPageCard'
@@ -8,6 +8,11 @@ import Faqs from '../Homepage/FAQs/Faqs'
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery'
 
 const TrainingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   const trainingData = [
     {
       id: 0,
