@@ -81,6 +81,20 @@ const About = () => {
     }
   ]
 
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Set the href attribute to the file path
+    link.href = '/Cyberous.pdf'; // Assuming the file is in the public directory
+    // Set the download attribute to give the file a name
+    link.download = 'Cyberous.pdf';
+    // Append the link to the body
+    document.body.appendChild(link);
+    // Trigger a click event to download the file
+    link.click();
+    // Clean up: remove the link from the body
+    document.body.removeChild(link);
+  };
 
 
   useEffect(() => {
@@ -137,9 +151,13 @@ const About = () => {
         </div>
       </div>
       <div className='md:flex md:flex-row md:justify-between'>
-        <button className='relative  h-full w-3/4 mx-8 md:mx-32 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/4'>
-          <img src={Images.downloadicon} className='invert absolute h-6 w-6 md:h-7 md:w-7 md:bottom-3 md:left-10' />
-          Download Brochure</button>
+      <button 
+      className="relative h-full w-3/4 mx-8 md:mx-32 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/4"
+      onClick={handleDownload}
+    >
+      <img src={Images.downloadicon} className="invert absolute h-6 w-6 md:h-7 md:w-7 md:bottom-3 md:left-10" alt="Download Icon" />
+      Download Brochure
+    </button>
         <div className='text-lg mt-8'>
           <img src={Images.AboutusIcon} className='mx-20 w-3/4 md:mx-0 opacity-70' />
         </div>
