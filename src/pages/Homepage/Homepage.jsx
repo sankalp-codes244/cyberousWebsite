@@ -36,44 +36,82 @@ const Homepage = () => {
       title: 'Bug Bounty',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.ourcources1,
-      type: 'bug_bounty'
+      type: 'bug_bounty',
+      path: '/training/bugbounty'
     },
     {
       id: 2,
       title: 'Advanced Ethical Hacking',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Advanced techniques in ethical hacking and cybersecurity.',
       image: Images.ourcources2,
-      type: 'Advanced_Ethical_Hacking'
+      type: 'Ethical_Hacking',
+      path: '/training/advanceeh'
     },
     {
       id: 3,
-      title: 'Linux Fundamental',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources3,
-      type: 'Linux_Fundamental'
+      title: 'Linux Fundamentals',
+      description: 'Fundamental concepts and practices of Linux operating system.',
+      image: Images.ourcources2,
+      type: 'Linux_Fundamental',
+      path: '/training/bugbounty'
     },
     {
       id: 4,
       title: 'Cyber Security Diploma',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Comprehensive training program covering various aspects of cybersecurity.',
       image: Images.ourcources4,
-      type: 'Cyber_Security_Diploma'
+      type: 'Cyber_Security_Diploma',
+      path: '/training/diploma'
     },
-    {
-      id: 5,
-      title: 'Application Development',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources5,
-      type: 'Application_Development' 
-    },
+    // {
+    //   id: 5,
+    //   title: 'Application Development',
+    //   description: 'Development of secure and robust applications.',
+    //   image: Images.ourcources5,
+    //   type: 'Application_Development' ,
+    //   path: '/training/linuxfundamentals'
+    // },
     {
       id: 6,
-      title: 'Advanced Ethical Hacking',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources2,
-      type: 'Advanced_Ethical_Hacking'
+      title: 'Linux Fundamentals',
+      description: 'Fundamental concepts and practices of Linux operating system.',
+      image: Images.ourcources5,
+      type: 'Ethical_Hacking',
+      path: '/training/linuxfundamentals'
     },
-  ];
+    {
+      id: 7,
+      title: 'Web Application Penetration Testing',
+      description: 'Assessing security vulnerabilities of web applications.',
+      image: Images.hackerAA,
+      type: 'Ethical_Hacking',
+      path: '/training/webpt'
+    },
+    {
+      id: 8,
+      title: 'Bug Bounty',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources1,
+      type: 'Ethical_Hacking',
+      path: '/training/bugbounty'
+    },
+    {
+      id: 9,
+      title: 'Mobile Application Penetration Testing',
+      description: 'Assessing security vulnerabilities of mobile applications.',
+      image: Images.MobileAppPenetrationTesting,
+      type: 'Ethical_Hacking',
+      path: '/training/mobilept'
+    },
+    {
+      id: 10,
+      title: 'Network Penetration Testing',
+      description: 'Evaluating network security vulnerabilities rigorously.',
+      image: Images.NetworkPenetrationTesting,
+      type: 'Ethical_Hacking',
+      path: '/training/networkpt'
+    },
+];
 
 const whyChooseUs = [
   {

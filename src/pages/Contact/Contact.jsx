@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Images } from '../../assets'
 import ContactUsCard from '../../components/ContactUsCard'
 import { Link } from 'react-router-dom'
+import { z, object, string, number } from "zod";
 
 
 
@@ -39,18 +40,50 @@ const contactData = [
 ]
 
 
+
 const Contact = () => {
+  // Define the schema using Zod
+const schema = object({
+  mobileNumber: string().min(10).max(20),
+  email: string().email(),
+  FirstName: string(),
+  LastName: string(),
+  question: string(),
+  message: string(),
+});
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [formData, setFormData] = useState({
+    phone: "",
+    email: "",
+    FirstName: "",
+    LastName: "",
+    question: "",
+    message: "",
+  });
+  const [formErrors, setFormErrors] = useState({});
+  const [loader, setLoader] = useState(false);
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isChoice, setIsChoice] = useState(false)
   const [formStatus, setFormStatus] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
-    
-    const formData = new FormData(event.target);
+  const handleSubmit = async (e) => {
+    setLoader(true);
+    e.preventDefault();
+    if(formData.phone === '' || formData.email === '' || formData.FirstName === '' || formData.LastName === '' || formData.question === '' || formData.message === '') {
+      alert("Please fill all the fields");
+      setLoader(false);
+      console.log(formData)
+      return;
+    }
 
-    fetch('https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec', {
+    try {
+      const formData = new FormData(event.target);
+
+    const response = fetch('https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec', {
       method: 'POST',
       body: formData
     })
@@ -58,22 +91,59 @@ const Contact = () => {
     .then(data => {
       // Update form status
       setFormStatus(data.message);
+    setLoader(false);
       setShowPopup(true); // Show popup on successful submission
+
     })
     .catch(error => {
       // Handle error
       console.error('Error:', error);
       setFormStatus('An error occurred while submitting the form.');
       setShowPopup(true); // Show popup on error
+    setLoader(false);
+
     });
+      if (response.ok) {
+        // Success handling
+        console.log("Form data submitted successfully");
+        // Reset form data
+        setFormData({
+          phone: "",
+          email: "",
+          FirstName: "",
+          LastName: "",
+          serviceRequired: "",
+          message: "",
+        });
+    setLoader(false);
+
+      } else {
+        // Error handling
+        console.error("Failed to submit form data");
+    setLoader(false);
+        
+
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    setLoader(false);
+
+    }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
   const handleClosePopup = () => {
     setShowPopup(false); // Close the popup
   };
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
 
@@ -82,7 +152,21 @@ const Contact = () => {
   
   return (
     <>
-    
+    {showPopup && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+          <div className="bg-white rounded-lg p-8 max-w-md">
+            <div className="text-lg text-green-500 text-center mb-4">{formStatus}</div>
+            <button onClick={handleClosePopup} className="bg-custom-buttonColor-Green text-white font-semibold text-xl p-2 rounded-md">Close</button>
+          </div>
+        </div>
+      )}
+  {loader && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+          <div className="bg-white rounded-lg p-8 max-w-md">
+            <div className="text-lg text-green-500 text-center mb-4">Submitting form...</div>
+          </div>
+        </div>
+      )}
     <div>
       <div className='flex flex-col md:flex-row bg-custom-greyBorderColor my-10'>
         <div className='flex flex-col p-4 mt-4 md:mt-40 w-full md:w-1/2'>
@@ -149,21 +233,21 @@ const Contact = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 '>
               <label className='mx-4 text-black text-xl'>
                 First Name :
-                <input type='text' name='FirstName' className='border border-solid border-black  px-2 bg-white h-10 w-full    '></input>
+                <input value={formData.FirstName} onChange={handleChange} type='text' name='FirstName' className='border border-solid border-black  px-2 bg-white h-10 w-full    '></input>
               </label>
               <label className='mx-4 text-black text-xl'>
                 Last Name :
-                <input type='text' name='LastName' className='border border-solid border-black  px-2 bg-white h-10 w-full '></input>
+                <input value={formData.LastName} onChange={handleChange} type='text' name='LastName' className='border border-solid border-black  px-2 bg-white h-10 w-full '></input>
               </label>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 my-4'>
               <label className='mx-4 text-black text-xl'>
                 Phone :
-                <input type='text' name='phone' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
+                <input value={formData.mobileNumber} onChange={handleChange} type='text' name='phone' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
               </label>
               <label className='mx-4 text-black text-xl'>
                 Email :
-                <input type='email' name='email' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
+                <input value={formData.email} onChange={handleChange}  type='email' name='email' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
               </label>
 
 
@@ -174,7 +258,8 @@ const Contact = () => {
 A question about...
 </label>
 
-  <select name='question' className='border border-solid border-black bg-white mx-4 h-10 w-full'>
+  <select  value={formData.question}
+            onChange={handleChange} name='question' className='border border-solid border-black bg-white mx-4 h-10 w-full'>
     <option value='NA'>Select a service</option>
     <option value='VAPT'>VAPT</option>
     <option value='Red Teaming'>   Red Teaming</option>
@@ -184,7 +269,7 @@ A question about...
 </div>
             <div className='p-4 px-8 '>
               <p className='text-xl text-black py-4'>Your Comment  <span className=' text-2xl md:text-4xl text-red-700'> * </span></p>
-              <textarea name='message' className='border border-solid border-black w-full h-64 font-serif text-black p-4' type='text' placeholder=''>
+              <textarea value={formData.message} onChange={handleChange} name='message' className='border border-solid border-black w-full h-64 font-serif text-black p-4' type='text' placeholder=''>
               </textarea>
             </div>
             <div className='flex justify-center items-center'>

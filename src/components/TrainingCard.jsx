@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const TrainingCard = ({ image, title, description,type}) => {
+const TrainingCard = ({ image, title, description,type,path}) => {
   return (
     // Responsive max width and hover effects
     <div className="max-w-xs sm:max-w-sm lg:max-w-lg xl:max-w-lg mx-auto rounded overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
@@ -19,7 +19,7 @@ const TrainingCard = ({ image, title, description,type}) => {
         
         
       </div>
-      <Link className=" absolute bottom-0 right-0 m-3  px-3 py-2 bg-custom-buttonColor-Green text-white rounded-full focus:ring-4 duration-500 ring-green-300">
+      <Link to={path} className=" absolute bottom-0 right-0 m-3  px-3 py-2 bg-custom-buttonColor-Green text-white rounded-full focus:ring-4 duration-500 ring-green-300">
           Learn More
         </Link>
       </div>

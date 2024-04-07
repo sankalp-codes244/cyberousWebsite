@@ -47,7 +47,7 @@ import travelkicks from './images/travelkicks.png'
 import ourcources1 from './images/ourcources1.png'
 import ourcources2 from './images/ourcources2.jpg'
 import ourcources3 from './images/ourcources3.jpg'
-import ourcources4 from './images/ourcources4.png'
+import ourcources4 from './images/ourcources4.jpg'
 import ourcources5 from './images/ourcources5.jpeg'
 import methodology1 from './images/methodologyimg1.jpg'
 import Ev1 from './images/evaluatebusinessimg1.gif'
@@ -158,6 +158,10 @@ import webbug from './images/webbug.png'
 import websec from './images/websec.png'
 import mobsec from './images/mobsec.png'
 import iotsec from './images/iotsec.png'
+import hackerAA from './images/hackerAA.jpg'
+import MobileAppPenetrationTesting from './images/MobileAppPenetrationTesting.jpg'
+import NetworkPenetrationTesting from './images/NetworkPenetrationTesting.jpg'
+import  linuxHacked from './images/linuxHacked.jpg'
 
 import AmityImg1 from './images/Events/Amity/AmityImg1.jpg'
 import AmityImg2 from './images/Events/Amity/AmityImg2.jpeg'
@@ -415,4 +419,8 @@ export const Images ={
     coporatecyber1: coporatecyber1,
     coporatecyber2: coporatecyber2,
     coporatecyber3: coporatecyber3,
+    hackerAA: hackerAA,
+    MobileAppPenetrationTesting: MobileAppPenetrationTesting,
+    NetworkPenetrationTesting: NetworkPenetrationTesting,
+    linuxHacked: linuxHacked,
 }

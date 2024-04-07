@@ -8,8 +8,9 @@ import Faqs from '../Homepage/FAQs/Faqs'
 import MediaGallery from '../Homepage/MediaGallery/MediaGallery'
 
 const TrainingPage = () => {
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   
@@ -48,51 +49,89 @@ const TrainingPage = () => {
 
   ]
 
+
   const programs = [
     {
       id: 1,
       title: 'Bug Bounty',
       description: 'Smart CCTV Security Systems That Fits Your Business',
       image: Images.ourcources1,
-      type: 'bug_bounty'
+      type: 'bug_bounty',
+      path: '/training/bugbounty'
     },
     {
       id: 2,
       title: 'Advanced Ethical Hacking',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Advanced techniques in ethical hacking and cybersecurity.',
       image: Images.ourcources2,
-      type: 'Advanced_Ethical_Hacking'
+      type: 'Ethical_Hacking',
+      path: '/training/advanceeh'
     },
     {
       id: 3,
-      title: 'Linux Fundamental',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources3,
-      type: 'Linux_Fundamental'
+      title: 'Linux Fundamentals',
+      description: 'Fundamental concepts and practices of Linux operating system.',
+      image: Images.ourcources2,
+      type: 'Linux_Fundamental',
+      path: '/training/bugbounty'
     },
     {
       id: 4,
       title: 'Cyber Security Diploma',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Comprehensive training program covering various aspects of cybersecurity.',
       image: Images.ourcources4,
-      type: 'Cyber_Security_Diploma'
+      type: 'Cyber_Security_Diploma',
+      path: '/training/diploma'
     },
-    {
-      id: 5,
-      title: 'Application Development',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources5,
-      type: 'Application_Development' 
-    },
+    // {
+    //   id: 5,
+    //   title: 'Application Development',
+    //   description: 'Development of secure and robust applications.',
+    //   image: Images.ourcources5,
+    //   type: 'Application_Development' ,
+    //   path: '/training/linuxfundamentals'
+    // },
     {
       id: 6,
-      title: 'Advanced Ethical Hacking',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
-      image: Images.ourcources2,
-      type: 'Advanced_Ethical_Hacking'
+      title: 'Linux Fundamentals',
+      description: 'Fundamental concepts and practices of Linux operating system.',
+      image: Images.ourcources5,
+      type: 'Ethical_Hacking',
+      path: '/training/linuxfundamentals'
     },
-  ];
-
+    {
+      id: 7,
+      title: 'Web Application Penetration Testing',
+      description: 'Assessing security vulnerabilities of web applications.',
+      image: Images.hackerAA,
+      type: 'Ethical_Hacking',
+      path: '/training/webpt'
+    },
+    {
+      id: 8,
+      title: 'Bug Bounty',
+      description: 'Smart CCTV Security Systems That Fits Your Business',
+      image: Images.ourcources1,
+      type: 'Ethical_Hacking',
+      path: '/training/bugbounty'
+    },
+    {
+      id: 9,
+      title: 'Mobile Application Penetration Testing',
+      description: 'Assessing security vulnerabilities of mobile applications.',
+      image: Images.MobileAppPenetrationTesting,
+      type: 'Ethical_Hacking',
+      path: '/training/mobilept'
+    },
+    {
+      id: 10,
+      title: 'Network Penetration Testing',
+      description: 'Evaluating network security vulnerabilities rigorously.',
+      image: Images.NetworkPenetrationTesting,
+      type: 'Ethical_Hacking',
+      path: '/training/networkpt'
+    },
+];
   const faqData = [
     {
       id: 0,
@@ -244,18 +283,47 @@ const TrainingPage = () => {
         </div>
       </div>
 
-      <div className='p-10 flex flex-col md:flex:row '>
-        <div className='md:w-1/2'>
+      <div className='p-10 flex flex-col lg:flex-row md:flex:row '>
+        <div className='lg:w-2/3'>
           <h1 className='text-center text-2xl md:text-4xl font-Roboto font-bold py-5'>
             Online Cyber Security Diploma
           </h1>
-          <p className='font-xl font-__Inter_aaf875 text-center md:px-10 md:text-justify '>
+          <p className='lg:text-2xl pt-6 font-__Inter_aaf875 text-center md:px-10 md:text-justify '>
             Embark on a transformative journey in cybersecurity with Cyberous' comprehensive diploma programs, available in durations of 6 months and 1 year. Delve into cutting-edge techniques and industry best practices under the guidance of seasoned experts, equipping yourself with the skills needed to safeguard digital assets effectively. Whether you're looking to kickstart your career or enhance your expertise, our flexible programs offer the perfect pathway to success in the dynamic realm of cybersecurity
           </p>
+        </div>
+        <div className='lg:w-1/3 lg:flex gap-4 '>
+          <div className='border w-full rounded-xl shadow-xl p-5'>
+            <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>6 months</h1>
+            <ul className='px-3'>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> 6 Months/1 Year Duration</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Expert-Led Training</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Hands-On Learning</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Industry-Recognized Certification</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Career Advancement</li>
+            </ul>
+            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-4'>Read more</button>
+          </div>
+          <div className='border w-full  rounded-xl shadow-xl p-5'>
+            <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>1 year</h1>
+            <ul className='px-2'>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> 6 Months/1 Year Duration</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Expert-Led Training</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Hands-On Learning</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Industry-Recognized Certification</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Career Advancement</li>
+            </ul>
+            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-4'>Read more</button>
+
+          </div>
+         
         </div>
       </div>
       <div>
 
+      </div>
+      <div>
+        <Training programs={programs}/>
       </div>
       <div>
         <MediaGallery/>

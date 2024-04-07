@@ -6,7 +6,7 @@ const Testemonial = ({data}) => {
   
   return (
     <>
-      <div className="mb-8">
+    {data &&  <div className="mb-8">
         <h1 className="text-center text-3xl md:text-5xl font-serif m-6 font-bold">
           Testimonials
         </h1>
@@ -29,7 +29,7 @@ const Testemonial = ({data}) => {
             }
           </div>
       </div>
-      </div>
+      </div>}
     </>
   );
 };
