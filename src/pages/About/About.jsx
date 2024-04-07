@@ -147,19 +147,20 @@ const About = () => {
         <div className='flex flex-col md:flex-row justify-between items-center mt-20 md:pt-40 md:pb-10'>
           <div className='flex flex-col'>
             <p className='font-bold text-3xl md:text-6xl font-__Inter_aaf875'>Download a copy of our <p className='text-green-500 font-__Inter_aaf875 pt-6'>Company Profile</p></p>
-          </div>
-        </div>
-      </div>
-      <div className='md:flex md:flex-row md:justify-between'>
-        <button
-          className="relative h-full w-3/4 mx-8 md:mx-32 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 md:h-14 md:w-1/4"
+            <button
+          className="bg-custom-buttonColor-Green text-white font-bold py-2 lg:w-3/5 h-20 px-16  rounded-full mt-4 md:mt-8 hover:bg-custom-buttonColor-GreenLight focus:outline-none focus:shadow-outline flex items-center justify-between "
+          
           onClick={handleDownload}
         >
-          <img src={Images.downloadicon} className="invert absolute h-6 w-6 md:h-7 md:w-7 md:bottom-3 md:left-10" alt="Download Icon" />
-          Download Brochure
+          <img src={Images.downloadicon} className="invert object-contain  w-10 lg:w-10" alt="Download Icon" />
+         <p className='text-white text-xl'>Download Brochure</p> 
         </button>
+          </div>
         <img src={Images.AboutusIcon} className='mx-20 w-1/4 md:mx-0 opacity-70' />
+
+        </div>
       </div>
+    
 
       {/* We Excel section */}
       <div className='text-center my-20'>

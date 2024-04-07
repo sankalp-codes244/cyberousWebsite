@@ -60,8 +60,9 @@ const MediaGallery = () => {
                   <img key={index} src={image} alt={`Event ${event.id} Image ${index + 1}`} className="mx-2 pointer-events-none select-none w-52 max-h-28 min-h-28 lg:w-96 lg:min-h-52  lg:max-h-52 object-cover rounded-md" />
                 ))}
               </div>
-              <h3 className="text-lg font-bold text-center">{event.name}</h3>
-              <p className="text-sm text-gray-500 text-center">{event.description}</p>
+              <h3 className="text-3xl font-__Inter_aaf875 font-bold text-center py-3">{event.name}</h3>
+
+              {/* <p className="text-sm text-gray-500 text-center">{event.description}</p> */}
             </div>
           ))}
         </div>

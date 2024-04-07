@@ -54,7 +54,7 @@ const TrainingPage = () => {
     {
       id: 1,
       title: 'Bug Bounty',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Identifying and reporting security vulnerabilities in web applications.',
       image: Images.ourcources1,
       type: 'bug_bounty',
       path: '/training/bugbounty'
@@ -110,7 +110,7 @@ const TrainingPage = () => {
     {
       id: 8,
       title: 'Bug Bounty',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Identifying and reporting security vulnerabilities in web applications.',
       image: Images.ourcources1,
       type: 'Ethical_Hacking',
       path: '/training/bugbounty'
@@ -296,24 +296,25 @@ const TrainingPage = () => {
           <div className='border w-full rounded-xl shadow-xl p-5'>
             <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>6 months</h1>
             <ul className='px-3'>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> 6 Months/1 Year Duration</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Expert-Led Training</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Hands-On Learning</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Industry-Recognized Certification</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Career Advancement</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Linux Fundamentals
+Networking Fundamentals</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow />Python Programming</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Web Application & Network Penetration Testing</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Mobile Application Penetration Testing</li>
             </ul>
             <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-4'>Read more</button>
           </div>
           <div className='border w-full  rounded-xl shadow-xl p-5'>
             <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>1 year</h1>
             <ul className='px-2'>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> 6 Months/1 Year Duration</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Expert-Led Training</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Hands-On Learning</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Industry-Recognized Certification</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> 6 Months Diploma +</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Cloud Penetration Testing 
+API Penetration Testing </li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> IOT Internet of Things</li>
+              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Cloud Security</li>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Career Advancement</li>
             </ul>
-            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-4'>Read more</button>
+            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-10'>Read more</button>
 
           </div>
          

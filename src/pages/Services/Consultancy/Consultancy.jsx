@@ -17,14 +17,14 @@ const Cards = ({ image, name, desc }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className=' w-full h-relative relative shadow-md bg-white rounded-md hover:bg-green-500 duration-200 hover:scale-105'
+    <div className=' w-full h-relative relative shadow-md bg-white rounded-md hover:bg-custom-fontColor-Green duration-200 hover:scale-105'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
 
     >
       <div className={`py-28 lg:py-20 lg:px-10 `}>
         <div className='p-6 flex justify-center items-center w-28 top-3 left-3 overflow-hidden shadow-md rounded-full absolute'
-          style={{ backgroundColor: isHovered ? 'white' : '#68D391', transform: isHovered ? 'scale(1.1) rotate(20deg)' : 'scale(1)', transition: 'all 0.3s', }}
+          style={{ backgroundColor: isHovered ? 'white' : '#22c55e', transform: isHovered ? 'scale(1.1) rotate(20deg)' : 'scale(1)', transition: 'all 0.3s', }}
         >
           {image}
         </div>
@@ -218,7 +218,7 @@ const Consultancy = () => {
           />
         </div>
       </div>
-      <div className='py-10 md:py-40 text-center bg-no-repeat bg-cover  bg-center  object-contain' style={{ backgroundImage: `url(${Images.bgGreen})`, backgroundAttachment: 'fixed' }}>
+      <div className='py-10 md:py-40 text-center bg-no-repeat bg-cover  bg-center  object-contain' style={{ backgroundImage: `url(${Images.CorporateTrainingbg})`, backgroundAttachment: 'fixed' }}>
         <h1 className='text-3xl lg:text-6xl font-semibold py-4 text-white pb-10'>Our Cybersecurity Consulting services</h1>
         <div className='flex flex-wrap lg:grid lg:grid-cols-3 lg:flex-nowrap gap-14 p-6 m-8 justify-center'>
           {/* <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div> */}
@@ -275,7 +275,7 @@ const Consultancy = () => {
                         CALL FOR ADVICE NOW!
                       </p>
                       <p className="font-bold text-2xl lg:text-4xl">
-                        +91 9876543210
+                        +91 8199985888
                       </p>
                     </div>
                   </a>

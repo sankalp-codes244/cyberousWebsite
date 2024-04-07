@@ -35,7 +35,7 @@ const Homepage = () => {
     {
       id: 1,
       title: 'Bug Bounty',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Identifying and reporting security vulnerabilities in web applications.',
       image: Images.ourcources1,
       type: 'bug_bounty',
       path: '/training/bugbounty'
@@ -91,7 +91,7 @@ const Homepage = () => {
     {
       id: 8,
       title: 'Bug Bounty',
-      description: 'Smart CCTV Security Systems That Fits Your Business',
+      description: 'Identifying and reporting security vulnerabilities in web applications.',
       image: Images.ourcources1,
       type: 'Ethical_Hacking',
       path: '/training/bugbounty'
