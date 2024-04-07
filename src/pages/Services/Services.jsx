@@ -115,7 +115,7 @@ const data =[
                 <li className='font-__Inter_aaf875'>
                   <div className='flex flex-row'>
                     <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                    <p className='font-bold'> Ethical Hacking training </p>
+                    <p className='font-bold'> Ethical Hacking Training </p>
                   </div>
                   <div font-__Inter_aaf875 className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
                     <p className='pl-10'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</p>
@@ -151,7 +151,7 @@ const data =[
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
-                    <p className='pl-10'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services</p>
+                    <p className='pl-10'>Secure your iOS apps against cyber threats with our specialized Penetration Testing services.</p>
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
@@ -195,7 +195,7 @@ const data =[
                   <Link to='/services/iotpt'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  IoT Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  IOT Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -218,7 +218,7 @@ const data =[
                   <Link to='/services/redteaming'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Red Teaming: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Red Teaming </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -247,28 +247,30 @@ const data =[
         {/* <BrandsTrustUs /> */}
         <NamesYouKnow/>
       </div>
-      <div className="p-6 bg-custom-buttonColor-GreenDark text-white md:p-20">
+      <div className="p-6 bg-custom-buttonColor-GreenDark text-white md:p-6 border border-solid border-black">
         <div className="container mx-auto px-4 ">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="flex flex-col justify-center">
-              <span className="text-3xl md:text-5xl font-bold">30+</span>
-              <span className="text-xl md:text-3xl">CLIENTS SECURED</span>
+              <span className="text-3xl md:text-5xl font-__Inter_aaf875 font-bold">30+</span>
+              <span className="text-xl md:text-xl p-2 font-__Inter_aaf875">CLIENTS SECURED</span>
             </div>
             <div className="flex flex-col justify-center">
-              <span className="text-3xl md:text-5xl font-bold">150+</span>
-              <span className="text-xl md:text-3xl">PROJECTS COMPLETED</span>
+              <span className="text-3xl md:text-5xl font-bold font-__Inter_aaf875">150+</span>
+              <span className="text-xl md:text-xl p-2 font-__Inter_aaf875">PROJECTS COMPLETED</span>
             </div>
             <div className="flex flex-col justify-center">
-              <span className="text-3xl md:text-5xl font-bold">20+</span>
-              <span className="text-xl md:text-3xl">SKILLED PROFESSIONAL</span>
+              <span className="text-3xl md:text-5xl font-bold font-__Inter_aaf875">20+</span>
+              <span className="text-xl md:text-xl p-2 font-__Inter_aaf875">SKILLED PROFESSIONAL</span>
             </div>
             <div className="flex flex-col justify-center">
-              <span className="text-3xl md:text-5xl font-bold">12000+</span>
-              <span className="text-xl md:text-3xl">STUDENTS TRAINED</span>
+              <span className="text-3xl md:text-5xl font-bold font-__Inter_aaf875">12000+</span>
+              <span className="text-xl md:text-xl p-2 font-__Inter_aaf875">STUDENTS TRAINED</span>
             </div>
           </div>
         </div>
       </div>
+
+
       <div id="brands" className='min-h-full bg-white'>
         <IndustrialRecognition />
       </div>

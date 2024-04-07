@@ -206,6 +206,8 @@ import BoostEmployeeimg5 from './images/BoostEmployeeimg5.svg'
 import coporatecyber1 from './images/coporatecyber1.svg'
 import coporatecyber2 from './images/coporatecyber2.svg'
 import coporatecyber3 from './images/coporatecyber3.svg'
+import CorporateTrainingbg2 from './images/CorporateTrainingbg2.jpg'
+import CorporateTrainingbg3 from './images/CorporateTrainingbg3.jpg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -415,4 +417,6 @@ export const Images ={
     coporatecyber1: coporatecyber1,
     coporatecyber2: coporatecyber2,
     coporatecyber3: coporatecyber3,
+    CorporateTrainingbg2: CorporateTrainingbg2,
+    CorporateTrainingbg3: CorporateTrainingbg3,
 }

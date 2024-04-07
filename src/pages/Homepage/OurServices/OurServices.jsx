@@ -8,7 +8,7 @@ let servicesData = [
     img: Images.OurServicesimg1,
     servicesDescription: `Strengthen digital defenses with Cyberous' VAPT services. Our expert team conducts thorough Vulnerability Assessment and Penetration Testing, ensuring robust protection against cyber threats. Rely on our 5-star Google-rated services to safeguard your assets effectively.`,
     serviceText: 'VAPT',
-    link:'/',
+    link:'/services',
   },
   {
     id: 1,
