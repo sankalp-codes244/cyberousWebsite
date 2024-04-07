@@ -14,7 +14,7 @@ const Testemonial = ({data}) => {
         <div className="h-1 w-40 md:w-64 bg-custom-buttonColor-Green"></div>
         </div>
         <h1 className="text-center text-2xl md:text-4xl font-sans m-6">
-          What do People Say About Us
+          What Do People Say About Us
         </h1>
         <div className="flex justify-center">
           <div className=" md:w-4/5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-5 ">

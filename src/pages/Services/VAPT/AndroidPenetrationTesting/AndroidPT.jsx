@@ -30,7 +30,7 @@ const AndroidPT = () => {
     const approachData = [
       {
         id: 0,
-        name: 'Scoping and objectives',
+        name: 'Scoping and Objectives',
         description: "In this foundational phase, we intricately outline the boundaries of our evaluation, identifying specific app features, modules, and potential threat vectors. The primary goal is to tailor our testing methodologies for a focused and targeted assessment, ensuring actionable insights that align with your security objectives. By delving into the intricacies of scoping, we set the stage for a comprehensive and effective penetration testing strategy, providing a roadmap to fortify your Android application against evolving cybersecurity risks. Boost your Android app security strategy with our tailored scoping process today!",
         imgUrl: Images.AndroidPTApproachimg1,
         type: 'Scoping_and_objectives'
