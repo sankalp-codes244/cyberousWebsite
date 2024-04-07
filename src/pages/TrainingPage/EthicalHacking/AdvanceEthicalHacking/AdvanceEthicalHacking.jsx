@@ -12,8 +12,8 @@ const AdvanceEthicalHacking = () => {
   }, []);
   return (
     <div className='relative'>
-      <img src={Images.ethicalhackingimg10} className='hidden md:block bg-custom-custom-blackbg absolute right-0 top-20' />
-      <div className='flex justify-center bg-custom-custom-blackbg'>
+      <img src={Images.ethicalhackingimg10} className=' hidden md:block bg-custom-custom-blackbg absolute right-0 top-20' />
+      <div className='flex justify-center bg-custom-custom-blackbg h-screen'>
         <div className='md:w-4/5'>
           <div className='w-full p-4 md:px-20 md:py-10'>
             <div className='md:flex md:flex-row justify-between'>
