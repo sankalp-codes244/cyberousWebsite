@@ -35,8 +35,6 @@ import TermsandCond from './pages/FooterContent/TermsandCond.jsx'
 import Disclamer from './pages/FooterContent/Disclamer.jsx'
 import PrivacyPolicy from './pages/FooterContent/PrivacyPolicy.jsx'
 import DMCAPolicy from './pages/FooterContent/DMCAPolicy.jsx'
-import Tweet from './pages/Tweet.jsx'
-import GoogleR from './pages/googleR.jsx'
 
 
 const router = createBrowserRouter(
@@ -44,8 +42,6 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='*' element={<NotFound />} />
       <Route path='' element={<Homepage />} />
-      <Route path='/twitters' element={<Tweet />} />
-      <Route path='/GReview' element={<GoogleR />} />
       <Route path='/training' element={<TrainingPage />} />
       <Route path='/training/advanceeh' element={<AdvanceEthicalHacking/>} />
       <Route path='/training/bugbounty' element={<BugBounty />} />
