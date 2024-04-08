@@ -11,31 +11,36 @@ const contactData = [
     id: 0,
     name: 'Ask Cyberous',
     desc: 'Check out our FAQs',
-    Link: "Go →"
+    Link: "Go →",
+    nav: "/"
   },
   {
     id: 1,
     name: 'Call Us',
     desc: 'Give your local consumer service hotline a ring',
-    Link: "Go →"
+    Link: "Go →",
+    nav: "callto:918199985888"
   },
   {
     id: 2,
     name: 'Drop A Review',
     desc: 'Find our Google Page',
-    Link: "Go →"
+    Link: "Go →",
+    nav: "https://g.co/kgs/16dnDxb"
   },
   {
     id: 3,
     name: 'Tweet Us',
     desc: "We're just a tweet away @cyberousinfosec",
-    Link: "Go →"
+    Link: "Go →",
+    nav: "https://twitter.com/cyberousinfosec"
   },
   {
     id: 4,
     name: 'Speak Up',
     desc: "if you have a compliance concern (we'll keep it confidential)",
-    Link: "Go →"
+    Link: "Go →",
+    nav: "#msg"
   },
 ]
 
@@ -188,13 +193,13 @@ const schema = object({
           <div className='md:w-11/12'>
             <div className='grid grid-col-1 mx-12 my-2 gap-6 md:gap-4 md:grid-cols-5 '>
               {contactData.map((item) => (
-                <Link>
                   <ContactUsCard
+                  key={item.id}
                     head={item.name}
                     desc={item.desc}
                     link={item.Link}
+                    nav={item.nav}
                   />
-                </Link>
               ))}
             </div>
           </div>
@@ -216,7 +221,7 @@ const schema = object({
       <div className='m-8 lg:ml-36 lg:mt-20'>
         <div className='md:w-1/2'>
           <div className='border-b-2 border-gray-400'/>
-        <h1 className='text-2xl font-sans pt-20'>
+        <h1  className='text-2xl font-sans pt-20'>
           Leave Us A Message
         </h1>
         <p className='text-lg font sans py-4 lg:text-xl text-justify'>
@@ -272,7 +277,7 @@ A question about...
               <textarea value={formData.message} onChange={handleChange} name='message' className='border border-solid border-black w-full h-64 font-serif text-black p-4' type='text' placeholder=''>
               </textarea>
             </div>
-            <div className='flex justify-center items-center'>
+            <div id='msg' className='flex justify-center items-center'>
 
                 <button className='bg-custom-buttonColor-Green text-white font-semibold text-xl p-4 w-40 ' value='Submit' type='submit' id='submit'>SEND</button>
             </div>

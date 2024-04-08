@@ -434,4 +434,5 @@ export const Images ={
     BLOGBG: BLOGBG,
     support: support,
     internshipbg1: internshipbg1,
+    classroomTraining: classroomTraining,
 }

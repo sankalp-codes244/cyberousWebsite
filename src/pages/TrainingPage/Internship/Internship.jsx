@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Images } from '../../../assets'
 import FormComponent from '../../../components/FormComponent'
 import PageHeader from './PageHeader/PageHeader'
@@ -7,8 +7,14 @@ import NamesYouKnow from '../../Services/RedTeaming/NamesYouKnow/NamesYouKnow'
 import MediaGallery from '../../Homepage/MediaGallery/MediaGallery'
 import Faqs from '../../Homepage/FAQs/Faqs'
 import CourseTiles from './CourseTiles/CourseTiles'
+import { Link } from 'react-router-dom'
 
 const Internship = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }
+  )
+  
   return (
     <div>
       <div>
@@ -33,10 +39,11 @@ const Internship = () => {
               </div>
             </div>
             <div className='flex justify-center items-center md:w-1/4'>
-
+<Link to='/contact' className='w-full'>
               <button className='bg-white text-xl  font-__Inter_aaf875 font-bold p-3 w-full text-custom-buttonColor-Green rounded-lg'>
                 Enroll Now
               </button>
+  </Link>
             </div>
           </div>
         </div>

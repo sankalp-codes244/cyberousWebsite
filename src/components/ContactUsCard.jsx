@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 
-const ContactUsCard = ({ head, desc, link }) => {
+const ContactUsCard = ({ head, desc, link,nav }) => {
   return (
-    <div className='relative shadow-2xl border-black p-4 pb-10 bg-custom-orange-colorlight w-full h-full rounded-md'>
+    <Link to={nav} className='relative shadow-2xl border-black p-4 pb-10 bg-custom-orange-colorlight w-full h-full rounded-md'>
       <h1 className='md:text-2xl font-sans text-custom-greyLightColor pl-4 pt-4'>
         {head}
       </h1>
@@ -14,7 +15,7 @@ const ContactUsCard = ({ head, desc, link }) => {
           </p>
       </div>
       
-    </div>
+    </Link>
   )
 }
 

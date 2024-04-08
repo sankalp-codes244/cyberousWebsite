@@ -112,6 +112,7 @@ const data =[
           <div className='flex flex-col lg:flex-row justify-around p-4 lg:p-10'>
             <div className='text-lg lg:text-2xl mb-8 xl:mr-6 lg:mb-0'>
               <ul className='text-green-500 space-y-4 '>
+              <Link to='/training'>
                 <li className='font-__Inter_aaf875'>
                   <div className='flex flex-row'>
                     <img src={Images.checkMark} className='h-6 w-6 m-2' />
@@ -121,6 +122,8 @@ const data =[
                     <p className='pl-10'>Elevate your cybersecurity skills with our expert-led Ethical Hacking Training programs.</p>
                   </div>
                 </li>
+              </Link>
+
                 <li className='font-__Inter_aaf875'>
                   <Link to='/services/websecurity'>
                     <div className='flex flex-row '>

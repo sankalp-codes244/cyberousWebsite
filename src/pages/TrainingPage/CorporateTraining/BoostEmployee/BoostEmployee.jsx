@@ -23,8 +23,8 @@ const BoostEmployee = () => {
             </div>
             <div className='flex justify-center'>
                 <div className='md:w-5/6'>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 mb-6 shadow-lg rounded-lg'>
-                        <div className='bg-custom-greycolor1 w-full'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 mb-6  rounded-lg'>
+                        <div className='bg-custom-greycolor1 w-full shadow-lg'>
                             <div className='grid grid-cols-1 gap-10 md:w-full'>
                                 <div className='flex justify-center'>
                                     <img src={Images.BoostEmployeeimg1} className='w-20 m-4' />
@@ -37,7 +37,7 @@ const BoostEmployee = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-custom-greycolor1 w-full'>
+                        <div className='bg-custom-greycolor1 w-full shadow-lg'>
                             <div className='grid grid-cols-1 gap-10 md:w-full'>
                                 <div className='flex justify-center'>
                                     <img src={Images.BoostEmployeeimg2} className='w-20 m-4' />
@@ -50,7 +50,7 @@ const BoostEmployee = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-custom-greycolor1 w-full'>
+                        <div className='bg-custom-greycolor1 w-full shadow-lg'>
                             <div className='grid grid-cols-1 gap-10 md:w-full'>
                                 <div className='flex justify-center'>
                                     <img src={Images.BoostEmployeeimg3} className='w-20 m-4' />
@@ -63,7 +63,7 @@ const BoostEmployee = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-custom-greycolor1 w-full'>
+                        <div className='bg-custom-greycolor1 w-full shadow-lg'>
                             <div className='grid grid-cols-1 gap-10 md:w-full'>
                                 <div className='flex justify-center'>
                                     <img src={Images.BoostEmployeeimg5} className='w-20 m-4' />

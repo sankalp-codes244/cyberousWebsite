@@ -9,7 +9,7 @@ import MediaGallery from "../Homepage/MediaGallery/MediaGallery";
 
 const TrainingPage = () => {
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const trainingData = [
@@ -320,6 +320,7 @@ const TrainingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 w-3/4 py-10">
             {trainingData.map((item) => (
               <TrainingPageCard
+              key={item.id}
                 id={item.id}
                 name={item.name}
                 desc={item.desc}
@@ -610,10 +611,10 @@ const TrainingPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3">
+          <div className="flex justify-center items-center lg:w-1/2">
             <img
               src={Images.classroomTraining}
-              className="object-contain w-full"
+              className="object-contain w-full pointer-events-none"
             />
           </div>
         </div>
@@ -697,7 +698,7 @@ const TrainingPage = () => {
 
       <div className="py-10">
         <h1 className="text-center text-2xl md:text-4xl font-Roboto font-bold py-5 mt-10">
-        Let’s see what out students say’s about us
+        Let’s see what our students say’s about us
         </h1>
         <Testemonial data={testData} />
       </div>

@@ -113,7 +113,7 @@ const LinuxFundamentals = () => {
       <div className='bg-custom-greyLightColor p-10'>
         <h1 className='text-center text-2xl md:text-5xl font-serif font-bold'>What You Will Learn</h1>
         <div className='font-bold grid grid-cols-1 md:grid-cols-2 py-20 text-xl md:text-2xl font-__Inter_aaf875'>
-          <ol>
+           <ol className='grid gap-2'>
             <li className=''>
               <div className='flex flex-row'>
                 <img src={Images.accept} className='h-6 w-6 m-2' />
@@ -141,7 +141,7 @@ const LinuxFundamentals = () => {
 
 
           </ol>
-          <ol>
+           <ol className='grid gap-2'>
             <li className=''>
               <div className='flex flex-row'>
                 <img src={Images.accept} className='h-6 w-6 m-2' />
@@ -216,7 +216,7 @@ const LinuxFundamentals = () => {
           <div className='flex'>
             <div className='grid grid-cols-1 text-xl md:text-2xl font-__Inter_aaf875 px-6'>
               <div>
-                <ol>
+                 <ol className='grid gap-2'>
                   <li className=''>
                     <div className='flex flex-row'>
                       <img src={Images.accept} className='h-6 w-6 m-2' />
@@ -287,13 +287,13 @@ const LinuxFundamentals = () => {
           </div>
         </div>
       </div>
-      <div className='py-20'>
+      <div className='pt-20'>
         <IndustrialRecognition />
       </div>
       <div className='py-20'>
         <Testemonial />
       </div>
-      <div className='py-20'>
+      <div className='pb-20'>
         <MediaGallery />
       </div>
       <div className='py-20'>

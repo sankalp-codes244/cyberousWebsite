@@ -361,14 +361,13 @@ const AdvanceEthicalHacking = () => {
         </div>
         </div>
       </div>
-
-      <div className='py-20'>
+      <div className='pt-20'>
         <IndustrialRecognition />
       </div>
       <div className='py-20'>
         <Testemonial />
       </div>
-      <div className='py-20'>
+      <div className='pb-20'>
         <MediaGallery />
       </div>
       <div className='py-20'>
