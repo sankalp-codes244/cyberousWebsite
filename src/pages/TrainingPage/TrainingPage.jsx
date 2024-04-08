@@ -10,7 +10,7 @@ import MediaGallery from '../Homepage/MediaGallery/MediaGallery'
 const TrainingPage = () => {
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   

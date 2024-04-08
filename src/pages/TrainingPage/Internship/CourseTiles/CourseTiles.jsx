@@ -51,23 +51,10 @@ const CourseTiles = () => {
       ];
     
   return (
-    <div className='bg-custom-black-color my-20'>
+    <div className=''>
         <div className='flex justify-center'>
           <div className='md:w-10/12'>
-            <TrainingPrograms programs={programs} />
-            {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-10 p-10'>
-                {programs.map((items) => (
-                    <TrainingCard 
-                    id = {items.id}
-                    title = {items.title}
-                    description= {items.description}
-                    image={items.image}
-                    type={items.type}
-                    />
-                ))}
-                <TrainingCard 
-                />
-                </div> */}
+            <TrainingPrograms programs={programs} />           
           </div>
         </div>
     </div>
