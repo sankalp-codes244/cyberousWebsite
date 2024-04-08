@@ -196,6 +196,7 @@ import ethicalhackingimg9 from './images/EthicalHackingimg9.png'
 import ethicalhackingimg10 from './images/ethicalhackingimg10.webp'
 import ethicalhackingimg11 from './images/ethicalhackingimg11.png'
 import download from './images/download.png'
+import classroomTraining from './images/classroomTraining.png'
 import stars from './images/stars.png'
 import checkmark from './images/check-mark.png'
 import certificate1 from './images/certificate1.png'
@@ -213,6 +214,7 @@ import coporatecyber2 from './images/coporatecyber2.svg'
 import coporatecyber3 from './images/coporatecyber3.svg'
 import CorporateTrainingbg2 from './images/CorporateTrainingbg2.jpg'
 import CorporateTrainingbg3 from './images/CorporateTrainingbg3.jpg'
+import support from './images/support.png'
 
 export const Images ={
     logo: cyberousLogo,
@@ -429,4 +431,6 @@ export const Images ={
     CorporateTrainingbg2: CorporateTrainingbg2,
     CorporateTrainingbg3: CorporateTrainingbg3,
     BLOGBG: BLOGBG,
+    support: support,
+    classroomTraining: classroomTraining,
 }

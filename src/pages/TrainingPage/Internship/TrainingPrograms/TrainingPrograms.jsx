@@ -10,7 +10,7 @@ const TrainingPrograms = ({ programs }) => {
 
   return (
     <div className="container mx-auto px-4 my-24">
-      <h1 className="text-center text-3xl md:text-4xl font-bold text-white font-serif">
+      <h1 className="text-center text-3xl md:text-4xl font-bold font-serif">
         Our <span className="text-custom-fontColor-Green font-bold"> Training </span> Programs
       </h1>
       <div className="justify-center flex m-6">
