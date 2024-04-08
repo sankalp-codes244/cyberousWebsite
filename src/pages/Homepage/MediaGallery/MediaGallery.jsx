@@ -9,7 +9,7 @@ const MediaGallery = () => {
   const events = [
     {
       id: 1,
-      name: "Manipal",
+      name: "Manipal University",
       description: "Description for Event 1",
       images: [Images.ManipalImg1, Images.ManipalImg2, Images.ManipalImg3, Images.ManipalImg4] // Replace with actual image URLs
     },
@@ -21,13 +21,13 @@ const MediaGallery = () => {
     },
     {
       id: 3,
-      name: "Mody",
+      name: "Mody University",
       description: "Description for Event 3",
       images: [Images.ModiImg1, Images.ModiImg2, Images.ModiImg3, Images.ModiImg4,] // Replace with actual image URLs
     },
     {
       id: 4,
-      name: "Amity",
+      name: "Amity University",
       description: "Description for Event 4",
       images: [Images.AmityImg1, Images.AmityImg2, Images.AmityImg3, Images.AmityImg4, ] // Replace with actual image URLs
     },

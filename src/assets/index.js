@@ -162,6 +162,7 @@ import hackerAA from './images/hackerAA.jpg'
 import MobileAppPenetrationTesting from './images/MobileAppPenetrationTesting.jpg'
 import NetworkPenetrationTesting from './images/NetworkPenetrationTesting.jpg'
 import  linuxHacked from './images/linuxHacked.jpg'
+import  BLOGBG from './images/BLOGBG.jpg'
 
 import AmityImg1 from './images/Events/Amity/AmityImg1.jpg'
 import AmityImg2 from './images/Events/Amity/AmityImg2.jpeg'
@@ -427,4 +428,5 @@ export const Images ={
     linuxHacked: linuxHacked,
     CorporateTrainingbg2: CorporateTrainingbg2,
     CorporateTrainingbg3: CorporateTrainingbg3,
+    BLOGBG: BLOGBG,
 }

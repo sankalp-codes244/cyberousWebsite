@@ -13,7 +13,7 @@ export default function DropDown() {
   return (
     <Menu as="div" className="relative inline-block text-left" onMouseLeave={() => setIsOpen(false)} onMouseEnter={() => setIsOpen(true)}>
       <div>
-        <Menu.Button  onMouseLeave={() => setIsOpen(false)} onMouseEnter={() => setIsOpen(!isOpen)} className="inline-flex w-full justify-center rounded-md py-2  lg:font-bold  text-center">
+        <Menu.Button onMouseLeave={() => setIsOpen(false)} onMouseEnter={() => setIsOpen(!isOpen)} className="inline-flex w-full justify-center rounded-md py-2  lg:font-bold  text-center">
           <div>
             <LinkButtons links='Training' isOpen={isOpen} />
           </div>

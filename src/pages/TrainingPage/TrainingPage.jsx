@@ -292,17 +292,17 @@ const TrainingPage = () => {
             Embark on a transformative journey in cybersecurity with Cyberous' comprehensive diploma programs, available in durations of 6 months and 1 year. Delve into cutting-edge techniques and industry best practices under the guidance of seasoned experts, equipping yourself with the skills needed to safeguard digital assets effectively. Whether you're looking to kickstart your career or enhance your expertise, our flexible programs offer the perfect pathway to success in the dynamic realm of cybersecurity
           </p>
         </div>
-        <div className='lg:w-1/3 lg:flex gap-4 '>
-          <div className='border w-full rounded-xl shadow-xl p-5'>
+       
+        <div className='lg:w-1/2 pt-5 lg:pt-0 lg:flex gap-5 '>
+          <div className='border w-full rounded-xl shadow-xl mb-5 lg:mb-0 p-5'>
             <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>6 months</h1>
             <ul className='px-3'>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Linux Fundamentals
 Networking Fundamentals</li>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow />Python Programming</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Web Application & Network Penetration Testing</li>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Mobile Application Penetration Testing</li>
             </ul>
-            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-4'>Read more</button>
+            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-28'>Read more</button>
           </div>
           <div className='border w-full  rounded-xl shadow-xl p-5'>
             <h1 className='text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4'>1 year</h1>
@@ -312,9 +312,8 @@ Networking Fundamentals</li>
 API Penetration Testing </li>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow /> IOT Internet of Things</li>
               <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Cloud Security</li>
-              <li className='text-lg font-__Inter_aaf875'> <SideArrow /> Career Advancement</li>
             </ul>
-            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-10'>Read more</button>
+            <button className='bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-20'>Read more</button>
 
           </div>
          
