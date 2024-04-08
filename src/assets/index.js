@@ -213,6 +213,7 @@ import coporatecyber3 from './images/coporatecyber3.svg'
 import CorporateTrainingbg2 from './images/CorporateTrainingbg2.jpg'
 import CorporateTrainingbg3 from './images/CorporateTrainingbg3.jpg'
 import support from './images/support.png'
+import internshipbg1 from './images/internshipBg1.jpg'
 
 export const Images ={
     logo: cyberousLogo,
@@ -429,4 +430,5 @@ export const Images ={
     CorporateTrainingbg2: CorporateTrainingbg2,
     CorporateTrainingbg3: CorporateTrainingbg3,
     support: support,
+    internshipbg1: internshipbg1,
 }
