@@ -45,20 +45,17 @@ const Internship = () => {
 
 
       <div>
-        <div className='text-center relative bg-no-repeat bg-cover bg-center h-full md:h-screen object-cover p-6 md:pt-40' style={{ backgroundImage: `url(${Images.internshipbg1})`, }}>
-          <div className='flex flex-col'>
-            <h1 className='text-center text-custom-fontColor-Green text-xl md:text-5xl font-__Inter_aaf875 font-bold py-8'>
+        <div className='text-center relative bg-no-repeat bg-cover bg-center h-full md:h-screen object-cover p-6 md:pt-20' style={{ backgroundImage: `url(${Images.internshipbg1})`, }}>
+            <h1 className='text-center text-custom-fontColor-Green text-xl md:text-5xl font-__Inter_aaf875 font-bold md:py-20'>
               Cyberous Internship Training Program: Launch Your Cybersecurity Career with Us!
             </h1>
-            <div className='md:flex md:flex-row '>
+          <div className='grid grid-cols-1 md:grid-cols-2'>
               <p className='text-white font-__Inter_aaf875 text-lg  m-4 p-4 md:text-justify bg-custom-fontColor-Green'>
                 Welcome to Cyberous Internship Program – your gateway to hands-on experience and invaluable insights into the world of cybersecurity! Our program offers a dynamic learning environment where interns have the opportunity to work alongside seasoned professionals, tackle real-world challenges, and gain practical skills that set them apart in the industry.
               </p>
               <p className='text-white font-__Inter_aaf875 text-lg  p-4 md:text-justify m-4 bg-custom-fontColor-Green'>
                 At Cyberous, we believe in nurturing talent and providing aspiring cybersecurity professionals with the tools they need to succeed. Through mentorship, guided projects, and exposure to cutting-edge technologies, interns not only enhance their technical abilities but also develop critical thinking, problem-solving, and teamwork skills essential for thriving in today's cybersecurity landscape.
               </p>
-            </div>
-            <div className='md:flex md:flex-row'>
               <p className='text-white font-__Inter_aaf875 text-lg  md:text-justify m-4 p-4 bg-custom-fontColor-Green'>
                 Whether you're a student looking to kickstart your career or an individual seeking a career change, our internship program caters to diverse backgrounds and skill levels. With flexible scheduling options and a supportive learning environment, interns can tailor their experience to suit their goals and interests.
 
@@ -66,7 +63,6 @@ const Internship = () => {
               <p className='text-white font-__Inter_aaf875 text-lg  p-4 md:text-justify  m-4 bg-custom-fontColor-Green'>
                 Join us at Cyberous Internship Program and embark on a rewarding journey towards becoming a cybersecurity expert. Gain hands-on experience, expand your knowledge, and make meaningful contributions to our mission of securing digital assets against evolving threats. Apply now and take the first step towards a successful career in cybersecurity with Cyberous.
               </p>
-            </div>
           </div>
         </div>
       </div>

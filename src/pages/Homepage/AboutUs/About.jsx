@@ -17,22 +17,25 @@ const About = () => {
           <p className="text-lg lg:text-xl mt-6 text-black text-justify">
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan. Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row justify-start items-center">
-            <img src={Images.aboutimg1} alt="Image of something" className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28" />
-            <div className="grid grid-cols-1 gap-4 w-full">
-              <h1 className="mt-2 md:mt-10 ml-10 text-3xl font-bold">
+          {/* <div className="flex md:flex-row">
+            
+          </div> */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center border border-solid border-black">
+            <img src={Images.aboutimg1} alt="Image of something" className="pointer-events-none select-none w-28 h-28" />
+            <div className="grid grid-cols-1 gap-2 w-full">
+              <h1 className="mt-2 md:mt-10 ml-10 text-5xl font-bold">
                 Happy Clients
               </h1>
-              <h1 className="text-custom-buttonColor-Green text-3xl font-bold m-2 mt-4 ml-10">
+              <h1 className="text-custom-buttonColor-Green text-5xl font-bold ml-10">
                 1000 +
               </h1>
             </div>
             <img src={Images.aboutimg2} className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28 mt-4 sm:mt-0 sm:ml-20" alt="Cyberous achievement" />
-            <div className="grid grid-cols-1 gap-4 w-full">
-              <h1 className="m-2 text-3xl font-bold mt-6 ml-10">
+            <div className="grid grid-cols-1 gap-2 w-full">
+              <h1 className="m-2 text-5xl font-bold mt-6 ml-10">
                 Projects Done
               </h1>
-              <h1 className="text-custom-buttonColor-Green text-3xl font-bold mt-4  ml-10">
+              <h1 className="text-custom-buttonColor-Green text-5xl font-bold ml-10">
                 50+
               </h1>
             </div>
