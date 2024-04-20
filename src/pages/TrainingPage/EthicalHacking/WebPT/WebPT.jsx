@@ -7,6 +7,24 @@ import { Images } from '../../../../assets';
 import FormComponent from '../../../../components/FormComponent';
 
 const WebPT = () => {
+
+
+
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Set the href attribute to the file path
+    link.href = '/webapptesting.pdf'; // Assuming the file is in the public directory
+    // Set the download attribute to give the file a name
+    link.download = 'webapptesting.pdf';
+    // Append the link to the body
+    document.body.appendChild(link);
+    // Trigger a click event to download the file
+    link.click();
+    // Clean up: remove the link from the body
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -103,10 +121,10 @@ const WebPT = () => {
                   </div>
                 </div>
               <div className='md:mx-5'>
-                  <div className='w-full h-12 lg:w-64 flex justify-evenly px-12 lg:px-4 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+                  <button onClick={handleDownload} className='w-full h-12 lg:w-64 flex justify-evenly px-12 lg:px-4 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
                     <img src={Images.download} className=' w-6 invert' />
                     <p className='font-medium'>Download Syllabus</p>
-                  </div>
+                  </button>
                 </div>
               </div>
               <div className='md:ml-20 w-full md:w-1/2'>
