@@ -178,11 +178,11 @@ const schema = object({
           <h1 className='pr-20  text-6xl md:text-9xl  md:pr-0 font-bold text-center font-heading'>
             Contact Us
           </h1>
-          <h1 className='text-2xl md:text-4xl py-10 text-center md:py-20'>
+          <h1 className='text-2xl md:text-4xl py-10 text-center lg:py-20'>
             Need to Talk? We're Listening....
           </h1>
         </div>
-        <img src={Images.contactUsImg1} className='p-4 w-full h-full md:w-1/2' />
+        <img src={Images.contactUsImg1} className='p-4 w-full h-full lg:w-1/2' />
       </div>
 
       <div className='bg-custom-orange-color pb-14'>
