@@ -7,6 +7,7 @@ import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
 import PageHeader from './PageHeader/PageHeader'
+import NamesYouKnow from '../../RedTeaming/NamesYouKnow/NamesYouKnow'
 // import { Images } from '../../../assets'
 
 const SourceCode = () => {
@@ -193,7 +194,8 @@ const SourceCode = () => {
       <Methodology boxData={boxData} />
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
-      <BrandsTrustUs />
+      {/* <BrandsTrustUs /> */}
+      <NamesYouKnow/>
       <Testemonial data={data} />
       <Faqs faqData={faqData} />
     </div>
