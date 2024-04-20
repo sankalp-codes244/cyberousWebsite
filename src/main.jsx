@@ -34,7 +34,7 @@ import TermsandCond from './pages/FooterContent/TermsandCond.jsx'
 import Disclamer from './pages/FooterContent/Disclamer.jsx'
 import PrivacyPolicy from './pages/FooterContent/PrivacyPolicy.jsx'
 import DMCAPolicy from './pages/FooterContent/DMCAPolicy.jsx'
-import IoTPT from './pages/Services/VAPT/IOTPenetrationTesting/IoTPT.jsx'
+import IoTPT from './pages/Services/VAPT/IOTPenetrationTesting/IOTPT.jsx'
 
 
 const router = createBrowserRouter(

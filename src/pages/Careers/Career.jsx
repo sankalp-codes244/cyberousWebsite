@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Images } from "../../assets";
 import About from "../Homepage/AboutUs/About";
 import Profiles from "./Profiles/Profiles";
+import { Link } from "react-router-dom";
 
 const Career = () => {
   useEffect(() => {
@@ -23,16 +24,20 @@ const Career = () => {
             assistance.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 px-20 md:px-0">
+            <a href="tel:+918199985888">
             <button className="w-full md:w-1/2 h-16 my-10 sm:m-0 md:m-10 bg-custom-buttonColor-Green text-white duration-300 border border-solid border-green-700 rounded-lg text-base md:ml-52">
               Contact Us +91 81999 85888
             </button>
-            <button className="relative bg-transparent w-full md:w-1/2 h-16 sm:m-0 md:m-10 hover:bg-custom-buttonColor-Green hover:text-white text-green-500 duration-300 border border-solid border-custom-buttonColor-Green rounded-lg text-base md:ml-10">
-              <img
-                src={Images.chevronDown}
-                className="absolute invert -rotate-90 left-4 top-3 border-2 rounded-full border-solid border-black p-2 w-8 md:w-10 "
-              />
-              Apply Now
-            </button>
+            </a>
+            <Link to={'https://forms.gle/a7CSyRWemLuh1xBv6'}>
+              <button className="relative bg-transparent w-full md:w-1/2 h-16 sm:m-0 md:m-10 hover:bg-custom-buttonColor-Green hover:text-white text-green-500 duration-300 border border-solid border-custom-buttonColor-Green rounded-lg text-base md:ml-10">
+                <img
+                  src={Images.chevronDown}
+                  className="absolute invert -rotate-90 left-4 top-3 border-2 rounded-full border-solid border-black p-2 w-8 md:w-10 "
+                />
+                Apply Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -43,17 +48,17 @@ const Career = () => {
         <About />
       </div>
       <div className="bg-custom-black-color relative h-ful pb-20 lg:px-20 lg:py-40">
-       <div className="lg:mb-32 pt-10">
-       <h1 className="font-serif text-center  text-white text-3xl lg:text-5xl ">
-          HOW WE WORK?
-        </h1>
-        <div className="bg-green-500 h-2 w-1/4 mx-auto mt-2 mb-7"></div>
-       </div>
+        <div className="lg:mb-32 pt-10">
+          <h1 className="font-serif text-center  text-white text-3xl lg:text-5xl ">
+            HOW WE WORK?
+          </h1>
+          <div className="bg-green-500 h-2 w-1/4 mx-auto mt-2 mb-7"></div>
+        </div>
         <div className="grid grid-cols-1 lg:flex  gap-4">
-            <img src={Images.howWeWork} alt="how we work" className="lg:w-1/3 px-8 lg:px-0 object-cover" />
+          <img src={Images.howWeWork} alt="how we work" className="lg:w-1/3 px-8 lg:px-0 object-cover" />
           <div className="mx-7 lg:1/3 justify-center   p-2">
             <p className="text-white  text-justify lg:text-2xl">
-            At Cyberous, our approach to cybersecurity is proactive,
+              At Cyberous, our approach to cybersecurity is proactive,
               collaborative, and results- driven. We begin by understanding our
               clients' unique challenges and objectives, allowing us to tailor
               our solutions accordingly. Our team of experts employs a
@@ -67,7 +72,7 @@ const Career = () => {
               At Cyberous, we work tirelessly to fortify your digital defenses,
               employing a proactive approach and unparalleled expertise to
               safeguard your assets and privacy in an increasingly
-              interconnected world. 
+              interconnected world.
               <br />
               <br />
               Whether it's cybersecurity training or providing consulting
@@ -80,10 +85,10 @@ const Career = () => {
               future.
             </p>
           </div>
-          
+
         </div>
       </div>
-      
+
       <div></div>
     </div>
   );

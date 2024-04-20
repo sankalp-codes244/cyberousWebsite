@@ -9,7 +9,7 @@ const CorporateCyber = () => {
                     REAL TIME CORPORATE CYBER SECURITY TRAINING
                 </h1>
                 <h1 className='text-white font-__Inter_aaf875 text-2xl py-5 md:text-4xl text-center font-bold p-10 '>
-                    Comprehensive Coporate Cyber Security Training by Threatsys
+                    Comprehensive Coporate Cyber Security Training by Cyberous
                 </h1>
             </div>
             <div className='flex justify-center'>
