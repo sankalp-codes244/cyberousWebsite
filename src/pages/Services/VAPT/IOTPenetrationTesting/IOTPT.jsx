@@ -7,8 +7,9 @@ import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
 import PageHeader from './PageHeader/PageHeader'
+import NamesYouKnow from '../../RedTeaming/NamesYouKnow/NamesYouKnow'
 
-const IOTPT = () => {
+const IoTPT = () => {
 
   const boxData = [
     {
@@ -33,14 +34,14 @@ const IOTPT = () => {
       id: 0,
       name: 'Device Profiling and Enumeration',
       description: "Kickstart the IoT penetration testing process with a thorough analysis of the wide array of IoT devices present in your ecosystem. By pinpointing device specifications, communication protocols, and possible attack vectors, this detailed profiling establishes a solid foundation for grasping the interconnected devices. This approach facilitates a more precise and impactful penetration testing strategy, enhancing overall effectiveness and security posture.",
-      imgUrl: Images.IOTPTApproach1,
+      imgUrl: Images.IoTPTApproach1,
       type: 'Device_Profiling_and_Enumeration'
     },
     {
       id: 1,
       name: 'Network Architecture Analysis',
       description: "Explore the complex network framework underpinning IoT devices. Analyze communication channels, protocols, and data pathways to reveal potential weaknesses in network setups. This examination is designed to guarantee smooth and secure data exchange between IoT devices and backend systems, bolstering the ecosystem's resilience and security posture.",
-      imgUrl: Images.IOTPTApproach2,
+      imgUrl: Images.IoTPTApproach2,
       type: 'Network_Architecture_Analysis'
 
     },
@@ -48,7 +49,7 @@ const IOTPT = () => {
       id: 2,
       name: 'Firmware and Software Security Assessment',
       description: "Conduct a comprehensive assessment of IoT device firmware and software security. Scrutinize the code to uncover vulnerabilities, evaluate adherence to secure coding standards, and pinpoint potential exploits. This critical step plays a key role in safeguarding device integrity and bolstering security within the software layer of the IoT infrastructure.",
-      imgUrl: Images.IOTPTApproach3,
+      imgUrl: Images.IoTPTApproach3,
       type: 'Firmware_and_Software_Security_Assessment' 
 
     },
@@ -56,7 +57,7 @@ const IOTPT = () => {
       id: 3,
       name: 'Authentication and Access Controls',
       description: "Evaluate the efficiency of authentication methods and access controls deployed across the IoT environment. Guarantee that solely authorized entities engage with devices and systems, thwarting unauthorized entry and safeguarding sensitive data against potential breaches.",
-      imgUrl: Images.IOTPTApproach4,
+      imgUrl: Images.IoTPTApproach4,
       type: 'Authentication_and_Access_Controls'
 
     },
@@ -64,7 +65,7 @@ const IOTPT = () => {
       id: 4,
       name: 'Data Encryption and Privacy Measures',
       description: "Analyze the encryption techniques utilized to protect data both during transmission and storage within the IoT network. Assess privacy protocols to shield sensitive data, ensuring alignment with data protection regulations. This process prioritizes data confidentiality and integrity across the entirety of the IoT ecosystem.",
-      imgUrl: Images.IOTPTApproach5,
+      imgUrl: Images.IoTPTApproach5,
       type: 'Data_Encryption_and_Privacy_Measures'
 
     },
@@ -72,7 +73,7 @@ const IOTPT = () => {
       id: 5,
       name: 'Physical Security Evaluation',
       description: "Perform a detailed examination of the physical security elements of IoT devices, uncovering potential vulnerabilities associated with tampering, unauthorized access, or device compromise. This comprehensive approach guarantees a thorough evaluation, covering both digital and physical security aspects within the IoT infrastructure.",
-      imgUrl: Images.IOTPTApproach6,
+      imgUrl: Images.IoTPTApproach6,
       type: 'Physical_Security_Evaluation'
 
     },
@@ -80,7 +81,7 @@ const IOTPT = () => {
       id: 6,
       name: 'Incident Response Testing',
       description: "Conduct realistic scenario simulations to evaluate the effectiveness of incident response protocols within your IoT setup. Measure the system's ability to detect, react to, and recover from security breaches. This proactive approach strengthens cybersecurity readiness, enhancing the overall resilience of your IoT environment.",
-      imgUrl: Images.IOTPTApproach7,
+      imgUrl: Images.IoTPTApproach7,
       type: 'Incident_Response_Testing'
 
     },
@@ -120,21 +121,21 @@ const IOTPT = () => {
       id: 1,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' IoT penetration testing service was invaluable for our smart device security. Their team's expertise uncovered vulnerabilities that could have compromised user privacy and safety. Thanks to Cyberous, we were able to address these issues and enhance the security of our IoT ecosystem. Highly recommend their services for IoT security testing.",
+      desc: "cyberous IoT penetration testing service was invaluable for our smart device security. Their team's expertise uncovered vulnerabilities that could have compromised user privacy and safety. Thanks to Cyberous, we were able to address these issues and enhance the security of our IoT ecosystem. Highly recommend their services for IoT security testing.",
       image: Images.user
     },
     {
       id: 2,
       name: "Anonymous",
       title: "",
-      desc: "Impressed by Cyberous' IoT penetration testing service. Their thorough assessment of our connected devices identified potential risks and provided actionable recommendations for mitigation. With Cyberous' help, we've strengthened our IoT security measures and protected our infrastructure from potential threats. Trustworthy and professional – Cyberous is our top choice for IoT security.",
+      desc: "Impressed by cyberous IoT penetration testing service. Their thorough assessment of our connected devices identified potential risks and provided actionable recommendations for mitigation. With cyberous help, we've strengthened our IoT security measures and protected our infrastructure from potential threats. Trustworthy and professional – Cyberous is our top choice for IoT security.",
       image: Images.user
     },
     {
       id: 3,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' IoT penetration testing service exceeded our expectations. Their team's expertise in assessing the security of our IoT ecosystem was evident as they uncovered vulnerabilities and provided clear guidance on how to address them. Their comprehensive report enabled us to improve our IoT security posture effectively. Cyberous is a trusted partner for all our IoT security needs.",
+      desc: "cyberous IoT penetration testing service exceeded our expectations. Their team's expertise in assessing the security of our IoT ecosystem was evident as they uncovered vulnerabilities and provided clear guidance on how to address them. Their comprehensive report enabled us to improve our IoT security posture effectively. Cyberous is a trusted partner for all our IoT security needs.",
       image: Images.user
     },
     {
@@ -148,7 +149,7 @@ const IOTPT = () => {
       id: 5,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' IoT penetration testing service was instrumental in validating the security of our smart devices. Their team's expertise and attention to detail were invaluable as they conducted simulated attacks and identified potential risks. With Cyberous' help, we were able to enhance the security of our IoT ecosystem and protect our users' privacy. Cyberous is our trusted advisor for IoT security testing.",
+      desc: "cyberous IoT penetration testing service was instrumental in validating the security of our smart devices. Their team's expertise and attention to detail were invaluable as they conducted simulated attacks and identified potential risks. With cyberous help, we were able to enhance the security of our IoT ecosystem and protect our users' privacy. Cyberous is our trusted advisor for IoT security testing.",
       image: Images.user
     },
     {
@@ -195,7 +196,11 @@ const IOTPT = () => {
       <Methodology boxData={boxData} />
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
-      <BrandsTrustUs />
+      {/* <BrandsTrustUs /> */}
+      <div className='flex justify-center'>
+        <div className="h-1 w-4/5 lg:w-2/3 bg-custom-greyBorderColor rounded-full"></div>
+      </div>
+      <NamesYouKnow/>
       <Testemonial data={data} />
       <Faqs faqData={faqData} />
     </div>
@@ -203,4 +208,4 @@ const IOTPT = () => {
 
 }
 
-export default IOTPT
+export default IoTPT

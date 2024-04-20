@@ -128,35 +128,35 @@ const AndroidPT = () => {
         id: 1,
         name: "Anonymous",
         title: "",
-        desc: "Cyberous' API penetration testing service was a game-changer for our organization. Their team conducted a comprehensive assessment of our APIs, uncovering vulnerabilities we hadn't considered. Their detailed report and recommendations allowed us to address these issues proactively, ensuring the security of our systems. Cyberous is our trusted partner for all our cybersecurity needs.",
+        desc: "cyberous API penetration testing service was a game-changer for our organization. Their team conducted a comprehensive assessment of our APIs, uncovering vulnerabilities we hadn't considered. Their detailed report and recommendations allowed us to address these issues proactively, ensuring the security of our systems. Cyberous is our trusted partner for all our cybersecurity needs.",
         image: Images.user
       },
       {
         id: 2,
         name: "Anonymous",
         title: "",
-        desc: "We were thoroughly impressed by Cyberous' API penetration testing service. Their team's expertise and attention to detail were evident from the start. They identified critical vulnerabilities in our APIs and provided practical recommendations for mitigation. Thanks to Cyberous, we now have confidence in the security of our systems. Highly recommended!",
+        desc: "We were thoroughly impressed by cyberous API penetration testing service. Their team's expertise and attention to detail were evident from the start. They identified critical vulnerabilities in our APIs and provided practical recommendations for mitigation. Thanks to Cyberous, we now have confidence in the security of our systems. Highly recommended!",
         image: Images.user
       },
       {
         id: 3,
         name: "Anonymous",
         title: "",
-        desc: "Cyberous' API penetration testing service exceeded our expectations. Their team's thorough assessment of our APIs revealed potential security risks that we were unaware of. Their detailed report and recommendations helped us prioritize and address these vulnerabilities effectively. Cyberous has become our trusted advisor for API security, and we highly recommend their services to others.",
+        desc: "cyberous API penetration testing service exceeded our expectations. Their team's thorough assessment of our APIs revealed potential security risks that we were unaware of. Their detailed report and recommendations helped us prioritize and address these vulnerabilities effectively. Cyberous has become our trusted advisor for API security, and we highly recommend their services to others.",
         image: Images.user
       },
       {
         id: 4,
         name: "Anonymous",
         title: "",
-        desc: "Hats off to Cyberous for their exceptional API penetration testing service. Their team demonstrated deep expertise in assessing the security of our APIs, uncovering vulnerabilities and providing actionable recommendations for remediation. Their professionalism and commitment to excellence were evident throughout the engagement. We're grateful for Cyberous' insights and highly recommend their services.",
+        desc: "Hats off to Cyberous for their exceptional API penetration testing service. Their team demonstrated deep expertise in assessing the security of our APIs, uncovering vulnerabilities and providing actionable recommendations for remediation. Their professionalism and commitment to excellence were evident throughout the engagement. We're grateful for cyberous insights and highly recommend their services.",
         image: Images.user
       },
       {
         id: 5,
         name: "Anonymous",
         title: "",
-        desc: "Cyberous' API penetration testing service was a game-changer for our development team. Their comprehensive assessment of our APIs identified vulnerabilities that could have compromised the security of our applications. Their detailed report and recommendations enabled us to strengthen our API security measures and protect our systems from potential threats. Working with Cyberous has been a positive experience, and we look forward to future collaborations.",
+        desc: "cyberous API penetration testing service was a game-changer for our development team. Their comprehensive assessment of our APIs identified vulnerabilities that could have compromised the security of our applications. Their detailed report and recommendations enabled us to strengthen our API security measures and protect our systems from potential threats. Working with Cyberous has been a positive experience, and we look forward to future collaborations.",
         image: Images.user
       },
       {

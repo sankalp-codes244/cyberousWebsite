@@ -15,7 +15,7 @@ const MediaGallery = () => {
     },
     {
       id: 2,
-      name: "Navy",
+      name: "Indian Navy",
       description: "Description for Event 2",
       images: [Images.NavyImg1, Images.NavyImg2, Images.NavyImg3, Images.NavyImg4,] // Replace with actual image URLs
     },

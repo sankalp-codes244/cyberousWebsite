@@ -18,21 +18,21 @@ const RedTeaming = () => {
       id: 1,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' Red Teaming service was a game-changer for our organization. Their simulated attacks were realistic and comprehensive, revealing vulnerabilities we hadn't anticipated. Their insights and recommendations helped us strengthen our defenses significantly. Cyberous is our trusted partner for proactive cybersecurity.",
+      desc: "cyberous Red Teaming service was a game-changer for our organization. Their simulated attacks were realistic and comprehensive, revealing vulnerabilities we hadn't anticipated. Their insights and recommendations helped us strengthen our defenses significantly. Cyberous is our trusted partner for proactive cybersecurity.",
       image: Images.user
     },
     {
       id: 2,
       name: "Anonymous",
       title: "",
-      desc: "We were thoroughly impressed by Cyberous' Red Teaming service. Their team conducted a thorough assessment of our security posture, identifying weaknesses and exploiting them in simulated attacks. Their detailed report and actionable recommendations empowered us to enhance our security measures effectively. Cyberous is a true leader in Red Teaming.",
+      desc: "We were thoroughly impressed by cyberous Red Teaming service. Their team conducted a thorough assessment of our security posture, identifying weaknesses and exploiting them in simulated attacks. Their detailed report and actionable recommendations empowered us to enhance our security measures effectively. Cyberous is a true leader in Red Teaming.",
       image: Images.user
     },
     {
       id: 3,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' Red Teaming service exceeded our expectations. Their team's expertise and professionalism were evident throughout the engagement. They challenged our defenses with realistic attack scenarios, providing valuable insights into our security strengths and weaknesses. We're grateful for Cyberous' guidance and highly recommend their Red Teaming service.",
+      desc: "cyberous Red Teaming service exceeded our expectations. Their team's expertise and professionalism were evident throughout the engagement. They challenged our defenses with realistic attack scenarios, providing valuable insights into our security strengths and weaknesses. We're grateful for cyberous guidance and highly recommend their Red Teaming service.",
       image: Images.user
     },
     {
@@ -46,7 +46,7 @@ const RedTeaming = () => {
       id: 5,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' Red Teaming service was instrumental in validating our security measures. Their team's expertly executed simulated attacks exposed weaknesses in our defenses, allowing us to address them proactively. Their insights and recommendations were invaluable in strengthening our security posture. Cyberous is a trusted advisor for Red Teaming.",
+      desc: "cyberous Red Teaming service was instrumental in validating our security measures. Their team's expertly executed simulated attacks exposed weaknesses in our defenses, allowing us to address them proactively. Their insights and recommendations were invaluable in strengthening our security posture. Cyberous is a trusted advisor for Red Teaming.",
       image: Images.user
     },
     {

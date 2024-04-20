@@ -6,7 +6,7 @@ let servicesData = [
   {
     id: 0,
     img: Images.OurServicesimg1,
-    servicesDescription: `Strengthen digital defenses with Cyberous' VAPT services. Our expert team conducts thorough Vulnerability Assessment and Penetration Testing, ensuring robust protection against cyber threats. Rely on our 5-star Google-rated services to safeguard your assets effectively.`,
+    servicesDescription: `Strengthen digital defenses with Cyberous VAPT services. Our expert team conducts thorough Vulnerability Assessment and Penetration Testing, ensuring robust protection against cyber threats. Rely on our 5-star Google-rated services to safeguard your assets effectively.`,
     serviceText: 'VAPT',
     link:'/services',
   },
@@ -27,7 +27,7 @@ let servicesData = [
   {
     id: 3,
     img: Images.OurServicesimg4,
-    servicesDescription: `Enhance cybersecurity resilience with Cyberous' Red Teaming service. Our experts simulate real-world attacks to uncover vulnerabilities and fortify your defense strategy. Trust us for comprehensive solutions tailored to safeguard your digital infrastructure against sophisticated threats.`,
+    servicesDescription: `Enhance cybersecurity resilience with Cyberous Red Teaming service. Our experts simulate real-world attacks to uncover vulnerabilities and fortify your defense strategy. Trust us for comprehensive solutions tailored to safeguard your digital infrastructure against sophisticated threats.`,
     serviceText: 'Red Teaming',
     link:'/services/redteaming'
   },

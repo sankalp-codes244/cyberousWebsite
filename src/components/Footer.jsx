@@ -12,12 +12,15 @@ const Footer = () => {
           <h1 className='text-white text-2xl font-bold mb-5 ml-8'>Services</h1>
           <div>
             <ol className="list-none">
+            <Link to='/training/'>
+
               <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
-                Cyber Security Training
+                Training
               </li>
+            </Link>
               <Link to='/training/corporatetraining'>
               <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
@@ -31,7 +34,7 @@ const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
-                VAPT
+                Services
               </li>
               </Link>
               <Link to='/services/consultancy'>
@@ -145,22 +148,23 @@ const Footer = () => {
         </div>
       </div>
       <div className='h-full bg-black md:px-24'>
-        <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous</span> reserved</h1>
+        
+        <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous.</span> All Rights Reserved.</h1>
         <div className=''>
           <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6">
-            <Link to={'/terms'}>
+            <Link to={'/terms&Condition'}>
             <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Terms & Conditions
             </li>
             </Link>
-            <Link to='/privacyPolicy'>
+            <Link to='/privacypolicy'>
             <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Privacy Policy
             </li>
             </Link>
-            <Link to={'/DMCA'}>
+            <Link to={'/dmcapolicy'}>
             <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               DMCA Policy

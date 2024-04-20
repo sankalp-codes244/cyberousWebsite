@@ -9,52 +9,53 @@ import NamesYouKnow from './RedTeaming/NamesYouKnow/NamesYouKnow';
 
 const Services = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    // window.scrollTo(0, 0); 
   }, []);
-const data =[
-  {
-    id: 1,
-    name: "Gaurav",
-    title: "CEO",
-    desc: "Choosing Cyberous was a game-changer for our business. Their VAPT team meticulously uncovered weaknesses in our systems, allowing us to fortify our defenses effectively. We feel much more secure now.",
-    image: Images.user
-  },
-  {
-    id: 2,
-    name: "Smith",
-    title: "CEO",
-    desc: "Working with Cyberous was a breeze. Their VAPT team was professional and efficient, providing detailed reports that helped us strengthen our defenses. Their consultancy services were insightful, and the Red Teaming exercise was a wake-up call. Cyberous is now our go-to for cybersecurity.",
-    image: Images.user
-  },
-  {
-    id: 3,
-    name: "Shubham",
-    title: "CEO",
-    desc: "We were impressed by Cyberous' professionalism and expertise. Their VAPT services were thorough, and their consultancy provided practical recommendations tailored to our needs. We highly recommend Cyberous for securing your business.",
-    image: Images.user
-  },
-  {
-    id: 4,
-    name: "John Smith",
-    title: "CEO",
-    desc: "Choosing Cyberous for our Red Teaming service was a game-changer. Their team simulated real-world attack scenarios with precision and expertise. The insights gained were invaluable, allowing us to identify and address critical vulnerabilities in our defenses. Cyberous' Red Teaming service is a must for any organization serious about fortifying their cybersecurity posture.",
-    image: Images.user
-  },
-  {
-    id: 5,
-    name: "Aman",
-    title: "Tech Expert",
-    desc: "Cyberous Web Penetration Testing service has revolutionized our online presence. Their expertise in web security ensured that our platform is robust against potential threats, while their proactive approach guarantees continuous protection. We highly recommend Cyberous for anyone seeking reliable web security solutions.",
-    image: Images.user
-  },
-  {
-    id: 6,
-    name: "Rohan",
-    title: "Manager",
-    desc: "Partnering with Cyberous for cybersecurity consultancy was a game-changer for our company. Their team of experts provided invaluable guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've strengthened our defenses and enhanced our overall security posture. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
-    image: Images.user
-  }
-];
+  const data = [
+    {
+      id: 1,
+      name: "Gaurav",
+      title: "CEO",
+      desc: "Choosing Cyberous was a game-changer for our business. Their VAPT team meticulously uncovered weaknesses in our systems, allowing us to fortify our defenses effectively. We feel much more secure now.",
+      image: Images.user,
+    },
+    {
+      id: 2,
+      name: "Smith",
+      title: "",
+      desc: "Working with Cyberous was a breeze. Their VAPT team was professional and efficient, providing detailed reports that helped us strengthen our defenses. Their consultancy services were insightful, and the Red Teaming exercise was a wake-up call. Cyberous is now our go-to for cybersecurity.",
+      image: Images.user,
+    },
+    {
+      id: 3,
+      name: "Shubham",
+      title: "CEO",
+      desc: "We were impressed by Cyberous' professionalism and expertise. Their VAPT services were thorough, and their consultancy provided practical recommendations tailored to our needs. We highly recommend Cyberous for securing your business.",
+      image: Images.user,
+    },
+    {
+      id: 4,
+      name: "John Smith",
+      title: "CEO",
+      desc: "Choosing Cyberous for our Red Teaming service was a game-changer. Their team simulated real-world attack scenarios with precision and expertise. The insights gained were invaluable, allowing us to identify and address critical vulnerabilities in our defenses. Cyberous' Red Teaming service is a must for any organization serious about fortifying their cybersecurity posture.",
+      image: Images.user,
+    },
+    {
+      id: 5,
+      name: "Aman",
+      title: "Tech Expert",
+      desc: "Cyberous Web Penetration Testing service has revolutionized our online presence. Their expertise in web security ensured that our platform is robust against potential threats, while their proactive approach guarantees continuous protection. We highly recommend Cyberous for anyone seeking reliable web security solutions.",
+      image: Images.user,
+    },
+    {
+      id: 6,
+      name: "Rohan",
+      title: "Manager",
+      desc: "Partnering with Cyberous for cybersecurity consultancy was a game-changer for our company. Their team of experts provided invaluable guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've strengthened our defenses and enhanced our overall security posture. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
+      image: Images.user,
+    }
+  ];
+  
   return (
     <div className='h-full'>
       {/* Background section */}
@@ -68,7 +69,7 @@ const data =[
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-__Inter_aaf875 '>Our Company</h1>
+        <h1 className='text-3xl text-center md:text-5xl font-bold font-__Inter_aaf875 '>Our Company</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
@@ -136,7 +137,7 @@ const data =[
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/network'>
+                  <Link to='/services/networksecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  Network Penetration Testing </p>
@@ -147,7 +148,7 @@ const data =[
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/iospt'>
+                  <Link to='/services/iossecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>IOS Application Penetration Testing</p>
@@ -158,7 +159,7 @@ const data =[
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/androidpt'>
+                  <Link to='/services/androidsecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  Android Application Penetration Testing </p>
@@ -173,10 +174,10 @@ const data =[
             <div className='text-lg lg:text-2xl'>
               <ul className=' xl:mr-6 text-green-500 space-y-4' >
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/sourcecode'>
+                  <Link to='/services/source-code-review'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Source Code Review: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Source Code Review </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -184,7 +185,7 @@ const data =[
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/apipt'>
+                  <Link to='/services/apisecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  API Penetration Testing </p>
@@ -195,10 +196,10 @@ const data =[
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/iotpt'>
+                  <Link to='/services/IoTsecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  IOT Penetration Testing </p>
+                      <p className='font-bold font-__Inter_aaf875'>  IoT Penetration Testing </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -210,7 +211,7 @@ const data =[
                   <Link to='/services/consultancy'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Cyber Security Consultancy: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Cyber Security Consultancy</p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -239,7 +240,7 @@ const data =[
 
       <div className='text-center relative bg-no-repeat bg-center h-32 pt-10 bg-white'>
         <div className='h-full  bg-opacity-50 flex flex-col justify-center'>
-          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black'>Our Clients</h1>
+          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black font-serif'>Brands that Trust us </h1>
           <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
         </div>
       </div>

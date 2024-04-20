@@ -14,21 +14,21 @@ const IOSPT = () => {
       id: 1,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' iOS penetration testing service was exceptional. Their thorough examination of our app uncovered vulnerabilities we hadn't considered. Their detailed report and recommendations helped us strengthen our app's security. We highly recommend Cyberous for iOS security testing.",
+      desc: "cyberous iOS penetration testing service was exceptional. Their thorough examination of our app uncovered vulnerabilities we hadn't considered. Their detailed report and recommendations helped us strengthen our app's security. We highly recommend Cyberous for iOS security testing.",
       image: Images.user
     },
     {
       id: 2,
       name: "Anonymous",
       title: "",
-      desc: "Impressed with Cyberous' iOS penetration testing service. They identified critical security flaws in our app and provided clear guidance on how to address them. Thanks to Cyberous, we've been able to enhance our app's security measures. Trustworthy and professional – Cyberous is our top choice for mobile security.",
+      desc: "Impressed with cyberous iOS penetration testing service. They identified critical security flaws in our app and provided clear guidance on how to address them. Thanks to Cyberous, we've been able to enhance our app's security measures. Trustworthy and professional – Cyberous is our top choice for mobile security.",
       image: Images.user
     },
     {
       id: 3,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' iOS penetration testing service was thorough and insightful. They uncovered vulnerabilities in our app that we hadn't considered. Their comprehensive report enabled us to improve our app's security posture effectively. Cyberous is a trusted partner for all our mobile security needs.",
+      desc: "cyberous iOS penetration testing service was thorough and insightful. They uncovered vulnerabilities in our app that we hadn't considered. Their comprehensive report enabled us to improve our app's security posture effectively. Cyberous is a trusted partner for all our mobile security needs.",
       image: Images.user
     },
     {
@@ -42,7 +42,7 @@ const IOSPT = () => {
       id: 5,
       name: "Anonymous",
       title: "",
-      desc: "Cyberous' iOS penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
+      desc: "cyberous iOS penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
       image: Images.user
     },
     {
@@ -77,14 +77,14 @@ const IOSPT = () => {
       id: 0,
       name: 'Device Profiling and Enumeration',
       description: "Kickstart the IoT penetration testing process with a thorough analysis of the wide array of IoT devices present in your ecosystem. By pinpointing device specifications, communication protocols, and possible attack vectors, this detailed profiling establishes a solid foundation for grasping the interconnected devices. This approach facilitates a more precise and impactful penetration testing strategy, enhancing overall effectiveness and security posture.",
-      imgUrl: Images.IOTPTApproach1,
+      imgUrl: Images.IoTPTApproach1,
       type: 'Device_Profiling_and_Enumeration'
     },
     {
       id: 1,
       name: 'Network Architecture Analysis',
       description: "Explore the complex network framework underpinning IoT devices. Analyze communication channels, protocols, and data pathways to reveal potential weaknesses in network setups. This examination is designed to guarantee smooth and secure data exchange between IoT devices and backend systems, bolstering the ecosystem's resilience and security posture.",
-      imgUrl: Images.IOTPTApproach2,
+      imgUrl: Images.IoTPTApproach2,
       type: 'Network_Architecture_Analysis'
 
     },
@@ -92,7 +92,7 @@ const IOSPT = () => {
       id: 2,
       name: 'Firmware and Software Security Assessment',
       description: "Conduct a comprehensive assessment of IoT device firmware and software security. Scrutinize the code to uncover vulnerabilities, evaluate adherence to secure coding standards, and pinpoint potential exploits. This critical step plays a key role in safeguarding device integrity and bolstering security within the software layer of the IoT infrastructure.",
-      imgUrl: Images.IOTPTApproach3,
+      imgUrl: Images.IoTPTApproach3,
       type: 'Firmware_and_Software_Security_Assessment'
 
     },
@@ -100,7 +100,7 @@ const IOSPT = () => {
       id: 3,
       name: 'Authentication and Access Controls',
       description: "Evaluate the efficiency of authentication methods and access controls deployed across the IoT environment. Guarantee that solely authorized entities engage with devices and systems, thwarting unauthorized entry and safeguarding sensitive data against potential breaches.",
-      imgUrl: Images.IOTPTApproach4,
+      imgUrl: Images.IoTPTApproach4,
       type: 'Authentication_and_Access_Controls'
 
     },
@@ -108,7 +108,7 @@ const IOSPT = () => {
       id: 4,
       name: 'Data Encryption and Privacy Measures',
       description: "Analyze the encryption techniques utilized to protect data both during transmission and storage within the IoT network. Assess privacy protocols to shield sensitive data, ensuring alignment with data protection regulations. This process prioritizes data confidentiality and integrity across the entirety of the IoT ecosystem.",
-      imgUrl: Images.IOTPTApproach5,
+      imgUrl: Images.IoTPTApproach5,
       type: 'Data_Encryption_and_Privacy_Measures'
 
     },
@@ -116,7 +116,7 @@ const IOSPT = () => {
       id: 5,
       name: 'Physical Security Evaluation',
       description: "Perform a detailed examination of the physical security elements of IoT devices, uncovering potential vulnerabilities associated with tampering, unauthorized access, or device compromise. This comprehensive approach guarantees a thorough evaluation, covering both digital and physical security aspects within the IoT infrastructure.",
-      imgUrl: Images.IOTPTApproach6,
+      imgUrl: Images.IoTPTApproach6,
       type: 'Physical_Security_Evaluation'
 
     },
@@ -124,7 +124,7 @@ const IOSPT = () => {
       id: 6,
       name: 'Incident Response Testing',
       description: "Conduct realistic scenario simulations to evaluate the effectiveness of incident response protocols within your IoT setup. Measure the system's ability to detect, react to, and recover from security breaches. This proactive approach strengthens cybersecurity readiness, enhancing the overall resilience of your IoT environment.",
-      imgUrl: Images.IOTPTApproach7,
+      imgUrl: Images.IoTPTApproach7,
       type: 'Incident_Response_Testing'
 
     },

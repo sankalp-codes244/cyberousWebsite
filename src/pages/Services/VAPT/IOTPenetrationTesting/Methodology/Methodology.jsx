@@ -39,7 +39,7 @@ const Methodology = ({ boxData }) => {
                     )}
                 </div>
                 <div className='lg:w-2/5 mt-10 lg:mt-20 lg:ml-20 mb-10 lg:mb-20'>
-                    <img src={Images.IOTPTMethimg1} className='pointer-events-none select-none' alt='Methodology' />
+                    <img src={Images.IoTPTMethimg1} className='pointer-events-none select-none' alt='Methodology' />
                 </div>
             </div>
         </div>

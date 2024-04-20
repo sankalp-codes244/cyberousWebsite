@@ -7,6 +7,7 @@ import OurApproach from './OurApproach/OurApproach'
 import Faqs from './FAQs/Faqs'
 import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import PageHeader from './PageHeader/PageHeader'
+import NamesYouKnow from '../../RedTeaming/NamesYouKnow/NamesYouKnow'
 
 const WebApplicationSecurity = () => {
 
@@ -148,47 +149,48 @@ const WebApplicationSecurity = () => {
   const data = [
     {
       id: 1,
-      name: "Anonymous",
-      title: "",
-      desc: "Cyberous' web penetration testing service was incredibly thorough and insightful. Their team identified vulnerabilities we hadn't even considered, allowing us to patch them before they could be exploited. Their detailed report gave us peace of mind knowing our website is secure. Highly recommended!",
-      image: Images.user
+      name: "Rohan",
+      title: "Security Expert",
+      desc: "Cyberous web penetration testing service was incredibly thorough and insightful. Their team identified vulnerabilities we hadn't even considered, allowing us to patch them before they could be exploited. Their detailed report gave us peace of mind knowing our website is secure. Highly recommended!",
+      image: Images.user,
     },
     {
       id: 2,
-      name: "Anonymous",
-      title: "",
-      desc: "We were blown away by Cyberous' web penetration testing expertise. Their team conducted a comprehensive assessment, uncovering vulnerabilities that could have put our business at risk. Thanks to their thorough analysis and recommendations, we've significantly strengthened our website's security. Cyberous is definitely our go-to for cybersecurity.",
-      image: Images.user
+      name: "Muskan",
+      title: "Security Consultant",
+      desc: "We were blown away by Cyberous web penetration testing expertise. Their team conducted a comprehensive assessment, uncovering vulnerabilities that could have put our business at risk. Thanks to their thorough analysis and recommendations, we've significantly strengthened our website's security. Cyberous is definitely our go-to for cybersecurity.",
+      image: Images.user,
     },
     {
       id: 3,
-      name: "Anonymous",
-      title: "",
-      desc: "Cyberous' web penetration testing service was worth every penny. Their team went above and beyond to assess our website's security, providing detailed insights and actionable recommendations. With their help, we've improved our defenses and mitigated potential risks. Trustworthy, professional, and highly recommended!",
-      image: Images.user
+      name: "Rahul",
+      title: "Security Manager",
+      desc: "Cyberous web penetration testing service was worth every penny. Their team went above and beyond to assess our website's security, providing detailed insights and actionable recommendations. With their help, we've improved our defenses and mitigated potential risks. Trustworthy, professional, and highly recommended!",
+      image: Images.user,
     },
     {
       id: 4,
-      name: "Anonymous",
-      title: "",
+      name: "Dan",
+      title: "Consultant",
       desc: "Hats off to Cyberous for their exceptional web penetration testing service. Their team demonstrated deep expertise and attention to detail throughout the assessment process. Their comprehensive report not only identified vulnerabilities but also provided practical solutions for remediation. Cyberous has earned our trust, and we'll be returning for future security needs.",
-      image: Images.user
+      image: Images.user,
     },
     {
       id: 5,
-      name: "Anonymous",
-      title: "",
-      desc: "Cyberous' web penetration testing service exceeded our expectations. Their team conducted a thorough examination of our website, identifying vulnerabilities and offering practical solutions to address them. Their professionalism and expertise were evident from start to finish. We feel more confident than ever in the security of our online presence. Highly recommend Cyberous to anyone serious about protecting their digital assets.",
-      image: Images.user
+      name: "Amanjot",
+      title: "Associate",
+      desc: "Cyberous web penetration testing service exceeded our expectations. Their team conducted a thorough examination of our website, identifying vulnerabilities and offering practical solutions to address them. Their professionalism and expertise were evident from start to finish. We feel more confident than ever in the security of our online presence. Highly recommend Cyberous to anyone serious about protecting their digital assets.",
+      image: Images.user,
     },
     {
       id: 6,
-      name: "Anonymous",
-      title: "",
-      desc: "Cyberous' web penetration testing service was a game-changer for our business. Their team conducted a detailed analysis of our website's security, identifying potential weaknesses and providing actionable recommendations to mitigate them. Thanks to Cyberous, we've strengthened our defenses and can rest easy knowing our online assets are protected. If you're serious about cybersecurity, look no further than Cyberous.",
-      image: Images.user
+      name: "Dinesh",
+      title: "Manager",
+      desc: "Cyberous web penetration testing service was a game-changer for our business. Their team conducted a detailed analysis of our website's security, identifying potential weaknesses and providing actionable recommendations to mitigate them. Thanks to Cyberous, we've strengthened our defenses and can rest easy knowing our online assets are protected. If you're serious about cybersecurity, look no further than Cyberous.",
+      image: Images.user,
     }
   ];
+  
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -210,7 +212,7 @@ const WebApplicationSecurity = () => {
         <div className='flex justify-center'>
           <div className='w-full lg:w-2/3 px-4 lg:px-0'>
             <p className='m-6 mb-12 text-base lg:text-xl text-black text-justify'>
-              Benefit from robust protection for your digital assets through our Web Application Security Testing service. Our skilled team utilizes state-of-the-art methodologies, such as Black Box, Gray Box, and White Box Testing, to meticulously assess your web applications. We delve beyond surface-level vulnerabilities, addressing intricate business logic flaws for a thorough security evaluation. Our service adheres to industry standards like OWASP10, SANS25, and OSSTMM, offering both on-premises and off-premises application security testing. With a proven roadmap honed through years of experience, we safeguard online platforms, mobile applications, and cloud environments effectively, leaving no space for cyber threats.
+              Benefit from robust protection for your digital assets through our Web Application Penetration Testing service. Our skilled team utilizes state-of-the-art methodologies, such as Black Box, Gray Box, and White Box Testing, to meticulously assess your web applications. We delve beyond surface-level vulnerabilities, addressing intricate business logic flaws for a thorough security evaluation. Our service adheres to industry standards like OWASP10, SANS25, and OSSTMM, offering both on-premises and off-premises application security testing. With a proven roadmap honed through years of experience, we safeguard online platforms, mobile applications, and cloud environments effectively, leaving no space for cyber threats.
             </p>
           </div>
         </div>
@@ -225,7 +227,8 @@ const WebApplicationSecurity = () => {
       <Methodology boxData={boxData} />
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
-      <BrandsTrustUs />
+      {/* <BrandsTrustUs /> */}
+      <NamesYouKnow/>
       <Testemonial data={data} />
       <Faqs faqData={faqData} />
     </div>

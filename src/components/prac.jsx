@@ -36,7 +36,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Essential skills for Linux operating system.</div>
                 </Link>
                 
-                <Link to='/training/advanceeh' onClick={() => setIsOpen(!isOpen)} >
+                <Link to='/training/ethicalhacking' onClick={() => setIsOpen(!isOpen)} >
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.hacker} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 " />
                     Advanced Ethical Hacking

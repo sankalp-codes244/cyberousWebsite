@@ -6,7 +6,7 @@ const PageHeader = () => {
     <div className='text-center bg-no-repeat bg-cover bg-center h-screen object-cover' style={{ backgroundImage: `url(${Images.RedteamingHeader})`, }}>
         <div className='p-10 md:p-40'>
           <div className='bg-orange-500  md:w-2/3 '>
-            <h1 className='text-4xl md:text-8xl mr-6 md:mr-0 font-holtwood py-6 pl-4 text-left'>
+            <h1 className='text-6xl md:text-9xl mr-6 md:mr-0 font-holtwood py-6 pl-4 text-left'>
               Red Team Services
             </h1>
             <p className='text-2xl text-start p-4 pb-20 font-stylish md:p-6 md:pb-32 md:text-justify'>

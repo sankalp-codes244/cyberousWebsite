@@ -122,7 +122,7 @@ import Consultancycard1 from './images/Consultancycard1.png'
 import Consultancycard2 from './images/Consultancycard2.png'
 import Consultancycard3 from './images/Consultancycard3.png'
 import WebAppHeaderimg1 from './images/WebAppHeaderimg1.jpg'
-import RedteamingHeader from './images/RedteamingHeader.jpg'
+import RedteamingHeader from './images/RedteamingHeader.jpeg'
 import PlayRulesimg1 from './images/PlayRulesimg1.png'
 import Expertsimg1 from './images/Expertsimg1.png'
 import Collectiveimg1 from './images/Collectiveimg1.png'
@@ -220,7 +220,7 @@ import internshipbg1 from './images/internshipBg1.jpg'
 export const Images ={
     logo: cyberousLogo,
     mobsec: mobsec,
-    iotsec: iotsec,
+    IoTsec: iotsec,
     callLogo: phoneLogo,
     emailLogo: email,
     aboutImages: aboutImages,
@@ -308,15 +308,15 @@ export const Images ={
     NetworkApproachimg4: NetworkApproachimg4,
     NetworkApproachimg5: NetworkApproachimg5,
     NetworkApproachimg6: NetworkApproachimg6,
-    IOTPTApproach1: IOTPTApproach1,
-    IOTPTApproach2: IOTPTApproach2,
-    IOTPTApproach3: IOTPTApproach3,
-    IOTPTApproach4: IOTPTApproach4,
-    IOTPTApproach5: IOTPTApproach5,
-    IOTPTApproach6: IOTPTApproach6,
-    IOTPTApproach7: IOTPTApproach7,
+    IoTPTApproach1: IOTPTApproach1,
+    IoTPTApproach2: IOTPTApproach2,
+    IoTPTApproach3: IOTPTApproach3,
+    IoTPTApproach4: IOTPTApproach4,
+    IoTPTApproach5: IOTPTApproach5,
+    IoTPTApproach6: IOTPTApproach6,
+    IoTPTApproach7: IOTPTApproach7,
     IOSPTMethimg1: IOSPTMethimg1,
-    IOTPTMethimg1: IOTPTMethimg1,
+    IoTPTMethimg1: IOTPTMethimg1,
     APIPTApproachimg1: APIPTApproachimg1,
     APIPTApproachimg2: APIPTApproachimg2,
     APIPTApproachimg3: APIPTApproachimg3,

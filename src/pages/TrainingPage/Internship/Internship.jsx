@@ -84,7 +84,7 @@ const Internship = () => {
             <h1 className='text-white text-sm md:text-lg text-left  font-__Inter_aaf875 '>Explore Tailored Placement Assistance with Cyberous</h1>
             <div className=' w-full my-4 bg-custom-fontColor-Dark' style={{ height: 1 }}></div>
           <p className='text-white font-__Inter_aaf875 text-lg text-justify py-2'>
-            Embark on your cybersecurity career journey with confidence, supported by Cyberous' tailored placement assistance services. Our team is dedicated to helping you secure rewarding opportunities in the industry through personalized guidance, resume optimization, interview preparation, and networking support.
+            Embark on your cybersecurity career journey with confidence, supported by cyberous tailored placement assistance services. Our team is dedicated to helping you secure rewarding opportunities in the industry through personalized guidance, resume optimization, interview preparation, and networking support.
           </p>
           <p className='text-white font-__Inter_aaf875 text-lg text-justify py-2'>
             With our extensive industry connections and deep understanding of the cybersecurity landscape, we ensure that you're equipped with the tools and resources needed to stand out to potential employers. Whether you're a recent graduate, career changer, or seasoned professional, our placement assistance services are designed to match your unique skills, experience, and career goals.

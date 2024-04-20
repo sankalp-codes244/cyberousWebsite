@@ -15,7 +15,7 @@ const TestimonialCard = ({ image, name, title, desc }) => {
           />
           <div className="flex flex-col">
             <h1 className="text-2xl font-serif py-4 font-bold text-black text-center">{name}</h1>
-            <h1 className="mb-4 text-black text-center">{title}</h1>
+            <h1 className="mb-4 text-black">{title}</h1>
           </div>
         </div>
         <p className="text-lg px-4 text-justify text-black ">

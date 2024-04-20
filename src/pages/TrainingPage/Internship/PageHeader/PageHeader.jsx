@@ -1,6 +1,7 @@
 import React from 'react'
 import FormComponent from '../../../../components/FormComponent'
 import { Images } from '../../../../assets'
+import { Link } from 'react-router-dom'
 
 const PageHeader = () => {
     return (
@@ -17,9 +18,11 @@ const PageHeader = () => {
                                 Internship Program
                             </h1>
                             <div className='md:flex md:flex-row justify-center py-10 md:py-28 px-4'>
-                                <button className='bg-custom-fontColor-Green text-white text-xl font-bold font-__Inter_aaf875 w-full md:w-1/3 p-6 rounded-md hover:bg-custom-buttonColor-GreenDark '>
-                                    Request A Demo Class
+                                <Link to='/contact' className='w-full flex justify-center'>
+                                <button className='bg-custom-fontColor-Green text-white text-xl font-bold font-__Inter_aaf875 w-full md:w-1/3 p-4 rounded-md hover:bg-custom-buttonColor-GreenDark '>
+                                    Enroll Now
                                 </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

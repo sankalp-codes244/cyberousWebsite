@@ -9,7 +9,7 @@ const TermsandCond = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms and Conditions For Cyberous</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms and Conditions</h1>
         <p className="text-lg text-gray-700 mb-6">
           Welcome to Cyberous! These terms and conditions outline the rules and regulations for the use of Cyberous, located at "www.cyberous.in". By accessing this website we assume you accept these terms and conditions. Do not continue to use Cyberous if you do not agree to take all of the terms and conditions stated on this page.
         </p>
@@ -18,7 +18,7 @@ const TermsandCond = () => {
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Cookies</h2>
         <p className="text-lg text-gray-700 mb-6">
-          We employ the use of cookies. By accessing Cyberous, you agreed to use cookies in agreement with the Cyberous's Privacy Policy. Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
+          We employ the use of cookies. By accessing Cyberous, you agreed to use cookies in agreement with the Cyberous Privacy Policy. Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mb-6">License</h2>
         <p className="text-lg text-gray-700 mb-6">
@@ -80,7 +80,7 @@ const TermsandCond = () => {
           <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
         </ul>
         <p className="text-lg text-gray-700 mb-6">
-          No use of Cyberous's logo or other artwork will be allowed for linking absent a trademark license agreement.
+          No use of Cyberous logo or other artwork will be allowed for linking absent a trademark license agreement.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mb-6">iFrames</h2>
         <p className="text-lg text-gray-700 mb-6">

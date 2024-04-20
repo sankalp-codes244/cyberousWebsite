@@ -9,7 +9,7 @@ import { z, object, string, number } from "zod";
 const contactData = [
   {
     id: 0,
-    name: 'Ask Cyberous',
+    name: 'Ask cyberous',
     desc: 'Check out our FAQs',
     Link: "Go →",
     nav: "/"
@@ -88,7 +88,7 @@ const schema = object({
     try {
       const formData = new FormData(event.target);
 
-    const response = fetch('https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec', {
+    const response = fetch('https://script.google.com/macros/s/AKfycbwDj0fQJHBzFdqIVMLb2XLgczS5PvfY8bmSVaRnbMfSEheJe9fkguyK3n2_QxZ8Q-LS/exec', {
       method: 'POST',
       body: formData
     })

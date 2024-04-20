@@ -24,21 +24,21 @@ const Blog = () => {
       id: 1,
       name: "Raghav",
       title: "",
-      desc: "Cyberous' cybersecurity consultancy service was exceptional. Their team provided valuable insights and guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've significantly strengthened our defenses and mitigated potential risks. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
+      desc: "cyberous cybersecurity consultancy service was exceptional. Their team provided valuable insights and guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With cyberous support, we've significantly strengthened our defenses and mitigated potential risks. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
       image: Images.user
     },
     {
       id: 2,
       name: "Rahul Kumar",
       title: "",
-      desc: "We were thoroughly impressed by Cyberous' web application penetration testing service. Their team conducted a thorough assessment of our web application, identifying vulnerabilities and providing practical recommendations for remediation. Thanks to Cyberous, we've been able to enhance our application's security measures effectively. Trustworthy and professional – Cyberous is our top choice for web security.",
+      desc: "We were thoroughly impressed by cyberous web application penetration testing service. Their team conducted a thorough assessment of our web application, identifying vulnerabilities and providing practical recommendations for remediation. Thanks to Cyberous, we've been able to enhance our application's security measures effectively. Trustworthy and professional – Cyberous is our top choice for web security.",
       image: Images.user
     },
     {
       id: 3,
       name: " Anand",
       title: "",
-      desc: "Cyberous' Red Teaming service exceeded our expectations. Their team's simulated attacks were sophisticated and insightful, giving us a clear understanding of our organization's security posture. Their comprehensive report and recommendations enabled us to address vulnerabilities and enhance our defenses. Cyberous is our go-to partner for Red Teaming.",
+      desc: "cyberous Red Teaming service exceeded our expectations. Their team's simulated attacks were sophisticated and insightful, giving us a clear understanding of our organization's security posture. Their comprehensive report and recommendations enabled us to address vulnerabilities and enhance our defenses. Cyberous is our go-to partner for Red Teaming.",
       image: Images.user
     },
     {
@@ -52,7 +52,7 @@ const Blog = () => {
       id: 5,
       name: "Ashok ",
       title: "",
-      desc: "Cyberous' Android penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
+      desc: "cyberous Android penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
       image: Images.user
     },
     {
@@ -198,7 +198,7 @@ const Blog = () => {
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/network'>
+                  <Link to='/services/networksecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  Network Penetration Testing </p>
@@ -209,7 +209,7 @@ const Blog = () => {
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/iospt'>
+                  <Link to='/services/iossecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>IOS Application Penetration Testing</p>
@@ -220,7 +220,7 @@ const Blog = () => {
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/androidpt'>
+                  <Link to='/services/androidsecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  Android Application Penetration Testing </p>
@@ -235,7 +235,7 @@ const Blog = () => {
             <div className='text-lg lg:text-2xl'>
               <ul className=' xl:mr-6 text-green-500 space-y-4' >
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/sourcecode'>
+                  <Link to='/services/source-code-review'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  Source Code Review: </p>
@@ -246,7 +246,7 @@ const Blog = () => {
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/apipt'>
+                  <Link to='/services/apisecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  API Penetration Testing </p>
@@ -257,7 +257,7 @@ const Blog = () => {
                   </div>
                 </li>
                 <li className='font-__Inter_aaf875'>
-                  <Link to='/services/iotpt'>
+                  <Link to='/services/IoTsecurity'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
                       <p className='font-bold font-__Inter_aaf875'>  IoT Penetration Testing </p>
@@ -322,7 +322,7 @@ const Blog = () => {
 
       <div className='text-center relative bg-no-repeat bg-center h-32 pt-10 bg-white'>
         <div className='h-full  bg-opacity-50 flex flex-col justify-center'>
-          {/* <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black'>Our Clients</h1> */}
+          {/* <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black font-serif'>Brands that Trust us </h1> */}
           {/* <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div> */}
         </div>
       </div>

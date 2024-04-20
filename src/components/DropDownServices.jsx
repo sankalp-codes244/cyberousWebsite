@@ -53,13 +53,13 @@ export default function DropDown() {
                 <Link onClick={()=>setIsOpen(false)} to='/services/websecurity' className=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.websec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
-                    Web Application Security
+                    Web Application Testing
                     <ChevronDownIcon className={`-mr-1 h-5 w-5 text-gray-400 -rotate-90`} aria-hidden="true" />
                   </div>
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Assessing web application security thoroughly.</div>
                 </Link>
               
-                <Link onClick={()=>setIsOpen(false)} to='/services/network'>
+                <Link onClick={()=>setIsOpen(false)} to='/services/networksecurity'>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.hacker} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Network Penetration Testing
@@ -71,16 +71,16 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Evaluating network security vulnerabilities rigorously.</div>
                 </Link>
                 
-                <Link onClick={()=>setIsOpen(false)} to='/services/iotpt'>
+                <Link onClick={()=>setIsOpen(false)} to='/services/IoTsecurity'>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
-                    <img src={Images.iotsec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
+                    <img src={Images.IoTsec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     IoT Penetration Testing
                     <ChevronDownIcon className={`-mr-1 h-5 w-5 text-gray-400 -rotate-90`} aria-hidden="true" />
                   </div>
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'> Testing security of IoT devices comprehensively.</div>
                 </Link>
                 
-                <Link onClick={()=>setIsOpen(false)} to='/services/sourcecode'>
+                <Link onClick={()=>setIsOpen(false)} to='/services/source-code-review'>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.webbug} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     Source Code Review
@@ -89,7 +89,7 @@ export default function DropDown() {
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Analyzing code for security vulnerabilities diligently.</div>
                 </Link>
                 
-                <Link onClick={()=>setIsOpen(false)} to='/services/androidpt'className=''>
+                <Link onClick={()=>setIsOpen(false)} to='/services/androidsecurity'className=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.mobsec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     
@@ -98,7 +98,7 @@ Android Pen Testing
                   </div>
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'>Assessing Android app security comprehensively.</div>
                 </Link>
-                <Link onClick={()=>setIsOpen(false)} to='/services/iospt' className=''>
+                <Link onClick={()=>setIsOpen(false)} to='/services/iossecurity' className=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.mobsec} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     
@@ -107,7 +107,7 @@ Android Pen Testing
                   </div>
                   <div className='text-white lg:text-black lg:font-normal items-center hidden lg:block my-2'> Evaluating iOS app security thoroughly.</div>
                 </Link>
-                <Link onClick={()=>setIsOpen(false)} to='/services/apipt'className=''>
+                <Link onClick={()=>setIsOpen(false)} to='/services/apisecurity'className=''>
                   <div className='text-white lg:text-black lg:font-medium flex items-center '>
                     <img src={Images.bugs} alt="Ethical Hacking" className="w-7 hidden lg:block mx-2 "/>
                     

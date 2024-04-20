@@ -13,7 +13,7 @@ const ServicesCard = ({image,serviceText,serviceName,link}) => {
       <div className=''>
       <button className=''>
           <Link to={link}>
-        <div className='absolute bottom-4 w-10 duration-500 hover:w-20 h-10 rounded-full bg-custom-buttonColor-Green flex justify-center'>
+        <div className='lg:absolute mt-6 lg:mt-0 bottom-4 w-10 duration-500 hover:w-20 h-10 rounded-full bg-custom-buttonColor-Green flex justify-center'>
           <img src={Images.whiteArrow} className='pointer-events-none select-none p-2' alt='arrow' />
         </div>
           </Link>

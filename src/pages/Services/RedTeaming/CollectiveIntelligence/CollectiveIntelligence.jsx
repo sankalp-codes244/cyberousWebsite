@@ -9,10 +9,10 @@ const CollectiveIntelligence = () => {
                     <img src={Images.Collectiveimg1} />
                 </div>
                 <div className='md:w-1/2 md:mx-10 md:px-10 text-white'>
-                    <h1 className='text-4xl md:text-8xl mr-6 font-holtwood pt-6 pl-4 text-left text-white'>
+                    <h1 className='text-6xl md:text-8xl mr-6 font-holtwood pt-6 pl-4 text-left text-white'>
                         Collective 
                     </h1>
-                    <h1 className='text-4xl md:text-8xl mr-6 font-holtwood pb-6 pl-4 text-left text-orange-500'>
+                    <h1 className='text-6xl md:text-8xl mr-6 font-holtwood pb-6 pl-4 text-left text-orange-500'>
                         Intelligence
                     </h1>
                     <div className='pr-10'>
@@ -27,7 +27,7 @@ const CollectiveIntelligence = () => {
 
                 </div>
                 <div className='md:w-1/2 hidden md:block'>
-                    <img src={Images.Collectiveimg1} className='my-48 mx-20 h-full w-11/12 object-contain' />
+                    <img src={Images.Collectiveimg1} className='my-48  h-full w-11/12 object-contain' />
                 </div>
             </div>
         </div>

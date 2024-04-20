@@ -6,6 +6,7 @@ import Training from "../Homepage/Training/Training";
 import Testemonial from "../Homepage/Testimonial/Testemonial";
 import Faqs from "../Homepage/FAQs/Faqs";
 import MediaGallery from "../Homepage/MediaGallery/MediaGallery";
+import { Link } from "react-router-dom";
 
 const TrainingPage = () => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const TrainingPage = () => {
 
     {
       id: 2,
-      name: `Hands-On Project Based Learning`,
+      name: `Live projects`,
       desc: [
         `World-Class Instructors`,
         `Expert-Led Mentoring Sessions`,
@@ -52,7 +53,7 @@ const TrainingPage = () => {
     },
     {
       id: 4,
-      name: `Industry Recognised Certification`,
+      name: `Recognised certificate `,
       desc: [
         `Cyberops Training Certificate`,
         `Graded Performance Certificate`,
@@ -86,7 +87,7 @@ const TrainingPage = () => {
       description: "Advanced techniques in ethical hacking and cybersecurity.",
       image: Images.ourcources2,
       type: "Ethical_Hacking",
-      path: "/training/advanceeh",
+      path: "/training/ethicalhacking",
     },
     {
       id: 3,
@@ -189,50 +190,51 @@ const TrainingPage = () => {
         " Vulnerability Assessment involves a meticulous examination to identify and address vulnerabilities. This critical step ensures a proactive approach to security, allowing for timely mitigation and safeguarding your web application against potential cyber threats.",
     },
   ];
-  const testData =[
+  const testData = [
     {
       id: 1,
-      name: "Gaurav",
-      title: "CEO",
-      desc: "Choosing Cyberous was a game-changer for our business. Their VAPT team meticulously uncovered weaknesses in our systems, allowing us to fortify our defenses effectively. We feel much more secure now.",
-      image: Images.user
+      name: "Palki",
+      title: "Student",
+      desc: "I've enrolled in Cyberous L1, L2, and L3 training programs, and I must say they are highly structured and informative. Cyberous offers a full range of training with instructors you can rely on. My trainer, Mr. Yogesh Saini, is experienced and well-informed.",
+      image: Images.user,
     },
     {
       id: 2,
-      name: "Smith",
-      title: "CEO",
-      desc: "Working with Cyberous was a breeze. Their VAPT team was professional and efficient, providing detailed reports that helped us strengthen our defenses. Their consultancy services were insightful, and the Red Teaming exercise was a wake-up call. Cyberous is now our go-to for cybersecurity.",
-      image: Images.user
+      name: "Raj",
+      title: "Student",
+      desc: "I must say, the Ethical Hacking training program at Cyberous is amazing. They will teach you from scratch to advanced level. I highly recommend Cyberous as your partner in your cybersecurity journey.",
+      image: Images.user,
     },
     {
       id: 3,
-      name: "Shubham",
-      title: "CEO",
-      desc: "We were impressed by Cyberous' professionalism and expertise. Their VAPT services were thorough, and their consultancy provided practical recommendations tailored to our needs. We highly recommend Cyberous for securing your business.",
-      image: Images.user
+      name: "Muskan",
+      title: "Student",
+      desc: "Learning skills from Cyberous is great. Teachers are wonderful, they help you to brush your skills and learn new technical skills. Moreover, the main focus is on hands-on practice which is a must to survive in the corporate world.",
+      image: Images.user,
     },
     {
       id: 4,
-      name: "John Smith",
-      title: "CEO",
-      desc: "Choosing Cyberous for our Red Teaming service was a game-changer. Their team simulated real-world attack scenarios with precision and expertise. The insights gained were invaluable, allowing us to identify and address critical vulnerabilities in our defenses. Cyberous' Red Teaming service is a must for any organization serious about fortifying their cybersecurity posture.",
-      image: Images.user
+      name: "Girdhari",
+      title: "Student",
+      desc: "Cyberous is the finest place to learn ethical hacking and a variety of other topics. The trainers are really pleasant and knowledgeable. The enrollment process was smooth. I completed the course and am now working as a cybersecurity analyst.",
+      image: Images.user,
     },
     {
       id: 5,
-      name: "Aman",
-      title: "Tech Expert",
-      desc: "Cyberous Web Penetration Testing service has revolutionized our online presence. Their expertise in web security ensured that our platform is robust against potential threats, while their proactive approach guarantees continuous protection. We highly recommend Cyberous for anyone seeking reliable web security solutions.",
-      image: Images.user
+      name: "Vishal",
+      title: "Student",
+      desc: "I want to share my experience with Cyberous. I have learned many things from Cyberous. There is a teacher who teaches very well, his name is Abhijeet sir. His explanation is very well understood. I am very happy to learn from there. I give a 5-star rating to Cyberous.",
+      image: Images.user,
     },
     {
       id: 6,
-      name: "Rohan",
-      title: "Manager",
-      desc: "Partnering with Cyberous for cybersecurity consultancy was a game-changer for our company. Their team of experts provided invaluable guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've strengthened our defenses and enhanced our overall security posture. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
-      image: Images.user
+      name: "Pravesh",
+      title: "Student",
+      desc: "You can surely check out Cyberous if you are interested in ethical hacking. Their way of teaching is just amazing.",
+      image: Images.user,
     }
   ];
+  
 
   return (
     <div className="h-full">
@@ -252,14 +254,15 @@ const TrainingPage = () => {
       </div>
 
       <div className="bg-custom-greyBorderColor md:p-10 py-32">
-        <h1 className="font-bold text-xl md:text-4xl text-center font-Roboto p-4 py-10">
-          Unlock Your Cybersecurity Career Potential with Cyberous'
+        <h1 className="font-bold font-serif text-xl md:text-4xl text-center p-4 pt-10">
+          Unlock Your Cybersecurity Career Potential with cyberous
           Comprehensive Cybersecurity Program
         </h1>
+        <div className="h-1 w-1/2 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
         <div className="flex flex-col md:flex-row p-4 md:gap-10">
           <div className="md:w-1/2">
             <p className="p-2 text-lg md:text-xl text-justify">
-              Embark on a lucrative career path in cybersecurity with Cyberous'
+              Embark on a lucrative career path in cybersecurity with cyberous
               cutting-edge cybersecurity program. Elevate your organization's
               security posture and minimize IT security risks with our
               industry-leading training.
@@ -333,10 +336,11 @@ const TrainingPage = () => {
       <div className="py-24 bg-custom-greyBorderColor">
         <div className="flex justify-center">
           <div className="md:w-3/4">
-            <h1 className="text-center text-xl md:text-3xl font-Roboto py-6">
+            <h1 className="text-center font-serif text-xl md:text-3xl font-Roboto py-6">
               Cyber Security Course - Tailored Training to Suit Your
               Organizational Requirements!
             </h1>
+            <div className="h-1 w-1/2 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
           </div>
         </div>
         <div className="md:flex md:flex-row p-4 md:p-10 md:px-40">
@@ -364,13 +368,14 @@ const TrainingPage = () => {
       </div>
 
       <div className="bg-custom-black-color py-8">
-        <h1 className="text-center text-3xl md:text-5xl font-bold text-white font-Roboto">
+        <h1 className="text-center text-3xl md:text-5xl font-serif font-bold text-white font-Roboto">
           What We Offer
         </h1>
+        <div className="h-1 w-96 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
         <div className="md:flex md:justify-center py-4">
           <div className="md:w-11/12">
             <p className="text-white font-__Inter_aaf875 text-center text-sm md:text-base px-3">
-              Craw Security offers a high level of technical education to
+              Cyberous Security offers a high level of technical education to
               students. clients, and partners in the IT Industry, and we have
               well-qualified. certified, and experienced trainers whoprovide
               nothing but the best in the businese We have training programs
@@ -417,10 +422,9 @@ const TrainingPage = () => {
                   landscape.
                 </p>
                 <div className="flex justify-center mt-4">
-                  <button className="h-1/2 w-2/3 p-3 md:p-6 bg-white rounded-md text-black font-__Inter_aaf875">
-                    {" "}
-                    Book Your Demo
-                  </button>
+                  <Link className="h-1/2 w-2/3 p-3 md:p-6 bg-white rounded-md text-black font-__Inter_aaf875" to="/contact">
+                    <p className="text-center">Book Your Demo</p>
+                  </Link>
                 </div>
               </div>
               <div className="md:flex md:flex-col gap-5">
@@ -451,11 +455,12 @@ const TrainingPage = () => {
 
       <div className="p-10 flex flex-col lg:flex-row md:flex:row ">
         <div className="lg:w-2/3">
-          <h1 className="text-center text-2xl md:text-4xl font-Roboto font-bold py-5">
+          <h1 className="text-center font-serif text-2xl md:text-4xl font-bold py-5">
             Online Cyber Security Diploma
           </h1>
+          <div className="h-1 w-1/2 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
           <p className="lg:text-2xl pt-6 font-__Inter_aaf875 text-center md:px-10 md:text-justify ">
-            Embark on a transformative journey in cybersecurity with Cyberous'
+            Embark on a transformative journey in cybersecurity with cyberous
             comprehensive diploma programs, available in durations of 6 months
             and 1 year. Delve into cutting-edge techniques and industry best
             practices under the guidance of seasoned experts, equipping yourself
@@ -474,7 +479,12 @@ const TrainingPage = () => {
             <ul className="px-3">
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
-                <SideArrow /> Linux Fundamentals Networking Fundamentals
+                <SideArrow /> Linux Fundamentals
+              </li>
+              <li className="text-lg font-__Inter_aaf875">
+                {" "}
+                <SideArrow />
+                 Networking Fundamentals
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
@@ -486,7 +496,7 @@ const TrainingPage = () => {
                 <SideArrow /> Mobile Application Penetration Testing
               </li>
             </ul>
-            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-28">
+            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-36">
               Read more
             </button>
           </div>
@@ -505,14 +515,18 @@ const TrainingPage = () => {
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
-                <SideArrow /> IOT Internet of Things
+                <SideArrow />  API Penetration Testing{" "}
+              </li>
+              <li className="text-lg font-__Inter_aaf875">
+                {" "}
+                <SideArrow /> IoT Internet of Things
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
                 <SideArrow /> Cloud Security
               </li>
             </ul>
-            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-20">
+            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-28">
               Read more
             </button>
           </div>
@@ -523,7 +537,7 @@ const TrainingPage = () => {
         <Training programs={programs} />
       </div>
       <div>
-        <div className="h-full p-6 md:px-20  w-full bg-custom-buttonColor-Green">
+        <div className="h-full p-6 md:px-20  w-full bg-black">
           <div className="md:flex md:flex-row justify-between">
             <div className="md:flex md:flex-row md:w-3/4">
               <div className="flex justify-center">
@@ -543,7 +557,7 @@ const TrainingPage = () => {
               </div>
             </div>
             <div className="flex justify-center items-center md:w-1/4">
-              <button className="bg-white text-xl w-full font-__Inter_aaf875 font-bold p-3 text-custom-buttonColor-Green rounded-lg">
+              <button className="bg-white text-xl w-full font-__Inter_aaf875 font-bold p-3 text-black rounded-lg">
                 Enroll Now
               </button>
             </div>
@@ -567,7 +581,7 @@ const TrainingPage = () => {
                 </h1>
               </div>
               <p className="text-white lg:text-xl font-__Inter_aaf875 text-base px-14 text-justify">
-                "Master cybersecurity essentials with Cyberous' online training
+                "Master cybersecurity essentials with cyberous online training
                 led by industry experts. Explore topics like ethical hacking and
                 risk analysis from anywhere, at your own pace. Elevate your
                 skills and stay ahead in the field with our convenient and
@@ -585,7 +599,7 @@ const TrainingPage = () => {
                 </h1>
               </div>
               <p className="text-white lg:text-xl font-__Inter_aaf875 text-base px-14 text-justify">
-                "Master cybersecurity essentials with Cyberous' online training
+                "Master cybersecurity essentials with cyberous online training
                 led by industry experts. Explore topics like ethical hacking and
                 risk analysis from anywhere, at your own pace. Elevate your
                 skills and stay ahead in the field with our convenient and
@@ -603,7 +617,7 @@ const TrainingPage = () => {
                 </h1>
               </div>
               <p className="text-white lg:text-xl font-__Inter_aaf875 text-base px-14 text-justify">
-                "Master cybersecurity essentials with Cyberous' online training
+                "Master cybersecurity essentials with cyberous online training
                 led by industry experts. Explore topics like ethical hacking and
                 risk analysis from anywhere, at your own pace. Elevate your
                 skills and stay ahead in the field with our convenient and
@@ -611,7 +625,7 @@ const TrainingPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/2">
+          <div className="flex justify-center items-center lg:w-full">
             <img
               src={Images.classroomTraining}
               className="object-contain w-full pointer-events-none"
@@ -623,10 +637,8 @@ const TrainingPage = () => {
         <div className="bg-white lg:flex lg:px-24 w-full h-full">
           <div className="py-10 lg:w-1/2 ">
             <div className="flex flex-col lg:flex-col items-start">
-              <div className="flex justify-center items-center px-5 lg:px-0">
-                <div className="w-5 h-5 lg:w-5 bg-black flex justify-center items-center rounded-full">
-                 
-                </div>
+              <div className="flex justify-center items-center px-7 lg:px-0">
+                
 
                 <h1 className=" lg:text-3xl font-bold font-__Inter_aaf875 p-5">
                 Cyberous Job Assistance
@@ -634,7 +646,7 @@ const TrainingPage = () => {
                 </h1>
               </div>
               <p className=" lg:text-xl font-__Inter_aaf875 text-base px-14 text-justify">
-              "Navigate the cybersecurity job market with confidence through Cyberous' dedicated job assistance program. Benefit from personalized guidance, resume reviews, and interview preparation to secure rewarding opportunities in the field. Our comprehensive support ensures you're equipped to thrive in your cybersecurity career."
+              "Navigate the cybersecurity job market with confidence through cyberous dedicated job assistance program. Benefit from personalized guidance, resume reviews, and interview preparation to secure rewarding opportunities in the field. Our comprehensive support ensures you're equipped to thrive in your cybersecurity career."
 
               </p>
             </div>
@@ -663,10 +675,10 @@ const TrainingPage = () => {
                 </h1>
               </div>
               <div className="flex justify-center items-center px-10 lg:px-5">
-                <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full">
+                <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full mx-3 lg:mx-2">
                   <img src={Images.checkMark} className="object-contain" />
                 </div>
-                <h1 className=" lg:text-2xl font-bold font-__Inter_aaf875 px-5">
+                <h1 className=" lg:text-2xl mx-2 font-bold font-__Inter_aaf875 px-5">
                   Tailored Career Guidance
                 </h1>
               </div>

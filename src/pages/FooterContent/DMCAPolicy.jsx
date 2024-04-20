@@ -11,7 +11,7 @@ const DMCAPolicy = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">DMCA Policy For Cyberous</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">DMCA Policy</h1>
         <p className="text-lg text-gray-700 mb-6">
           The Digital Millennium Copyright Act (“DMCA”) is designed to protect content creators from having their work stolen and published by other people on the internet.
           <br />
@@ -77,8 +77,8 @@ If you would like to notify us of the infringing material or activity, we encour
           Email:
           <br />
           <br />
-          <a href="mailto:contactus@cyberous.in" className="text-blue-500">
-          contactus@cyberous.in
+          <a href="mailto:info@cyberous.in" className="text-blue-500">
+          info@cyberous.in
           </a>
           <br />
           <b>Please allow 1-2 business days for an email response.</b>

@@ -33,7 +33,7 @@ export default function DropDown({openMenu}) {
       > */}
         <Menu.Items className="sm:absolute lg:fixed lg:w-full lg:inset-y-30 lg:z-10 lg:mt-2 lg:bg-white lg:divide-y lg:divide-gray-100 lg:focus:outline-none sm:right-0 sm:z-10 sm:mt-2 sm:w-56 sm:origin-top-right sm:divide-y sm:divide-gray-100 sm:rounded-md bg-black  sm:focus:outline-none" >  
         <div className="grid grid-cols-2 gap-3 grid-flow-row bg-black"  onClick={()=>openMenu(false)} >
-            {[{name: "Web Application Security", link: "/services/websecurity"},{name: "Source Code", link: "/services/sourcecode"},{name: "Network", link: "/services/network"},{name: "IOT Penetration Testing", link: "/services/iotpt"},{name: "IOS Application Penetration Testing", link: "/services/iospt"},{name: "API Penetration Testing", link: "/services/apipt"},{name: "Android Application Penetration Testing", link: "/services/androidpt"}].map((type) => (
+            {[{name: "Web Application Testing", link: "/services/websecurity"},{name: "Source Code", link: "/services/source-code-review"},{name: "Network", link: "/services/networksecurity"},{name: "IoT Penetration Testing", link: "/services/IoTsecurity"},{name: "IOS Application Penetration Testing", link: "/services/iossecurity"},{name: "API Penetration Testing", link: "/services/apisecurity"},{name: "Android Application Penetration Testing", link: "/services/androidsecurity"}].map((type) => (
               <>
                   {/* <Link
                   to={type.link}

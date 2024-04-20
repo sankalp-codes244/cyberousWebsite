@@ -14,7 +14,6 @@ import Blog from './pages/Blog/Blog.jsx'
 import WebApplicationSecurity from './pages/Services/VAPT/WebApplicationSecurity/WebApplicationSecurity.jsx'
 import SourceCode from './pages/Services/VAPT/SourceCode/SourceCode.jsx'
 import Network from './pages/Services/VAPT/Network/Network.jsx'
-import IOTPT from './pages/Services/VAPT/IOTPenetrationTesting/IOTPT.jsx'
 import IOSPT from './pages/Services/VAPT/IOSPenetrationTesting/IOSPT.jsx'
 import APIPT from './pages/Services/VAPT/APIPenetrationTesting/APIPT.jsx'
 import AndroidPT from './pages/Services/VAPT/AndroidPenetrationTesting/AndroidPT.jsx'
@@ -35,6 +34,7 @@ import TermsandCond from './pages/FooterContent/TermsandCond.jsx'
 import Disclamer from './pages/FooterContent/Disclamer.jsx'
 import PrivacyPolicy from './pages/FooterContent/PrivacyPolicy.jsx'
 import DMCAPolicy from './pages/FooterContent/DMCAPolicy.jsx'
+import IoTPT from './pages/Services/VAPT/IOTPenetrationTesting/IoTPT.jsx'
 
 
 const router = createBrowserRouter(
@@ -43,7 +43,7 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound />} />
       <Route path='' element={<Homepage />} />
       <Route path='/training' element={<TrainingPage />} />
-      <Route path='/training/advanceeh' element={<AdvanceEthicalHacking/>} />
+      <Route path='/training/ethicalhacking' element={<AdvanceEthicalHacking/>} />
       <Route path='/training/bugbounty' element={<BugBounty />} />
       <Route path='/training/linuxfundamentals' element={<LinuxFundamentals />} />
       <Route path='/training/mobilept' element={<MobilePT/>} />
@@ -57,22 +57,22 @@ const router = createBrowserRouter(
       
       <Route path='/services' element={<Services />} />
       <Route path='/services/websecurity' element={<WebApplicationSecurity />} />
-      <Route path='/services/sourcecode' element={<SourceCode />} />
-      <Route path='/services/network' element={<Network />} />
-      <Route path='/services/iotpt' element={<IOTPT/>} />
-      <Route path='/services/iospt' element={<IOSPT />} />
-      <Route path='/services/apipt' element={<APIPT/>} />
-      <Route path='/services/androidpt' element={<AndroidPT/>} />
+      <Route path='/services/source-code-review' element={<SourceCode />} />
+      <Route path='/services/networksecurity' element={<Network />} />
+      <Route path='/services/IoTsecurity' element={<IoTPT/>} />
+      <Route path='/services/iossecurity' element={<IOSPT />} />
+      <Route path='/services/apisecurity' element={<APIPT/>} />
+      <Route path='/services/androidsecurity' element={<AndroidPT/>} />
       <Route path='/services/consultancy' element={<Consultancy/>} />
       <Route path='/services/redteaming' element={<RedTeaming/>} />
       <Route path='/about' element={<About />} />
       <Route path='/blog' element={<Blog />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/career' element={<Career/>} />
-      <Route path='/terms'element={<TermsandCond/>} />
+      <Route path='/terms&Condition'element={<TermsandCond/>} />
       <Route path='/disclaimer'element={<Disclamer/>} />
-      <Route path='/privacyPolicy'element={<PrivacyPolicy/>} />
-      <Route path='/DMCA'element={<DMCAPolicy/>} />
+      <Route path='/privacypolicy'element={<PrivacyPolicy/>} />
+      <Route path='/dmcapolicy'element={<DMCAPolicy/>} />
 
     </Route>,
   ))

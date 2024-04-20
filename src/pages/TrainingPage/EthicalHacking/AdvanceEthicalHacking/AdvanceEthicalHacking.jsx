@@ -18,11 +18,14 @@ const AdvanceEthicalHacking = () => {
           <div className='w-full p-4 md:px-20 md:py-10'>
             <div className='md:flex md:flex-row justify-between'>
               <div className='py-8 md:px-0'>
-                <h1 className='text-white font-Roboto font-bold text-lg md:text-4xl md:text-justify py-4'> Web Application Security Course  </h1>
+                <h1 className='text-white font-Roboto font-bold text-lg md:text-4xl md:text-justify py-4'> Advance Ethical Hacking Course  </h1>
                 <div className='flex flex-row gap-2'>
-                  <h1 className='bg-custom-gold-color h-6 items-center md:h-6 text-xs md:text-sm p-2 md:p-0 md:w-auto font-__Inter_aaf875 text-center rounded-sm my-3'>
+                     <div className='flex justify-center items-center'>
+
+                  <h1 className='bg-custom-gold-color text-xs md:text-sm p-1 px-2 md:w-auto font-__Inter_aaf875 text-center rounded-sm my-3'>
                     BestSeller
                   </h1>
+                  </div>
                   <div className='flex flex-row'>
                     <h1 className='text-white font-Roboto text-xs p-2 mt-2 md:text-sm'>
                       5.0
@@ -76,28 +79,28 @@ const AdvanceEthicalHacking = () => {
                       </div>
                       <div className='flex flex-row'>
                         <img src={Images.ethicalhackingimg4} className='w-4 mx-2 invert object-contain ' />
-                        <h1 className='text-white font-Roboto text-sm my-2'>
-                          Acccrediation by: <span className='font-bold'>Cyberous  </span>
+                      <h1 className='text-white font-Roboto text-base my-2'>
+                          Accreditation by: <span className='font-bold'>Cyberous  </span>
                         </h1>
                       </div>
                     </div>
                     <div className='hidden md:block md:w-full p-6 mt-20'>
                       <div className=' bg-white w-full relative  rounded-sm md:w-3/4 md:mt-20 h-1/2 p-5'>
                         <h1 className='font-bold text-2xl '>
-                          ₹15000.00
+                          ₹12500.00
                         </h1>
                         <h1 className='absolute font-bold text-base line-through right-20 md:right-5 md:bottom-2 text-custom-fontColor-grey'>
-                          ₹17700
+                          ₹17000
                         </h1>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className='md:mx-5 relative'>
-                  <button className='w-full md:w-60 h-12 hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
-                    <img src={Images.download} className=' w-6 absolute left-10 md:left-2 invert' />
-                    Download Syllabus
-                  </button>
+               <div className='md:mx-5'>
+                  <div className='w-full h-12 lg:w-80 flex justify-evenly px-12 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+                    <img src={Images.download} className=' w-6 invert' />
+                    <p className='font-medium'>Download Syllabus</p>
+                  </div>
                 </div>
               </div>
               <div className='md:ml-20 w-full md:w-1/2'>
@@ -237,7 +240,7 @@ const AdvanceEthicalHacking = () => {
             <li className=''>
               <div className='flex flex-row'>
                 <img src={Images.accept} className='h-6 w-6 m-2' />
-                <p className='mt-2'>IOT and cloud hacking</p>
+                <p className='mt-2'>IoT and cloud hacking</p>
               </div>
             </li>
           </ol>
@@ -284,9 +287,10 @@ const AdvanceEthicalHacking = () => {
       </div>
       <div className='bg-custom-greyBorderColor p-2 justify-between md:p-20 md:flex md:flex-row'>
         <div className='flex flex-col md:w-1/2'>
-          <h1 className='text-center   font-serif font-bold text-2xl md:text-4xl py-6'>
+               <h1 className='text-center   font-serif font-bold text-2xl md:text-4xl py-6'>
             Why to Join Cyberous Training Program?
           </h1>
+        <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
           <div className='flex'>
             <div className='grid grid-cols-1 text-xl md:text-2xl font-__Inter_aaf875 px-6'>
               <div>
@@ -350,9 +354,10 @@ const AdvanceEthicalHacking = () => {
       </div>
 
       <div className='p-10'>
-        <h1 className='text-center text-2xl md:text-4xl font-Roboto font-bold py-6'>
-          Cyberous's Student Awards
+        <h1 className='text-center text-2xl md:text-4xl font-serif font-bold py-6'>
+          Cyberous Student Awards
         </h1>
+        <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
         <div className='w-full'>
         <div className='grid grid-cols-1 md:grid-cols-3'>
           <img src={Images.certificate1} className='p-4'/>

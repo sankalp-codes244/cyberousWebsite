@@ -45,7 +45,7 @@ export default function FormComponent() {
     .then(response => response.json())
     .then(data => {
       // Update form status
-      setFormStatus(data.message);
+      setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
     setLoader(false);
       setShowPopup(true); // Show popup on successful submission
 
@@ -115,8 +115,16 @@ export default function FormComponent() {
     {showPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
           <div className="bg-white rounded-lg p-8 max-w-md">
+          <div className="text-end pb-8">
+            <button onClick={handleClosePopup} className="bg-gray-500 items-center text-white font-semibold text-xl p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+            </button>
+            </div>
             <div className="text-lg text-green-500 text-center mb-4">{formStatus}</div>
-            <button onClick={handleClosePopup} className="bg-custom-buttonColor-Green text-white font-semibold text-xl p-2 rounded-md">Close</button>
+            
           </div>
         </div>
       )}
@@ -137,17 +145,7 @@ export default function FormComponent() {
         </p>
       </div>
       <div className="p-6 space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <label htmlFor="mobile-number" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Mobile number</label>
-            <input value={formData.mobileNumber} onChange={handleChange} name='phone'  type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
-          </div>
-          <div className="space-y-2">
-            <label htmlFor="email" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Email</label>
-            <input value={formData.email} onChange={handleChange}   name='email' type="email" id="email" placeholder="Enter your email" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
-          </div>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="first-name" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">First name</label>
             <input value={formData.FirstName} onChange={handleChange} name='FirstName' type="text" id="first-name" placeholder="Enter your first name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 text-sm py-5 text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
@@ -158,6 +156,17 @@ export default function FormComponent() {
             <input value={formData.LastName} onChange={handleChange} name='LastName' type="text" id="last-name" placeholder="Enter your last name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
           </div>
         </div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <label htmlFor="mobile-number" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Mobile number</label>
+            <input value={formData.mobileNumber} onChange={handleChange} name='phone'  type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="email" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Email</label>
+            <input value={formData.email} onChange={handleChange}   name='email' type="email" id="email" placeholder="Enter your email" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+          </div>
+        </div>
+        
         <div className="space-y-2">
           <label
             htmlFor="service-required"
@@ -169,20 +178,21 @@ export default function FormComponent() {
             id="service-required"
             value={formData.question}
             onChange={handleChange}
-            className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500"
+            className=" h-10 w-full rounded-md border border-gray-300 bg-gray-200  text-sm text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500"
           >
                <option value='NA'>Select a service</option>
     <option value='VAPT'>VAPT</option>
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
     <option value='Support'>Support</option>
+    <option value='Support'>Training</option>
           </select>
         </div>
         <div className="space-y-2">
           <label htmlFor="message" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Description</label>
-          <textarea  value={formData.message} onChange={handleChange} name='message' id="message" placeholder="Enter your message" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
+          <textarea  value={formData.message} onChange={handleChange} name='message' id="message" placeholder="Enter your message" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black  focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
         </div>
-        <button className="inline-flex items-center shadow-lg border  justify-center whitespace-nowrap rounded-md text-sm lg:text-xl font-medium ring-offset-background transition-colors focus:outline-none bg-green-500 text-white focus:ring-2 focus:ring-gray-300 duration-500 focus:ring-offset-2 bg-primary text-black hover:bg-opacity-90 h-10 px-4 py-5">Submit</button>
+        <button className="inline-flex items-center shadow-lg border  justify-center whitespace-nowrap rounded-md text-sm lg:text-xl font-medium ring-offset-background transition-colors focus:outline-none bg-green-500 text-white focus:ring-2 focus:ring-gray-300 duration-500 focus:ring-offset-2 bg-primary text-white hover:bg-opacity-90 h-10 px-4 py-5">Submit</button>
       </div>
       
     </form>

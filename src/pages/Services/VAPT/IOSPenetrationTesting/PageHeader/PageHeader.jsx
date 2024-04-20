@@ -9,7 +9,7 @@ const PageHeader = () => {
                     VULNERABILITY ASSESSMENT AND PENETRATION TESTING SERVICES
                 </h1>
                 <h1 className='text-center text-2xl md:text-6xl font-serif font-bold p-6 text-white'>
-                IOS Application Penetration Testing
+                iOS Application Penetration Testing
                 </h1>
                 <div className='flex justify-center'>
                     <div className='md:w-3/4'>

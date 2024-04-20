@@ -9,7 +9,7 @@ const Disclaimer = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">Disclaimer For Cyberous</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">Disclaimer</h1>
         <p className="text-lg text-gray-700 mb-6">
           All information on "www.cyberous.in" is provided in good faith and solely for the purpose of providing general information.
           <br />
@@ -48,7 +48,7 @@ const Disclaimer = () => {
         <p className="text-lg text-gray-700 mb-6">
           If you require any additional information or have any queries about our disclaimer then please contact us via email address given below.
           <br />
-          Email: <a href='mailto:contactus@cyberous.in'>contactus@cyberous.in</a>
+          Email: <a href='mailto:info@cyberous.in'>info@cyberous.in</a>
         </p>
       </div>
     </div>

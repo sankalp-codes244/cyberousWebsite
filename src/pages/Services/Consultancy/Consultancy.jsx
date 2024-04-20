@@ -134,7 +134,7 @@ const Consultancy = () => {
       </div>
 
       <div className="flex flex-col text-center py-14">
-        <h1 className="text-3xl lg:text-4xl mt-4">OVERVIEW</h1>
+        <h1 className="text-2xl lg:text-4xl font-serif mt-4">Overview of our Services</h1>
         <div className="flex justify-center">
           <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
         </div>
@@ -143,7 +143,7 @@ const Consultancy = () => {
       {/* Overview Services Text */}
       <div className="lg:flex lg:flex-row sm:flex-col justify-center py-10">
         <div className="w-full lg:w-2/3 px-4 lg:px-9">
-          <h1 className="text-3xl m-6 lg:text-5xl text-black font-bold mt-4 ">
+          <h1 className="text-3xl m-6 lg:text-5xl text-custom-fontColor-Green font-bold mt-4 ">
             Overview of our Consultancy Services
           </h1>
           <p className="m-6 mb-12 text-base lg:text-xl text-black text-justify ">
@@ -288,7 +288,7 @@ const Consultancy = () => {
                         SAY HELLO!
                       </p>
                       <p className="font-bold text-xl lg:text-4xl">
-                        cyberous@gmail.info
+                        info@cyberous.in
                       </p>
                     </div>
                   </a>

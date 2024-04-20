@@ -9,7 +9,7 @@ const Experts = () => {
                     <img src={Images.Expertsimg1} />
                 </div>
                 <div className='md:w-1/2 md:mx-10'>
-                    <h1 className='text-2xl md:text-6xl mr-6 font-holtwood py-6 pl-4 text-left'>
+                    <h1 className='text-5xl md:text-7xl mr-6 font-holtwood py-6 pl-4 text-left'>
                     RED TEAMING LEAD BY EXPERTS
                     </h1>
                     <p className='text-2xl mx-4 font-stylish pl-4 md:mr-6 pb-6 text-justify my-4'>

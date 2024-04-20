@@ -4,7 +4,7 @@ const Attackers = () => {
     return (
         <div className='bg-custom-black-color'>
             <div className='px-4 py-20 md:pt-40 md:px-16 md:w-4/5 '>
-                <h1 className='md:m-6 text-3xl md:text-7xl md:p-0 font-holtwood py-6 text-left text-white'>
+                <h1 className='md:m-6 text-6xl md:text-8xl md:p-0 font-holtwood py-6 text-left text-white'>
                     Attackers Don't Rest.<span className='text-orange-600'> Neither Do We.</span>
                 </h1>
                 <div className=' md:w-3/4'>

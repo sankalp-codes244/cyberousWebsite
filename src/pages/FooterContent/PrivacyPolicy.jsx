@@ -63,7 +63,7 @@ Note that Cyberous has no access to or control over these cookies that are used 
 </p>
 <h2 className="text-2xl font-bold text-gray-900 mb-6">Third Party Privacy Policies</h2>
 <p className="text-lg text-gray-700 mb-6">
-Cyberous's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+Cyberous Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
 
 </p>
 <p className="text-lg text-gray-700 mb-6">

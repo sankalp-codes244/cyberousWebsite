@@ -71,21 +71,21 @@ const Diploma = () => {
       id: 1,
       name: "Raghav",
       title: "",
-      desc: "Cyberous' cybersecurity consultancy service was exceptional. Their team provided valuable insights and guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With Cyberous' support, we've significantly strengthened our defenses and mitigated potential risks. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
+      desc: "cyberous cybersecurity consultancy service was exceptional. Their team provided valuable insights and guidance tailored to our specific needs, helping us navigate complex security challenges with confidence. With cyberous support, we've significantly strengthened our defenses and mitigated potential risks. Highly recommend Cyberous for comprehensive cybersecurity solutions.",
       image: Images.user
     },
     {
       id: 2,
       name: "Rahul Kumar",
       title: "",
-      desc: "We were thoroughly impressed by Cyberous' web application penetration testing service. Their team conducted a thorough assessment of our web application, identifying vulnerabilities and providing practical recommendations for remediation. Thanks to Cyberous, we've been able to enhance our application's security measures effectively. Trustworthy and professional – Cyberous is our top choice for web security.",
+      desc: "We were thoroughly impressed by cyberous web application penetration testing service. Their team conducted a thorough assessment of our web application, identifying vulnerabilities and providing practical recommendations for remediation. Thanks to Cyberous, we've been able to enhance our application's security measures effectively. Trustworthy and professional – Cyberous is our top choice for web security.",
       image: Images.user
     },
     {
       id: 3,
       name: " Anand",
       title: "",
-      desc: "Cyberous' Red Teaming service exceeded our expectations. Their team's simulated attacks were sophisticated and insightful, giving us a clear understanding of our organization's security posture. Their comprehensive report and recommendations enabled us to address vulnerabilities and enhance our defenses. Cyberous is our go-to partner for Red Teaming.",
+      desc: "cyberous Red Teaming service exceeded our expectations. Their team's simulated attacks were sophisticated and insightful, giving us a clear understanding of our organization's security posture. Their comprehensive report and recommendations enabled us to address vulnerabilities and enhance our defenses. Cyberous is our go-to partner for Red Teaming.",
       image: Images.user
     },
     {
@@ -99,7 +99,7 @@ const Diploma = () => {
       id: 5,
       name: "Ashok ",
       title: "",
-      desc: "Cyberous' Android penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
+      desc: "cyberous Android penetration testing service was invaluable for our app's security. Their expertise in identifying vulnerabilities and providing actionable recommendations was exceptional. With their help, we were able to strengthen our app's security and protect our users' sensitive data. Cyberous is our trusted partner for mobile security testing.",
       image: Images.user
     },
     {
@@ -176,7 +176,7 @@ const Diploma = () => {
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
             <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
-              "Take your first step towards a successful career in cybersecurity with Cyberous' comprehensive Diploma in Cybersecurity program. Designed to equip you with the essential skills and knowledge needed to thrive in this rapidly evolving field, our diploma program covers a wide range of topics.
+              "Take your first step towards a successful career in cybersecurity with cyberous comprehensive Diploma in Cybersecurity program. Designed to equip you with the essential skills and knowledge needed to thrive in this rapidly evolving field, our diploma program covers a wide range of topics.
             </p>
           </div>
         </div>
@@ -271,7 +271,7 @@ const Diploma = () => {
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
-                <SideArrow /> IOT Internet of Things
+                <SideArrow /> IoT Internet of Things
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
@@ -287,7 +287,7 @@ const Diploma = () => {
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
-                <SideArrow /> IOT Internet of Things
+                <SideArrow /> IoT Internet of Things
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
@@ -370,7 +370,7 @@ const Diploma = () => {
 
       <div className='text-center relative bg-no-repeat bg-center h-32 pt-10 bg-white'>
         <div className='h-full  bg-opacity-50 flex flex-col justify-center'>
-          {/* <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black'>Our Clients</h1> */}
+          {/* <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-black font-serif'>Brands that Trust us </h1> */}
           {/* <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div> */}
         </div>
       </div>

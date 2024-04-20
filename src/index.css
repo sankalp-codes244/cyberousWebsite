@@ -43,3 +43,10 @@ html {
   margin-top: 10px;
   border-radius: 5px;
 }
+
+@layer base {
+  @font-face {
+      font-family: "Queering";
+      src: url("../src/assets/Fonts/queering.otf");
+    }
+}
