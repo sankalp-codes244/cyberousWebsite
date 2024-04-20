@@ -23,7 +23,7 @@ const Methodology = ({ boxData }) => {
                         <div className="h-1 w-32 lg:w-48 mt-4 mb-6 lg:mb-8 bg-custom-buttonColor-Green rounded-full"></div>
                     </div>
                     <p className=' mx-6 lg:mx-20 mt-2 lg:mt-6 text-lg lg:text-xl text-justify'>
-                    Unlock Advanced Security Solutions with Our Comprehensive Penetration Testing Methodology. Discover and Address Business Logic Vulnerabilities with Cyberous. Our Approach Aligns with Industry Standards Including OWASP10, SANS25, and OSSTMM. Experience Both On-Premises and Off-Premises Application Security Solutions Tailored to Your Needs. Trust Our Years of Expertise in Safeguarding Online Platforms, Mobile Apps, and Cloud Environments.
+                        Unlock Advanced Security Solutions with Our Comprehensive Penetration Testing Methodology. Discover and Address Business Logic Vulnerabilities with Cyberous. Our Approach Aligns with Industry Standards Including OWASP10, SANS25, and OSSTMM. Experience Both On-Premises and Off-Premises Application Security Solutions Tailored to Your Needs. Trust Our Years of Expertise in Safeguarding Online Platforms, Mobile Apps, and Cloud Environments.
                     </p>
                     <div className='flex flex-wrap justify-center mx-6 lg:mx-20 mt-6'>
                         {boxData.map((item, index) => (

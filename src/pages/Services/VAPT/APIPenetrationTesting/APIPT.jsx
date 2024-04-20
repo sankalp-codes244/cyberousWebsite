@@ -7,6 +7,7 @@ import BrandsTrustUs from '../../../Homepage/BrandsTrustUs/BrandsTrustUs'
 import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
 import PageHeader from './PageHeader/PageHeader'
+import NamesYouKnow from '../../RedTeaming/NamesYouKnow/NamesYouKnow'
 
 const APIPT = () => {    
   const data = [
@@ -226,7 +227,8 @@ const APIPT = () => {
       <Methodology boxData={boxData} />
       <EvaluateBusiness />
       <OurApproach approachData={approachData} />
-      <BrandsTrustUs />
+      <NamesYouKnow/>
+      {/* <BrandsTrustUs /> */}
       <Testemonial data={data}/>
       <Faqs faqData={faqData} />
     </div>

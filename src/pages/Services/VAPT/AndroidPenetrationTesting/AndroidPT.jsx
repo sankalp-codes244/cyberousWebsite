@@ -7,6 +7,7 @@ import Testemonial from '../../../Homepage/Testimonial/Testemonial'
 import Faqs from './FAQs/Faqs'
 import { Images } from '../../../../assets'
 import PageHeader from './PageHeader/PageHeader'
+import NamesYouKnow from '../../RedTeaming/NamesYouKnow/NamesYouKnow'
 
 const AndroidPT = () => {
     const boxData = [
@@ -204,7 +205,8 @@ const AndroidPT = () => {
         <Methodology boxData={boxData} />
         <EvaluateBusiness />
         <OurApproach approachData={approachData} />
-        <BrandsTrustUs />
+        {/* <BrandsTrustUs /> */}
+        <NamesYouKnow/>
         <Testemonial data={data} />
         <Faqs faqData={faqData} />
       </div>
