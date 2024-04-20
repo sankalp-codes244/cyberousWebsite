@@ -13,7 +13,7 @@ const AdvanceEthicalHacking = () => {
   return (
     <div className='relative'>
       <img src={Images.ethicalhackingimg10} className=' hidden md:block bg-custom-custom-blackbg absolute right-0 top-20' />
-      <div className='flex justify-center bg-custom-custom-blackbg h-screen'>
+      <div className='flex justify-center bg-custom-custom-blackbg h-full'>
         <div className='md:w-4/5'>
           <div className='w-full p-4 md:px-20 md:py-10'>
             <div className='md:flex md:flex-row justify-between'>
@@ -84,7 +84,13 @@ const AdvanceEthicalHacking = () => {
                         </h1>
                       </div>
                     </div>
-                    <div className='hidden md:block md:w-full p-6 mt-20'>
+                    <div className='lg:hidden md:block md:w-full h-full my-5'>
+                    
+                        <h1 className='font-bold text-2xl bg-white p-2 text-center rounded-sm'>
+                          ₹12500.00
+                        </h1>
+                       
+                    </div> <div className='hidden md:block md:w-full p-6 mt-20'>
                       <div className=' bg-white w-full relative  rounded-sm md:w-3/4 md:mt-20 h-1/2 p-5'>
                         <h1 className='font-bold text-2xl '>
                           ₹12500.00
@@ -93,17 +99,26 @@ const AdvanceEthicalHacking = () => {
                           ₹17000
                         </h1>
                       </div>
+                      {/* <div className=' bg-green-500 w-full relative  rounded-sm md:w-3/4 md:mt-20 h-1/2 p-5'>
+                        <h1 className='font-bold text-2xl text-white '>
+                          ₹12500.00
+                        </h1>
+                        <h1 className='absolute font-bold text-base line-through right-20 md:right-5 md:bottom-2 text-white'>
+                          ₹17000
+                        </h1>
+                      </div> */}
                     </div>
+                    
                   </div>
                 </div>
-               <div className='md:mx-5'>
-                  <div className='w-full h-12 lg:w-80 flex justify-evenly px-12 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+              <div className='md:mx-5'>
+                  <div className='w-full h-12 lg:w-64 flex justify-evenly px-12 lg:px-4 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
                     <img src={Images.download} className=' w-6 invert' />
                     <p className='font-medium'>Download Syllabus</p>
                   </div>
                 </div>
               </div>
-              <div className='md:ml-20 w-full md:w-1/2'>
+              <div className='md:ml-20 w-full  md:w-1/2'>
                 <FormComponent />
               </div>
             </div>
@@ -113,7 +128,7 @@ const AdvanceEthicalHacking = () => {
 
 
 
-      <div className='bg-custom-greyLightColor p-10'>
+      <div className='bg-custom-greyLightColor  p-10'>
         <h1 className='text-center text-2xl md:text-4xl font-serif font-bold'>What You Will Learn</h1>
         <div className='font-bold grid grid-cols-1 md:grid-cols-4 gap-5 py-20 text-xl md:text-2xl font-Roboto'>
           <ol>

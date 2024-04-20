@@ -84,7 +84,13 @@ const WebPT = () => {
                         </h1>
                       </div>
                     </div>
-                    <div className='hidden md:block md:w-full p-6 mt-20'>
+                    <div className='lg:hidden md:block md:w-full h-full my-5'>
+                    
+                        <h1 className='font-bold text-2xl bg-white p-2 text-center rounded-sm'>
+                          ₹12500.00
+                        </h1>
+                       
+                    </div> <div className='hidden md:block md:w-full p-6 mt-20'>
                       <div className=' bg-white w-full relative  rounded-sm md:w-3/4 md:mt-20 h-1/2 p-5'>
                         <h1 className='font-bold text-2xl '>
                           ₹15000.00
@@ -96,8 +102,8 @@ const WebPT = () => {
                     </div>
                   </div>
                 </div>
-               <div className='md:mx-5'>
-                  <div className='w-full h-12 lg:w-80 flex justify-evenly px-12 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+              <div className='md:mx-5'>
+                  <div className='w-full h-12 lg:w-64 flex justify-evenly px-12 lg:px-4 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
                     <img src={Images.download} className=' w-6 invert' />
                     <p className='font-medium'>Download Syllabus</p>
                   </div>
