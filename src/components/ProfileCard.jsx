@@ -1,5 +1,7 @@
 import React from 'react'
 import SideArrow from '../assets/Svgs/SideArrow'
+import { Images } from '../assets'
+import { Link } from 'react-router-dom'
 
 const ProfileCard = ({ id, name, desc, location, type, qualifications, benefits, howtoapply }) => {
     return (
@@ -39,6 +41,12 @@ const ProfileCard = ({ id, name, desc, location, type, qualifications, benefits,
                     <h1 className='p-2 font-__Inter_aaf875 text-base md:text-lg'>
                      <span className='font-bold'> How To Apply </span>: {howtoapply}
                     </h1>
+                    <Link to={'https://forms.gle/a7CSyRWemLuh1xBv6'} className='flex justify-center lg:justify-start' >
+                    <button className='w-3/4 h-12 lg:w-64 flex justify-evenly px-12 lg:px-4 my-4 items-center hover:bg-green-700 border border-solid border-green-500 bg-green-500  rounded-md text-white'>
+                    <img src={Images.download} className=' w-6 invert' />
+                    <p className='font-medium'>Apply Now</p>
+                  </button>
+                    </Link>
                 </div>
             </div>
         </div>
