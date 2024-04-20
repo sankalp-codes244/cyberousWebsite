@@ -9,7 +9,7 @@ import NamesYouKnow from './RedTeaming/NamesYouKnow/NamesYouKnow';
 
 const Services = () => {
   useEffect(() => {
-    // window.scrollTo(0, 0); 
+    window.scrollTo(0, 0); 
   }, []);
   const data = [
     {
@@ -83,7 +83,7 @@ const Services = () => {
 
       {/* Service details */}
       <div className='px-4 lg:px-32 py-8'>
-        <div className='grid grid-cols-1 md:grid-cols-2 '>
+        <div className='flex flex-col lg:flex-row justify-center items-end'>
           <div className='flex flex-col'>
             <div className='flex  flex-row items-center mx-10 md:mx-40'>
               <p className='text-9xl text-green-500 font-__Inter_aaf875 font-bold '>4+</p>
@@ -97,14 +97,14 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className='text-lg text-justify mt-10 md:mt-20 font-__Inter_aaf875'>
+          <div className='text-lg text-justify mt-10 md:mt-20 font-__Inter_aaf875 py-3'>
             Welcome to Cyberous, your premier cyber security partner. Specializing in ethical hacking training, VAPT services covering web, network, mobile, and cloud platforms, as well as red teaming and consultancy solutions. Founded in 2020 by Mr. Yogesh Saini, renowned for training over 10,000 students globally and 2,500+ corporate employees. Recognized as a Top 10 CEO in Jaipur, Rajasthan. Cyberous is committed to empowering individuals and organizations while ensuring a secure digital future. Join us in safeguarding your digital assets today.
           </div>
         </div>
       </div>
       {/* We Excel section */}
       <div className='text-center my-10'>
-        <h2 className='text-3xl lg:text-4xl font-bold font-__Inter_aaf875'>Our Services</h2>
+        <h2 className='text-3xl lg:text-4xl font-bold font-serif'>Our Services</h2>
         <p className='text-green-500 text-2xl lg:text-5xl my-4 font-__Inter_aaf875'>What do We Offer?</p>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>

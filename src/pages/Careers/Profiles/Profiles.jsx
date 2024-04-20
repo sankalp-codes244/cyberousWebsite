@@ -11,7 +11,7 @@ const Profiles = () => {
       type:'Internship Job',
       Qualifications:'Currently pursuing a master degree or graduate',
       benefits : ['Hands-on experience in the field of cyber security.', 'Opportunity to work alongside experienced professionals and gain valuable mentorship.', 'Exposure to cutting-edge technologies and industry best practices.', 'Potential for future full-time employment opportunities based on performance and business needs.'],
-      How_to_Apply: "Interested candidates should submit their resume and cover letter here or mail us at info@cyberous.in .Please include Job profile name in the subject line.",
+      How_to_Apply: "Interested candidates should submit their resume and cover letter here or mail us at info@cyberous.in. Please include Job profile name in the subject line.",
     },
     {
       id : 1,
@@ -21,7 +21,7 @@ const Profiles = () => {
       type:'Internship Job',
       Qualifications:" Pursuing a degree in Graphic Design, Visual Arts, or related fieldProficiency in graphic design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign or Canva)",
       benefits : ['Gain hands-on experience in a professional design environmentMentorship from experienced designers', 'Opportunity to work on diverse projects and build a portfolio'],
-      How_to_Apply: "Interested candidates should submit their resume and cover letter here or mail us at info@cyberous.in .Please include Job profile name in the subject line.",
+      How_to_Apply: "Interested candidates should submit their resume and cover letter here or mail us at info@cyberous.in. Please include Job profile name in the subject line.",
     },
   ]
   return (

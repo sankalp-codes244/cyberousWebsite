@@ -5,7 +5,7 @@ import Profiles from "./Profiles/Profiles";
 
 const Career = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
   return (
     <div>
@@ -39,6 +39,9 @@ const Career = () => {
       <div>
         <Profiles />
       </div>
+      <div>
+        <About />
+      </div>
       <div className="bg-custom-black-color relative h-ful pb-20 lg:px-20 lg:py-40">
        <div className="lg:mb-32 pt-10">
        <h1 className="font-serif text-center  text-white text-3xl lg:text-5xl ">
@@ -47,9 +50,10 @@ const Career = () => {
         <div className="bg-green-500 h-2 w-1/4 mx-auto mt-2 mb-7"></div>
        </div>
         <div className="grid grid-cols-1 lg:flex  gap-4">
-          <div className="mx-7 lg:1/3 justify-center  bg-slate-500 p-4">
+            <img src={Images.howWeWork} alt="how we work" className="lg:w-1/3 px-8 lg:px-0 object-cover" />
+          <div className="mx-7 lg:1/3 justify-center   p-2">
             <p className="text-white  text-justify lg:text-2xl">
-              At Cyberous, our approach to cybersecurity is proactive,
+            At Cyberous, our approach to cybersecurity is proactive,
               collaborative, and results- driven. We begin by understanding our
               clients' unique challenges and objectives, allowing us to tailor
               our solutions accordingly. Our team of experts employs a
@@ -58,18 +62,14 @@ const Career = () => {
               prioritize open communication and collaboration, working closely
               with our clients to ensure transparency and alignment throughout
               the process.
-            </p>
-          </div>
-          <div className="mx-7 lg:1/3 justify-center  bg-slate-500 p-4">
-            <p className="text-white  text-justify lg:text-2xl">
-              "At Cyberous, we work tirelessly to fortify your digital defenses,
+              <br />
+              <br />
+              At Cyberous, we work tirelessly to fortify your digital defenses,
               employing a proactive approach and unparalleled expertise to
               safeguard your assets and privacy in an increasingly
-              interconnected world. "
-            </p>
-          </div>
-          <div className="mx-7 lg:1/3 justify-center  bg-slate-500 p-4">
-            <p className="text-white  text-justify lg:text-2xl">
+              interconnected world. 
+              <br />
+              <br />
               Whether it's cybersecurity training or providing consulting
               services, we strive to empower our clients with the knowledge and
               tools needed to mitigate risks and protect their digital assets.
@@ -80,11 +80,10 @@ const Career = () => {
               future.
             </p>
           </div>
+          
         </div>
       </div>
-      <div>
-        <About />
-      </div>
+      
       <div></div>
     </div>
   );

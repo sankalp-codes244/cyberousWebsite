@@ -98,7 +98,7 @@ const About = () => {
 
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
   return (
     <div className='h-full'>
@@ -148,12 +148,12 @@ const About = () => {
           <div className='flex flex-col'>
             <p className='font-bold text-3xl md:text-6xl font-__Inter_aaf875'>Download a copy of our <p className='text-green-500 font-__Inter_aaf875 pt-6'>Company Profile</p></p>
             <button
-          className="bg-custom-buttonColor-Green text-white font-bold py-2 lg:w-3/5 h-20 px-16  rounded-full mt-4 md:mt-8 hover:bg-custom-buttonColor-GreenLight focus:outline-none focus:shadow-outline flex items-center justify-between "
+          className="bg-custom-buttonColor-Green text-white font-bold py-2 lg:w-3/5 h-20 px-12 lg:px-14 my-5 rounded-full mt-4 md:mt-8 hover:bg-custom-buttonColor-GreenLight focus:outline-none focus:shadow-outline flex items-center justify-between "
           
           onClick={handleDownload}
         >
           <img src={Images.downloadicon} className="invert object-contain  w-10 lg:w-10" alt="Download Icon" />
-         <p className='text-white text-xl'>Download Brochure</p> 
+         <p className='text-white text-xl lg:text-2xl'>Download Brochure</p> 
         </button>
           </div>
         <img src={Images.AboutusIcon} className='mx-20 w-1/4 md:mx-0 opacity-70' />

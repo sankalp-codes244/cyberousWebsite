@@ -269,10 +269,9 @@ A question about...
     <option value='VAPT'>VAPT</option>
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
-    <option value='Support'>Support</option>
   </select>
 </div>
-            <div className='p-4 px-8 '>
+            <div className='p-4  '>
               <p className='text-xl text-black py-4'>Your Comment  <span className=' text-2xl md:text-4xl text-red-700'> * </span></p>
               <textarea value={formData.message} onChange={handleChange} name='message' className='border border-solid border-black w-full h-64 font-serif text-black p-4' type='text' placeholder=''>
               </textarea>

@@ -102,17 +102,18 @@ const Footer = () => {
             {/* Add other list items */}
           </ol>
         </div>
-        <div className=' md:w-1/3 h-full ml-8 md:mr-10 md:mt-0'>
+        <div className=' md:w-1/3 h-full lg:ml-8 md:mr-10 md:mt-0'>
           <h1 className='text-white text-2xl font-bold mb-5 ml-5 mt-8'>
             News Letter
           </h1>
           <div>
-            <h1 className='text-custom-fontColor-Dark ml-5  md:mr-10'>
+            <h1 className='text-custom-fontColor-Dark mx-5 lg:ml-5 lg:mr-10'>
               Stay informed about cybersecurity risks. Get the latest security updates directly to your email inbox
             </h1>
             <div className="flex flex-col md:flex-row items-center mt-6 ">
+               <form className='flex flex-col lg:flex-row'>
               <div className=" rounded-lg mb-4 md:mb-0">
-                <input
+               <input
                   name="emailHandle"
                   type="email"
                   className="mt-4 ml-5 h-10 px-4 focus-visible:ring-4 duration-500 text-white bg-custum-bg-dark  border border-solid border-white w-80 rounded-lg
@@ -123,6 +124,7 @@ const Footer = () => {
               <button className="mt-4 ml-4 bg-custom-buttonColor-Green hover:bg-custom-buttonColor-GreenDark text-white font-bold py-2 px-4 rounded">
                 Sign Up
               </button>
+               </form>
             </div>
           </div>
         </div>
@@ -149,29 +151,30 @@ const Footer = () => {
       </div>
       <div className='h-full bg-black md:px-24'>
         
-        <h1 className='ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous.</span> All Rights Reserved.</h1>
-        <div className=''>
-          <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6">
+        <h1 className='hidden lg:block ml-32 pt-4 text-white text-base font-bold'> <span>© 2024 Cyberous.</span> All Rights Reserved.</h1>
+        <h1 className=' lg:hidden pt-4 text-white text-center text-base font-bold'> <span>© 2024 Cyberous.</span><br/> All Rights Reserved.</h1>
+        <div className='flex lg:flex-none justify-center items-center'>
+          <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6 mx-5 self-center">
             <Link to={'/terms&Condition'}>
-            <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <li className="md:w-52 text-custom-fontColor-Dark  mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Terms & Conditions
             </li>
             </Link>
-            <Link to='/privacypolicy'>
-            <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <Link to='/privacypolicy' className='ml-9 lg:ml-0'>
+            <li className=" md:w-52 text-custom-fontColor-Dark mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Privacy Policy
             </li>
             </Link>
             <Link to={'/dmcapolicy'}>
-            <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <li className=" md:w-52 text-custom-fontColor-Dark  mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               DMCA Policy
             </li>
             </Link>
-            <Link to='/disclaimer'>
-              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <Link to='/disclaimer' className='ml-9 lg:ml-0'>
+              <li className=" md:w-52 text-custom-fontColor-Dark mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 
                 Disclaimer
               </li>

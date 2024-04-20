@@ -163,7 +163,7 @@ const Diploma = () => {
       {/* Background section */}
       <div className='text-center relative bg-no-repeat bg-cover bg-center h-screen object-cover' style={{ backgroundImage: `url(${Images.aboutBg})`, }}>
         <div className='h-full bg-black bg-opacity-50 flex flex-col justify-center'>
-          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-__Inter_aaf875 font-bold text-white'>Diploma in cybersecurity</h1>
+          <h1 className='text-2xl sm:text-3xl lg:text-5xl font-__Inter_aaf875 font-bold text-white'>Diploma in Cybersecurity</h1>
           <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
           {/* <h2 className='text-xl sm:text-2xl lg:text-3xl text-white font-bold font-__Inter_aaf875'>ISO:27001:2013 CERTIFIED COMPANY</h2> */}
         </div>
@@ -171,7 +171,7 @@ const Diploma = () => {
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif'>Our Motive</h1>
+        <h1 className='text-4xl text-center md:text-5xl font-bold font-serif'>Our Motive</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>

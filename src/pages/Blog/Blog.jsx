@@ -127,7 +127,7 @@ const Blog = () => {
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif'>Our Blogs</h1>
+        <h1 className='text-lg text-center md:text-4xl font-bold font-serif'>Our Blogs</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
@@ -238,7 +238,7 @@ const Blog = () => {
                   <Link to='/services/source-code-review'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Source Code Review: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Source Code Review </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -272,7 +272,7 @@ const Blog = () => {
                   <Link to='/services/consultancy'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Cyber Security Consultancy: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Cyber Security Consultancy </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
@@ -283,7 +283,7 @@ const Blog = () => {
                   <Link to='/services/redteaming'>
                     <div className='flex flex-row'>
                       <img src={Images.checkMark} className='h-6 w-6 m-2' />
-                      <p className='font-bold font-__Inter_aaf875'>  Red Teaming: </p>
+                      <p className='font-bold font-__Inter_aaf875'>  Red Teaming </p>
                     </div>
                   </Link>
                   <div className='text-base lg:text-lg font-normal text-gray-600 font-sans'>
