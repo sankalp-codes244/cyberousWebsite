@@ -199,7 +199,7 @@ export default function FormComponent() {
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
     <option value='Support'>Support</option>
-    <option value='Support'>Training</option>
+    <option value='Training'>Training</option>
           </select>
           {formErrors.question && <div className="text-red-500 text-sm text-center">{formErrors.question}</div>}
         </div>

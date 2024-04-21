@@ -496,9 +496,11 @@ const TrainingPage = () => {
                 <SideArrow /> Mobile Application Penetration Testing
               </li>
             </ul>
+            <Link to="/training/diploma">
             <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-36">
               Read more
             </button>
+            </Link>
           </div>
           <div className="border w-full  rounded-xl shadow-xl p-5">
             <h1 className="text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4">
@@ -526,9 +528,11 @@ const TrainingPage = () => {
                 <SideArrow /> Cloud Security
               </li>
             </ul>
+            <Link to="/training/diploma">
             <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-28">
               Read more
             </button>
+            </Link>
           </div>
         </div>
       </div>

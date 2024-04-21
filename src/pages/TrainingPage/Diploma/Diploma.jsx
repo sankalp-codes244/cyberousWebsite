@@ -357,11 +357,11 @@ const Diploma = () => {
         </div>
       </div>
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif'>Dynamic Cybersecurity Education</h1>
-        <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
+        <h1 className='text-xl text-center md:text-5xl font-bold font-serif'>Dynamic Cybersecurity Education</h1>
+        <div className="h-1 w-60 lg:w-1/2 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
-            <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
+            <p className='text-lg mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
               Throughout the program, students will engage in hands-on lab exercises, practical assignments, and real-world simulations to reinforce their learning and apply their knowledge in practical scenarios. Additionally, guest lectures and industry insights will be provided to offer a holistic understanding of cybersecurity practices and trends.
 
             </p>

@@ -282,6 +282,8 @@ A question about...
     <option value='VAPT'>VAPT</option>
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
+    <option value='Training'>Training</option>
+    
   </select>
   {formErrors.question && <p className='text-red-500 text-sm'>{formErrors.question}</p>}
 </div>
