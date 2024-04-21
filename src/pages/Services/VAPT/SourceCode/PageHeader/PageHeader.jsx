@@ -1,6 +1,6 @@
 import React from 'react'
 import { Images } from '../../../../../assets'
-
+import { Link } from 'react-router-dom'
 const PageHeader = () => {
     return (
         <div className='h-screen'>
@@ -16,9 +16,11 @@ const PageHeader = () => {
                         <p className='text-white text-justify p-6 md:px-28'>
                             Our comprehensive methodology guarantees a thorough assessment of your network infrastructure, identifying vulnerabilities and strengthening defenses against potential cyber threats. From meticulous network exploration to simulating real-world attacks and conducting in-depth traffic analysis, our experts leave no aspect unexamined.
                         </p>
+                        <Link to='/contact'> 
                         <button className='w-1/2 md:w-1/4 h-14 md:text-xl font-Roboto bg-custom-buttonColor-Green hover:bg-white rounded-full text-white hover:text-custom-buttonColor-Green hover:border hover:border-solid hover:border-custom-buttonColor-Green'>
                             Get a free Consultation
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

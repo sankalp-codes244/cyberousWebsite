@@ -94,7 +94,7 @@ export default function DropDown() {
             </div>
           </div>
           {/* new gray menu */}
-          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
+          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-28 flex flex-col justify-center'>
             <Link onClick={() => setIsOpen(!isOpen)} to='training/corporatetraining'>
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Corporate training</p>
             </Link>
@@ -103,7 +103,7 @@ export default function DropDown() {
               Tailored programs enhancing skills for organizational growth and efficiency.</div>
           </div>
           {/* new gray menu */}
-          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
+          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-28 flex flex-col justify-center'>
             <Link onClick={() => setIsOpen(!isOpen)} to='training/diploma'>
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Diploma in Cyber security</p>
             </Link>
@@ -112,7 +112,7 @@ export default function DropDown() {
               Comprehensive program securing digital environments with advanced strategies.</div>
           </div>
           {/* new gray menu */}
-          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-36 flex flex-col justify-center'>
+          <div className='lg:bg-slate-100 lg:my-1 lg:px-20 lg:h-28 flex flex-col justify-center'>
             <Link onClick={() => setIsOpen(!isOpen)} to='training/internship'>
               <p className='text-white lg:text-black font-bold text-lg lg:text-xl py-3'>Internship training</p>
             </Link>

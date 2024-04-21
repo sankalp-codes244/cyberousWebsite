@@ -1,15 +1,7 @@
 import { useState, useEffect } from "react";
-import { z, object, string, number } from "zod";
+import xss from "xss";
 
 // Define the schema using Zod
-const schema = object({
-  mobileNumber: string().min(10).max(20),
-  email: string().email(),
-  FirstName: string(),
-  LastName: string(),
-  question: string(),
-  message: string(),
-});
 
 export default function FormComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,73 +16,89 @@ export default function FormComponent() {
   });
   const [formErrors, setFormErrors] = useState({});
   const [loader, setLoader] = useState(false);
-
+  const invalidKeys = "<>{}[]|\\$^`";
   const handleSubmit = async (e) => {
-    setLoader(true);
     e.preventDefault();
-    if(formData.phone === '' || formData.email === '' || formData.FirstName === '' || formData.LastName === '' || formData.question === '' || formData.message === '') {
-      alert("Please fill all the fields");
+    setLoader(true);
+  
+    // Basic form validation
+    const errors = {};
+    const sanitizedFormData = {}; // Object to store sanitized form data
+  
+    // Sanitize each form field
+    for (const key in formData) {
+      if (Object.hasOwnProperty.call(formData, key)) {
+        const sanitizedValue = xss(formData[key]); // Sanitize the value using xss library
+        sanitizedFormData[key] = sanitizedValue; // Store the sanitized value
+      }
+    }
+  
+    // Perform validation on sanitized form data
+    if (
+      sanitizedFormData.phone.trim() === "" ||
+      sanitizedFormData.phone.length < 10 ||
+      sanitizedFormData.phone.length > 12 ||
+      isNaN(sanitizedFormData.phone) ||
+      invalidKeys.includes(sanitizedFormData.phone)
+    ) {
+      errors.phone = "Phone number is required";
+    }
+    if (sanitizedFormData.email.trim() === "" || invalidKeys.includes(sanitizedFormData.email)) {
+      errors.email = "Email is required";
+    }
+    if (sanitizedFormData.FirstName.trim() === "" || invalidKeys.includes(sanitizedFormData.FirstName)) {
+      errors.FirstName = "First name is required";
+    }
+    if (sanitizedFormData.LastName.trim() === "" || invalidKeys.includes(sanitizedFormData.LastName)) {
+      errors.LastName = "Last name is required";
+    }
+    if (
+      sanitizedFormData.question === "" ||
+      sanitizedFormData.question === "NA" ||
+      sanitizedFormData.question === "Select a service"
+    ) {
+      errors.question = "Please select a service";
+    }
+    if (sanitizedFormData.message.trim() === "" && invalidKeys.includes(sanitizedFormData.message)) {
+      errors.message = "Message is required";
+    }
+  
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
       setLoader(false);
-      console.log(formData)
       return;
     }
-
+  
+    // If no errors, proceed with form submission
     try {
-      const formData = new FormData(event.target);
-
-    const response = fetch('https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Update form status
-      setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
-    setLoader(false);
-      setShowPopup(true); // Show popup on successful submission
-
-    })
-    .catch(error => {
-      // Handle error
-      console.error('Error:', error);
-      setFormStatus('An error occurred while submitting the form.');
-      setShowPopup(true); // Show popup on error
-    setLoader(false);
-
-    });
+      const formData = new FormData(e.target);
+  
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec", {
+        method: "POST",
+        body: formData,
+      });
       if (response.ok) {
-        // Success handling
-        console.log("Form data submitted successfully");
-        // Reset form data
-        setFormData({
-          phone: "",
-          email: "",
-          FirstName: "",
-          LastName: "",
-          serviceRequired: "",
-          message: "",
-        });
-    setLoader(false);
-
+        setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
+        setShowPopup(true); // Show popup on successful submission
       } else {
-        // Error handling
-        console.error("Failed to submit form data");
-    setLoader(false);
-        
-
+        setFormStatus("An error occurred while submitting the form.");
+        setShowPopup(true); // Show popup on error
       }
     } catch (error) {
       console.error("Error:", error);
-    setLoader(false);
-
+      setFormStatus("An error occurred while submitting the form.");
+      setShowPopup(true); // Show popup on error
     }
+    setLoader(false);
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value,
+    const sanitizedValue = xss(value); // Sanitize the input value
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: sanitizedValue,
     }));
   };
   const [formStatus, setFormStatus] = useState('');
@@ -135,6 +143,7 @@ export default function FormComponent() {
           </div>
         </div>
       )}
+      
     <form  id='myform' method='post' onSubmit={handleSubmit}  className={`rounded-lg border bg-white text-black shadow-xl w-full max-w-2xl ${isOpen ? 'open' : ''}`}>
       <div className="flex flex-col space-y-1.5 p-6">
         <h3 className="text-2xl lg:text-4xl font-semibold whitespace-nowrap leading-none tracking-tight text-black">
@@ -149,21 +158,26 @@ export default function FormComponent() {
           <div className="space-y-2">
             <label htmlFor="first-name" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">First name</label>
             <input value={formData.FirstName} onChange={handleChange} name='FirstName' type="text" id="first-name" placeholder="Enter your first name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 text-sm py-5 text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            {formErrors.FirstName && <div className="text-red-500 text-sm text-center">{formErrors.FirstName}</div>}
+
           </div>
           <div className="space-y-2">
             <label htmlFor="last-name" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Last name</label>
           
             <input value={formData.LastName} onChange={handleChange} name='LastName' type="text" id="last-name" placeholder="Enter your last name" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            {formErrors.LastName && <div className="text-red-500 text-sm text-center">{formErrors.LastName}</div>}
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="mobile-number" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Mobile number</label>
-            <input value={formData.mobileNumber} onChange={handleChange} name='phone'  type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            <input value={formData.phone} onChange={handleChange} name='phone'  type="text" id="mobile-number" placeholder="Enter your mobile number" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+            {formErrors.phone && <div className="text-red-500 text-sm text-center">{formErrors.phone}</div>}
           </div>
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Email</label>
             <input value={formData.email} onChange={handleChange}   name='email' type="email" id="email" placeholder="Enter your email" className="flex h-10 w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black lg:text-xl focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500" />
+          {formErrors.email && <div className="text-red-500 text-sm text-center">{formErrors.email}</div>}
           </div>
         </div>
         
@@ -187,10 +201,12 @@ export default function FormComponent() {
     <option value='Support'>Support</option>
     <option value='Support'>Training</option>
           </select>
+          {formErrors.question && <div className="text-red-500 text-sm text-center">{formErrors.question}</div>}
         </div>
         <div className="space-y-2">
           <label htmlFor="message" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Description</label>
           <textarea  value={formData.message} onChange={handleChange} name='message' id="message" placeholder="Enter your message" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black  focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
+          {formErrors.message && <div className="text-red-500 text-sm text-center">{formErrors.message}</div>}
         </div>
         <button className="inline-flex items-center shadow-lg border  justify-center whitespace-nowrap rounded-md text-sm lg:text-xl font-medium ring-offset-background transition-colors focus:outline-none bg-green-500 text-white focus:ring-2 focus:ring-gray-300 duration-500 focus:ring-offset-2 bg-primary text-white hover:bg-opacity-90 h-10 px-4 py-5">Submit</button>
       </div>

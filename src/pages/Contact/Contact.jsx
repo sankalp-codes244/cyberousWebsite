@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Images } from '../../assets'
 import ContactUsCard from '../../components/ContactUsCard'
 import { Link } from 'react-router-dom'
-import { z, object, string, number } from "zod";
-
+import xss from 'xss'
 
 
 const contactData = [
@@ -47,15 +46,7 @@ const contactData = [
 
 
 const Contact = () => {
-  // Define the schema using Zod
-const schema = object({
-  mobileNumber: string().min(10).max(20),
-  email: string().email(),
-  FirstName: string(),
-  LastName: string(),
-  question: string(),
-  message: string(),
-});
+
 
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,72 +66,89 @@ const schema = object({
   const [formStatus, setFormStatus] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
+  const invalidKeys = "<>{}[]|\\$^`";
   const handleSubmit = async (e) => {
-    setLoader(true);
     e.preventDefault();
-    if(formData.phone === '' || formData.email === '' || formData.FirstName === '' || formData.LastName === '' || formData.question === '' || formData.message === '') {
-      alert("Please fill all the fields");
+    setLoader(true);
+  
+    // Basic form validation
+    const errors = {};
+    const sanitizedFormData = {}; // Object to store sanitized form data
+  
+    // Sanitize each form field
+    for (const key in formData) {
+      if (Object.hasOwnProperty.call(formData, key)) {
+        const sanitizedValue = xss(formData[key]); // Sanitize the value using xss library
+        sanitizedFormData[key] = sanitizedValue; // Store the sanitized value
+      }
+    }
+  
+    // Perform validation on sanitized form data
+    if (
+      sanitizedFormData.phone.trim() === "" ||
+      sanitizedFormData.phone.length < 10 ||
+      sanitizedFormData.phone.length > 12 ||
+      isNaN(sanitizedFormData.phone) ||
+      invalidKeys.includes(sanitizedFormData.phone)
+    ) {
+      errors.phone = "Phone number is required";
+    }
+    if (sanitizedFormData.email.trim() === "" || invalidKeys.includes(sanitizedFormData.email)) {
+      errors.email = "Email is required";
+    }
+    if (sanitizedFormData.FirstName.trim() === "" || invalidKeys.includes(sanitizedFormData.FirstName)) {
+      errors.FirstName = "First name is required";
+    }
+    if (sanitizedFormData.LastName.trim() === "" || invalidKeys.includes(sanitizedFormData.LastName)) {
+      errors.LastName = "Last name is required";
+    }
+    if (
+      sanitizedFormData.question === "" ||
+      sanitizedFormData.question === "NA" ||
+      sanitizedFormData.question === "Select a service"
+    ) {
+      errors.question = "Please select a service";
+    }
+    if (sanitizedFormData.message.trim() === "" && invalidKeys.includes(sanitizedFormData.message)) {
+      errors.message = "Message is required";
+    }
+  
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
       setLoader(false);
-      console.log(formData)
       return;
     }
-
+  
+    // If no errors, proceed with form submission
     try {
-      const formData = new FormData(event.target);
-
-    const response = fetch('https://script.google.com/macros/s/AKfycbwDj0fQJHBzFdqIVMLb2XLgczS5PvfY8bmSVaRnbMfSEheJe9fkguyK3n2_QxZ8Q-LS/exec', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Update form status
-      setFormStatus(data.message);
-    setLoader(false);
-      setShowPopup(true); // Show popup on successful submission
-
-    })
-    .catch(error => {
-      // Handle error
-      console.error('Error:', error);
-      setFormStatus('An error occurred while submitting the form.');
-      setShowPopup(true); // Show popup on error
-    setLoader(false);
-
-    });
+      const formData = new FormData(e.target);
+  
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec", {
+        method: "POST",
+        body: formData,
+      });
       if (response.ok) {
-        // Success handling
-        console.log("Form data submitted successfully");
-        // Reset form data
-        setFormData({
-          phone: "",
-          email: "",
-          FirstName: "",
-          LastName: "",
-          serviceRequired: "",
-          message: "",
-        });
-    setLoader(false);
-
+        setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
+        setShowPopup(true); // Show popup on successful submission
       } else {
-        // Error handling
-        console.error("Failed to submit form data");
-    setLoader(false);
-        
-
+        setFormStatus("An error occurred while submitting the form.");
+        setShowPopup(true); // Show popup on error
       }
     } catch (error) {
       console.error("Error:", error);
-    setLoader(false);
-
+      setFormStatus("An error occurred while submitting the form.");
+      setShowPopup(true); // Show popup on error
     }
+    setLoader(false);
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value,
+    const sanitizedValue = xss(value); // Sanitize the input value
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: sanitizedValue,
     }));
   };
   const handleClosePopup = () => {
@@ -224,7 +232,7 @@ const schema = object({
         <h1  className='text-2xl font-sans pt-20'>
           Leave Us A Message
         </h1>
-        <p className='text-lg font sans py-4 lg:text-xl text-justify'>
+        <p  id='msg' className='text-lg font sans py-4 lg:text-xl text-justify'>
           Your message will be sent to our teams worldwide, who will get back to you as soon as they can. Please be advised that weekends and public holidays might delay response time.
         </p>
         </div>
@@ -239,20 +247,25 @@ const schema = object({
               <label className='mx-4 text-black text-xl'>
                 First Name :
                 <input value={formData.FirstName} onChange={handleChange} type='text' name='FirstName' className='border border-solid border-black  px-2 bg-white h-10 w-full    '></input>
+              {formErrors.FirstName && <p className='text-red-500 text-sm'>{formErrors.FirstName}</p>}
+
               </label>
               <label className='mx-4 text-black text-xl'>
                 Last Name :
                 <input value={formData.LastName} onChange={handleChange} type='text' name='LastName' className='border border-solid border-black  px-2 bg-white h-10 w-full '></input>
+              {formErrors.LastName && <p className='text-red-500 text-sm'>{formErrors.LastName}</p>}
               </label>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 my-4'>
               <label className='mx-4 text-black text-xl'>
                 Phone :
                 <input value={formData.mobileNumber} onChange={handleChange} type='text' name='phone' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
+              {formErrors.phone && <p className='text-red-500 text-sm'>{formErrors.phone}</p>}
               </label>
               <label className='mx-4 text-black text-xl'>
                 Email :
                 <input value={formData.email} onChange={handleChange}  type='email' name='email' className='border border-solid border-black px-2  bg-white h-10 w-full '></input>
+                {formErrors.email && <p className='text-red-500 text-sm'>{formErrors.email}</p>}
               </label>
 
 
@@ -270,13 +283,15 @@ A question about...
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
   </select>
+  {formErrors.question && <p className='text-red-500 text-sm'>{formErrors.question}</p>}
 </div>
             <div className='p-4  '>
               <p className='text-xl text-black py-4'>Your Comment  <span className=' text-2xl md:text-4xl text-red-700'> * </span></p>
               <textarea value={formData.message} onChange={handleChange} name='message' className='border border-solid border-black w-full h-64 font-serif text-black p-4' type='text' placeholder=''>
               </textarea>
+              {formErrors.message && <p className='text-red-500 text-sm'>{formErrors.message}</p>}
             </div>
-            <div id='msg' className='flex justify-center items-center'>
+            <div className='flex justify-center items-center'>
 
                 <button className='bg-custom-buttonColor-Green text-white font-semibold text-xl p-4 w-40 ' value='Submit' type='submit' id='submit'>SEND</button>
             </div>
@@ -292,8 +307,16 @@ A question about...
     {showPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
           <div className="bg-white rounded-lg p-8 max-w-md">
+          <div className="text-end pb-8">
+            <button onClick={handleClosePopup} className="bg-gray-500 items-center text-white font-semibold text-xl p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+            </button>
+            </div>
             <div className="text-lg text-green-500 text-center mb-4">{formStatus}</div>
-            <button onClick={handleClosePopup} className="bg-custom-buttonColor-Green text-white font-semibold text-xl p-2 rounded-md">Close</button>
+            
           </div>
         </div>
       )}

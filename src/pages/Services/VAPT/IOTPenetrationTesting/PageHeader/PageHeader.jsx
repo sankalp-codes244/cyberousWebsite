@@ -1,6 +1,6 @@
 import React from 'react'
 import { Images } from '../../../../../assets'
-
+import { Link } from 'react-router-dom'
 const PageHeader = () => {
   return (
     <div className='h-screen'>
@@ -16,9 +16,11 @@ const PageHeader = () => {
                         <p className='text-white text-justify p-6 px-10 md:px-40'>
                         Safeguard Your Connected Future with Our IoT Penetration Testing Services - Fortifying Your Devices and Networks Against Emerging Cyber Risks.
                         </p>
+                        <Link to='/contact'> 
                         <button className='w-1/2 md:w-1/4 h-14 md:text-xl font-Roboto bg-custom-buttonColor-Green hover:bg-white rounded-full text-white hover:text-custom-buttonColor-Green hover:border hover:border-solid hover:border-custom-buttonColor-Green'>
                             Get a free Consultation
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

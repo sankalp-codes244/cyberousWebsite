@@ -220,7 +220,7 @@ const data = [
       <div id="gallery" className='my-36'>
         <MediaGallery/>
       </div>
-      <div>
+      <div id="#faq">
         <Faqs/>
       </div>
     </>
