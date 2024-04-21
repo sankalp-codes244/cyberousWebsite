@@ -143,9 +143,9 @@ const Diploma = () => {
     // Create a link element
     const link = document.createElement('a');
     // Set the href attribute to the file path
-    link.href = '/Cyberous.pdf'; // Assuming the file is in the public directory
+    link.href = '/DiplomaCybersecurity6month.pdf'; // Assuming the file is in the public directory
     // Set the download attribute to give the file a name
-    link.download = 'Cyberous.pdf';
+    link.download = 'DiplomaCybersecurity6month.pdf';
     // Append the link to the body
     document.body.appendChild(link);
     // Trigger a click event to download the file
@@ -153,6 +153,21 @@ const Diploma = () => {
     // Clean up: remove the link from the body
     document.body.removeChild(link);
   };
+  const handleDownload1 = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Set the href attribute to the file path
+    link.href = '/12monthsduration.pdf'; // Assuming the file is in the public directory
+    // Set the download attribute to give the file a name
+    link.download = '12monthsduration.pdf';
+    // Append the link to the body
+    document.body.appendChild(link);
+    // Trigger a click event to download the file
+    link.click();
+    // Clean up: remove the link from the body
+    document.body.removeChild(link);
+  };
+
 
 
   useEffect(() => {
@@ -186,134 +201,144 @@ const Diploma = () => {
       <div className='px-4 lg:px-32 py-8'>
         <div className='grid '>
           <div className=' w-full'>
-          <div className=' flex justify-center items-center '>
-          <div className="lg:w-full pt-5 lg:pt-0 lg:flex gap-5 ">
-          <div className="border w-full rounded-xl shadow-xl mb-5 lg:mb-0 p-5">
-            <h1 className="text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4">
-              6 months
-            </h1>
-            <ul className="px-3">
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Linux Fundamentals Networking Fundamentals
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow />
-                Python Programming
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow />
-                Ethical Hacking from Scratch
+            <div className=' flex justify-center items-center '>
+              <div className="lg:w-full pt-5 lg:pt-0 lg:flex gap-5 ">
+                <div className="border w-full rounded-xl shadow-xl mb-5 lg:mb-0 p-5">
+                  <h1 className="text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4">
+                    6 months
+                  </h1>
+                  <ul className="px-3">
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Linux Fundamentals Networking Fundamentals
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow />
+                      Python Programming
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow />
+                      Ethical Hacking from Scratch
 
 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow />
-                Web Application & Network Penetration Testing
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow />
+                      Web Application & Network Penetration Testing
 
 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow />
-                Networking Fundamentals
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow />
+                      Networking Fundamentals
 
 
 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Mobile Application Penetration Testing
-              </li>
-            </ul>
-            <Link to='/contact'>
-            <button className="bg-custom-buttonColor-Green  hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-64">
-              Enroll Now
-            </button>
-              </Link>
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Mobile Application Penetration Testing
+                    </li>
+                  </ul>
+                  <div className='grid grid-cols-2'>
+                    <Link to='/contact'>
+                      <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-5 rounded-md w-11/12 mt-64 mx-2">
+                        Enroll Now
+                      </button>
+                    </Link>
+                    <button onClick={handleDownload} className="bg-custom-buttonColor-Green  hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-11/12 mt-64">
+                      Download Syllabus
+                    </button>
+                  </div>
+
+                </div>
+                <div className="border w-full  rounded-xl shadow-xl p-5">
+                  <h1 className="text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4">
+                    1 year
+                  </h1>
+                  <ul className="px-2">
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Linux Fundamentals
+
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow />Networking Fundamentals
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Python Programming
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Web Application & Network Penetration Testing
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Mobile Application Penetration Testing
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Cloud Penetration Testing
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> API Penetration Testing
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> IoT Internet of Things
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Cloud Security
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Ethical Hacking from Scratch
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Cloud Penetration Testing API Penetration Testing{" "}
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> IoT Internet of Things
+                    </li>
+                    <li className="text-lg font-__Inter_aaf875">
+                      {" "}
+                      <SideArrow /> Cloud Security
+                    </li>
+                  </ul>
+                  <div className='grid grid-cols-2'>
+                    <Link to='/contact'>
+                      <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-5 rounded-md w-11/12 mt-16 mx-2">
+                        Enroll Now
+                      </button>
+                    </Link>
+                    <button onClick={handleDownload1} className="bg-custom-buttonColor-Green  hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-11/12 mt-16">
+                      Download Syllabus
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div className="border w-full  rounded-xl shadow-xl p-5">
-            <h1 className="text-center text-2xl lg:text-4xl font-bold font-__Inter_aaf875 pb-4">
-              1 year
-            </h1>
-            <ul className="px-2">
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Linux Fundamentals
 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow />Networking Fundamentals
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Python Programming
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Web Application & Network Penetration Testing
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Mobile Application Penetration Testing
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Cloud Penetration Testing 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> API Penetration Testing 
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> IoT Internet of Things
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Cloud Security
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Ethical Hacking from Scratch
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Cloud Penetration Testing API Penetration Testing{" "}
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> IoT Internet of Things
-              </li>
-              <li className="text-lg font-__Inter_aaf875">
-                {" "}
-                <SideArrow /> Cloud Security
-              </li>
-            </ul>
-            <Link to='/contact'>
-
-            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-16">
-              Enroll Now
-            </button>
-            </Link>
-
-          </div>
-        </div>
-          </div>
-           
-          </div>
-        
         </div>
 
       </div>
-    
+
 
       {/* We choose section */}
-     
+
       <div>
         <h1 className="font-Roboto text-center text-xl md:text-3xl p-5 md:p-10 font-bold">
           Why choose Cyberous as your partner in your cybersecurity journey?
@@ -337,7 +362,7 @@ const Diploma = () => {
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
             <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
-            Throughout the program, students will engage in hands-on lab exercises, practical assignments, and real-world simulations to reinforce their learning and apply their knowledge in practical scenarios. Additionally, guest lectures and industry insights will be provided to offer a holistic understanding of cybersecurity practices and trends.
+              Throughout the program, students will engage in hands-on lab exercises, practical assignments, and real-world simulations to reinforce their learning and apply their knowledge in practical scenarios. Additionally, guest lectures and industry insights will be provided to offer a holistic understanding of cybersecurity practices and trends.
 
             </p>
           </div>
@@ -378,11 +403,11 @@ const Diploma = () => {
 
 
       {/* Service List */}
-      
+
       <div id="brands" className='min-h-full bg-white'>
         <IndustrialRecognition />
       </div>
-      
+
       <div id="gallery" className='min-h-full bg-white'>
         <MediaGallery />
       </div>
