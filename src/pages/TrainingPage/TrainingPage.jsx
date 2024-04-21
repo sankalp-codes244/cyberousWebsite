@@ -336,7 +336,7 @@ const TrainingPage = () => {
       <div className="py-24 bg-custom-greyBorderColor">
         <div className="flex justify-center">
           <div className="md:w-3/4">
-            <h1 className="text-center font-serif text-xl md:text-3xl font-Roboto py-6">
+            <h1 className="text-center font-serif text-xl md:text-3xl p-4">
               Cyber Security Course - Tailored Training to Suit Your
               Organizational Requirements!
             </h1>

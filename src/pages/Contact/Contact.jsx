@@ -18,7 +18,7 @@ const contactData = [
     name: 'Call Us',
     desc: 'Give your local consumer service hotline a ring',
     Link: "Go →",
-    nav: "callto:918199985888"
+    nav: "tel:918199985888"
   },
   {
     id: 2,

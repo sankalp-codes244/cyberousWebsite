@@ -3,6 +3,7 @@ import { Images } from '../assets';
 
 const FaqCard = ({ name, description }) => {
   const [isOpen, setIsOpen] = useState(false);
+  
 
   const buttonHandler = () => {
     setIsOpen(!isOpen);

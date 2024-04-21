@@ -3,6 +3,20 @@ import { Images } from '../../../../assets'
 import { Link } from 'react-router-dom'
 
 const AreYouReady = () => {
+    const handleDownload = () => {
+        // Create a link element
+        const link = document.createElement('a');
+        // Set the href attribute to the file path
+        link.href = '/CorporateTraining.pdf'; // Assuming the file is in the public directory
+        // Set the download attribute to give the file a name
+        link.download = 'CorporateTraining.pdf';
+        // Append the link to the body
+        document.body.appendChild(link);
+        // Trigger a click event to download the file
+        link.click();
+        // Clean up: remove the link from the body
+        document.body.removeChild(link);
+      };
     return (
         <div className='text-center bg-no-repeat bg-cover bg-center h-screen object-cover p-10' style={{ backgroundImage: `url(${Images.CorporateTrainingbg3})`, }}>
             <div className='flex justify-center'>
@@ -12,11 +26,17 @@ const AreYouReady = () => {
                     <p className='font-__Inter_aaf875 text-lg md:text-xl text-white py-10'>
                     Stop worrying about Cyber Security problems. Focus on your business. Let us provide the best Cyber Security Services you deserve. Let’s Discuss about your Cyber Security Risks & Requirements.
                     </p>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <Link to='/contact'>
-                    <button className='bg-custom-gold-color h-10 w-full md:w-1/3 text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg rounded-sm'>
+                    <button className='bg-custom-gold-color p-6 rounded-md w-full text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg'>
                         Contact Us Now
                     </button>
                     </Link>
+                    <button onClick={handleDownload} className='flex items-center justify-center bg-custom-gold-color  rounded-md w-full text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg p-6'><img src={Images.downloadicon} className='w-6 invert mx-5' /> 
+
+                        <p>View Modules</p>
+                    </button>
+                    </div>
                 </div>
             </div>
         </div>

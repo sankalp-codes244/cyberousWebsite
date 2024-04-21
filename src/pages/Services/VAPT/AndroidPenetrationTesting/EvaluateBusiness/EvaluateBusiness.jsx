@@ -30,7 +30,7 @@ const EvaluateBusiness = () => {
             <div class='w-full h-full text-center bg-white'>
                 <div class='flex flex-col md:flex-row mt-16'>
                     <div class='md:w-2/3 md:ml-8 mt-4'>
-                        <h1 class='font-sans text-4xl mt-4 md:ml-28 mb-20'>Evaluate your business capabilities and uncover opportunities for greater success.</h1>
+                        <h1 class='font-sans font-bold p-4 text-4xl lg:text-4xl mt-4 md:ml-28 mb-20'>Evaluate your business capabilities and uncover opportunities for greater success.</h1>
                     </div>
                     <button class='m-8 ml-12 md:ml-0 md:mt-8 rounded-full h-16 md:w-48 border border-green-500 text-white bg-green-500 pl-3 pr-2 font-bold hover:bg-custom-buttonColor-GreenDark'>Get a free Consultation</button>
                 </div>
