@@ -191,7 +191,7 @@ const Diploma = () => {
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
             <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
-              "Take your first step towards a successful career in cybersecurity with cyberous comprehensive Diploma in Cybersecurity program. Designed to equip you with the essential skills and knowledge needed to thrive in this rapidly evolving field, our diploma program covers a wide range of topics.
+              Take your first step towards a successful career in cybersecurity with cyberous comprehensive Diploma in Cybersecurity program. Designed to equip you with the essential skills and knowledge needed to thrive in this rapidly evolving field, our diploma program covers a wide range of topics.
             </p>
           </div>
         </div>

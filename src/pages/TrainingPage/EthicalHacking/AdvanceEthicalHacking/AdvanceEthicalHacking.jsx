@@ -55,7 +55,7 @@ const AdvanceEthicalHacking = () => {
                     <img src={Images.star} className='w-2 h-2 md:w-3 md:h-3 mt-5' />
                     <img src={Images.star} className='mr-4 w-2 h-2 md:w-3 md:h-3 mt-5' />
                   </div>
-                  <h1 className='text-white font-Roboto text-xs py-2 mt-2 md:text-sm'>
+                  <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-sm'>
                     600+ Reviews
                   </h1>
                   <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-sm'>
