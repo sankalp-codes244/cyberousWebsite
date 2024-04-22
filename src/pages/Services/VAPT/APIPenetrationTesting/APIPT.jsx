@@ -35,21 +35,21 @@ const APIPT = () => {
     {
       id: 4,
       name: "Rohan",
-      title: "",
+      title: "Junior Manager",
       desc: "Hats off to Cyberous for their exceptional API penetration testing service. Their team demonstrated deep expertise in assessing the security of our APIs, uncovering vulnerabilities and providing actionable recommendations for remediation. Their professionalism and commitment to excellence were evident throughout the engagement. We're grateful for  Cyberous insights and highly recommend their services.",
       image: Images.user,
     },
     {
       id: 5,
-      name: "",
-      title: "",
+      name: "Hitesh",
+      title: "Student",
       desc: " Cyberous API penetration testing service was a game-changer for our development team. Their comprehensive assessment of our APIs identified vulnerabilities that could have compromised the security of our applications. Their detailed report and recommendations enabled us to strengthen our API security measures and protect our systems from potential threats. Working with Cyberous has been a positive experience, and we look forward to future collaborations.",
       image: Images.user,
     },
     {
       id: 6,
-      name: "",
-      title: "",
+      name: "Siddarth",
+      title: "Developer",
       desc: "We can't thank Cyberous enough for their outstanding API penetration testing service. Their team's expertise and attention to detail were invaluable in uncovering vulnerabilities in our APIs. Their comprehensive report and actionable recommendations allowed us to enhance our API security posture significantly. Cyberous is our trusted partner for cybersecurity, and we highly recommend their services to anyone seeking to secure their APIs.",
       image: Images.user,
     }
