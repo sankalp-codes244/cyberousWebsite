@@ -31,47 +31,48 @@ const Network = () => {
   const data = [
     {
       id: 1,
-      name: "Anonymous",
-      title: "",
-      desc: "cyberous network penetration testing service was a game-changer for our company. Their expert team identified vulnerabilities in our network infrastructure that we were previously unaware of. Their detailed report and recommendations helped us strengthen our defenses and protect our sensitive data. Cyberous is our go-to partner for all our cybersecurity needs.",
+      name: "Ravi Sharma",
+      title: "Manager",
+      desc: "Cyberous network penetration testing service was a game-changer for our company. Their expert team identified vulnerabilities in our network infrastructure that we were previously unaware of. Their detailed report and recommendations helped us strengthen our defenses and protect our sensitive data. Cyberous is our go-to partner for all our cybersecurity needs.",
       image: Images.user
     },
     {
       id: 2,
-      name: "Anonymous",
-      title: "",
-      desc: "We were thoroughly impressed by cyberous network penetration testing service. Their team's thorough assessment of our network infrastructure uncovered vulnerabilities that could have put our organization at risk. Their actionable recommendations allowed us to address these issues promptly and effectively. Thanks to Cyberous, we now have confidence in the security of our network.",
+      name: "Priya Patel",
+      title: "Developer",
+      desc: "We were thoroughly impressed by Cyberous network penetration testing service. Their team's thorough assessment of our network infrastructure uncovered vulnerabilities that could have put our organization at risk. Their actionable recommendations allowed us to address these issues promptly and effectively. Thanks to Cyberous, we now have confidence in the security of our network.",
       image: Images.user
     },
     {
       id: 3,
-      name: "Anonymous",
-      title: "",
-      desc: "cyberous network penetration testing service exceeded our expectations. Their team demonstrated deep expertise in assessing the security of our network, identifying vulnerabilities, and providing practical recommendations for remediation. Their professionalism and commitment to excellence were evident throughout the engagement. We're grateful for cyberous insights and highly recommend their services.",
+      name: "Amit Singh",
+      title: "Sales Executive",
+      desc: "Cyberous network penetration testing service exceeded our expectations. Their team demonstrated deep expertise in assessing the security of our network, identifying vulnerabilities, and providing practical recommendations for remediation. Their professionalism and commitment to excellence were evident throughout the engagement. We're grateful for Cyberous insights and highly recommend their services.",
       image: Images.user
     },
     {
       id: 4,
-      name: "Anonymous",
-      title: "",
+      name: "Deepika Gupta",
+      title: "Student",
       desc: "Hats off to Cyberous for their exceptional network penetration testing service. Their team's meticulous examination of our network infrastructure uncovered vulnerabilities that we had overlooked. Their comprehensive report and actionable recommendations enabled us to strengthen our network security measures effectively. Working with Cyberous has been a positive experience, and we look forward to future collaborations.",
       image: Images.user
     },
     {
       id: 5,
-      name: "Anonymous",
-      title: "",
-      desc: "cyberous network penetration testing service was instrumental in enhancing our cybersecurity posture. Their team's in-depth analysis and thorough testing uncovered vulnerabilities in our network infrastructure that we were previously unaware of. Their detailed report and recommendations provided us with clear guidance on how to mitigate these risks effectively. We highly recommend Cyberous to any organization serious about securing their network.",
+      name: "Rajesh Khanna",
+      title: "Security Analyst",
+      desc: "Cyberous network penetration testing service was instrumental in enhancing our cybersecurity posture. Their team's in-depth analysis and thorough testing uncovered vulnerabilities in our network infrastructure that we were previously unaware of. Their detailed report and recommendations provided us with clear guidance on how to mitigate these risks effectively. We highly recommend Cyberous to any organization serious about securing their network.",
       image: Images.user
     },
     {
       id: 6,
       name: "Anonymous",
-      title: "",
+      title: "Network Administrator",
       desc: "Choosing Cyberous for our network penetration testing was one of the best decisions we made for our organization's security. Their team's expertise and attention to detail were evident throughout the engagement. They identified vulnerabilities in our network infrastructure and provided actionable recommendations for improvement. Thanks to Cyberous, we now have peace of mind knowing that our network is secure. Highly recommend their services to others.",
       image: Images.user
     }
   ];
+
   
   const approachData = [
     {
