@@ -3,7 +3,7 @@ import { Images } from '../../../../assets'
 
 const NamesYouKnow = () => {
     return (
-        <div>
+        <div className='py-20'>
             <div className=' md:p-10'>
                 <div className='md:px-10 md:w-4/5'>
                     <h1 className='text-6xl md:text-8xl mr-3 md:mr-0 font-Montreal py-6 pl-4 text-left'>
