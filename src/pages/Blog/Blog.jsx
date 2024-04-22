@@ -127,12 +127,13 @@ const Blog = () => {
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-4xl font-bold font-serif'>Our Blogs</h1>
+        <h1 className='text-lg text-center md:text-6xl font-bold font-serif'>Our Blogs</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
             <p className='text-2xl mx-4 lg:text-3xl lg:mx-32 text-center font-__Inter_aaf875'>
-              "Projects that make us stand <span className='text-custom-buttonColor-GreenDark font-bold'> out.</span>"
+              "Projects that make us stand <span className='text-custom-buttonColor-GreenDark font-bold md:text-5xl
+              '> Out</span>"
             </p>
           </div>
         </div>

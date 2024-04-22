@@ -50,3 +50,9 @@ html {
       src: url("../src/assets/Fonts/queering.otf");
     }
 }
+@layer base {
+  @font-face {
+      font-family: "Montreal";
+      src: url("../src/assets/Fonts/Montreal.ttf");
+    }
+}

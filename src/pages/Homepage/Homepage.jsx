@@ -44,7 +44,7 @@ const Homepage = () => {
       id: 2,
       title: 'Advanced Ethical Hacking',
       description: 'Advanced techniques in ethical hacking and cybersecurity.',
-      image: Images.ourcources2,
+      image: Images.ourcources5,
       type: 'Ethical_Hacking',
       path: '/training/ethicalhacking'
     },

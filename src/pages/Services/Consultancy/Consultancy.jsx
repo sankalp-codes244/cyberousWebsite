@@ -134,7 +134,7 @@ const Consultancy = () => {
       </div>
 
       <div className="flex flex-col text-center py-14">
-        <h1 className="text-2xl lg:text-4xl font-serif mt-4">Overview of our Services</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold font-serif mt-4">Overview of our Services</h1>
         <div className="flex justify-center">
           <div className="h-1 w-20 lg:w-32 bg-custom-buttonColor-Green mt-4 rounded-full"></div>
         </div>

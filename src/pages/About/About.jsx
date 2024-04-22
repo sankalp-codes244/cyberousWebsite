@@ -113,7 +113,7 @@ const About = () => {
 
       {/* Company info */}
       <div className='flex flex-col justify-center py-8'>
-        <h1 className='text-lg text-center md:text-2xl font-bold font-serif'>Our Company</h1>
+        <h1 className='text-lg text-center md:text-4xl font-bold font-serif'>Our Company</h1>
         <div className="h-1 w-32 bg-custom-buttonColor-Green my-4 mx-auto rounded-full "></div>
         <div className='flex justify-center'>
           <div className='w-full md:w-3/4'>
@@ -148,7 +148,7 @@ const About = () => {
           <div className='flex flex-col'>
             <p className='font-bold text-3xl md:text-6xl font-__Inter_aaf875'>Download a copy of our <p className='text-green-500 font-__Inter_aaf875 pt-6'>Company Profile</p></p>
             <button
-          className="bg-custom-buttonColor-Green text-white font-bold py-2 lg:w-3/5 h-20 px-12 lg:px-14 my-5 rounded-full mt-4 md:mt-8 hover:bg-custom-buttonColor-GreenLight focus:outline-none focus:shadow-outline flex items-center justify-between "
+          className="bg-custom-buttonColor-Green text-white font-bold py-2 lg:w-3/6 h-20 px-12 lg:px-14 my-5 rounded-full mt-4 md:mt-8 hover:bg-custom-buttonColor-GreenLight focus:outline-none focus:shadow-outline flex items-center justify-between "
           
           onClick={handleDownload}
         >
@@ -165,7 +165,7 @@ const About = () => {
       {/* We Excel section */}
       <div className='text-center my-20'>
         <h2 className='text-3xl lg:text-4xl font-bold font-serif'>We Excel in Delivering
-          <span className='text-green-500 text-2xl lg:text-4xl'> Optimal Solution</span>
+          <span className='text-green-500 text-2xl lg:text-5xl'> Optimal Solution</span>
         </h2>
         <div className="h-1 w-32 md:w-1/3 bg-custom-buttonColor-Green my-4 mx-auto rounded-full"></div>
       </div>

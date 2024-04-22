@@ -670,7 +670,7 @@ const TrainingPage = () => {
               <div className="lg:grid lg:grid-cols-2 lg:grid-flow-row gap-3 ">
               <div className="flex justify-center items-center px-10 lg:px-5">
                 <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full">
-                  <img src={Images.checkMark} className="object-contain" />
+                  <img src={Images.checkMark} className="object-contain w-6" />
                 </div>
                 <h1 className=" lg:text-2xl font-bold font-__Inter_aaf875 px-10">
                 Industry Connections
@@ -680,7 +680,7 @@ const TrainingPage = () => {
               </div>
               <div className="flex justify-center items-center px-10 lg:px-5">
                 <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full mx-3 lg:mx-2">
-                  <img src={Images.checkMark} className="object-contain" />
+                  <img src={Images.checkMark} className="object-contain w-6" />
                 </div>
                 <h1 className=" lg:text-2xl mx-2 font-bold font-__Inter_aaf875 px-5">
                   Tailored Career Guidance
@@ -688,7 +688,7 @@ const TrainingPage = () => {
               </div>
               <div className="flex justify-center items-center px-10 lg:px-5">
                 <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full">
-                  <img src={Images.checkMark} className="object-contain" />
+                  <img src={Images.checkMark} className="object-contain w-6" />
                 </div>
                 <h1 className=" lg:text-2xl font-bold font-__Inter_aaf875 px-10">
                 Resume Optimization
@@ -697,7 +697,7 @@ const TrainingPage = () => {
               </div>
               <div className="flex justify-center items-center px-10 lg:px-5">
                 <div className="w-10 h-10 lg:w-10 flex justify-center items-center rounded-full">
-                  <img src={Images.checkMark} className="object-contain" />
+                  <img src={Images.checkMark} className="object-contain w-6" />
                 </div>
                 <h1 className=" lg:text-2xl font-bold font-__Inter_aaf875 px-10">
                 Interview Preparation

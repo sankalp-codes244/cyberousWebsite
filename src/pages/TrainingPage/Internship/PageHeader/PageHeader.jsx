@@ -15,7 +15,7 @@ const PageHeader = () => {
                                 Unlock Your Potential in Cyber Security
                             </h1>
                             <h1 className='text-custom-fontColor-Green text-center text-4xl md:text-7xl font-__Inter_aaf875 font-bold'>
-                                Internship Program
+                                Internship Training Program
                             </h1>
                             <div className='md:flex md:flex-row justify-center py-10 md:py-28 px-4'>
                                 <Link to='/contact' className='w-full flex justify-center'>

@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import { Link } from "react-router-dom";
 
 const TrainingCard = ({ image, title, description,type,path}) => {
@@ -19,8 +20,8 @@ const TrainingCard = ({ image, title, description,type,path}) => {
         
         
       </div>
-      <Link to={path} className=" absolute bottom-0 right-0 m-3  px-3 py-2 bg-custom-buttonColor-Green text-white rounded-full focus:ring-4 duration-500 ring-green-300">
-          Learn More
+      <Link to={path} className=" absolute bottom-0 right-0 m-3  px-2 py-2 bg-custom-buttonColor-Green text-white rounded-full focus:ring-4 duration-500 ring-green-300">
+          <ChevronRightIcon className="w-6"/>
         </Link>
       </div>
       

@@ -59,7 +59,7 @@ export default function FormComponent() {
     ) {
       errors.question = "Please select a service";
     }
-    if (sanitizedFormData.message.trim() === "" && invalidKeys.includes(sanitizedFormData.message)) {
+    if (invalidKeys.includes(sanitizedFormData.message)) {
       errors.message = "Message is required";
     }
   
@@ -198,7 +198,6 @@ export default function FormComponent() {
     <option value='VAPT'>VAPT</option>
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
-    <option value='Support'>Support</option>
     <option value='Training'>Training</option>
           </select>
           {formErrors.question && <div className="text-red-500 text-sm text-center">{formErrors.question}</div>}
@@ -206,7 +205,6 @@ export default function FormComponent() {
         <div className="space-y-2">
           <label htmlFor="message" className="text-sm lg:text-xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black">Description</label>
           <textarea  value={formData.message} onChange={handleChange} name='message' id="message" placeholder="Enter your message" className="flex w-full rounded-md border border-gray-300 bg-gray-200 px-3 py-5 text-sm lg:text-xl text-black  focus:outline-none focus:border-gray-600 focus:ring focus:ring-gray-300 duration-500 min-h-[100px]" />
-          {formErrors.message && <div className="text-red-500 text-sm text-center">{formErrors.message}</div>}
         </div>
         <button className="inline-flex items-center shadow-lg border  justify-center whitespace-nowrap rounded-md text-sm lg:text-xl font-medium ring-offset-background transition-colors focus:outline-none bg-green-500 text-white focus:ring-2 focus:ring-gray-300 duration-500 focus:ring-offset-2 bg-primary text-white hover:bg-opacity-90 h-10 px-4 py-5">Submit</button>
       </div>

@@ -44,8 +44,7 @@ const LinuxFundamentals = () => {
 </h1>
 </div>
                   <div className='flex flex-row'>
-                    <h1 className='text-white font-Roboto text-xs p-2 mt-2 md:text-sm'>
-                      4.7
+                   <h1 className='text-white font-Roboto text-xs p-2 mt-2 md:text-base'>                      4.7
                     </h1>
                     <img src={Images.star} className='w-2 h-2 md:w-3 md:h-3 mt-5' />
                     <img src={Images.star} className='w-2 h-2 md:w-3 md:h-3 mt-5' />
@@ -53,10 +52,10 @@ const LinuxFundamentals = () => {
                     <img src={Images.star} className='w-2 h-2 md:w-3 md:h-3 mt-5' />
                     <img src={Images.star} className='mr-4 w-2 h-2 md:w-3 md:h-3 mt-5' />
                   </div>
-                  <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-sm'>
+                  <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-base'>
                     500+ Reviews
                   </h1>
-                  <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-sm'>
+                  <h1 className='text-white font-Roboto text-sm py-2 mt-2 md:text-base'>
                     8000+ Students
                   </h1>
                 </div>
@@ -101,13 +100,20 @@ const LinuxFundamentals = () => {
                         </h1>
                       </div>
                     </div>
+                    <div className='lg:hidden md:block md:w-full h-full my-5'>
+                    
+                        <h1 className='font-bold text-2xl bg-white p-2 text-center rounded-sm'>
+                          ₹5000.00
+                        </h1>
+                       
+                    </div> 
                     <div className='hidden md:block md:w-full p-6 mt-20'>
                       <div className=' bg-white w-full relative  rounded-sm md:w-3/4 md:mt-20 h-1/2 p-5'>
                         <h1 className='font-bold text-2xl '>
                           ₹5000.00
                         </h1>
                         <h1 className='absolute font-bold text-base line-through right-20 md:right-5 md:bottom-2 text-custom-fontColor-grey'>
-                          ₹8500
+                          ₹10000
                         </h1>
                       </div>
                     </div>

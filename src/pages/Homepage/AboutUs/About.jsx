@@ -20,7 +20,7 @@ const About = () => {
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center">
             <img src={Images.aboutimg1} alt="Image of something" className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28" />
             <div className=" w-full">
-              <h1 className="mt-2 font-serif md:mt-10 ml-10 text-center text-2xl font-bold">
+              <h1 className="m-2 font-Montreal text-3xl font-bold text-center lg:mt-10 ml-10">
                 Happy Clients
               </h1>
               <h1 className="text-custom-buttonColor-Green text-center text-4xl font-bold m-2 mt-4 ml-10">
@@ -29,7 +29,7 @@ const About = () => {
             </div>
             <img src={Images.aboutimg2} className="pointer-events-none select-none w-28 h-28 sm:w-28 sm:h-28 mt-10 ml-10" alt="Cyberous achievement" />
             <div className=" w-full">
-              <h1 className="m-2 font-serif text-2xl font-bold text-center lg:mt-10 ml-10">
+              <h1 className="m-2 font-Montreal text-3xl font-bold text-center lg:mt-10 ml-10">
                 Projects Done
               </h1>
               <h1 className="text-custom-buttonColor-Green text-center text-4xl font-bold mt-4  ml-10">

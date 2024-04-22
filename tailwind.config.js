@@ -43,6 +43,7 @@ export default {
         arbutus: ['Arbutus', 'sans-serif'],
         holtwood: ['Queering', 'sans-serif'],
         stylish: ['Stylish', 'sans-serif'],
+        Montreal: ['Montreal', 'sans-serif'],
         __Inter_aaf875:['Inter'],
         Roboto:['Roboto'],
       },

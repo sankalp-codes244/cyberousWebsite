@@ -25,7 +25,7 @@ const contactData = [
     name: 'Drop A Review',
     desc: 'Find our Google Page',
     Link: "Go →",
-    nav: "https://g.co/kgs/16dnDxb"
+    nav: "https://g.page/r/CRVoAJXhPKPfEAI/review"
   },
   {
     id: 3,
@@ -283,6 +283,7 @@ A question about...
     <option value='Red Teaming'>   Red Teaming</option>
     <option value='Consultancy'>Consultancy</option>
     <option value='Training'>Training</option>
+    <option value='Training'>Internship Training</option>
     
   </select>
   {formErrors.question && <p className='text-red-500 text-sm'>{formErrors.question}</p>}
