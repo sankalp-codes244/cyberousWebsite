@@ -14,7 +14,7 @@ const Footer = () => {
             <ol className="list-none">
             <Link to='/training/'>
 
-              <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              <li className="md:w-52 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -22,7 +22,7 @@ const Footer = () => {
               </li>
             </Link>
               <Link to='/training/corporatetraining'>
-              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
               </Link>
               <Link to='/services'>
-              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               </Link>
               <Link to='/services/consultancy'>
-                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                   </svg>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
               </Link>
               <Link to='/services/redteaming'>
-                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+                <li className=" md:w-52 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                   </svg>
@@ -60,7 +60,7 @@ const Footer = () => {
           <h1 className='text-white text-2xl font-bold mb-5 ml-8'>Quick Links</h1>
           <ol className="list-none">
             <Link to='/career'>
-              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
             </Link>
             <Link to='/services'>
-              <li className=" md:w-32 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className=" md:w-32 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -76,7 +76,7 @@ const Footer = () => {
               </li>
             </Link>
             <Link to='/about'>
-              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
             </Link>
             <Link to='/blog'>
-              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
             </Link>
             <Link to='/contact'>
-              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+              <li className=" md:w-24 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
@@ -133,16 +133,16 @@ const Footer = () => {
         <div className="pt-6 ml-12 md:mt-20 justify-center md:justify-normal flex  md:p-10 ">
 
           <Link to={'https://www.facebook.com/cyberous.in?mibextid=dGKdO6'}>
-            <img src={Images.facebookLight} alt="Facebook" className=" h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
+            <img src={Images.facebookLight} alt="Facebook" className=" h-10 w-10 rounded-full object-contain mx-1 lg:hover:scale-110 transition-transform duration-300 mr-4 " />
           </Link>
           <Link to={'https://www.instagram.com/cyberous_?igsh=bndreTYxMnIxemxn'}>
-            <img src={Images.instagramLight} alt="Instagram" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
+            <img src={Images.instagramLight} alt="Instagram" className="h-10 w-10 rounded-full object-contain mx-1 lg:hover:scale-110 transition-transform duration-300 mr-4" />
           </Link>
           <Link to={'https://www.linkedin.com/company/cyberous'}>
-            <img src={Images.linkedinLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4" />
+            <img src={Images.linkedinLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 lg:hover:scale-110 transition-transform duration-300 mr-4" />
           </Link>
           <Link to={'https://twitter.com/cyberousinfosec'}>
-            <img src={Images.xLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 hover:scale-110 transition-transform duration-300 mr-4 " />
+            <img src={Images.xLight} alt="LinkedIn" className="h-10 w-10 rounded-full object-contain mx-1 lg:hover:scale-110 transition-transform duration-300 mr-4 " />
           </Link>
         </div>
         <div className='pr-4 md:pr-48'>
@@ -156,25 +156,25 @@ const Footer = () => {
         <div className='flex lg:flex-none justify-center items-center'>
           <ol className="grid grid-cols-2 md:flex md:flex-row list-none my-6 mx-5 self-center">
             <Link to={'/terms&Condition'}>
-            <li className="md:w-52 text-custom-fontColor-Dark  mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <li className="md:w-52 text-custom-fontColor-Dark  mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Terms & Conditions
             </li>
             </Link>
             <Link to='/privacypolicy' className='ml-9 lg:ml-0'>
-            <li className=" md:w-52 text-custom-fontColor-Dark mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <li className=" md:w-52 text-custom-fontColor-Dark mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               Privacy Policy
             </li>
             </Link>
             <Link to={'/dmcapolicy'}>
-            <li className=" md:w-52 text-custom-fontColor-Dark  mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+            <li className=" md:w-52 text-custom-fontColor-Dark  mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
               
               DMCA Policy
             </li>
             </Link>
             <Link to='/disclaimer' className='ml-9 lg:ml-0'>
-              <li className=" md:w-52 text-custom-fontColor-Dark mb-2 hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
+              <li className=" md:w-52 text-custom-fontColor-Dark mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green ">
                 
                 Disclaimer
               </li>
