@@ -54,7 +54,7 @@ const Homepage = () => {
       description: 'Fundamental concepts and practices of Linux operating system.',
       image: Images.ourcources2,
       type: 'Linux_Fundamental',
-      path: '/training/bugbounty'
+      path: '/training/linuxfundamentals'
     },
     {
       id: 4,

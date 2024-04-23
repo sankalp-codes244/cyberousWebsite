@@ -12,6 +12,7 @@ import Callicon from "../../../assets/Svgs/Callicon";
 import Mailicon from "../../../assets/Svgs/Mailicon";
 import FormComponent from "../../../components/FormComponent";
 import Faqs from "../../Homepage/FAQs/Faqs";
+import { Link } from "react-router-dom";
 
 const Cards = ({ image, name, desc }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -126,9 +127,11 @@ const Consultancy = () => {
               measures to safeguard their digital assets from ever-evolving
               cyber threats.
             </p>
+            <Link to='/contact'>
             <button className="w-1/2 h-16 md:w-1/4  text-white hover:text-custom-buttonColor-Green font-Roboto bg-custom-buttonColor-Green hover:bg-white rounded-full duration-300 active:bg-green-800 text-lg md:text-2xl">
               Get a Free Consultation
             </button>
+            </Link>
           </div>
         </div>
       </div>

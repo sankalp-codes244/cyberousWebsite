@@ -67,7 +67,7 @@ const MobilePT = () => {
                       <div className='flex flex-row'>
                         <img src={Images.ethicalhackingimg9} className='w-4 mx-2 invert object-contain' />
                         <h1 className='text-white font-Roboto text-base my-2'>
-                          Course Duration: <span className='font-bold'> 1 Months </span>
+                          Course Duration: <span className='font-bold'> 2 Months </span>
                         </h1>
                       </div>
                       <div className='flex flex-row'>

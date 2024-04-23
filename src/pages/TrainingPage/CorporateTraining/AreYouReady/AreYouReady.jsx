@@ -28,11 +28,11 @@ const AreYouReady = () => {
                     </p>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     <Link to='/contact'>
-                    <button className='bg-custom-gold-color p-6 rounded-md w-full text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg'>
+                    <button className='bg-custom-gold-color p-3 rounded-md w-full lg:w-3/4 text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg'>
                         Contact Us Now
                     </button>
                     </Link>
-                    <button onClick={handleDownload} className='flex items-center justify-center bg-custom-gold-color  rounded-md w-full text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg p-6'><img src={Images.downloadicon} className='w-6 invert mx-5' /> 
+                    <button onClick={handleDownload} className='flex items-center justify-center bg-custom-gold-color  rounded-md w-full text-xl text-white font-bold font-__Inter_aaf875 hover:bg-yellow-600 shadow-lg lg:w-3/4 p-3'><img src={Images.downloadicon} className='w-6 invert mx-5' /> 
 
                         <p>View Modules</p>
                     </button>

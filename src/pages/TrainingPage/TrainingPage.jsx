@@ -368,7 +368,7 @@ const TrainingPage = () => {
       </div>
 
       <div className="bg-custom-black-color py-8">
-        <h1 className="text-center text-3xl md:text-5xl font-serif font-bold text-white font-Roboto">
+        <h1 className="text-center text-3xl md:text-5xl font-serif font-bold text-white">
           What We Offer
         </h1>
         <div className="h-1 w-96 bg-custom-buttonColor-Green my-4 mx-auto  rounded-full"></div>
@@ -513,7 +513,7 @@ const TrainingPage = () => {
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
-                <SideArrow /> Cloud Penetration Testing API Penetration Testing{" "}
+                <SideArrow /> Cloud Penetration Testing {" "}
               </li>
               <li className="text-lg font-__Inter_aaf875">
                 {" "}
@@ -529,7 +529,7 @@ const TrainingPage = () => {
               </li>
             </ul>
             <Link to="/training/diploma">
-            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-28">
+            <button className="bg-custom-buttonColor-Green hover:bg-green-600 duration-300 text-white font-__Inter_aaf875 p-2 rounded-md w-full mt-36">
               Read more
             </button>
             </Link>
@@ -561,9 +561,11 @@ const TrainingPage = () => {
               </div>
             </div>
             <div className="flex justify-center items-center md:w-1/4">
-              <button className="bg-white text-xl w-full font-__Inter_aaf875 font-bold p-3 text-black rounded-lg">
+              <Link to='/contact' className="m-4 bg-white text-xl h-10 lg:h-16 flex justify-center items-center w-60 font-__Inter_aaf875 font-bold p-3  text-black rounded-lg ">
+              <button className="">
                 Enroll Now
               </button>
+              </Link>
             </div>
           </div>
         </div>

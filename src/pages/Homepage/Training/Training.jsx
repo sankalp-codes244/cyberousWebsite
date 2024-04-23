@@ -19,7 +19,6 @@ const Training = ({ programs }) => {
       {/* Filter buttons with responsive adjustments */}
       <div className="flex flex-wrap justify-center my-4 text-center">
         {["All", "bug_bounty", "Linux_Fundamental", "Ethical_Hacking", "Cyber_Security_Diploma", 
-      // "Application_Development"  
       ].map((type) => (
           <button
             key={type}
@@ -53,6 +52,7 @@ const Training = ({ programs }) => {
                 title={program.title}
                 description={program.description}
                 type={program.type}
+                path={program.path}
               />
             ))
         )}
