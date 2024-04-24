@@ -74,7 +74,7 @@ export default function FormComponent() {
     try {
       const formData = new FormData(e.target);
 
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzYM4qTyi8YLsZL7awW7eUYwM6MfczeoKH-8fdmpJwlos48UVmqkrLdtSAJESZA774v/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwuccL2VkkhsPzGUuTfTbPVPHb6rNe0nXQR6hnm3ff4TpNNaBoXcnLh8ybwfCtoBAY-dQ/exec", {
         method: "POST",
         body: formData,
       });

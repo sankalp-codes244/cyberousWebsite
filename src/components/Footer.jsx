@@ -1,10 +1,89 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Images } from '../assets'
+import xss from 'xss';
 
 
 
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+  const [formErrors, setFormErrors] = useState({});
+  const [loader, setLoader] = useState(false);
+
+  const [formStatus, setFormStatus] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
+  const invalidKeys = "<>{}[]|\\$^`";
+
+  const handleSubmit = async (e) => {
+    console.log("first")
+    e.preventDefault();
+    setLoader(true);
+  
+    // Basic form validation
+    const errors = {};
+    const sanitizedFormData = {}; // Object to store sanitized form data
+  
+    // Sanitize each form field
+    for (const key in formData) {
+      if (Object.hasOwnProperty.call(formData, key)) {
+        const sanitizedValue = xss(formData[key]); // Sanitize the value using xss library
+        sanitizedFormData[key] = sanitizedValue; // Store the sanitized value
+      }
+    }
+  
+    // Perform validation on sanitized form data
+
+    if (sanitizedFormData.email.trim() === "" || invalidKeys.includes(sanitizedFormData.email)) {
+      errors.email = "Email is required";
+    }
+    
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      setLoader(false);
+      return;
+    }
+  
+    // If no errors, proceed with form submission
+    try {
+      const formDataToSend = new FormData();
+for (const key in formData) {
+  formDataToSend.append(key, formData[key]);
+}
+  
+const response = await fetch("https://script.google.com/macros/s/AKfycbxIDZid8J3qFtHyIAo9xqfB_YVpUi17TvenXYVE9NN5VIIRJ_M2izjAIFRbVDS48hVQ/exec", {
+  method: "POST",
+  body: formDataToSend,
+});
+      if (response.ok) {
+        setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
+        setShowPopup(true); // Show popup on successful submission
+        setFormData({
+          email: "",
+         
+        });
+      } else {
+        setFormStatus("An error occurred while submitting the form.");
+        setShowPopup(true); // Show popup on error
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setFormStatus("An error occurred while submitting the form.");
+      setShowPopup(true); // Show popup on error
+    }
+    setLoader(false);
+  };
+  
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    const sanitizedValue = xss(value); // Sanitize the input value
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: sanitizedValue,
+    }));
+  };
   return (
     <div className='flex flex-col bg-custum-bg-dark pt-10'>
       <div className='flex flex-col md:flex-row  '>
@@ -67,12 +146,12 @@ const Footer = () => {
                 Career
               </li>
             </Link>
-            <Link to='/services'>
-              <li className=" md:w-32 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
+            <Link to='/training/internship'>
+              <li className=" md:w-40 text-custom-fontColor-Dark ml-5 mb-2 lg:hover:scale-110 transition duration-300 hover:text-custom-buttonColor-Green">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 mr-1 inline-block transform rotate-90">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
-                Our Services
+                Internship Training
               </li>
             </Link>
             <Link to='/about'>
@@ -114,14 +193,17 @@ const Footer = () => {
                <form className='flex flex-col lg:flex-row'>
               <div className=" rounded-lg mb-4 md:mb-0">
                <input
-                  name="emailHandle"
+               onChange={handleChange}
+               value={formData.email}
+                  name="email"
                   type="email"
                   className="mt-4 ml-5 h-10 px-4 focus-visible:ring-4 duration-500 text-white bg-custum-bg-dark  border border-solid border-white w-80 rounded-lg
                   "
                   placeholder="Enter your email"
                 />
+                {formErrors.email && (<p className="text-red-500 text-sm ml-5">{formErrors.email}</p>)}
               </div>
-              <button className="mt-4 ml-4 bg-custom-buttonColor-Green hover:bg-custom-buttonColor-GreenDark text-white font-bold py-2 px-4 rounded">
+              <button onClick={handleSubmit} className="mt-4 ml-4 bg-custom-buttonColor-Green hover:bg-custom-buttonColor-GreenDark text-white font-bold py-2 px-4 rounded">
                 Sign Up
               </button>
                </form>
