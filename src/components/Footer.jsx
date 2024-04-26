@@ -57,7 +57,7 @@ const response = await fetch("https://script.google.com/macros/s/AKfycbxIDZid8J3
   body: formDataToSend,
 });
       if (response.ok) {
-        setFormStatus("Thanks for reaching out to us! We will get back to you soon.");
+        setFormStatus("Welcome aboard! 🛡️ Your inbox is now your fortress against cyber threats.");
         setShowPopup(true); // Show popup on successful submission
         setFormData({
           email: "",
@@ -84,7 +84,32 @@ const response = await fetch("https://script.google.com/macros/s/AKfycbxIDZid8J3
       [name]: sanitizedValue,
     }));
   };
-  return (
+
+  const handleClosePopup = () => {
+    setShowPopup(false); // Close the popup
+  };
+  return (<>
+        {showPopup && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+          <div className="bg-white rounded-lg p-8 max-w-md">
+            <div className="text-end pb-8">
+              <button onClick={handleClosePopup} className="bg-gray-500 items-center text-white font-semibold text-xl p-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="text-lg text-green-500 text-center mb-4">{formStatus}</div>
+          </div>
+        </div>
+      )}
+      {loader && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+          <div className="bg-white rounded-lg p-8 max-w-md">
+            <div className="text-lg text-green-500 text-center mb-4">Submitting...</div>
+          </div>
+        </div>
+      )}
     <div className='flex flex-col bg-custum-bg-dark pt-10'>
       <div className='flex flex-col md:flex-row  '>
         <div className='md:w-1/3 h-auto md:h-full ml-8 mt-8'>
@@ -268,6 +293,8 @@ const response = await fetch("https://script.google.com/macros/s/AKfycbxIDZid8J3
       </div>
 
     </div>
+  </>
+
   )
 }
 
